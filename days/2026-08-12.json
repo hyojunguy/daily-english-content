@@ -1,0 +1,297 @@
+{
+  "schema": 1,
+  "day": 1,
+  "date": "2026-08-12",
+  "week": 1,
+  "block": "team-daily",
+  "theme": "합류 첫 주 — 나를 소개하고 판을 읽는다",
+  "topic": "첫 스탠드업에서 자기소개하고 맡을 영역 밝히기",
+  "difficulty": 1,
+  "situations": [
+    {
+      "id": "d001-s1",
+      "title_ko": "첫 스탠드업에서 자기소개하기",
+      "context_ko": "합류 첫날 아침 스탠드업, 팀 리드가 새로 온 {name}에게 소개와 맡을 영역을 물어본다. 팀원 대여섯 명이 화이트보드 앞에 모여 있다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1qBKWsXZjuqDtsRgBzv06Cpa8tHRESM0W",
+        "url": "https://drive.google.com/uc?export=download&id=1qBKWsXZjuqDtsRgBzv06Cpa8tHRESM0W",
+        "duration_ms": 25272
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Let's kick off with introductions since we've got someone new. Go ahead whenever you're ready.",
+          "ko": "새로 합류한 분이 있으니 자기소개부터 시작하죠. 준비되면 편하게 말씀해주세요.",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 6010
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks — I'm {name}, and I'll be working on training and inference infrastructure, mostly evaluation pipelines at first.",
+          "ko": "감사합니다 — 저는 {name}이고, 학습·추론 인프라를 맡을 예정이고 처음엔 주로 평가 파이프라인 쪽을 볼 것 같아요.",
+          "is_target": true,
+          "start_ms": 6360,
+          "end_ms": 15880
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Good to have you. Feel free to jump into any thread if something looks unclear.",
+          "ko": "함께하게 되어 좋네요. 뭐든 애매하면 아무 스레드에나 편하게 들어와서 물어보세요.",
+          "is_target": false,
+          "start_ms": 16230,
+          "end_ms": 21030
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Could you point me to the repo where the current benchmark scripts live?",
+          "ko": "지금 벤치마크 스크립트가 있는 저장소 위치 좀 알려주실 수 있을까요?",
+          "is_target": true,
+          "start_ms": 21380,
+          "end_ms": 25220
+        }
+      ]
+    },
+    {
+      "id": "d001-s2",
+      "title_ko": "평가 파이프라인 담당자와 첫 대화",
+      "context_ko": "스탠드업 직후, 평가 하네스를 오래 관리해온 시니어 엔지니어 Priya가 {name}에게 잠깐 시간을 내준다. {name}은 자신이 맡을 범위를 명확히 하려 한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1v2FR2NL-k2JBZFfPiCdC316BsgEWHLvt",
+        "url": "https://drive.google.com/uc?export=download&id=1v2FR2NL-k2JBZFfPiCdC316BsgEWHLvt",
+        "duration_ms": 34680
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Just so I understand — is the eval pipeline shared across teams, or does each team run its own?",
+          "ko": "제가 제대로 이해한 게 맞는지 확인하고 싶은데요 — 평가 파이프라인이 팀마다 따로 있나요, 아니면 공용으로 쓰나요?",
+          "is_target": true,
+          "start_ms": 250,
+          "end_ms": 7210
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "시니어 엔지니어 (Priya)",
+          "en": "It's shared. We maintain the core harness, but teams bolt on their own task-specific metrics.",
+          "ko": "공용이에요. 핵심 하네스는 저희가 관리하고, 팀들이 각자 태스크별 지표를 그 위에 얹는 구조예요.",
+          "is_target": false,
+          "start_ms": 7560,
+          "end_ms": 14040
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That makes sense. I'll be working on adding latency and throughput checks to that shared harness.",
+          "ko": "그렇군요. 이번 주엔 그 공용 하네스에 레이턴시랑 처리량 체크를 추가하는 작업을 맡을 것 같아요.",
+          "is_target": true,
+          "start_ms": 14390,
+          "end_ms": 20310
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "시니어 엔지니어 (Priya)",
+          "en": "That'll help a lot — nobody's touched the throughput numbers in months, so they're pretty stale.",
+          "ko": "그거 진짜 도움 될 거예요 — 처리량 수치가 몇 달째 아무도 안 건드려서 낡았거든요.",
+          "is_target": false,
+          "start_ms": 20660,
+          "end_ms": 26980
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "One more thing — who should I loop in before I change anything in the shared config?",
+          "ko": "하나만 더요 — 공용 설정을 바꾸기 전에 누구한테 미리 알려야 할까요?",
+          "is_target": true,
+          "start_ms": 27330,
+          "end_ms": 34610
+        }
+      ]
+    },
+    {
+      "id": "d001-s3",
+      "title_ko": "GPU 클러스터 접근 문서를 못 찾아 동료에게 묻기",
+      "context_ko": "자리에 앉은 지 얼마 안 된 {name}이 GPU 클러스터 접근 권한 관련 문서를 찾지 못해 옆자리 동료 Marco에게 도움을 청한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1e8zjHNzuIjbF5alBkVY7UmddXykI1vCW",
+        "url": "https://drive.google.com/uc?export=download&id=1e8zjHNzuIjbF5alBkVY7UmddXykI1vCW",
+        "duration_ms": 25128
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "옆자리 동료 엔지니어 (Marco)",
+          "en": "Hey, welcome aboard. Anything I can help you track down today?",
+          "ko": "안녕하세요, 합류 축하해요. 오늘 뭐 찾는 거 도와드릴 거 있어요?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 4650
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Actually yes — could you point me to the doc for requesting GPU cluster access?",
+          "ko": "사실 있어요 — GPU 클러스터 접근 신청하는 문서 좀 알려주실 수 있어요?",
+          "is_target": true,
+          "start_ms": 5000,
+          "end_ms": 10680
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "옆자리 동료 엔지니어 (Marco)",
+          "en": "It's not written down anywhere good, honestly. Easiest is to ping the platform channel directly.",
+          "ko": "그건 어디에도 제대로 정리가 안 돼 있어요, 솔직히. 그냥 플랫폼 채널에 바로 물어보는 게 제일 빨라요.",
+          "is_target": false,
+          "start_ms": 11030,
+          "end_ms": 17430
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Okay, I'll ping them now. Thanks for saving me from searching the wiki for an hour.",
+          "ko": "네, 지금 바로 물어볼게요. 위키 한 시간 뒤지는 거 안 하게 해주셔서 감사해요.",
+          "is_target": true,
+          "start_ms": 17780,
+          "end_ms": 25060
+        }
+      ]
+    },
+    {
+      "id": "d001-s4",
+      "title_ko": "매니저와의 첫 1:1에서 우선순위 확인하기",
+      "context_ko": "합류 첫날 오후, 매니저 Sam과 짧은 1:1 미팅에서 {name}이 이번 주에 뭘 우선해야 할지 확실히 짚고 넘어가려 한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1ryeFdNHBgMDpZu3_mvRDU3JjJLzJB-PS",
+        "url": "https://drive.google.com/uc?export=download&id=1ryeFdNHBgMDpZu3_mvRDU3JjJLzJB-PS",
+        "duration_ms": 32424
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Just so I understand my priorities — should I focus on the eval pipeline or the serving stack first?",
+          "ko": "제 우선순위를 제대로 이해하고 싶은데요 — 평가 파이프라인이랑 서빙 스택 중에 뭘 먼저 봐야 할까요?",
+          "is_target": true,
+          "start_ms": 250,
+          "end_ms": 6810
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저 (Sam)",
+          "en": "Eval pipeline first. Serving stack changes are on hold until the next planning cycle.",
+          "ko": "평가 파이프라인이 먼저예요. 서빙 스택 쪽은 다음 계획 주기까지 보류 상태고요.",
+          "is_target": false,
+          "start_ms": 7160,
+          "end_ms": 13320
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Understood. I'll be working on the eval harness this week and hold off on serving changes.",
+          "ko": "알겠습니다. 이번 주엔 평가 하네스 작업을 맡고 서빙 쪽 변경은 미뤄둘게요.",
+          "is_target": true,
+          "start_ms": 13670,
+          "end_ms": 20630
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저 (Sam)",
+          "en": "Perfect. Flag me if the scope grows beyond what we discussed — I'd rather know early.",
+          "ko": "좋아요. 얘기했던 범위보다 커지면 바로 알려주세요 — 일찍 아는 게 낫거든요.",
+          "is_target": false,
+          "start_ms": 20980,
+          "end_ms": 27300
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Will do. I'll send you a short update by Friday so you can see where things stand.",
+          "ko": "네, 금요일까지 짧게 진행 상황 정리해서 보내드릴게요.",
+          "is_target": true,
+          "start_ms": 27650,
+          "end_ms": 32370
+        }
+      ]
+    },
+    {
+      "id": "d001-s5",
+      "title_ko": "다른 리서처와 실험 중복 확인하기",
+      "context_ko": "스탠드업에서 동료 리서처 Jin이 비슷한 영역을 이미 실험 중이라는 걸 알게 된 {name}이 작업이 겹치지 않도록 확인한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "12HK7_-vvsHJwwiKmrJCze0XrUnmJJZJG",
+        "url": "https://drive.google.com/uc?export=download&id=12HK7_-vvsHJwwiKmrJCze0XrUnmJJZJG",
+        "duration_ms": 25608
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 리서처 (Jin)",
+          "en": "Wait, are you also looking at the evaluation harness? I've had a branch open for weeks.",
+          "ko": "잠깐, 혹시 평가 하네스도 보고 계세요? 저 몇 주째 브랜치 하나 열어두고 있는데.",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 6570
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Could you point me to that branch? I don't want to duplicate work you've already started.",
+          "ko": "그 브랜치 위치 좀 알려주실 수 있어요? 이미 하고 계신 작업을 중복해서 하고 싶지 않아서요.",
+          "is_target": true,
+          "start_ms": 6920,
+          "end_ms": 13000
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 리서처 (Jin)",
+          "en": "Sure, I'll share the link after standup — it's pretty rough, but the core logic works.",
+          "ko": "그럼요, 스탠드업 끝나고 링크 보내드릴게요 — 좀 거칠긴 한데 핵심 로직은 돌아가요.",
+          "is_target": false,
+          "start_ms": 13350,
+          "end_ms": 20150
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Great, that'll save me a ton of time. I'll build on top of what you've got.",
+          "ko": "잘됐네요, 시간 엄청 아끼겠어요. 해두신 거 위에 이어서 만들어볼게요.",
+          "is_target": true,
+          "start_ms": 20500,
+          "end_ms": 25540
+        }
+      ]
+    }
+  ]
+}
