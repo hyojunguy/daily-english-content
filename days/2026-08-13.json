@@ -1,0 +1,297 @@
+{
+  "schema": 1,
+  "day": 2,
+  "date": "2026-08-13",
+  "week": 1,
+  "block": "team-daily",
+  "theme": "합류 첫 주 — 나를 소개하고 판을 읽는다",
+  "topic": "온보딩 버디에게 개발 환경 세팅 막힌 곳 묻기",
+  "difficulty": 1,
+  "situations": [
+    {
+      "id": "d002-s1",
+      "title_ko": "탕비실에서 온보딩 버디에게 시크릿 설정 물어보기",
+      "context_ko": "입사 둘째 날 점심 전, {name}은 탕비실에서 온보딩 버디 Priya와 마주친다. 로컬 환경에 시크릿을 하드코딩하지 않고 설정하는 방법을 몰라 막혀 있다.",
+      "image": "images/day-002/s1.webp",
+      "audio": {
+        "drive_id": "1S6kHGyaxQvRzkc9kRwOd-0V7cxI7OvKC",
+        "url": "https://drive.google.com/uc?export=download&id=1S6kHGyaxQvRzkc9kRwOd-0V7cxI7OvKC",
+        "duration_ms": 34440
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey, got a second? I'm stuck setting up my local secrets file and don't want to hardcode anything.",
+          "ko": "저기, 잠깐 시간 괜찮아? 로컬 시크릿 파일 설정하다 막혔는데, 하드코딩은 하고 싶지 않아서.",
+          "is_target": true,
+          "start_ms": 250,
+          "end_ms": 9130
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "온보딩 버디",
+          "en": "Sure, what's going on? Which service are you trying to connect to first?",
+          "ko": "그럼, 무슨 일이야? 어떤 서비스부터 연결하려는 거야?",
+          "is_target": false,
+          "start_ms": 9480,
+          "end_ms": 14680
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll be working on the inference serving stack, so I need the staging credentials for that.",
+          "ko": "나는 추론 서빙 스택 쪽을 맡을 거라서, 그거 스테이징 자격 증명이 필요해.",
+          "is_target": true,
+          "start_ms": 15030,
+          "end_ms": 22710
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "온보딩 버디",
+          "en": "Got it, those live in the shared vault, not the repo. I'll send you the path.",
+          "ko": "아, 그건 레포가 아니라 공유 볼트에 있어. 경로 보내줄게.",
+          "is_target": false,
+          "start_ms": 23060,
+          "end_ms": 28660
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks, that makes sense. Could you point me to the vault access request form too?",
+          "ko": "고마워, 이해됐어. 혹시 볼트 접근 신청서도 어디 있는지 알려줄 수 있어?",
+          "is_target": true,
+          "start_ms": 29010,
+          "end_ms": 34370
+        }
+      ]
+    },
+    {
+      "id": "d002-s2",
+      "title_ko": "회의실에서 Docker 권한 에러 함께 보기",
+      "context_ko": "{name}과 Priya는 유리벽 소회의실에 마주 앉아 로컬 개발 컨테이너 세팅을 점검한다. 밤새 돌린 빌드가 Docker 권한 에러로 실패했다.",
+      "image": "images/day-002/s2.webp",
+      "audio": {
+        "drive_id": "1LAPoKsmJdGqTvAF7fA0LNhxdvhF_dAGk",
+        "url": "https://drive.google.com/uc?export=download&id=1LAPoKsmJdGqTvAF7fA0LNhxdvhF_dAGk",
+        "duration_ms": 23520
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "온보딩 버디",
+          "en": "How's the local container setup going? Did the build finish overnight?",
+          "ko": "로컬 컨테이너 세팅은 어떻게 돼가? 밤새 돌린 빌드는 끝났어?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 5130
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Actually it failed — I'm getting a permission denied error when Docker tries to mount the volume.",
+          "ko": "사실 실패했어. Docker가 볼륨을 마운트할 때 권한 거부 에러가 나.",
+          "is_target": true,
+          "start_ms": 5480,
+          "end_ms": 11480
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "온보딩 버디",
+          "en": "Ah, that's a common one. You probably need to add yourself to the docker group.",
+          "ko": "아, 그거 흔한 문제야. 아마 너를 docker 그룹에 추가해야 할 거야.",
+          "is_target": false,
+          "start_ms": 11830,
+          "end_ms": 16950
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Just so I understand, do I log out and back in after that, or restart the whole machine?",
+          "ko": "정확히 확인하고 싶은데, 그렇게 하고 로그아웃했다 다시 로그인하면 돼, 아니면 컴퓨터를 통째로 재시작해야 해?",
+          "is_target": true,
+          "start_ms": 17300,
+          "end_ms": 23460
+        }
+      ]
+    },
+    {
+      "id": "d002-s3",
+      "title_ko": "화상회의로 파이썬 환경 불일치 해결하기",
+      "context_ko": "원격으로 일하는 온보딩 버디 Priya와 화상회의를 켜고 화면을 공유하며, 파이썬 패키지 버전이 맞지 않아 임포트 에러가 나는 문제를 함께 본다.",
+      "image": "images/day-002/s3.webp",
+      "audio": {
+        "drive_id": "1kuh0-58UQ6g6VTS1Wzvg1wZAYcs9bxzh",
+        "url": "https://drive.google.com/uc?export=download&id=1kuh0-58UQ6g6VTS1Wzvg1wZAYcs9bxzh",
+        "duration_ms": 28320
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "온보딩 버디",
+          "en": "Can you share your screen? Let's see what error you're getting on import.",
+          "ko": "화면 공유해줄래? 임포트할 때 무슨 에러 나는지 같이 보자.",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 5850
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sure, one sec. It says the torch version doesn't match what's pinned in the requirements file.",
+          "ko": "잠깐만. torch 버전이 requirements 파일에 고정된 것과 안 맞는다고 나와.",
+          "is_target": true,
+          "start_ms": 6200,
+          "end_ms": 13240
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "온보딩 버디",
+          "en": "Right, that happens if you didn't activate the right conda environment before installing.",
+          "ko": "맞아, 설치 전에 맞는 conda 환경을 활성화하지 않으면 그렇게 돼.",
+          "is_target": false,
+          "start_ms": 13590,
+          "end_ms": 21350
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Got it. What's the fastest way to rebuild the environment from scratch so it matches yours exactly?",
+          "ko": "알겠어. 네 환경이랑 똑같이 맞추려면 처음부터 다시 만드는 가장 빠른 방법이 뭐야?",
+          "is_target": true,
+          "start_ms": 21700,
+          "end_ms": 28260
+        }
+      ]
+    },
+    {
+      "id": "d002-s4",
+      "title_ko": "책상 옆에서 서브모듈 누락 문제 잡기",
+      "context_ko": "Priya가 {name}의 책상 옆에 걸터앉아, 레포지토리를 클론한 뒤 빌드가 계속 깨지는 이유를 함께 확인한다. 서브모듈이 제대로 받아지지 않은 것이 문제였다.",
+      "image": "images/day-002/s4.webp",
+      "audio": {
+        "drive_id": "1sKfMSSOKDZcgzzr1Veag-_Z6YGC932GX",
+        "url": "https://drive.google.com/uc?export=download&id=1sKfMSSOKDZcgzzr1Veag-_Z6YGC932GX",
+        "duration_ms": 38112
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "My build keeps failing right after clone — I think a submodule didn't pull down correctly.",
+          "ko": "클론하자마자 빌드가 계속 깨져. 서브모듈이 제대로 안 받아진 것 같아.",
+          "is_target": true,
+          "start_ms": 250,
+          "end_ms": 6250
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "온보딩 버디",
+          "en": "Yeah, this repo uses nested submodules. Did you clone with the recursive flag?",
+          "ko": "아, 이 레포는 중첩 서브모듈을 써. 클론할 때 recursive 옵션 줬어?",
+          "is_target": false,
+          "start_ms": 6600,
+          "end_ms": 12920
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No, just a plain clone. Just so I understand, should I re-clone, or can I fix it in place?",
+          "ko": "아니, 그냥 평범하게 클론했어. 확인차 묻는데, 다시 클론해야 해, 아니면 그 자리에서 고칠 수 있어?",
+          "is_target": true,
+          "start_ms": 13270,
+          "end_ms": 22550
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "온보딩 버디",
+          "en": "You can fix it in place — just run the submodule update command with init.",
+          "ko": "그 자리에서 고칠 수 있어. submodule update 명령을 init 옵션이랑 같이 돌리면 돼.",
+          "is_target": false,
+          "start_ms": 22900,
+          "end_ms": 28740
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Perfect, running that now — I want to double check the build passes before I start touching any code.",
+          "ko": "좋아, 지금 돌릴게. 코드 손대기 전에 빌드가 통과하는지 먼저 확인하고 싶어.",
+          "is_target": true,
+          "start_ms": 29090,
+          "end_ms": 38050
+        }
+      ]
+    },
+    {
+      "id": "d002-s5",
+      "title_ko": "여러 모니터 자리에서 .env 파일 누락 찾기",
+      "context_ko": "Priya의 모니터 세 대짜리 자리에 앉아 화면을 함께 보며, 로컬 서버가 시작하자마자 죽는 이유를 확인한다. 알고 보니 .env 파일이 아예 없었다.",
+      "image": "images/day-002/s5.webp",
+      "audio": {
+        "drive_id": "1JoGS8mIr9wO-bLJR4qB-9fULldeLPFR5",
+        "url": "https://drive.google.com/uc?export=download&id=1JoGS8mIr9wO-bLJR4qB-9fULldeLPFR5",
+        "duration_ms": 24552
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "온보딩 버디",
+          "en": "Let's pull it up on my second monitor. What error do you see when the server starts?",
+          "ko": "내 두 번째 모니터로 띄워보자. 서버 시작할 때 무슨 에러가 떠?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 5770
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It just crashes immediately and says a required environment variable is undefined.",
+          "ko": "시작하자마자 바로 죽으면서 필수 환경 변수가 정의되지 않았다고 나와.",
+          "is_target": true,
+          "start_ms": 6120,
+          "end_ms": 11480
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "온보딩 버디",
+          "en": "That's almost always a missing .env file. Did you copy the example one?",
+          "ko": "그건 거의 항상 .env 파일이 없어서 그래. 예시 파일 복사했어?",
+          "is_target": false,
+          "start_ms": 11830,
+          "end_ms": 17270
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No, I didn't even know there was an example file — where does that template live in the repo?",
+          "ko": "아니, 예시 파일이 있는 줄도 몰랐어. 그 템플릿이 레포 어디에 있어?",
+          "is_target": true,
+          "start_ms": 17620,
+          "end_ms": 24500
+        }
+      ]
+    }
+  ]
+}

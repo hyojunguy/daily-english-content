@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-08-12T11:35:45+00:00",
+  "updated": "2026-08-12T11:56:20+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 1,
-  "total_days": 1,
-  "total_turns": 22,
-  "total_target_turns": 12,
+  "latest_day": 2,
+  "total_days": 2,
+  "total_turns": 44,
+  "total_target_turns": 24,
   "days": [
     {
       "day": 1,
@@ -22,6 +22,22 @@
       "audio": 5,
       "complete": true,
       "file": "days/2026-08-12.json"
+    },
+    {
+      "day": 2,
+      "date": "2026-08-13",
+      "week": 1,
+      "block": "team-daily",
+      "theme": "합류 첫 주 — 나를 소개하고 판을 읽는다",
+      "topic": "온보딩 버디에게 개발 환경 세팅 막힌 곳 묻기",
+      "difficulty": 1,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 5,
+      "audio": 5,
+      "complete": true,
+      "file": "days/2026-08-13.json"
     }
   ]
 }
