@@ -15,7 +15,7 @@
       "image": "images/day-001/s1.webp",
       "audio": {
         "drive_id": "1qBKWsXZjuqDtsRgBzv06Cpa8tHRESM0W",
-        "url": "https://drive.google.com/uc?export=download&id=1qBKWsXZjuqDtsRgBzv06Cpa8tHRESM0W",
+        "url": "https://drive.usercontent.google.com/download?id=1qBKWsXZjuqDtsRgBzv06Cpa8tHRESM0W&export=download",
         "duration_ms": 25272
       },
       "turns": [
@@ -70,7 +70,7 @@
       "image": "images/day-001/s2.webp",
       "audio": {
         "drive_id": "1v2FR2NL-k2JBZFfPiCdC316BsgEWHLvt",
-        "url": "https://drive.google.com/uc?export=download&id=1v2FR2NL-k2JBZFfPiCdC316BsgEWHLvt",
+        "url": "https://drive.usercontent.google.com/download?id=1v2FR2NL-k2JBZFfPiCdC316BsgEWHLvt&export=download",
         "duration_ms": 34680
       },
       "turns": [
@@ -136,7 +136,7 @@
       "image": "images/day-001/s3.webp",
       "audio": {
         "drive_id": "1e8zjHNzuIjbF5alBkVY7UmddXykI1vCW",
-        "url": "https://drive.google.com/uc?export=download&id=1e8zjHNzuIjbF5alBkVY7UmddXykI1vCW",
+        "url": "https://drive.usercontent.google.com/download?id=1e8zjHNzuIjbF5alBkVY7UmddXykI1vCW&export=download",
         "duration_ms": 25128
       },
       "turns": [
@@ -191,7 +191,7 @@
       "image": "images/day-001/s4.webp",
       "audio": {
         "drive_id": "1ryeFdNHBgMDpZu3_mvRDU3JjJLzJB-PS",
-        "url": "https://drive.google.com/uc?export=download&id=1ryeFdNHBgMDpZu3_mvRDU3JjJLzJB-PS",
+        "url": "https://drive.usercontent.google.com/download?id=1ryeFdNHBgMDpZu3_mvRDU3JjJLzJB-PS&export=download",
         "duration_ms": 32424
       },
       "turns": [
@@ -257,7 +257,7 @@
       "image": "images/day-001/s5.webp",
       "audio": {
         "drive_id": "12HK7_-vvsHJwwiKmrJCze0XrUnmJJZJG",
-        "url": "https://drive.google.com/uc?export=download&id=12HK7_-vvsHJwwiKmrJCze0XrUnmJJZJG",
+        "url": "https://drive.usercontent.google.com/download?id=12HK7_-vvsHJwwiKmrJCze0XrUnmJJZJG&export=download",
         "duration_ms": 25608
       },
       "turns": [
