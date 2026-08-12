@@ -12,7 +12,7 @@
       "id": "d001-s1",
       "title_ko": "첫 스탠드업에서 자기소개하기",
       "context_ko": "합류 첫날 아침 스탠드업, 팀 리드가 새로 온 {name}에게 소개와 맡을 영역을 물어본다. 팀원 대여섯 명이 화이트보드 앞에 모여 있다.",
-      "image": null,
+      "image": "images/day-001/s1.webp",
       "audio": {
         "drive_id": "1qBKWsXZjuqDtsRgBzv06Cpa8tHRESM0W",
         "url": "https://drive.google.com/uc?export=download&id=1qBKWsXZjuqDtsRgBzv06Cpa8tHRESM0W",
@@ -65,7 +65,7 @@
       "id": "d001-s2",
       "title_ko": "평가 파이프라인 담당자와 첫 대화",
       "context_ko": "스탠드업 직후, 평가 하네스를 오래 관리해온 시니어 엔지니어 Priya가 {name}에게 잠깐 시간을 내준다. {name}은 자신이 맡을 범위를 명확히 하려 한다.",
-      "image": null,
+      "image": "images/day-001/s2.webp",
       "audio": {
         "drive_id": "1v2FR2NL-k2JBZFfPiCdC316BsgEWHLvt",
         "url": "https://drive.google.com/uc?export=download&id=1v2FR2NL-k2JBZFfPiCdC316BsgEWHLvt",
@@ -128,7 +128,7 @@
       "id": "d001-s3",
       "title_ko": "GPU 클러스터 접근 문서를 못 찾아 동료에게 묻기",
       "context_ko": "자리에 앉은 지 얼마 안 된 {name}이 GPU 클러스터 접근 권한 관련 문서를 찾지 못해 옆자리 동료 Marco에게 도움을 청한다.",
-      "image": null,
+      "image": "images/day-001/s3.webp",
       "audio": {
         "drive_id": "1e8zjHNzuIjbF5alBkVY7UmddXykI1vCW",
         "url": "https://drive.google.com/uc?export=download&id=1e8zjHNzuIjbF5alBkVY7UmddXykI1vCW",
@@ -181,7 +181,7 @@
       "id": "d001-s4",
       "title_ko": "매니저와의 첫 1:1에서 우선순위 확인하기",
       "context_ko": "합류 첫날 오후, 매니저 Sam과 짧은 1:1 미팅에서 {name}이 이번 주에 뭘 우선해야 할지 확실히 짚고 넘어가려 한다.",
-      "image": null,
+      "image": "images/day-001/s4.webp",
       "audio": {
         "drive_id": "1ryeFdNHBgMDpZu3_mvRDU3JjJLzJB-PS",
         "url": "https://drive.google.com/uc?export=download&id=1ryeFdNHBgMDpZu3_mvRDU3JjJLzJB-PS",
@@ -244,7 +244,7 @@
       "id": "d001-s5",
       "title_ko": "다른 리서처와 실험 중복 확인하기",
       "context_ko": "스탠드업에서 동료 리서처 Jin이 비슷한 영역을 이미 실험 중이라는 걸 알게 된 {name}이 작업이 겹치지 않도록 확인한다.",
-      "image": null,
+      "image": "images/day-001/s5.webp",
       "audio": {
         "drive_id": "12HK7_-vvsHJwwiKmrJCze0XrUnmJJZJG",
         "url": "https://drive.google.com/uc?export=download&id=12HK7_-vvsHJwwiKmrJCze0XrUnmJJZJG",
