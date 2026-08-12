@@ -27,7 +27,8 @@
           "ko": "저기, 잠깐 시간 괜찮아? 로컬 시크릿 파일 설정하다 막혔는데, 하드코딩은 하고 싶지 않아서.",
           "is_target": true,
           "start_ms": 250,
-          "end_ms": 9130
+          "end_ms": 9130,
+          "en_easy": "I'm stuck making my secrets file and don't want to hardcode anything."
         },
         {
           "n": 2,
@@ -47,7 +48,8 @@
           "ko": "나는 추론 서빙 스택 쪽을 맡을 거라서, 그거 스테이징 자격 증명이 필요해.",
           "is_target": true,
           "start_ms": 15030,
-          "end_ms": 22710
+          "end_ms": 22710,
+          "en_easy": "I'll handle the inference serving stack, so I need staging credentials."
         },
         {
           "n": 4,
@@ -67,7 +69,8 @@
           "ko": "고마워, 이해됐어. 혹시 볼트 접근 신청서도 어디 있는지 알려줄 수 있어?",
           "is_target": true,
           "start_ms": 29010,
-          "end_ms": 34370
+          "end_ms": 34370,
+          "en_easy": "Where can I find the vault access request form?"
         }
       ]
     },
@@ -100,7 +103,8 @@
           "ko": "사실 실패했어. Docker가 볼륨을 마운트할 때 권한 거부 에러가 나.",
           "is_target": true,
           "start_ms": 5480,
-          "end_ms": 11480
+          "end_ms": 11480,
+          "en_easy": "It failed with a permission denied error when Docker mounts the volume."
         },
         {
           "n": 3,
@@ -120,7 +124,8 @@
           "ko": "정확히 확인하고 싶은데, 그렇게 하고 로그아웃했다 다시 로그인하면 돼, 아니면 컴퓨터를 통째로 재시작해야 해?",
           "is_target": true,
           "start_ms": 17300,
-          "end_ms": 23460
+          "end_ms": 23460,
+          "en_easy": "Do I log out and back in, or start the whole computer?"
         }
       ]
     },
@@ -153,7 +158,8 @@
           "ko": "잠깐만. torch 버전이 requirements 파일에 고정된 것과 안 맞는다고 나와.",
           "is_target": true,
           "start_ms": 6200,
-          "end_ms": 13240
+          "end_ms": 13240,
+          "en_easy": "The torch version doesn't match the version in the requirements file."
         },
         {
           "n": 3,
@@ -173,7 +179,8 @@
           "ko": "알겠어. 네 환경이랑 똑같이 맞추려면 처음부터 다시 만드는 가장 빠른 방법이 뭐야?",
           "is_target": true,
           "start_ms": 21700,
-          "end_ms": 28260
+          "end_ms": 28260,
+          "en_easy": "How can I rebuild the environment fastest to match yours exactly?"
         }
       ]
     },
@@ -196,7 +203,8 @@
           "ko": "클론하자마자 빌드가 계속 깨져. 서브모듈이 제대로 안 받아진 것 같아.",
           "is_target": true,
           "start_ms": 250,
-          "end_ms": 6250
+          "end_ms": 6250,
+          "en_easy": "My build fails right after I clone, and a submodule seems broken."
         },
         {
           "n": 2,
@@ -216,7 +224,8 @@
           "ko": "아니, 그냥 평범하게 클론했어. 확인차 묻는데, 다시 클론해야 해, 아니면 그 자리에서 고칠 수 있어?",
           "is_target": true,
           "start_ms": 13270,
-          "end_ms": 22550
+          "end_ms": 22550,
+          "en_easy": "Should I clone it again, or can I fix it here?"
         },
         {
           "n": 4,
@@ -236,7 +245,8 @@
           "ko": "좋아, 지금 돌릴게. 코드 손대기 전에 빌드가 통과하는지 먼저 확인하고 싶어.",
           "is_target": true,
           "start_ms": 29090,
-          "end_ms": 38050
+          "end_ms": 38050,
+          "en_easy": "I want to check the build passes before I touch any code."
         }
       ]
     },
@@ -269,7 +279,8 @@
           "ko": "시작하자마자 바로 죽으면서 필수 환경 변수가 정의되지 않았다고 나와.",
           "is_target": true,
           "start_ms": 6120,
-          "end_ms": 11480
+          "end_ms": 11480,
+          "en_easy": "It crashes immediately and says a required environment variable is missing."
         },
         {
           "n": 3,
@@ -289,7 +300,8 @@
           "ko": "아니, 예시 파일이 있는 줄도 몰랐어. 그 템플릿이 레포 어디에 있어?",
           "is_target": true,
           "start_ms": 17620,
-          "end_ms": 24500
+          "end_ms": 24500,
+          "en_easy": "Where is the example file in the repo?"
         }
       ]
     }

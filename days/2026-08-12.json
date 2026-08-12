@@ -37,7 +37,8 @@
           "ko": "감사합니다 — 저는 {name}이고, 학습·추론 인프라를 맡을 예정이고 처음엔 주로 평가 파이프라인 쪽을 볼 것 같아요.",
           "is_target": true,
           "start_ms": 6360,
-          "end_ms": 15880
+          "end_ms": 15880,
+          "en_easy": "Thanks, I'm {name} and I'll work on training and inference infrastructure."
         },
         {
           "n": 3,
@@ -57,7 +58,8 @@
           "ko": "지금 벤치마크 스크립트가 있는 저장소 위치 좀 알려주실 수 있을까요?",
           "is_target": true,
           "start_ms": 21380,
-          "end_ms": 25220
+          "end_ms": 25220,
+          "en_easy": "Which repo has the benchmark scripts?"
         }
       ]
     },
@@ -80,7 +82,8 @@
           "ko": "제가 제대로 이해한 게 맞는지 확인하고 싶은데요 — 평가 파이프라인이 팀마다 따로 있나요, 아니면 공용으로 쓰나요?",
           "is_target": true,
           "start_ms": 250,
-          "end_ms": 7210
+          "end_ms": 7210,
+          "en_easy": "Do teams share the eval pipeline, or use their own?"
         },
         {
           "n": 2,
@@ -100,7 +103,8 @@
           "ko": "그렇군요. 이번 주엔 그 공용 하네스에 레이턴시랑 처리량 체크를 추가하는 작업을 맡을 것 같아요.",
           "is_target": true,
           "start_ms": 14390,
-          "end_ms": 20310
+          "end_ms": 20310,
+          "en_easy": "I'll add latency and throughput checks to the shared harness this week."
         },
         {
           "n": 4,
@@ -120,7 +124,8 @@
           "ko": "하나만 더요 — 공용 설정을 바꾸기 전에 누구한테 미리 알려야 할까요?",
           "is_target": true,
           "start_ms": 27330,
-          "end_ms": 34610
+          "end_ms": 34610,
+          "en_easy": "Who should I ask before I change the shared config?"
         }
       ]
     },
@@ -153,7 +158,8 @@
           "ko": "사실 있어요 — GPU 클러스터 접근 신청하는 문서 좀 알려주실 수 있어요?",
           "is_target": true,
           "start_ms": 5000,
-          "end_ms": 10680
+          "end_ms": 10680,
+          "en_easy": "Yes, where's the doc for GPU cluster access?"
         },
         {
           "n": 3,
@@ -173,7 +179,8 @@
           "ko": "네, 지금 바로 물어볼게요. 위키 한 시간 뒤지는 거 안 하게 해주셔서 감사해요.",
           "is_target": true,
           "start_ms": 17780,
-          "end_ms": 25060
+          "end_ms": 25060,
+          "en_easy": "Thanks, I'll ask them now instead of searching the wiki."
         }
       ]
     },
@@ -196,7 +203,8 @@
           "ko": "제 우선순위를 제대로 이해하고 싶은데요 — 평가 파이프라인이랑 서빙 스택 중에 뭘 먼저 봐야 할까요?",
           "is_target": true,
           "start_ms": 250,
-          "end_ms": 6810
+          "end_ms": 6810,
+          "en_easy": "Should I focus on the eval pipeline or the serving stack first?"
         },
         {
           "n": 2,
@@ -216,7 +224,8 @@
           "ko": "알겠습니다. 이번 주엔 평가 하네스 작업을 맡고 서빙 쪽 변경은 미뤄둘게요.",
           "is_target": true,
           "start_ms": 13670,
-          "end_ms": 20630
+          "end_ms": 20630,
+          "en_easy": "I'll work on the eval harness this week and delay serving changes."
         },
         {
           "n": 4,
@@ -236,7 +245,8 @@
           "ko": "네, 금요일까지 짧게 진행 상황 정리해서 보내드릴게요.",
           "is_target": true,
           "start_ms": 27650,
-          "end_ms": 32370
+          "end_ms": 32370,
+          "en_easy": "I'll send you a short update by Friday."
         }
       ]
     },
@@ -269,7 +279,8 @@
           "ko": "그 브랜치 위치 좀 알려주실 수 있어요? 이미 하고 계신 작업을 중복해서 하고 싶지 않아서요.",
           "is_target": true,
           "start_ms": 6920,
-          "end_ms": 13000
+          "end_ms": 13000,
+          "en_easy": "Where's that branch, so I don't duplicate your work?"
         },
         {
           "n": 3,
@@ -289,7 +300,8 @@
           "ko": "잘됐네요, 시간 엄청 아끼겠어요. 해두신 거 위에 이어서 만들어볼게요.",
           "is_target": true,
           "start_ms": 20500,
-          "end_ms": 25540
+          "end_ms": 25540,
+          "en_easy": "Great, that saves a lot of time and I'll continue your work."
         }
       ]
     }
