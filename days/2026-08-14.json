@@ -1,0 +1,309 @@
+{
+  "schema": 1,
+  "day": 3,
+  "date": "2026-08-14",
+  "week": 1,
+  "block": "team-daily",
+  "theme": "합류 첫 주 — 나를 소개하고 판을 읽는다",
+  "topic": "팀 슬랙 채널에 첫 인사 남기고 반응에 답하기",
+  "difficulty": 1,
+  "situations": [
+    {
+      "id": "d003-s1",
+      "title_ko": "스탠드업에서 슬랙 인사 글 반응 이야기하기",
+      "context_ko": "아침 스탠드업 시작 전, 학습자가 어젯밤 슬랙 채널에 올린 인사 글에 달린 반응들을 팀 리더에게 먼저 이야기하고, 오늘 무엇을 할지와 진행 상황 공유 방식을 확인한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1Kl9Xd_-ahVTMmM0PE6bHl7oPIoBQXzZF",
+        "url": "https://drive.usercontent.google.com/download?id=1Kl9Xd_-ahVTMmM0PE6bHl7oPIoBQXzZF&export=download",
+        "duration_ms": 30360
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나(신입 ML 엔지니어)",
+          "en": "Morning, quick thing before we dive in — a few people reacted to my intro post overnight.",
+          "ko": "다들 좋은 아침이에요. 시작하기 전에 잠깐만요 — 어젯밤 제 인사 글에 반응이 꽤 달렸더라고요.",
+          "is_target": true,
+          "en_easy": "Good morning, a few people reacted to my post overnight.",
+          "start_ms": 250,
+          "end_ms": 6810
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Yeah, welcome aboard! What are you starting with this week?",
+          "ko": "네, 합류 환영해요! 이번 주엔 뭐부터 시작하세요?",
+          "is_target": false,
+          "start_ms": 7160,
+          "end_ms": 11800
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나(신입 ML 엔지니어)",
+          "en": "I'll be working on the eval pipeline for the ranking model, starting with baseline metrics.",
+          "ko": "저는 랭킹 모델 평가 파이프라인을 맡아서, 우선 베이스라인 지표부터 잡아볼 예정이에요.",
+          "is_target": true,
+          "en_easy": "I'll work on the ranking model's eval pipeline, starting with baseline metrics.",
+          "start_ms": 12150,
+          "end_ms": 18230
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Nice, that's the piece Priya's been waiting on — loop her in once you have numbers.",
+          "ko": "좋네요, Priya가 기다리던 부분이에요 — 수치 나오면 바로 공유해주세요.",
+          "is_target": false,
+          "start_ms": 18580,
+          "end_ms": 24260
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나(신입 ML 엔지니어)",
+          "en": "Just so I understand, should I post updates in the thread or a new message each time?",
+          "ko": "제가 제대로 이해한 게 맞는지 확인차 여쭤보는데, 업데이트는 그 스레드에 달면 될까요, 아니면 매번 새 메시지로 올려야 하나요?",
+          "is_target": true,
+          "en_easy": "Should I reply here or send a new message each time?",
+          "start_ms": 24610,
+          "end_ms": 30290
+        }
+      ]
+    },
+    {
+      "id": "d003-s2",
+      "title_ko": "1:1에서 인사 글 댓글 속 자료 찾기",
+      "context_ko": "매니저와의 짧은 1:1 자리에서, 학습자가 인사 글에 달린 댓글 중 하나가 언급한 온보딩 자료를 아직 찾지 못해 어디서 볼 수 있는지 묻는다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1V4VU2cTkEm83v4NCgxgXU3XjzGGdtyTI",
+        "url": "https://drive.usercontent.google.com/download?id=1V4VU2cTkEm83v4NCgxgXU3XjzGGdtyTI&export=download",
+        "duration_ms": 24672
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나(신입 ML 엔지니어)",
+          "en": "Thanks for making time — a couple people replied to my intro thread with useful links.",
+          "ko": "시간 내주셔서 감사해요 — 제 인사 글 스레드에 몇 분이 유용한 링크를 달아주셨더라고요.",
+          "is_target": true,
+          "en_easy": "Thanks for your time, a few people sent useful links.",
+          "start_ms": 250,
+          "end_ms": 5130
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Good, that's a nice sign people are paying attention. Anything you're stuck on?",
+          "ko": "좋네요, 사람들이 관심 갖고 있다는 신호죠. 혹시 막히는 부분 있어요?",
+          "is_target": false,
+          "start_ms": 5480,
+          "end_ms": 10120
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나(신입 ML 엔지니어)",
+          "en": "Could you point me to the onboarding doc that Marco mentioned in his reply?",
+          "ko": "Marco가 댓글에서 언급했던 온보딩 문서, 어디서 볼 수 있는지 알려주실 수 있을까요?",
+          "is_target": true,
+          "en_easy": "Where is the onboarding doc he mentioned?",
+          "start_ms": 10470,
+          "end_ms": 15350
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "It's pinned in the channel description — I'll also drop the link in our DM.",
+          "ko": "채널 설명에 고정돼 있어요 — DM으로도 링크 하나 보내드릴게요.",
+          "is_target": false,
+          "start_ms": 15700,
+          "end_ms": 20740
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나(신입 ML 엔지니어)",
+          "en": "Thanks, that'll save me some searching later this afternoon.",
+          "ko": "감사해요, 덕분에 오후에 따로 찾아볼 필요가 없겠네요.",
+          "is_target": true,
+          "en_easy": "Thanks, that'll save me searching this afternoon.",
+          "start_ms": 21090,
+          "end_ms": 24610
+        }
+      ]
+    },
+    {
+      "id": "d003-s3",
+      "title_ko": "복도에서 마주친 동료, 업무 범위를 확인하다",
+      "context_ko": "복도를 지나던 다른 팀 엔지니어가 학습자의 인사 글에 남겼던 자기 댓글을 언급하며, 담당 업무가 서로 겹치지는 않는지 가볍게 확인한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1WfC6I3G5CKSmIy-7uPamLEETaq-LOPv0",
+        "url": "https://drive.usercontent.google.com/download?id=1WfC6I3G5CKSmIy-7uPamLEETaq-LOPv0&export=download",
+        "duration_ms": 25368
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "서빙 팀 엔지니어",
+          "en": "Hey, you're {name}, right? I saw your intro post — I work on the serving side.",
+          "ko": "저기, {name} 맞으시죠? 인사 글 봤어요 — 저는 서빙 쪽 담당이에요.",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 6410
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나(신입 ML 엔지니어)",
+          "en": "Yes, that's me. I noticed we might both be touching the same latency numbers.",
+          "ko": "네, 맞아요. 근데 저희 둘 다 같은 지연 시간 지표를 건드리게 될 것 같더라고요.",
+          "is_target": true,
+          "en_easy": "Yes, that's me and we may both use the same latency numbers.",
+          "start_ms": 6760,
+          "end_ms": 12760
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "서빙 팀 엔지니어",
+          "en": "Could be — want to grab fifteen minutes this week to compare notebooks before we duplicate work?",
+          "ko": "그럴 수도 있겠네요 — 중복 작업 안 하게 이번 주에 15분 정도 잡아서 노트북 비교해볼래요?",
+          "is_target": false,
+          "start_ms": 13110,
+          "end_ms": 20230
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나(신입 ML 엔지니어)",
+          "en": "Sounds good, I'll send you a calendar invite for tomorrow afternoon.",
+          "ko": "좋아요, 제가 내일 오후로 캘린더 초대 보내드릴게요.",
+          "is_target": true,
+          "en_easy": "Sounds good, I'll send you a calendar invite for tomorrow afternoon.",
+          "start_ms": 20580,
+          "end_ms": 25300
+        }
+      ]
+    },
+    {
+      "id": "d003-s4",
+      "title_ko": "화상회의에서 원격 동료가 담당 업무를 재확인하다",
+      "context_ko": "다른 시간대에 있는 원격 동료가 화상회의 중 뒤늦게 인사 글에 반응하며, 학습자가 정확히 어떤 범위를 맡는지 화면 너머로 직접 확인한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "100hO8XFYbU6nSI_ydH45zBj9BJujPd9k",
+        "url": "https://drive.usercontent.google.com/download?id=100hO8XFYbU6nSI_ydH45zBj9BJujPd9k&export=download",
+        "duration_ms": 28872
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "원격 동료",
+          "en": "Sorry I'm late to the thread, it was already night here. Are you covering eval for the whole ranking stack or just the offline part?",
+          "ko": "스레드에 늦게 반응해서 미안해요, 여기는 이미 밤이었거든요. 랭킹 스택 전체 평가를 맡으시는 거예요, 아니면 오프라인 부분만이에요?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 9290
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나(신입 ML 엔지니어)",
+          "en": "Just the offline part for now, the online metrics are still owned by the platform team.",
+          "ko": "일단은 오프라인 부분만이에요, 온라인 지표는 아직 플랫폼 팀이 담당하고 있어요.",
+          "is_target": true,
+          "en_easy": "I have the test part, the platform team owns online metrics.",
+          "start_ms": 9640,
+          "end_ms": 17880
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "원격 동료",
+          "en": "Got it, that matches what I heard. Can you drop a short doc link when it's ready?",
+          "ko": "알겠어요, 제가 들은 거랑 맞네요. 준비되면 짧은 문서 링크 하나 공유해줄 수 있어요?",
+          "is_target": false,
+          "start_ms": 18230,
+          "end_ms": 24310
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나(신입 ML 엔지니어)",
+          "en": "Sure, I'll share it in the channel as soon as the first draft is done.",
+          "ko": "네, 초안 나오는 대로 채널에 바로 공유할게요.",
+          "is_target": true,
+          "en_easy": "Sure, I'll share it in the channel when the draft is ready.",
+          "start_ms": 24660,
+          "end_ms": 28820
+        }
+      ]
+    },
+    {
+      "id": "d003-s5",
+      "title_ko": "점심 자리에서 논문 스터디 초대받기",
+      "context_ko": "점심을 함께 먹던 팀 동료가 인사 글에 적힌 리서치 배경 이야기를 꺼내며, 매주 열리는 논문 스터디에 참여할 생각이 있는지 캐주얼하게 묻는다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1EsYKNMPSDfH5kGA8Iwd8oPg4aj2VFVx5",
+        "url": "https://drive.usercontent.google.com/download?id=1EsYKNMPSDfH5kGA8Iwd8oPg4aj2VFVx5&export=download",
+        "duration_ms": 25128
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 동료",
+          "en": "I read in your intro that you came from a research background — do you read papers regularly?",
+          "ko": "인사 글 보니까 리서치 쪽에서 오셨던데 — 논문은 꾸준히 읽는 편이에요?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 6890
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나(신입 ML 엔지니어)",
+          "en": "Yeah, pretty much every week. What got me curious was your comment about a reading group.",
+          "ko": "네, 거의 매주 읽어요. 근데 스터디 그룹 얘기하신 게 궁금하더라고요.",
+          "is_target": true,
+          "en_easy": "Yeah I read weekly, and your reading group comment made me curious.",
+          "start_ms": 7240,
+          "end_ms": 13560
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 동료",
+          "en": "We meet Thursdays at four, pretty informal. Want me to add you to the calendar invite?",
+          "ko": "목요일 4시에 모이는데 편하게 하는 자리예요. 캘린더 초대에 넣어드릴까요?",
+          "is_target": false,
+          "start_ms": 13910,
+          "end_ms": 20790
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나(신입 ML 엔지니어)",
+          "en": "Yes, please add me, I'd like to see what you've been covering so far.",
+          "ko": "네, 넣어주세요. 지금까지 뭘 다뤘는지 한번 보고 싶어요.",
+          "is_target": true,
+          "en_easy": "Yes please add me, I want to see what you covered.",
+          "start_ms": 21140,
+          "end_ms": 25060
+        }
+      ]
+    }
+  ]
+}

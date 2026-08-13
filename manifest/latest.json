@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-08-12T11:56:20+00:00",
+  "updated": "2026-08-13T20:44:45+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 2,
-  "total_days": 2,
-  "total_turns": 44,
-  "total_target_turns": 24,
+  "latest_day": 3,
+  "total_days": 3,
+  "total_turns": 66,
+  "total_target_turns": 36,
   "days": [
     {
       "day": 1,
@@ -38,6 +38,22 @@
       "audio": 5,
       "complete": true,
       "file": "days/2026-08-13.json"
+    },
+    {
+      "day": 3,
+      "date": "2026-08-14",
+      "week": 1,
+      "block": "team-daily",
+      "theme": "합류 첫 주 — 나를 소개하고 판을 읽는다",
+      "topic": "팀 슬랙 채널에 첫 인사 남기고 반응에 답하기",
+      "difficulty": 1,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 5,
+      "complete": false,
+      "file": "days/2026-08-14.json"
     }
   ]
 }
