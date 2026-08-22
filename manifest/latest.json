@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-08-22T20:49:30+00:00",
+  "updated": "2026-08-22T21:08:22+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 10,
-  "total_days": 4,
-  "total_turns": 88,
-  "total_target_turns": 48,
+  "latest_day": 11,
+  "total_days": 5,
+  "total_turns": 110,
+  "total_target_turns": 60,
   "days": [
     {
       "day": 1,
@@ -70,6 +70,22 @@
       "audio": 5,
       "complete": false,
       "file": "days/2026-08-21.json"
+    },
+    {
+      "day": 11,
+      "date": "2026-08-22",
+      "week": 2,
+      "block": "team-daily",
+      "theme": "데일리 스탠드업 — 짧고 정확하게",
+      "topic": "다른 사람 발표를 듣고 관련 있는 정보 덧붙이기",
+      "difficulty": 1,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 5,
+      "complete": false,
+      "file": "days/2026-08-22.json"
     }
   ]
 }

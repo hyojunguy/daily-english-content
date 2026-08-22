@@ -1,0 +1,297 @@
+{
+  "schema": 1,
+  "day": 11,
+  "date": "2026-08-22",
+  "week": 2,
+  "block": "team-daily",
+  "theme": "데일리 스탠드업 — 짧고 정확하게",
+  "topic": "다른 사람 발표를 듣고 관련 있는 정보 덧붙이기",
+  "difficulty": 1,
+  "situations": [
+    {
+      "id": "d011-s1",
+      "title_ko": "화이트보드 스탠드업에서 체크포인트 손상 이슈 연결하기",
+      "context_ko": "매일 아침 화이트보드 앞에 서서 진행하는 스탠드업. 동료 Marco가 분산 학습 체크포인트 손상 문제를 보고하자, {name}가 자신이 본 스토리지 오류 로그를 연결해 알려준다.",
+      "image": null,
+      "audio": {
+        "drive_id": "18wySj5pJs3txoDjqqZ8lFb4Dgq68ZkNF",
+        "url": "https://drive.usercontent.google.com/download?id=18wySj5pJs3txoDjqqZ8lFb4Dgq68ZkNF&export=download",
+        "duration_ms": 38184
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나 (ML 리서처 겸 엔지니어)",
+          "en": "Yesterday I profiled the training loop, today I'm following up on a shared storage warning I found.",
+          "ko": "어제는 학습 루프 프로파일링했고, 오늘은 어제 발견한 공유 스토리지 경고를 확인해보려고요.",
+          "is_target": true,
+          "start_ms": 250,
+          "end_ms": 7770
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 Marco (분산 학습 담당)",
+          "en": "My distributed job crashed twice overnight from checkpoint corruption — I'm restarting from an earlier save now while I figure out the cause.",
+          "ko": "제 분산 학습 잡이 밤새 체크포인트 손상으로 두 번 죽었어요. 일단 이전 저장본으로 재시작하면서 원인을 찾고 있어요.",
+          "is_target": false,
+          "start_ms": 8120,
+          "end_ms": 18440
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나 (ML 리서처 겸 엔지니어)",
+          "en": "That might be the same storage issue — I saw write errors on that same mount yesterday afternoon.",
+          "ko": "그거 저랑 같은 스토리지 문제일 수도 있어요. 어제 오후에 같은 마운트에서 쓰기 오류를 봤거든요.",
+          "is_target": true,
+          "start_ms": 18790,
+          "end_ms": 26870
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 Marco (분산 학습 담당)",
+          "en": "Can you send me the exact timestamp? I want to check if it lines up with my crash logs.",
+          "ko": "정확한 시간대 좀 보내줄 수 있어요? 제 크래시 로그랑 맞는지 확인해보고 싶어서요.",
+          "is_target": false,
+          "start_ms": 27220,
+          "end_ms": 33300
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나 (ML 리서처 겸 엔지니어)",
+          "en": "Sure — I'll pull the logs now and share both timelines in the infra channel.",
+          "ko": "네, 지금 로그 뽑아서 두 타임라인 다 인프라 채널에 공유할게요.",
+          "is_target": true,
+          "start_ms": 33650,
+          "end_ms": 38130
+        }
+      ]
+    },
+    {
+      "id": "d011-s2",
+      "title_ko": "화상 스탠드업, 원격 동료의 토크나이저 버그와 내 이밸 셋 연결하기",
+      "context_ko": "화상회의로 진행하는 아침 스탠드업. 다른 시간대에 있는 동료 Elena가 전처리 버그를 보고하자, {name}가 자신이 막힌 평가 작업과 연결지어 이야기한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1H7MRe-LIkg7dGKFmYiJELEyWDdOC66Sp",
+        "url": "https://drive.usercontent.google.com/download?id=1H7MRe-LIkg7dGKFmYiJELEyWDdOC66Sp&export=download",
+        "duration_ms": 65784
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나 (ML 리서처 겸 엔지니어)",
+          "en": "I'm blocked on the tokenizer version — the eval numbers won't be trustworthy until that's settled.",
+          "ko": "토크나이저 버전 때문에 막혀 있어요. 그게 정리돼야 평가 수치를 믿을 수 있을 것 같아요.",
+          "is_target": true,
+          "start_ms": 250,
+          "end_ms": 5770
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "원격 동료 Elena",
+          "en": "I actually just found a preprocessing bug — it silently drops non-ASCII characters during tokenization.",
+          "ko": "사실 방금 전처리 버그를 하나 찾았어요. 토큰화할 때 비-ASCII 문자가 조용히 사라지더라고요.",
+          "is_target": false,
+          "start_ms": 6120,
+          "end_ms": 15560
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나 (ML 리서처 겸 엔지니어)",
+          "en": "That explains it — my eval set has a lot of non-English samples, so this could be skewing our numbers.",
+          "ko": "그래서 그랬구나. 제 평가 셋에 비영어 샘플이 많아서 수치가 왜곡됐을 수도 있겠네요.",
+          "is_target": true,
+          "start_ms": 15910,
+          "end_ms": 54230
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "원격 동료 Elena",
+          "en": "Good point — I'll push the fix today and ping you once it's merged so you can rerun.",
+          "ko": "맞아요. 오늘 안에 수정해서 머지되면 바로 알려드릴게요. 그때 다시 돌리시면 될 것 같아요.",
+          "is_target": false,
+          "start_ms": 54580,
+          "end_ms": 61300
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나 (ML 리서처 겸 엔지니어)",
+          "en": "Thanks — I'll hold off on the final eval run until your fix lands.",
+          "ko": "고마워요. 수정 반영될 때까지 최종 평가는 잠시 미뤄둘게요.",
+          "is_target": true,
+          "start_ms": 61650,
+          "end_ms": 65730
+        }
+      ]
+    },
+    {
+      "id": "d011-s3",
+      "title_ko": "동료 책상에 걸터앉아 증강 실험 결과 듣고 내 벤치마크와 연결하기",
+      "context_ko": "스탠드업 직후 동료 Jordan의 책상 옆에 걸터앉아 나누는 대화. 데이터 증강 실험 결과를 듣고 {name}가 자신의 벤치마크에서 겪은 비슷한 현상을 덧붙인다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1a6PvR7d9VwxaWcJglUvUrXZSPLNY_OfG",
+        "url": "https://drive.usercontent.google.com/download?id=1a6PvR7d9VwxaWcJglUvUrXZSPLNY_OfG&export=download",
+        "duration_ms": 26712
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나 (ML 리서처 겸 엔지니어)",
+          "en": "Quick question before you dive back in — did your augmentation experiment finish running overnight?",
+          "ko": "다시 몰입하기 전에 하나만요, 어젯밤 증강 실험 다 끝났어요?",
+          "is_target": true,
+          "start_ms": 250,
+          "end_ms": 6330
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 Jordan",
+          "en": "Yeah, it finished — accuracy went up three points, but inference got noticeably slower with the extra transforms.",
+          "ko": "네, 다 끝났어요. 정확도는 3점 올랐는데 추가된 변환 때문에 추론이 눈에 띄게 느려졌어요.",
+          "is_target": false,
+          "start_ms": 6680,
+          "end_ms": 15080
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나 (ML 리서처 겸 엔지니어)",
+          "en": "That tracks — I saw a similar slowdown in my benchmark last week. No blockers on my end though.",
+          "ko": "그럴 만하네요. 저도 지난주 벤치마크에서 비슷하게 느려지는 걸 봤어요. 그래도 제 쪽은 막힌 건 없어요.",
+          "is_target": true,
+          "start_ms": 15430,
+          "end_ms": 21830
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 Jordan",
+          "en": "Good to know — let's compare notes properly sometime this week.",
+          "ko": "알겠어요, 이번 주 안에 제대로 한번 비교해봐요.",
+          "is_target": false,
+          "start_ms": 22180,
+          "end_ms": 26660
+        }
+      ]
+    },
+    {
+      "id": "d011-s4",
+      "title_ko": "탕비실 가는 복도에서 서빙 지연 알림 듣고 원인 짚어주기",
+      "context_ko": "탕비실로 가는 복도에서 우연히 마주친 동료 Priya가 서빙 지연 알림을 언급하자, {name}가 어제 배포한 설정 변경을 원인으로 짚어준다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1JavX0_TXjsOz0a1CC-6toSVAXrCRNx3R",
+        "url": "https://drive.usercontent.google.com/download?id=1JavX0_TXjsOz0a1CC-6toSVAXrCRNx3R&export=download",
+        "duration_ms": 24888
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 Priya",
+          "en": "Hey, did you see the alert? Serving latency spiked almost 40% overnight and nobody's found the cause yet.",
+          "ko": "그 알림 봤어요? 밤새 서빙 지연이 거의 40%나 튀었는데 아직 아무도 원인을 못 찾았대요.",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 8890
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나 (ML 리서처 겸 엔지니어)",
+          "en": "That might be from the batch size change we shipped yesterday — it hasn't been load-tested yet.",
+          "ko": "어제 배포한 배치 사이즈 변경 때문일 수도 있어요. 아직 부하 테스트를 안 했거든요.",
+          "is_target": true,
+          "start_ms": 9240,
+          "end_ms": 14360
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 Priya",
+          "en": "Oh, that's a good lead — can you flag it in the incident channel so infra can check?",
+          "ko": "오, 그거 괜찮은 단서네요. 인시던트 채널에 알려서 인프라 팀이 확인하게 해줄 수 있어요?",
+          "is_target": false,
+          "start_ms": 14710,
+          "end_ms": 19830
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나 (ML 리서처 겸 엔지니어)",
+          "en": "On it — I'll post the diff and timestamps right now so they can correlate it.",
+          "ko": "바로 할게요. 지금 diff랑 시간대 올려서 대조해볼 수 있게 할게요.",
+          "is_target": true,
+          "start_ms": 20180,
+          "end_ms": 24820
+        }
+      ]
+    },
+    {
+      "id": "d011-s5",
+      "title_ko": "모니터 여러 대 자리에서 프로파일러 병목 같이 보며 내 결과 덧붙이기",
+      "context_ko": "여러 모니터가 붙어 있는 동료 Dana의 자리에서 프로파일링 결과를 함께 보다가, {name}가 자신이 어제 확인한 동일한 병목 원인을 덧붙인다.",
+      "image": null,
+      "audio": {
+        "drive_id": "11WAz7qiPZF0-Eawwal8g_75-DKvTzd3h",
+        "url": "https://drive.usercontent.google.com/download?id=11WAz7qiPZF0-Eawwal8g_75-DKvTzd3h&export=download",
+        "duration_ms": 30312
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 Dana",
+          "en": "Look at this trace — the GPU sits idle almost 30% of the time waiting on the data loader.",
+          "ko": "이 트레이스 좀 보세요. GPU가 데이터 로더 기다리느라 거의 30%나 놀고 있어요.",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 7050
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나 (ML 리서처 겸 엔지니어)",
+          "en": "I saw the exact same gap in my trace yesterday — it's the CPU-side image decoding that's the bottleneck.",
+          "ko": "저도 어제 제 트레이스에서 똑같은 걸 봤어요. CPU 쪽 이미지 디코딩이 병목이더라고요.",
+          "is_target": true,
+          "start_ms": 7400,
+          "end_ms": 16840
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 Dana",
+          "en": "That matches what I suspected — should we try moving decoding onto the GPU or just add more workers?",
+          "ko": "제가 의심하던 거랑 맞네요. 디코딩을 GPU로 옮겨볼까요, 아니면 그냥 워커를 더 늘려볼까요?",
+          "is_target": false,
+          "start_ms": 17190,
+          "end_ms": 24870
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나 (ML 리서처 겸 엔지니어)",
+          "en": "Let's try more workers first — it's a quick test before we touch the decoding pipeline.",
+          "ko": "일단 워커부터 늘려봐요. 디코딩 파이프라인 건드리기 전에 빠르게 테스트해볼 수 있으니까요.",
+          "is_target": true,
+          "start_ms": 25220,
+          "end_ms": 30260
+        }
+      ]
+    }
+  ]
+}
