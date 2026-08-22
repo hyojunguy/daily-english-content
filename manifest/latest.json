@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-08-13T20:44:45+00:00",
+  "updated": "2026-08-22T20:49:30+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 3,
-  "total_days": 3,
-  "total_turns": 66,
-  "total_target_turns": 36,
+  "latest_day": 10,
+  "total_days": 4,
+  "total_turns": 88,
+  "total_target_turns": 48,
   "days": [
     {
       "day": 1,
@@ -54,6 +54,22 @@
       "audio": 5,
       "complete": false,
       "file": "days/2026-08-14.json"
+    },
+    {
+      "day": 10,
+      "date": "2026-08-21",
+      "week": 2,
+      "block": "team-daily",
+      "theme": "데일리 스탠드업 — 짧고 정확하게",
+      "topic": "예상보다 오래 걸리는 작업을 미리 알리기",
+      "difficulty": 1,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 5,
+      "complete": false,
+      "file": "days/2026-08-21.json"
     }
   ]
 }

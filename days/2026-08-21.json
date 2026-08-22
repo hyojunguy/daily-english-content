@@ -1,0 +1,297 @@
+{
+  "schema": 1,
+  "day": 10,
+  "date": "2026-08-21",
+  "week": 2,
+  "block": "team-daily",
+  "theme": "데일리 스탠드업 — 짧고 정확하게",
+  "topic": "예상보다 오래 걸리는 작업을 미리 알리기",
+  "difficulty": 1,
+  "situations": [
+    {
+      "id": "d010-s1",
+      "title_ko": "평가 실행이 늦어지고 있음을 스탠드업에서 미리 알리기",
+      "context_ko": "화이트보드 앞에서 진행하는 아침 스탠드업. 팀 리드 Sam과 동료들 앞에서, 어제 시작한 대규모 벤치마크 실행이 예상보다 오래 걸리고 있다는 것을 미리 알린다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1vpdqQcj38aoetZ4uQfrgMaLc9Q5x-oct",
+        "url": "https://drive.usercontent.google.com/download?id=1vpdqQcj38aoetZ4uQfrgMaLc9Q5x-oct&export=download",
+        "duration_ms": 34824
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yesterday I kicked off the full benchmark run, and today I'm watching it since it's taking longer than we planned.",
+          "ko": "어제 전체 벤치마크를 돌리기 시작했는데, 오늘은 생각보다 오래 걸려서 계속 지켜보고 있어요.",
+          "is_target": true,
+          "start_ms": 250,
+          "end_ms": 10490
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "How much longer are we talking? We need numbers before Thursday's review.",
+          "ko": "얼마나 더 걸릴 것 같아요? 목요일 리뷰 전에는 수치가 나와야 해요.",
+          "is_target": false,
+          "start_ms": 10840,
+          "end_ms": 15640
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Honestly I'm blocked on the eval cluster being shared with another team, so it's running slower than expected.",
+          "ko": "사실 평가용 클러스터를 다른 팀이랑 같이 쓰고 있어서 거기서 막혀 있고, 그래서 예상보다 느려요.",
+          "is_target": true,
+          "start_ms": 15990,
+          "end_ms": 22150
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Okay, flag it now rather than surprise me Wednesday night.",
+          "ko": "좋아요, 수요일 밤에 갑자기 알리지 말고 미리 얘기해줘서 다행이네요.",
+          "is_target": false,
+          "start_ms": 22500,
+          "end_ms": 27060
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No blockers on my end besides the shared cluster, so I'll push for priority access today.",
+          "ko": "그 클러스터 말고는 딱히 막힌 건 없어서, 오늘 우선 접근 권한을 요청해볼게요.",
+          "is_target": true,
+          "start_ms": 27410,
+          "end_ms": 34770
+        }
+      ]
+    },
+    {
+      "id": "d010-s2",
+      "title_ko": "매니저와의 1:1에서 지연 사유를 구체적으로 설명하기",
+      "context_ko": "유리벽으로 된 작은 회의실. 매니저 Jordan과의 1:1에서, 스탠드업 때 언급했던 평가 실행 지연을 좀 더 구체적으로 설명하고 새로운 일정을 제안한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1i04NWFUdNHV1viozVB3yd9fURZ3mSda_",
+        "url": "https://drive.usercontent.google.com/download?id=1i04NWFUdNHV1viozVB3yd9fURZ3mSda_&export=download",
+        "duration_ms": 31032
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "{name}, can you give me more detail on the eval delay from standup? I need a realistic ETA, not a guess.",
+          "ko": "{name}, 스탠드업에서 말한 평가 지연에 대해 좀 더 자세히 알려줄 수 있어요? 대충 말고 현실적인 예상 일정이 필요해요.",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 8090
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The run needs another full day, so I'd rather tell you now than promise today's numbers.",
+          "ko": "실행이 하루는 더 걸릴 것 같아서, 오늘 수치를 준다고 약속하기보다 지금 미리 말씀드리는 게 나을 것 같아요.",
+          "is_target": true,
+          "start_ms": 8440,
+          "end_ms": 15080
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Is there anything I can do to help unblock this faster?",
+          "ko": "이거 빨리 풀리게 제가 도와줄 수 있는 게 있을까요?",
+          "is_target": false,
+          "start_ms": 15430,
+          "end_ms": 18870
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "If you can get us priority on the cluster, that would cut the wait almost in half.",
+          "ko": "클러스터 우선 순위만 좀 받아주시면, 대기 시간이 거의 절반으로 줄 것 같아요.",
+          "is_target": true,
+          "start_ms": 19220,
+          "end_ms": 30980
+        }
+      ]
+    },
+    {
+      "id": "d010-s3",
+      "title_ko": "화상회의로 원격 동료에게 지연 상황 공유하기",
+      "context_ko": "오후 늦게 화상회의로 원격 동료 Priya가 진행 상황을 확인한다. Priya는 이 결과를 바탕으로 다운스트림 리포트를 써야 해서, 정확한 지연 사유와 대안을 알려줘야 한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1dDtEIZ-7ZaxuZf9fddrF0mTZ7GOnsEWP",
+        "url": "https://drive.usercontent.google.com/download?id=1dDtEIZ-7ZaxuZf9fddrF0mTZ7GOnsEWP&export=download",
+        "duration_ms": 27120
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "원격 동료",
+          "en": "Hey, are the eval numbers going to be ready for my downstream report today?",
+          "ko": "저기, 오늘 제 다운스트림 리포트에 쓸 평가 수치 나올까요?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 5770
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not quite, yesterday I expected results by noon, but today I'm still re-running half the benchmarks.",
+          "ko": "아직이요, 어제는 정오면 나올 줄 알았는데 오늘도 벤치마크 절반을 다시 돌리고 있어요.",
+          "is_target": true,
+          "start_ms": 6120,
+          "end_ms": 15560
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "원격 동료",
+          "en": "Okay, when's the earliest you could get me at least partial numbers?",
+          "ko": "알겠어요, 그럼 부분 수치라도 언제쯤 받을 수 있을까요?",
+          "is_target": false,
+          "start_ms": 15910,
+          "end_ms": 21670
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I can send partial numbers by tomorrow morning if that works for your report deadline.",
+          "ko": "리포트 마감에 문제없다면 내일 아침까지 부분 수치는 보내드릴 수 있어요.",
+          "is_target": true,
+          "start_ms": 22020,
+          "end_ms": 27060
+        }
+      ]
+    },
+    {
+      "id": "d010-s4",
+      "title_ko": "복도에서 마주친 PM에게 데모 일정 영향 미리 알리기",
+      "context_ko": "탕비실 가는 길, 커피 머신 앞에서 PM Nora와 우연히 마주친다. 이번 주 금요일 데모에 쓸 평가 수치가 늦어질 수 있다는 걸 캐주얼하게, 하지만 확실하게 미리 알린다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1Tw6sM9RpcsEFXbNQngV9DZ150n8d55Hn",
+        "url": "https://drive.usercontent.google.com/download?id=1Tw6sM9RpcsEFXbNQngV9DZ150n8d55Hn&export=download",
+        "duration_ms": 29400
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Quick heads-up, the eval run is behind, so the demo numbers might not be final by Friday.",
+          "ko": "잠깐 알려드릴 게 있는데, 평가 실행이 늦어져서 금요일 데모 수치가 최종본이 아닐 수도 있어요.",
+          "is_target": true,
+          "start_ms": 250,
+          "end_ms": 6170
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "프로덕트 매니저",
+          "en": "Hey {name}, how far off are we? Do we need to rework the demo script?",
+          "ko": "{name}, 얼마나 늦어지는 거예요? 데모 대본을 다시 짜야 할까요?",
+          "is_target": false,
+          "start_ms": 6520,
+          "end_ms": 11880
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Maybe half a day off, so the demo should still work, just with slightly older numbers.",
+          "ko": "반나절 정도 늦어질 것 같아서, 데모 자체는 진행돼요, 다만 수치가 살짝 예전 버전일 거예요.",
+          "is_target": true,
+          "start_ms": 12230,
+          "end_ms": 19030
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "프로덕트 매니저",
+          "en": "Can you confirm by end of day so I can adjust the deck if needed?",
+          "ko": "필요하면 제가 자료를 수정할 수 있게 오늘 중으로 확정해서 알려줄래요?",
+          "is_target": false,
+          "start_ms": 19380,
+          "end_ms": 24180
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sounds good, I'll confirm by five today so you have time to adjust the deck.",
+          "ko": "좋아요, 오늘 5시까지 확정해서 알려드릴게요, 자료 수정할 시간은 충분하게요.",
+          "is_target": true,
+          "start_ms": 24530,
+          "end_ms": 29330
+        }
+      ]
+    },
+    {
+      "id": "d010-s5",
+      "title_ko": "동료와 함께 프로파일러로 지연 원인 짚어보기",
+      "context_ko": "모니터 여러 대가 붙어 있는 자리에서 동료 엔지니어 Marco와 함께 프로파일러 화면을 보며, 평가 작업이 왜 느려졌는지 원인을 짚고 오늘 안에 고칠 방법을 논의한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1dBXUOWLbSo84Cxu1DDdI3VACGTTpNXRi",
+        "url": "https://drive.usercontent.google.com/download?id=1dBXUOWLbSo84Cxu1DDdI3VACGTTpNXRi&export=download",
+        "duration_ms": 54312
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "So what's actually causing the eval job to crawl like this?",
+          "ko": "그래서 평가 작업이 이렇게 느려터진 진짜 원인이 뭐예요?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 4970
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The data loader is the bottleneck, it's spending most of the time on disk I/O, not compute.",
+          "ko": "데이터 로더가 병목이에요, 대부분의 시간을 연산이 아니라 디스크 입출력에 쓰고 있어요.",
+          "is_target": true,
+          "start_ms": 5320,
+          "end_ms": 42520
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Would switching to the cached shards help before end of day?",
+          "ko": "캐시된 샤드로 바꾸면 오늘 안에 도움이 될까요?",
+          "is_target": false,
+          "start_ms": 42870,
+          "end_ms": 46790
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That should help a lot, let me swap in the cached shards and rerun it this afternoon.",
+          "ko": "그러면 훨씬 나아질 거예요, 오늘 오후에 캐시된 샤드로 바꿔서 다시 돌려볼게요.",
+          "is_target": true,
+          "start_ms": 47140,
+          "end_ms": 54260
+        }
+      ]
+    }
+  ]
+}
