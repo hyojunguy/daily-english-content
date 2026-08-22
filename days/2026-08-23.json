@@ -1,0 +1,309 @@
+{
+  "schema": 1,
+  "day": 12,
+  "date": "2026-08-23",
+  "week": 2,
+  "block": "team-daily",
+  "theme": "데일리 스탠드업 — 짧고 정확하게",
+  "topic": "스탠드업이 길어질 때 논의를 뒤로 미루자고 제안하기",
+  "difficulty": 1,
+  "situations": [
+    {
+      "id": "d012-s1",
+      "title_ko": "화이트보드 스탠드업, 벤치마크 논쟁을 뒤로 미루기",
+      "context_ko": "화이트보드 앞에 서서 진행하는 스탠드업 중, 지난주와 다른 처리량 수치를 두고 Priya와 논쟁이 길어진다. 다섯 명이 더 업데이트를 기다리고 있어 자리를 옮겨 얘기하자고 제안해야 한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1d31FrVPKS1dNHzZ_TDvlsfCJ1AescKsE",
+        "url": "https://drive.usercontent.google.com/download?id=1d31FrVPKS1dNHzZ_TDvlsfCJ1AescKsE&export=download",
+        "duration_ms": 28008
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "Priya, 팀 동료",
+          "en": "Wait, your throughput numbers don't match what I saw last week. Can we dig into that right now?",
+          "ko": "잠깐, 처리량 수치가 지난주에 제가 본 거랑 다른데요. 지금 바로 파봐도 될까요?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 9050
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let's take that offline after standup — I don't want to eat everyone's time.",
+          "ko": "그건 스탠드업 끝나고 따로 얘기하죠 — 다른 분들 시간 뺏고 싶지 않아서요.",
+          "is_target": true,
+          "en_easy": "Let's discuss that after standup so we don't waste time.",
+          "start_ms": 9400,
+          "end_ms": 13720
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "Priya, 팀 동료",
+          "en": "Fair enough. Yesterday's numbers looked off, so I just want to make sure it's not a regression.",
+          "ko": "그러죠. 어제 수치가 좀 이상해서 리그레션은 아닌지 확인하고 싶었을 뿐이에요.",
+          "is_target": false,
+          "start_ms": 14070,
+          "end_ms": 21350
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Understood — yesterday I ran the benchmark suite, today I'm rerunning it with the fix applied.",
+          "ko": "알겠어요 — 어제는 벤치마크 스위트를 돌렸고, 오늘은 수정본으로 다시 돌리는 중이에요.",
+          "is_target": true,
+          "en_easy": "I ran the benchmark yesterday, now I'm running it with the fix.",
+          "start_ms": 21700,
+          "end_ms": 27940
+        }
+      ]
+    },
+    {
+      "id": "d012-s2",
+      "title_ko": "화상 스탠드업, 원격 동료의 디버깅 무용담을 잠깐 멈추기",
+      "context_ko": "화상회의로 진행하는 스탠드업에서 원격 동료 Marco가 어젯밤 데이터 로더 레이스 컨디션 디버깅 이야기를 상세히 풀기 시작한다. 시간이 늘어지기 전에 스레드로 넘기자고 제안해야 한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1_n-MXko5UkOsLbmf6aEpEnIi9Khhc0kh",
+        "url": "https://drive.usercontent.google.com/download?id=1_n-MXko5UkOsLbmf6aEpEnIi9Khhc0kh&export=download",
+        "duration_ms": 32592
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yesterday I merged the eval config, today I'm just verifying results — no blockers on my end.",
+          "ko": "어제 평가 설정을 머지했고, 오늘은 결과만 검증하면 돼요 — 저는 막힌 거 없어요.",
+          "is_target": true,
+          "en_easy": "I'm just verifying results today and I have no blockers.",
+          "start_ms": 250,
+          "end_ms": 7050
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "Marco, 원격 동료",
+          "en": "Nice. Mine's messier — I spent two hours chasing a race condition in the data loader last night.",
+          "ko": "좋네요. 저는 좀 복잡해요 — 어젯밤에 데이터 로더 레이스 컨디션 잡느라 두 시간 썼거든요.",
+          "is_target": false,
+          "start_ms": 7400,
+          "end_ms": 14360
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sounds gnarly, but let's park the deep dive — can you drop the details in the thread after this?",
+          "ko": "골치 아프겠네요, 근데 자세한 얘기는 잠깐 미뤄두죠 — 끝나고 스레드에 정리해서 올려줄래요?",
+          "is_target": true,
+          "en_easy": "That sounds hard, but can you write it in the chat later?",
+          "start_ms": 14710,
+          "end_ms": 21110
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "Marco, 원격 동료",
+          "en": "Yeah, good call. I'll write it up and tag you once standup wraps.",
+          "ko": "네, 그게 낫겠어요. 스탠드업 끝나면 정리해서 태그할게요.",
+          "is_target": false,
+          "start_ms": 21460,
+          "end_ms": 27300
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks — that keeps us on track and I can actually read it properly later.",
+          "ko": "고마워요 — 그러면 시간도 지키고, 저도 나중에 제대로 읽어볼 수 있겠네요.",
+          "is_target": true,
+          "en_easy": "Thanks, that keeps us on time and I can read it later.",
+          "start_ms": 27650,
+          "end_ms": 32530
+        }
+      ]
+    },
+    {
+      "id": "d012-s3",
+      "title_ko": "유리벽 회의실 스탠드업, 배포 롤백 논쟁을 미루기",
+      "context_ko": "작은 유리벽 회의실에서 서브팀 스탠드업 중, 동료 Sam과 배포 롤백 여부를 두고 의견이 갈린다. 다른 팀원들이 기다리고 있어 따로 시간을 잡자고 제안해야 한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1HxhEq5KcWPAeQeOjpOwS9tGrR_VsdbUI",
+        "url": "https://drive.usercontent.google.com/download?id=1HxhEq5KcWPAeQeOjpOwS9tGrR_VsdbUI&export=download",
+        "duration_ms": 29520
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "Sam, 팀 동료",
+          "en": "If we roll back now we lose the last two days of eval data — I really think we should wait.",
+          "ko": "지금 롤백하면 지난 이틀치 평가 데이터를 잃는데요 — 저는 좀 기다리는 게 맞다고 봐요.",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 6890
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I hear you, but let's not decide that here — can we grab fifteen minutes right after this?",
+          "ko": "무슨 말인지 알겠는데, 여기서 결정하진 말죠 — 끝나고 십오 분만 따로 시간 잡을까요?",
+          "is_target": true,
+          "en_easy": "I understand, but can we meet briefly after this instead?",
+          "start_ms": 7240,
+          "end_ms": 15880
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "Sam, 팀 동료",
+          "en": "Works for me. I just didn't want it to get buried and forgotten.",
+          "ko": "좋아요. 그냥 이 얘기가 묻혀서 잊힐까 봐 그랬어요.",
+          "is_target": false,
+          "start_ms": 16230,
+          "end_ms": 20550
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It won't — I'm blocked on the rollback decision anyway, so I need that conversation today.",
+          "ko": "안 그럴 거예요 — 어차피 저도 롤백 결정 때문에 막혀 있어서, 오늘 그 얘기가 꼭 필요해요.",
+          "is_target": true,
+          "en_easy": "I'm blocked on the rollback decision, so I need that conversation today.",
+          "start_ms": 20900,
+          "end_ms": 29460
+        }
+      ]
+    },
+    {
+      "id": "d012-s4",
+      "title_ko": "모니터 여러 대 자리에서 레이턴시 로그 논의를 뒤로 미루기",
+      "context_ko": "모니터 여러 대가 붙은 자리에서 진행하는 미니 스탠드업 중, 동료 Jae와 함께 서빙 레이턴시 스파이크 로그를 보다가 논의가 깊어진다. 나머지 업데이트를 위해 논의를 오후로 미루자고 제안한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1DDDWYM6TlPRKddcGNqWQqM7GqmHkINWL",
+        "url": "https://drive.usercontent.google.com/download?id=1DDDWYM6TlPRKddcGNqWQqM7GqmHkINWL&export=download",
+        "duration_ms": 31560
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Give me a second — let me pull up the trace so we're all looking at the same thing.",
+          "ko": "잠깐만요 — 트레이스 화면 띄울 테니 다 같이 보죠.",
+          "is_target": true,
+          "en_easy": "Wait, I'll open the trace so we see the same thing.",
+          "start_ms": 250,
+          "end_ms": 5450
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "Jae, 팀 동료",
+          "en": "Oh wow, that queue depth is way higher than I expected — is this new?",
+          "ko": "어, 큐 깊이가 생각보다 훨씬 높네요 — 이거 새로 생긴 거예요?",
+          "is_target": false,
+          "start_ms": 5800,
+          "end_ms": 10840
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It is, but let's not debug it live — I'll send you the dashboard link after standup.",
+          "ko": "맞아요, 근데 지금 여기서 디버깅하진 말죠 — 스탠드업 끝나고 대시보드 링크 보내줄게요.",
+          "is_target": true,
+          "en_easy": "Let's not debug this now, I'll send the link after standup.",
+          "start_ms": 11190,
+          "end_ms": 18470
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "Jae, 팀 동료",
+          "en": "Good idea, I don't want to hold up the rest of the team either.",
+          "ko": "좋은 생각이에요, 저도 나머지 팀원들 시간 뺏고 싶지 않아서요.",
+          "is_target": false,
+          "start_ms": 18820,
+          "end_ms": 22820
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Exactly — let's keep today's update short and dig into the real fix this afternoon.",
+          "ko": "맞아요 — 오늘 업데이트는 짧게 하고, 진짜 수정은 오후에 파보죠.",
+          "is_target": true,
+          "en_easy": "Let's keep today's update short and start the fix this afternoon.",
+          "start_ms": 23170,
+          "end_ms": 31490
+        }
+      ]
+    },
+    {
+      "id": "d012-s5",
+      "title_ko": "복도에서 마주쳐 미뤄둔 벤치마크 논의 시간 확정하기",
+      "context_ko": "스탠드업이 끝난 직후 복도에서 Priya와 마주쳐, 아까 미뤄둔 벤치마크 논의를 언제 다시 할지 짧게 확정한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1gwSK-oo9_b2GZcvrT1S-YmOZF0Rnb_O0",
+        "url": "https://drive.usercontent.google.com/download?id=1gwSK-oo9_b2GZcvrT1S-YmOZF0Rnb_O0&export=download",
+        "duration_ms": 32328
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "Priya, 팀 동료",
+          "en": "Hey, are we still doing eleven for the benchmark thing, or did that get pushed?",
+          "ko": "저기, 벤치마크 얘기 열한 시에 하는 거 맞죠, 아니면 밀렸어요?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 5050
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Still on for eleven — I already blocked my calendar so we don't lose the slot again.",
+          "ko": "열한 시 그대로예요 — 또 놓치지 않으려고 캘린더에 미리 막아뒀어요.",
+          "is_target": true,
+          "en_easy": "It's still the same time, I already blocked my calendar.",
+          "start_ms": 5400,
+          "end_ms": 9640
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "Priya, 팀 동료",
+          "en": "Perfect, I'll bring the numbers from last week so we can compare directly.",
+          "ko": "좋아요, 지난주 수치 가져올 테니 바로 비교해보죠.",
+          "is_target": false,
+          "start_ms": 9990,
+          "end_ms": 15110
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Great, that'll save us time — let's keep it to twenty minutes so it doesn't spiral either.",
+          "ko": "좋아요, 그럼 시간도 아끼겠네요 — 너무 길어지지 않게 이십 분으로 딱 잡죠.",
+          "is_target": true,
+          "en_easy": "Great, let's keep it short to save time.",
+          "start_ms": 15460,
+          "end_ms": 32260
+        }
+      ]
+    }
+  ]
+}

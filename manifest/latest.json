@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-08-22T21:08:22+00:00",
+  "updated": "2026-08-22T21:23:36+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 11,
-  "total_days": 5,
-  "total_turns": 110,
-  "total_target_turns": 60,
+  "latest_day": 12,
+  "total_days": 6,
+  "total_turns": 132,
+  "total_target_turns": 72,
   "days": [
     {
       "day": 1,
@@ -86,6 +86,22 @@
       "audio": 5,
       "complete": false,
       "file": "days/2026-08-22.json"
+    },
+    {
+      "day": 12,
+      "date": "2026-08-23",
+      "week": 2,
+      "block": "team-daily",
+      "theme": "데일리 스탠드업 — 짧고 정확하게",
+      "topic": "스탠드업이 길어질 때 논의를 뒤로 미루자고 제안하기",
+      "difficulty": 1,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 5,
+      "complete": false,
+      "file": "days/2026-08-23.json"
     }
   ]
 }
