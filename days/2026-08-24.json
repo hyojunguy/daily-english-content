@@ -1,0 +1,309 @@
+{
+  "schema": 1,
+  "day": 13,
+  "date": "2026-08-24",
+  "week": 2,
+  "block": "team-daily",
+  "theme": "데일리 스탠드업 — 짧고 정확하게",
+  "topic": "휴가·병가로 자리를 비운다고 알리기",
+  "difficulty": 1,
+  "situations": [
+    {
+      "id": "d013-s1",
+      "title_ko": "화이트보드 스탠드업에서 내일 반차를 미리 알리기",
+      "context_ko": "화이트보드 앞에 서서 진행하는 아침 스탠드업, 팀 리드가 순서대로 상태를 묻는다. {name}은 오늘 업데이트를 전하면서 내일 오전 병원 예약 때문에 반차를 낸다고 미리 알린다.",
+      "image": null,
+      "audio": {
+        "drive_id": "13k3BKxWPmTFDjtGgUXB_Z0E8f14q-ZHN",
+        "url": "https://drive.usercontent.google.com/download?id=13k3BKxWPmTFDjtGgUXB_Z0E8f14q-ZHN&export=download",
+        "duration_ms": 25440
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "{name}, you're up — what's the status today?",
+          "ko": "{name}님, 차례예요 — 오늘 상태 어때요?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 3450
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yesterday I finished the data loader fix, and today I'm running the full eval suite.",
+          "ko": "어제는 데이터 로더 버그를 고쳤고, 오늘은 전체 평가 스위트를 돌릴 거예요.",
+          "is_target": true,
+          "en_easy": "I fixed the data bug yesterday and run the eval suite today.",
+          "start_ms": 3800,
+          "end_ms": 8840
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Sounds good. Anything blocking you right now?",
+          "ko": "좋네요. 지금 막힌 거 있어요?",
+          "is_target": false,
+          "start_ms": 9190,
+          "end_ms": 12470
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No blockers on my end, but I have a doctor's appointment tomorrow morning, so I'll be out until noon.",
+          "ko": "막힌 건 없는데, 내일 오전에 병원 예약이 있어서 정오까지는 자리를 비울 것 같아요.",
+          "is_target": true,
+          "en_easy": "No blockers, but I'm out until 12 tomorrow.",
+          "start_ms": 12820,
+          "end_ms": 25380
+        }
+      ]
+    },
+    {
+      "id": "d013-s2",
+      "title_ko": "유리벽 회의실에서 갑자기 몸이 안 좋아 조퇴 요청하기",
+      "context_ko": "유리벽으로 된 작은 회의실에서 매니저와 짧게 마주 앉는다. {name}은 갑자기 몸이 안 좋아져 오후 반차를 요청하고 급한 작업을 동료에게 넘기려 한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1dgbaNL22baBZ4Ocqf0ikT4hvF6oBD02N",
+        "url": "https://drive.usercontent.google.com/download?id=1dgbaNL22baBZ4Ocqf0ikT4hvF6oBD02N&export=download",
+        "duration_ms": 22512
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey, do you have a minute? I'm not feeling well and might need to leave early.",
+          "ko": "저기, 잠깐 시간 되세요? 몸이 안 좋아서 일찍 들어가야 할 것 같아요.",
+          "is_target": true,
+          "en_easy": "I'm not feeling well and might leave early.",
+          "start_ms": 250,
+          "end_ms": 4810
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Of course, come in. Is it something serious?",
+          "ko": "그럼요, 들어와요. 많이 안 좋은 거예요?",
+          "is_target": false,
+          "start_ms": 5160,
+          "end_ms": 9320
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Just a bad headache — I think I need to rest at home for the afternoon.",
+          "ko": "그냥 두통이 심해서요 — 오후엔 집에서 쉬어야 할 것 같아요.",
+          "is_target": true,
+          "en_easy": "My head hurts, so I'll rest at home this afternoon.",
+          "start_ms": 9670,
+          "end_ms": 13670
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Take the time you need. Anything urgent I should know about?",
+          "ko": "필요한 만큼 쉬어요. 제가 알아야 할 급한 일 있어요?",
+          "is_target": false,
+          "start_ms": 14020,
+          "end_ms": 17780
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'm blocked on the eval rerun anyway, so Sam can pick it up tomorrow.",
+          "ko": "어차피 평가 재실행 때문에 막혀 있으니까, 내일 Sam이 이어받으면 될 것 같아요.",
+          "is_target": true,
+          "en_easy": "I'm blocked on the eval run anyway, so someone can continue tomorrow.",
+          "start_ms": 18130,
+          "end_ms": 22450
+        }
+      ]
+    },
+    {
+      "id": "d013-s3",
+      "title_ko": "복도에서 마주친 동료에게 내일 병가를 알리고 인수인계하기",
+      "context_ko": "탕비실로 가는 복도에서 동료 Marco와 마주친다. {name}은 내일 병가를 낼 예정이라 서빙 알림을 대신 봐달라고 부탁한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1mF6oJLqF1RtgTpJiRIJgR4V0rzYA13E5",
+        "url": "https://drive.usercontent.google.com/download?id=1mF6oJLqF1RtgTpJiRIJgR4V0rzYA13E5&export=download",
+        "duration_ms": 24072
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Hey, are you coming to the sync later, or heading out already?",
+          "ko": "저기, 이따 싱크 미팅 오세요, 아니면 벌써 퇴근하시는 거예요?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 4810
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'm calling in sick tomorrow, so could you keep an eye on the alerts?",
+          "ko": "내일 병가를 낼 것 같아서요, 알림 좀 대신 봐주실 수 있어요?",
+          "is_target": true,
+          "en_easy": "I'm taking a sick day tomorrow, so could you watch the alerts?",
+          "start_ms": 5160,
+          "end_ms": 12120
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Sure, no problem. Anything specific I should watch for?",
+          "ko": "그럼요, 문제없어요. 특별히 신경 써야 할 거 있어요?",
+          "is_target": false,
+          "start_ms": 12470,
+          "end_ms": 16790
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Just the serving latency dashboard — ping me only if it spikes badly.",
+          "ko": "서빙 레이턴시 대시보드만 봐주시면 돼요 — 크게 튀면 그때만 연락 주세요.",
+          "is_target": true,
+          "en_easy": "Check the serving latency dashboard, and ping me if it rises much.",
+          "start_ms": 17140,
+          "end_ms": 24020
+        }
+      ]
+    },
+    {
+      "id": "d013-s4",
+      "title_ko": "화상 스탠드업에서 병가 다녀온 다음 날 따라잡기",
+      "context_ko": "화상 스탠드업, 여러 얼굴이 화면에 떠 있다. {name}은 어제 병가로 자리를 비웠고, 오늘 복귀해 밀린 평가 결과를 다시 따라잡는 중이라고 알린다.",
+      "image": null,
+      "audio": {
+        "drive_id": "15CGXooKU_TjpBu48PR5Z7z_0ACqrKuNi",
+        "url": "https://drive.usercontent.google.com/download?id=15CGXooKU_TjpBu48PR5Z7z_0ACqrKuNi&export=download",
+        "duration_ms": 20880
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "원격 동료",
+          "en": "Good to see you back — how are you feeling?",
+          "ko": "다시 보니 반갑네요 — 컨디션은 좀 어때요?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 2970
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks — yesterday I was out sick, and today I'm catching up on the eval results.",
+          "ko": "고마워요 — 어제는 병가였고, 오늘은 평가 결과를 다시 따라잡고 있어요.",
+          "is_target": true,
+          "en_easy": "Thanks, I was out sick yesterday and I'm reviewing the eval results.",
+          "start_ms": 3320,
+          "end_ms": 10760
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "원격 동료",
+          "en": "Take it easy. Anything currently blocking you after being away?",
+          "ko": "무리하지 마세요. 자리 비운 뒤로 막힌 거 있어요?",
+          "is_target": false,
+          "start_ms": 11110,
+          "end_ms": 15350
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'm blocked on last week's benchmark rerun, but nothing else is stuck.",
+          "ko": "지난주 벤치마크 재실행 때문에 막혀 있는데, 그거 말고는 다 괜찮아요.",
+          "is_target": true,
+          "en_easy": "I'm blocked on last week's benchmark run, but nothing else is stuck.",
+          "start_ms": 15700,
+          "end_ms": 20820
+        }
+      ]
+    },
+    {
+      "id": "d013-s5",
+      "title_ko": "점심 테이블에서 다음 주 휴가 계획 조율하기",
+      "context_ko": "점심 테이블에서 동료 Priya와 마주 앉아 식사한다. {name}은 다음 주 이틀간 가족 여행으로 휴가를 낸다고 미리 알리고 온콜 커버를 부탁한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1IxlBmfjuhw9ocWl0IV4NarHv1KNeaefg",
+        "url": "https://drive.usercontent.google.com/download?id=1IxlBmfjuhw9ocWl0IV4NarHv1KNeaefg&export=download",
+        "duration_ms": 22344
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Priya, heads-up — I'm taking Wednesday and Thursday off next week for a family trip.",
+          "ko": "Priya, 미리 말씀드리는데 — 다음 주 수요일이랑 목요일에 가족 여행 때문에 휴가 낼 거예요.",
+          "is_target": true,
+          "en_easy": "I'm off Wednesday and Thursday next week for a family trip.",
+          "start_ms": 250,
+          "end_ms": 5530
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Oh nice! Should I cover the on-call rotation those days?",
+          "ko": "오, 좋네요! 그 날들 온콜 제가 대신 맡을까요?",
+          "is_target": false,
+          "start_ms": 5880,
+          "end_ms": 10040
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That'd be great, and I'll finish the handoff notes before I leave.",
+          "ko": "그래 주시면 정말 좋죠, 떠나기 전에 인수인계 문서도 다 정리해 둘게요.",
+          "is_target": true,
+          "en_easy": "That'd be great, and I'll finish the handoff notes before I leave.",
+          "start_ms": 10390,
+          "end_ms": 14470
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Sounds good. Just make sure the runbook link is up to date.",
+          "ko": "좋아요. 런북 링크만 최신인지 확인해 주세요.",
+          "is_target": false,
+          "start_ms": 14820,
+          "end_ms": 19220
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Will do — I'll drop it in the channel by Friday.",
+          "ko": "네, 금요일까지 채널에 링크 올려둘게요.",
+          "is_target": true,
+          "en_easy": "Will do, I'll post it in the channel by Friday.",
+          "start_ms": 19570,
+          "end_ms": 22290
+        }
+      ]
+    }
+  ]
+}
