@@ -27,7 +27,8 @@
           "ko": "어제 전체 벤치마크를 돌리기 시작했는데, 오늘은 생각보다 오래 걸려서 계속 지켜보고 있어요.",
           "is_target": true,
           "start_ms": 250,
-          "end_ms": 10490
+          "end_ms": 10490,
+          "en_easy": "I started the benchmark yesterday, and it's taking longer than we planned."
         },
         {
           "n": 2,
@@ -47,7 +48,8 @@
           "ko": "사실 평가용 클러스터를 다른 팀이랑 같이 쓰고 있어서 거기서 막혀 있고, 그래서 예상보다 느려요.",
           "is_target": true,
           "start_ms": 15990,
-          "end_ms": 22150
+          "end_ms": 22150,
+          "en_easy": "I'm stuck because another team shares the eval cluster."
         },
         {
           "n": 4,
@@ -67,7 +69,8 @@
           "ko": "그 클러스터 말고는 딱히 막힌 건 없어서, 오늘 우선 접근 권한을 요청해볼게요.",
           "is_target": true,
           "start_ms": 27410,
-          "end_ms": 34770
+          "end_ms": 34770,
+          "en_easy": "Only the cluster blocks me, so I'll request priority access today."
         }
       ]
     },
@@ -100,7 +103,8 @@
           "ko": "실행이 하루는 더 걸릴 것 같아서, 오늘 수치를 준다고 약속하기보다 지금 미리 말씀드리는 게 나을 것 같아요.",
           "is_target": true,
           "start_ms": 8440,
-          "end_ms": 15080
+          "end_ms": 15080,
+          "en_easy": "The run needs one more day, so I'm telling you now."
         },
         {
           "n": 3,
@@ -120,7 +124,8 @@
           "ko": "클러스터 우선 순위만 좀 받아주시면, 대기 시간이 거의 절반으로 줄 것 같아요.",
           "is_target": true,
           "start_ms": 19220,
-          "end_ms": 30980
+          "end_ms": 30980,
+          "en_easy": "If we get priority, the wait time drops by half."
         }
       ]
     },
@@ -153,7 +158,8 @@
           "ko": "아직이요, 어제는 정오면 나올 줄 알았는데 오늘도 벤치마크 절반을 다시 돌리고 있어요.",
           "is_target": true,
           "start_ms": 6120,
-          "end_ms": 15560
+          "end_ms": 15560,
+          "en_easy": "Not yet, I'm still running half the benchmarks again."
         },
         {
           "n": 3,
@@ -173,7 +179,8 @@
           "ko": "리포트 마감에 문제없다면 내일 아침까지 부분 수치는 보내드릴 수 있어요.",
           "is_target": true,
           "start_ms": 22020,
-          "end_ms": 27060
+          "end_ms": 27060,
+          "en_easy": "I can send partial numbers by tomorrow, if that meets your deadline."
         }
       ]
     },
@@ -196,7 +203,8 @@
           "ko": "잠깐 알려드릴 게 있는데, 평가 실행이 늦어져서 금요일 데모 수치가 최종본이 아닐 수도 있어요.",
           "is_target": true,
           "start_ms": 250,
-          "end_ms": 6170
+          "end_ms": 6170,
+          "en_easy": "The eval run is late, so Friday's numbers may not be final."
         },
         {
           "n": 2,
@@ -216,7 +224,8 @@
           "ko": "반나절 정도 늦어질 것 같아서, 데모 자체는 진행돼요, 다만 수치가 살짝 예전 버전일 거예요.",
           "is_target": true,
           "start_ms": 12230,
-          "end_ms": 19030
+          "end_ms": 19030,
+          "en_easy": "Maybe half a day late, but the demo will use older numbers."
         },
         {
           "n": 4,
@@ -236,7 +245,8 @@
           "ko": "좋아요, 오늘 5시까지 확정해서 알려드릴게요, 자료 수정할 시간은 충분하게요.",
           "is_target": true,
           "start_ms": 24530,
-          "end_ms": 29330
+          "end_ms": 29330,
+          "en_easy": "Sounds good, I'll confirm by 5 so you can adjust the materials."
         }
       ]
     },
@@ -269,7 +279,8 @@
           "ko": "데이터 로더가 병목이에요, 대부분의 시간을 연산이 아니라 디스크 입출력에 쓰고 있어요.",
           "is_target": true,
           "start_ms": 5320,
-          "end_ms": 42520
+          "end_ms": 42520,
+          "en_easy": "Loading data is slow, mostly from disk instead of computing."
         },
         {
           "n": 3,
@@ -289,7 +300,8 @@
           "ko": "그러면 훨씬 나아질 거예요, 오늘 오후에 캐시된 샤드로 바꿔서 다시 돌려볼게요.",
           "is_target": true,
           "start_ms": 47140,
-          "end_ms": 54260
+          "end_ms": 54260,
+          "en_easy": "That should help, I'll load cached files and run again this afternoon."
         }
       ]
     }
