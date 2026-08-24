@@ -27,7 +27,8 @@
           "ko": "마무리하기 전에 오늘 나온 항목들 누가 맡을지 한번 정리해볼까요?",
           "is_target": true,
           "start_ms": 250,
-          "end_ms": 4970
+          "end_ms": 4970,
+          "en_easy": "Before we finish, can we review who owns today's items?"
         },
         {
           "n": 2,
@@ -47,7 +48,8 @@
           "ko": "어제는 체크포인트 스크립트를 봤고, 오늘은 이밸 컨피그 버그를 고칠 거예요.",
           "is_target": true,
           "start_ms": 9350,
-          "end_ms": 15510
+          "end_ms": 15510,
+          "en_easy": "Yesterday I reviewed the checkpoint script, today I'm fixing the eval bug."
         },
         {
           "n": 4,
@@ -67,7 +69,8 @@
           "ko": "감사해요, 그리고 Marco 항목에 'dataloader'가 아니라 'data loader'로 맞는지 한번 봐주시겠어요?",
           "is_target": true,
           "start_ms": 20610,
-          "end_ms": 26450
+          "end_ms": 26450,
+          "en_easy": "Thanks, can you check his item has the right spelling?"
         }
       ]
     },
@@ -90,7 +93,8 @@
           "ko": "간단히 업데이트드리면, 오늘 액션 아이템 대부분은 순조롭게 진행 중이에요.",
           "is_target": true,
           "start_ms": 250,
-          "end_ms": 3770
+          "end_ms": 3770,
+          "en_easy": "Quick update, most of my action items are going well today."
         },
         {
           "n": 2,
@@ -110,7 +114,8 @@
           "ko": "그건 막혀 있어요, 공유 스토리지 버킷 접근 권한이 먼저 필요해요.",
           "is_target": true,
           "start_ms": 8790,
-          "end_ms": 15030
+          "end_ms": 15030,
+          "en_easy": "I'm blocked, and I need access to shared storage first."
         },
         {
           "n": 4,
@@ -143,7 +148,8 @@
           "ko": "저기, 그 재시도 로직 수정 항목 네가 맡은 거였나 나였나?",
           "is_target": true,
           "start_ms": 250,
-          "end_ms": 4730
+          "end_ms": 4730,
+          "en_easy": "Did you take that fix, or did I?"
         },
         {
           "n": 2,
@@ -163,7 +169,8 @@
           "ko": "알겠어, 그럼 내 리스트에 추가하고 티켓 담당자도 업데이트할게.",
           "is_target": true,
           "start_ms": 9830,
-          "end_ms": 13590
+          "end_ms": 13590,
+          "en_easy": "Okay, I'll add it to my list and update the ticket owner."
         },
         {
           "n": 4,
@@ -196,7 +203,8 @@
           "ko": "오늘 아침에 리스트에 있던 두 항목 다 끝냈어요?",
           "is_target": true,
           "start_ms": 250,
-          "end_ms": 3530
+          "end_ms": 3530,
+          "en_easy": "Did you finish both items on your list this morning?"
         },
         {
           "n": 2,
@@ -216,7 +224,8 @@
           "ko": "제 쪽은 막힌 거 없어서, 점심 먹고 바로 PR 리뷰해드릴 수 있어요.",
           "is_target": true,
           "start_ms": 8950,
-          "end_ms": 15750
+          "end_ms": 15750,
+          "en_easy": "Nothing blocks me, so I can review your code after lunch."
         },
         {
           "n": 4,
@@ -236,7 +245,8 @@
           "ko": "좋아요, 슬랙으로 알려주시면 바로 확인할게요.",
           "is_target": true,
           "start_ms": 19810,
-          "end_ms": 23810
+          "end_ms": 23810,
+          "en_easy": "Sounds good, ping me on Slack and I'll check it now."
         }
       ]
     },
@@ -269,7 +279,8 @@
           "ko": "어제는 컨피그 수정을 머지했고, 오늘은 실패한 이밸 스위트를 다시 돌릴 거예요.",
           "is_target": true,
           "start_ms": 5800,
-          "end_ms": 11960
+          "end_ms": 11960,
+          "en_easy": "I merged the config fix yesterday and am running failed eval tests."
         },
         {
           "n": 3,
@@ -289,7 +300,8 @@
           "ko": "알겠어요, 막히면 알려주세요, 제가 한번 볼게요.",
           "is_target": true,
           "start_ms": 17780,
-          "end_ms": 22500
+          "end_ms": 22500,
+          "en_easy": "Sounds good, tell me if you get stuck and I'll check."
         }
       ]
     }
