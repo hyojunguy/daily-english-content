@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-08-23T20:49:04+00:00",
+  "updated": "2026-08-24T21:14:14+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 13,
-  "total_days": 7,
-  "total_turns": 154,
-  "total_target_turns": 84,
+  "latest_day": 14,
+  "total_days": 8,
+  "total_turns": 176,
+  "total_target_turns": 96,
   "days": [
     {
       "day": 1,
@@ -118,6 +118,22 @@
       "audio": 5,
       "complete": false,
       "file": "days/2026-08-24.json"
+    },
+    {
+      "day": 14,
+      "date": "2026-08-25",
+      "week": 2,
+      "block": "team-daily",
+      "theme": "데일리 스탠드업 — 짧고 정확하게",
+      "topic": "스탠드업에서 나온 액션 아이템 정리해 확인하기",
+      "difficulty": 1,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 5,
+      "complete": false,
+      "file": "days/2026-08-25.json"
     }
   ]
 }
