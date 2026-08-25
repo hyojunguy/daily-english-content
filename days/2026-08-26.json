@@ -1,0 +1,309 @@
+{
+  "schema": 1,
+  "day": 15,
+  "date": "2026-08-26",
+  "week": 3,
+  "block": "team-daily",
+  "theme": "비동기 소통 — 슬랙과 문서로 일하기",
+  "topic": "답이 없는 스레드를 정중하게 다시 올리기",
+  "difficulty": 1,
+  "situations": [
+    {
+      "id": "d015-s1",
+      "title_ko": "스탠드업에서 답 없는 리뷰 스레드 다시 올리기",
+      "context_ko": "화이트보드 앞 스탠드업. 팀 리드 Priya가 막힌 일이 있는지 묻자, {name}은 이틀 전 올린 체크포인트 수정 PR이 아직 리뷰를 못 받았다고 짚는다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1h8rDEOR0tzCaPEm2MmffmfiOnFVgDe8y",
+        "url": "https://drive.usercontent.google.com/download?id=1h8rDEOR0tzCaPEm2MmffmfiOnFVgDe8y&export=download",
+        "duration_ms": 23112
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드 Priya",
+          "en": "Anything blocking before we close out standup?",
+          "ko": "스탠드업 마치기 전에 막힌 거 있는 사람?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 2890
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Following up on the PR I posted Tuesday — no one's reviewed the checkpoint fix yet.",
+          "ko": "화요일에 올린 PR 다시 올리는데요, 체크포인트 수정 건이 아직 아무도 안 봐줬어요.",
+          "is_target": true,
+          "en_easy": "Did anyone check my checkpoint fix from Tuesday?",
+          "start_ms": 3240,
+          "end_ms": 10040
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드 Priya",
+          "en": "Ah, that slipped through. Tag Dae-ho directly, he's probably drowning in his own thread.",
+          "ko": "아, 그거 놓쳤네. Dae-ho한테 직접 태그해봐, 자기 스레드에 파묻혀 있을 거야.",
+          "is_target": false,
+          "start_ms": 10390,
+          "end_ms": 18070
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good call, I'll ping him and drop a note in the channel too.",
+          "ko": "좋아요, 그분한테 핑 보내고 채널에도 한 줄 남길게요.",
+          "is_target": true,
+          "en_easy": "Good idea, I'll message him and post in the channel too.",
+          "start_ms": 18420,
+          "end_ms": 23060
+        }
+      ]
+    },
+    {
+      "id": "d015-s2",
+      "title_ko": "1:1에서 예산 승인 스레드 에스컬레이션 상의하기",
+      "context_ko": "유리벽 회의실에서 매니저 Sam과의 1:1. 지난주 올린 GPU 예산 요청 스레드가 일주일째 무응답이라, {name}이 에스컬레이션할지 상의한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1G-_ydszHB6mPjJQFn0XxzU6feuffiP2v",
+        "url": "https://drive.usercontent.google.com/download?id=1G-_ydszHB6mPjJQFn0XxzU6feuffiP2v&export=download",
+        "duration_ms": 25920
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저 Sam",
+          "en": "How's the compute budget request going? I know you filed that last week.",
+          "ko": "컴퓨트 예산 요청은 어떻게 됐어? 지난주에 올렸었잖아.",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 5370
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No rush, but it's been a week with no reply — should I loop in finance directly?",
+          "ko": "급한 건 아닌데 일주일째 답이 없어서요, 재무팀에 직접 알려도 될까요?",
+          "is_target": true,
+          "en_easy": "No one replied for a week, can I ask finance directly?",
+          "start_ms": 5720,
+          "end_ms": 13080
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저 Sam",
+          "en": "Good instinct. Escalating after a week isn't pushy, it's just visibility.",
+          "ko": "잘 판단했어. 일주일 지나서 에스컬레이션하는 건 무리한 게 아니라 그냥 상황 공유야.",
+          "is_target": false,
+          "start_ms": 13430,
+          "end_ms": 19430
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Okay, I'll re-post it in the finance channel and tag their lead this time.",
+          "ko": "네, 이번엔 재무 채널에 다시 올리고 담당 리드도 태그할게요.",
+          "is_target": true,
+          "en_easy": "Okay, I'll post again in the finance channel and tag their lead.",
+          "start_ms": 19780,
+          "end_ms": 25860
+        }
+      ]
+    },
+    {
+      "id": "d015-s3",
+      "title_ko": "동료 책상 옆에서 API 키 요청 스레드 확인하기",
+      "context_ko": "동료 Elena의 책상에 걸터앉아 잠깐 이야기하는 중. 3일 전 플랫폼팀에 태그해둔 API 키 요청 스레드가 여전히 조용해, {name}이 다시 올릴지 고민한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1sqK6xei_GXcyqJnwoDoyS4Dq3MdPQV0L",
+        "url": "https://drive.usercontent.google.com/download?id=1sqK6xei_GXcyqJnwoDoyS4Dq3MdPQV0L&export=download",
+        "duration_ms": 20952
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 Elena",
+          "en": "Did the platform team ever get back to you about the API key request?",
+          "ko": "플랫폼팀에서 API 키 요청 건 답 왔어?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 4970
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Following up on that thread again today — still nothing since Monday.",
+          "ko": "오늘도 그 스레드 다시 올렸는데 월요일 이후로 아무 답이 없어요.",
+          "is_target": true,
+          "en_easy": "I posted again today, but there's still nothing since Monday.",
+          "start_ms": 5320,
+          "end_ms": 9480
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 Elena",
+          "en": "Ugh, they've been slow lately. Maybe DM the on-call person instead of the channel.",
+          "ko": "요즘 그 팀 좀 느려. 채널 말고 온콜 담당자한테 DM 보내보는 건 어때.",
+          "is_target": false,
+          "start_ms": 9830,
+          "end_ms": 16230
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah, I'll try that, and reply in the thread so it stays visible.",
+          "ko": "네, 그렇게 해볼게요. 스레드에도 답글 남겨서 다른 사람도 볼 수 있게 할게요.",
+          "is_target": true,
+          "en_easy": "I'll try that and reply there so everyone can see.",
+          "start_ms": 16580,
+          "end_ms": 20900
+        }
+      ]
+    },
+    {
+      "id": "d015-s4",
+      "title_ko": "화상회의로 디자인 문서 리뷰 스레드 다시 올리기",
+      "context_ko": "화상회의로 원격 리뷰어 Noah와 통화 중. 지난주 코멘트를 남긴 평가 방법론 문서가 일주일째 승인이 안 나서, {name}이 다른 담당자를 스레드에 태그해 가시성을 높이려 한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "195axaE9yzgqFbJqO9aLaSTeSQ_js7fhk",
+        "url": "https://drive.usercontent.google.com/download?id=195axaE9yzgqFbJqO9aLaSTeSQ_js7fhk&export=download",
+        "duration_ms": 33552
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "For visibility: I'm looping in Grace on this thread since the eval doc's been stuck for a week.",
+          "ko": "다들 참고하시라고, 평가 문서 스레드가 일주일째 멈춰 있어서 Grace를 태그할게요.",
+          "is_target": true,
+          "en_easy": "I'm asking her to help since the eval doc stayed stuck.",
+          "start_ms": 250,
+          "end_ms": 12330
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "리뷰어 Noah",
+          "en": "Sorry, I saw it but forgot to reply — let me look right after this call.",
+          "ko": "미안, 보긴 했는데 답을 깜빡했네. 이 통화 끝나고 바로 볼게.",
+          "is_target": false,
+          "start_ms": 12680,
+          "end_ms": 18600
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No pressure, I just want someone with context in case I'm out tomorrow.",
+          "ko": "부담 갖지 마세요, 그냥 내일 제가 자리 비울 수도 있어서 맥락 아는 분이 필요해서요.",
+          "is_target": true,
+          "en_easy": "No pressure, I want someone with context if I'm out tomorrow.",
+          "start_ms": 18950,
+          "end_ms": 24470
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "리뷰어 Noah",
+          "en": "Fair enough. I'll leave comments by end of day, promise.",
+          "ko": "그래, 알겠어. 오늘 안으로 꼭 코멘트 남길게.",
+          "is_target": false,
+          "start_ms": 24820,
+          "end_ms": 29460
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Perfect, thanks — I'll close the loop once you've weighed in.",
+          "ko": "좋아요, 감사해요. 의견 주시면 제가 마무리 정리할게요.",
+          "is_target": true,
+          "en_easy": "Thanks, I'll finish once you give feedback.",
+          "start_ms": 29810,
+          "end_ms": 33490
+        }
+      ]
+    },
+    {
+      "id": "d015-s5",
+      "title_ko": "복도에서 마주친 동료에게 PR 리뷰 스레드 재촉하기",
+      "context_ko": "탕비실 가는 복도에서 동료 Owen과 마주쳤다. 병합을 막고 있는 PR 리뷰 스레드가 조용해서, {name}이 오늘 저녁 평가 실행 전에 확인해달라고 부탁한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1m31T7eunYheDLDwJMqd_PcxUvDnrrCKs",
+        "url": "https://drive.usercontent.google.com/download?id=1m31T7eunYheDLDwJMqd_PcxUvDnrrCKs&export=download",
+        "duration_ms": 25152
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey, following up on the review thread for my PR — anything blocking, or just backlog?",
+          "ko": "저기, 제 PR 리뷰 스레드 다시 올리는데요, 막힌 게 있어서예요 아니면 그냥 밀린 거예요?",
+          "is_target": true,
+          "en_easy": "Is something blocking my review, or is everyone just busy?",
+          "start_ms": 250,
+          "end_ms": 6650
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 Owen",
+          "en": "Oh, it's just backlog, sorry. I'll get to it today.",
+          "ko": "아, 그냥 밀린 거야, 미안. 오늘 안에 볼게.",
+          "is_target": false,
+          "start_ms": 7000,
+          "end_ms": 11240
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No rush, but I'd like to merge before the eval run tonight if possible.",
+          "ko": "급한 건 아닌데 가능하면 오늘 밤 평가 실행 전에 머지하고 싶어서요.",
+          "is_target": true,
+          "en_easy": "I'd like to merge before tonight's eval run.",
+          "start_ms": 11590,
+          "end_ms": 16790
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 Owen",
+          "en": "Got it, that changes things — I'll bump it up now.",
+          "ko": "알겠어, 그럼 얘기가 다르지. 지금 바로 순위 올릴게.",
+          "is_target": false,
+          "start_ms": 17140,
+          "end_ms": 20740
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Appreciate it. I'll drop a thumbs up once I see your comments.",
+          "ko": "감사해요. 코멘트 보이면 바로 확인 표시 남길게요.",
+          "is_target": true,
+          "en_easy": "Thanks, I'll add a thumbs up once I see your comments.",
+          "start_ms": 21090,
+          "end_ms": 25090
+        }
+      ]
+    }
+  ]
+}

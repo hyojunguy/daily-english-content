@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-08-24T21:14:14+00:00",
+  "updated": "2026-08-25T21:14:27+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 14,
-  "total_days": 8,
-  "total_turns": 176,
-  "total_target_turns": 96,
+  "latest_day": 15,
+  "total_days": 9,
+  "total_turns": 198,
+  "total_target_turns": 108,
   "days": [
     {
       "day": 1,
@@ -134,6 +134,22 @@
       "audio": 5,
       "complete": false,
       "file": "days/2026-08-25.json"
+    },
+    {
+      "day": 15,
+      "date": "2026-08-26",
+      "week": 3,
+      "block": "team-daily",
+      "theme": "비동기 소통 — 슬랙과 문서로 일하기",
+      "topic": "답이 없는 스레드를 정중하게 다시 올리기",
+      "difficulty": 1,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 5,
+      "complete": false,
+      "file": "days/2026-08-26.json"
     }
   ]
 }
