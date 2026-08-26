@@ -1,0 +1,309 @@
+{
+  "schema": 1,
+  "day": 16,
+  "date": "2026-08-27",
+  "week": 3,
+  "block": "team-daily",
+  "theme": "비동기 소통 — 슬랙과 문서로 일하기",
+  "topic": "긴 논의를 요약해 결론만 채널에 남기기",
+  "difficulty": 1,
+  "situations": [
+    {
+      "id": "d016-s1",
+      "title_ko": "스탠드업, 이틀 끈 토크나이저 논쟁을 정리하겠다고 나서기",
+      "context_ko": "토크나이저 교체를 둘러싼 슬랙 스레드가 이틀째 끝나지 않은 채 스탠드업까지 이어졌다. 팀 리드 Priya가 결론을 채널에 정리해달라고 요청한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1fOJ7FnC3sqc7vbQ4UBXP3mFuN0WlpcY5",
+        "url": "https://drive.usercontent.google.com/download?id=1fOJ7FnC3sqc7vbQ4UBXP3mFuN0WlpcY5&export=download",
+        "duration_ms": 23448
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "That tokenizer thread is still open after two days — can someone close it out?",
+          "ko": "그 토크나이저 스레드 이틀째 안 끝났던데, 누가 좀 정리해줄 수 있어요?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 5610
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Following up on that thread, I'll post the final decision and skip the back-and-forth.",
+          "ko": "그 스레드 이어서, 오가는 논쟁은 빼고 최종 결정만 정리해서 올릴게요.",
+          "is_target": true,
+          "en_easy": "I'll post the final decision, not the whole debate.",
+          "start_ms": 5960,
+          "end_ms": 11960
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Great, just make sure it's clear which tokenizer we're actually shipping.",
+          "ko": "좋아요, 어떤 토크나이저로 최종 결정됐는지만 명확하게 써줘요.",
+          "is_target": false,
+          "start_ms": 12310,
+          "end_ms": 17910
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll pin the summary comment so nobody has to scroll through fifty replies.",
+          "ko": "요약 댓글을 상단에 고정할게요, 답글 오십 개 다 안 읽어도 되게.",
+          "is_target": true,
+          "en_easy": "I'll pin the summary comment so nobody has to read 50 replies.",
+          "start_ms": 18260,
+          "end_ms": 23380
+        }
+      ]
+    },
+    {
+      "id": "d016-s2",
+      "title_ko": "1:1 회의실, 사흘째 이어진 배치 사이즈 논쟁을 매듭짓기",
+      "context_ko": "배치 사이즈와 그래디언트 누적 방식을 두고 스레드가 사흘째 논쟁 중이다. 매니저 Marco가 유리벽 회의실 1:1에서 결론만 정리해 채널에 올려달라고 부탁한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1w5ygKg4PGM3H8tMriv-W6auSgJ2ufTmx",
+        "url": "https://drive.usercontent.google.com/download?id=1w5ygKg4PGM3H8tMriv-W6auSgJ2ufTmx&export=download",
+        "duration_ms": 30840
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That batch-size thread has ninety replies now — I think it's time to just summarize it.",
+          "ko": "그 배치 사이즈 스레드 답글이 이제 아흔 개예요, 그냥 요약해서 정리할 때가 된 것 같아요.",
+          "is_target": true,
+          "en_easy": "That topic has 90 replies now, so let's summarize it.",
+          "start_ms": 250,
+          "end_ms": 9690
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Agreed, it's turned into a debate nobody's going to read all the way through.",
+          "ko": "맞아요, 아무도 끝까지 안 읽을 논쟁으로 번졌어요.",
+          "is_target": false,
+          "start_ms": 10040,
+          "end_ms": 14760
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll write up the final call and link the two benchmarks that settled it.",
+          "ko": "최종 결정 정리하고, 결론 낸 벤치마크 두 개도 링크로 붙일게요.",
+          "is_target": true,
+          "en_easy": "I'll write the final decision and link the 2 deciding benchmarks.",
+          "start_ms": 15110,
+          "end_ms": 19110
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Perfect — post it as a new message, not buried in the thread.",
+          "ko": "좋아요, 스레드 안에 묻지 말고 새 메시지로 올려줘요.",
+          "is_target": false,
+          "start_ms": 19460,
+          "end_ms": 24500
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Will do, and I'll tag the people who were arguing so they see it's settled.",
+          "ko": "네, 논쟁했던 사람들 태그해서 결론 났다는 것도 보이게 할게요.",
+          "is_target": true,
+          "en_easy": "Will do, I'll tag the arguing people so they know it's final.",
+          "start_ms": 24850,
+          "end_ms": 30770
+        }
+      ]
+    },
+    {
+      "id": "d016-s3",
+      "title_ko": "동료 책상에 걸터앉아 GPU 할당 논쟁 결과 알려주기",
+      "context_ko": "서빙팀과 학습팀 사이 GPU 할당 논쟁 스레드가 길게 이어졌다. 그 스레드를 놓친 동료 Jae가 결과를 물어봐서, 채널에 남길 요약을 미리 말해준다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1Urs6glSdv83LT_o9bppi4ABu66-UyuH1",
+        "url": "https://drive.usercontent.google.com/download?id=1Urs6glSdv83LT_o9bppi4ABu66-UyuH1&export=download",
+        "duration_ms": 23520
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Hey, did GPU allocation ever get resolved? That thread got long and I lost track.",
+          "ko": "저기, GPU 할당 결론 났어요? 스레드가 너무 길어져서 못 따라갔어요.",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 7690
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "For visibility: training keeps the two extra nodes until the eval run finishes Friday.",
+          "ko": "참고로: 이밸 돌아갈 때까지 학습팀이 노드 두 개 더 갖고 있기로 했어요, 금요일까지.",
+          "is_target": true,
+          "en_easy": "The training team keeps the 2 extra nodes until eval finishes Friday.",
+          "start_ms": 8040,
+          "end_ms": 13720
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Oh good, that's way clearer than scrolling through the whole argument.",
+          "ko": "아, 좋네요, 그 긴 논쟁 다 읽는 것보다 훨씬 낫네요.",
+          "is_target": false,
+          "start_ms": 14070,
+          "end_ms": 18870
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'm about to post that exact line in the channel so it's the pinned answer.",
+          "ko": "이 내용 그대로 채널에 올려서 고정 답변으로 만들 거예요.",
+          "is_target": true,
+          "en_easy": "I'll post that exact line in the channel as the pinned answer.",
+          "start_ms": 19220,
+          "end_ms": 23460
+        }
+      ]
+    },
+    {
+      "id": "d016-s4",
+      "title_ko": "화상회의, 원격 동료에게 지표 논쟁 결론 다시 설명하기",
+      "context_ko": "이밸 지표를 exact match로 통일할지 BLEU로 할지 논쟁한 스레드를 원격 동료 Elena가 놓쳤다. 화상회의에서 결론을 설명하고 채널에도 남기겠다고 말한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1SbGVHwKdo3wzXvQsS9GeFKvzBfYIs-wR",
+        "url": "https://drive.usercontent.google.com/download?id=1SbGVHwKdo3wzXvQsS9GeFKvzBfYIs-wR&export=download",
+        "duration_ms": 26328
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "원격 동료",
+          "en": "Sorry, I completely missed that eval-metric thread — did you all land on something?",
+          "ko": "미안한데 저 그 지표 스레드 완전히 놓쳤어요, 결론 났어요?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 7130
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We settled on exact match for the main leaderboard and BLEU stays as a secondary score.",
+          "ko": "메인 리더보드는 exact match로 하고, BLEU는 보조 지표로 남기기로 했어요.",
+          "is_target": true,
+          "en_easy": "Exact match is the main score and the other stays secondary.",
+          "start_ms": 7480,
+          "end_ms": 12680
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "원격 동료",
+          "en": "Got it, that actually makes the comparison with last quarter a lot simpler.",
+          "ko": "알겠어요, 그러면 지난 분기랑 비교하기도 훨씬 쉬워지겠네요.",
+          "is_target": false,
+          "start_ms": 13030,
+          "end_ms": 19110
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll drop that same summary in the channel right after this call for anyone else who missed it.",
+          "ko": "이 회의 끝나면 바로 채널에도 똑같이 요약 올릴게요, 놓친 사람들 보게.",
+          "is_target": true,
+          "en_easy": "I'll post that summary in the channel for anyone missing this call.",
+          "start_ms": 19460,
+          "end_ms": 26260
+        }
+      ]
+    },
+    {
+      "id": "d016-s5",
+      "title_ko": "탕비실 가는 길, PM에게 체크포인트 롤백 결론 알려주기",
+      "context_ko": "손상된 체크포인트를 롤백할지 논쟁한 스레드가 길어졌다. 탕비실 가는 복도에서 PM Noah가 결정 상태를 묻는다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1hod1W3-8t028MExbfkktHO-nSapaPJUh",
+        "url": "https://drive.usercontent.google.com/download?id=1hod1W3-8t028MExbfkktHO-nSapaPJUh&export=download",
+        "duration_ms": 29544
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No rush, but I still owe the team a summary of the rollback decision.",
+          "ko": "급한 건 아닌데, 롤백 결정 요약을 아직 팀에 안 올렸네요.",
+          "is_target": true,
+          "en_easy": "No rush, but I owe the team a rollback summary.",
+          "start_ms": 250,
+          "end_ms": 5690
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "No worries, I just didn't want to assume anything before the demo tomorrow.",
+          "ko": "괜찮아요, 그냥 내일 데모 전에 미리 확인하고 싶었어요.",
+          "is_target": false,
+          "start_ms": 6040,
+          "end_ms": 11240
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We're rolling back to Tuesday's checkpoint — I'll post that as the final line in the thread.",
+          "ko": "화요일 체크포인트로 롤백하기로 했고, 이 내용을 스레드 마지막 줄에 정리해서 올릴게요.",
+          "is_target": true,
+          "en_easy": "We'll restore Tuesday's checkpoint and post the final note.",
+          "start_ms": 11590,
+          "end_ms": 16470
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "That works, just flag it clearly so nobody keeps replying to the old messages.",
+          "ko": "좋아요, 옛날 메시지에 계속 답 달지 않게 눈에 띄게만 표시해줘요.",
+          "is_target": false,
+          "start_ms": 16820,
+          "end_ms": 23380
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll mark it as resolved and pin the summary right at the top of the channel.",
+          "ko": "해결됨으로 표시하고 요약을 채널 맨 위에 고정해둘게요.",
+          "is_target": true,
+          "en_easy": "I'll mark it resolved and pin the summary at the channel top.",
+          "start_ms": 23730,
+          "end_ms": 29490
+        }
+      ]
+    }
+  ]
+}

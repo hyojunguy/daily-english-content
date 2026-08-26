@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-08-25T21:14:27+00:00",
+  "updated": "2026-08-26T21:15:22+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 15,
-  "total_days": 9,
-  "total_turns": 198,
-  "total_target_turns": 108,
+  "latest_day": 16,
+  "total_days": 10,
+  "total_turns": 220,
+  "total_target_turns": 120,
   "days": [
     {
       "day": 1,
@@ -150,6 +150,22 @@
       "audio": 5,
       "complete": false,
       "file": "days/2026-08-26.json"
+    },
+    {
+      "day": 16,
+      "date": "2026-08-27",
+      "week": 3,
+      "block": "team-daily",
+      "theme": "비동기 소통 — 슬랙과 문서로 일하기",
+      "topic": "긴 논의를 요약해 결론만 채널에 남기기",
+      "difficulty": 1,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 5,
+      "complete": false,
+      "file": "days/2026-08-27.json"
     }
   ]
 }
