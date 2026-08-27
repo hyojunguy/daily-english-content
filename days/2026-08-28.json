@@ -1,0 +1,297 @@
+{
+  "schema": 1,
+  "day": 17,
+  "date": "2026-08-28",
+  "week": 3,
+  "block": "team-daily",
+  "theme": "비동기 소통 — 슬랙과 문서로 일하기",
+  "topic": "시차가 다른 동료에게 비동기로 리뷰 요청하기",
+  "difficulty": 1,
+  "situations": [
+    {
+      "id": "d017-s1",
+      "title_ko": "스탠드업, 시차 다른 동료에게 보낼 비동기 리뷰 요청 예고하기",
+      "context_ko": "아침 스탠드업 중 팀 리드가 PR 진행 상황을 묻는다. 리뷰어인 베를린 동료는 아직 잠들어 있어 {name}은 어젯밤 남긴 메시지에 이어 비동기로 리뷰를 요청한 상태라고 설명한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "19f2ikCv4DTFDIUgRTHURBFhmQzxUVHU_",
+        "url": "https://drive.usercontent.google.com/download?id=19f2ikCv4DTFDIUgRTHURBFhmQzxUVHU_&export=download",
+        "duration_ms": 20952
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드 (Sam)",
+          "en": "Where are we on the eval pipeline PR? Is it merged yet?",
+          "ko": "이밸 파이프라인 PR은 어떻게 되고 있어? 벌써 머지됐어?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 4010
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not yet — I'm following up on the review request I left for Priya in Berlin last night.",
+          "ko": "아직요. 어젯밤에 베를린에 있는 프리야한테 남긴 리뷰 요청, 지금 다시 팔로우업하고 있어요.",
+          "is_target": true,
+          "start_ms": 4360,
+          "end_ms": 11560
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드 (Sam)",
+          "en": "Good. Let us know once she's back online and looks at it.",
+          "ko": "좋아. 그쪽이 다시 온라인 되고 확인하면 알려줘.",
+          "is_target": false,
+          "start_ms": 11910,
+          "end_ms": 16790
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Will do. I'll post an update in the channel once I hear back from her.",
+          "ko": "네, 답 오는 대로 채널에 업데이트 남길게요.",
+          "is_target": true,
+          "start_ms": 17140,
+          "end_ms": 20900
+        }
+      ]
+    },
+    {
+      "id": "d017-s2",
+      "title_ko": "유리벽 회의실 1:1, 시차 있는 동료에게 보낼 메시지 톤 다듬기",
+      "context_ko": "매니저와의 1:1 자리. {name}은 다른 시간대에 있는 동료 마르코에게 보낼 리뷰 요청 메시지가 너무 재촉하듯 들릴까 봐 매니저에게 톤을 봐달라고 한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1wCBNo2sofzUoSRuUg80Th3tsk89SW0ia",
+        "url": "https://drive.usercontent.google.com/download?id=1wCBNo2sofzUoSRuUg80Th3tsk89SW0ia&export=download",
+        "duration_ms": 100992
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Can I get your take on this message before I send it? I don't want to sound pushy.",
+          "ko": "이 메시지 보내기 전에 한번 봐주실 수 있어요? 너무 재촉하는 것처럼 안 보였으면 해서요.",
+          "is_target": true,
+          "start_ms": 250,
+          "end_ms": 34490
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Sure, let's see it. What's the ask exactly?",
+          "ko": "그래, 보여줘. 정확히 뭘 요청하는 거야?",
+          "is_target": false,
+          "start_ms": 34840,
+          "end_ms": 38600
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'm asking Marco to review the config changes by Thursday, but he's nine hours ahead.",
+          "ko": "마르코한테 목요일까지 컨피그 변경 리뷰해달라고 하는 건데, 걔는 시차가 9시간이나 나요.",
+          "is_target": true,
+          "start_ms": 38950,
+          "end_ms": 44390
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Try softening it a little — people in far time zones respond better to a gentler ask like that.",
+          "ko": "표현을 좀 부드럽게 해봐. 시차 큰 사람들한테는 그렇게 완곡하게 물어보는 게 반응이 더 좋더라고.",
+          "is_target": false,
+          "start_ms": 44740,
+          "end_ms": 93540
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good call. I'll open with 'No rush, but could you take a look by Thursday?'",
+          "ko": "그러네요. '급한 건 아닌데, 목요일까지 봐줄 수 있어요?'로 시작할게요.",
+          "is_target": true,
+          "start_ms": 93890,
+          "end_ms": 100930
+        }
+      ]
+    },
+    {
+      "id": "d017-s3",
+      "title_ko": "동료 책상에 걸터앉아, 리뷰 요청 메시지에 참조 붙이기",
+      "context_ko": "동료 재의 책상 옆에 걸터앉아 리뷰 요청 메시지를 같이 손본다. 리뷰어가 늦게 반응할 경우를 대비해 다른 사람도 볼 수 있게 참조를 붙일지 상의한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1w9CJv4asUvn-hyT4U8uR0tJV0YX5lzBe",
+        "url": "https://drive.usercontent.google.com/download?id=1w9CJv4asUvn-hyT4U8uR0tJV0YX5lzBe&export=download",
+        "duration_ms": 25992
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 (Jae)",
+          "en": "Are you cc'ing anyone else on that message, or just Marco?",
+          "ko": "그 메시지 마르코 말고 다른 사람도 참조 넣어?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 4010
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll add 'For visibility:' and tag the platform lead, since this touches the shared config.",
+          "ko": "공유 컨피그 건드리는 거라 'For visibility:' 붙여서 플랫폼 리드도 같이 태그할게요.",
+          "is_target": true,
+          "start_ms": 4360,
+          "end_ms": 12120
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 (Jae)",
+          "en": "Smart. That way nobody's blocked if Marco doesn't see it right away.",
+          "ko": "잘 생각했다. 마르코가 바로 못 봐도 아무도 안 막히겠네.",
+          "is_target": false,
+          "start_ms": 12470,
+          "end_ms": 17430
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Exactly — I just want someone else aware in case this drags into next week.",
+          "ko": "맞아요, 혹시 다음 주까지 넘어갈 수도 있으니까 다른 사람도 알고 있었으면 해서요.",
+          "is_target": true,
+          "start_ms": 17780,
+          "end_ms": 25940
+        }
+      ]
+    },
+    {
+      "id": "d017-s4",
+      "title_ko": "화상회의, 일찍 접속한 원격 동료에게 직접 리뷰 요청하기",
+      "context_ko": "마르코가 겹치는 시간을 맞추려 평소보다 일찍 화상회의에 들어왔다. {name}은 고마움을 표하고 컨피그 PR 리뷰를 직접 부탁한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1Dzk1pf1mRNNdOHdh2jK5JLBviueayKSy",
+        "url": "https://drive.usercontent.google.com/download?id=1Dzk1pf1mRNNdOHdh2jK5JLBviueayKSy&export=download",
+        "duration_ms": 27864
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks for hopping on early — I know it's still dark out there for you.",
+          "ko": "일찍 들어와줘서 고마워요. 거긴 아직 어두울 시간일 텐데.",
+          "is_target": true,
+          "start_ms": 250,
+          "end_ms": 4170
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "원격 동료 (Marco)",
+          "en": "No problem, I wanted to catch you before my day gets busy. What's up?",
+          "ko": "괜찮아요, 제 하루 바빠지기 전에 얘기하고 싶었어요. 무슨 일이에요?",
+          "is_target": false,
+          "start_ms": 4520,
+          "end_ms": 9480
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Following up on the review request — could you take a pass at the config PR this week?",
+          "ko": "리뷰 요청 관련해서 다시 팔로우업하는 건데, 이번 주 안에 컨피그 PR 한번 봐줄 수 있어요?",
+          "is_target": true,
+          "start_ms": 9830,
+          "end_ms": 14550
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "원격 동료 (Marco)",
+          "en": "I can probably get to it Wednesday. Does that work for your timeline?",
+          "ko": "아마 수요일쯤엔 볼 수 있을 것 같은데, 그쪽 일정에 맞아요?",
+          "is_target": false,
+          "start_ms": 14900,
+          "end_ms": 19460
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That works. No rush, but if you spot anything major, just flag it in the thread.",
+          "ko": "좋아요. 급한 건 아니니까, 큰 문제 보이면 스레드에 그냥 표시만 해주세요.",
+          "is_target": true,
+          "start_ms": 19810,
+          "end_ms": 27810
+        }
+      ]
+    },
+    {
+      "id": "d017-s5",
+      "title_ko": "탕비실 가는 복도에서 PM에게 비동기 리뷰 상황 알려주기",
+      "context_ko": "복도에서 마주친 PM 엘레나가 데모 전까지 PR이 준비될지 묻는다. {name}은 비동기 리뷰가 진행 중이라는 것과 예상 일정을 설명한다.",
+      "image": null,
+      "audio": {
+        "drive_id": "1TY3UkvKrwoai0JsOzYgnowMF0isSdwVZ",
+        "url": "https://drive.usercontent.google.com/download?id=1TY3UkvKrwoai0JsOzYgnowMF0isSdwVZ&export=download",
+        "duration_ms": 21048
+      },
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "PM (Elena)",
+          "en": "Hey, do you know when the config PR will be ready for the demo?",
+          "ko": "저기, 컨피그 PR이 데모 전까지 준비될지 알아?",
+          "is_target": false,
+          "start_ms": 250,
+          "end_ms": 4970
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It's waiting on an async review from Marco — I looped you in for visibility on the thread.",
+          "ko": "지금 마르코 비동기 리뷰 기다리는 중이에요. 스레드에 참고하시라고 같이 넣어놨어요.",
+          "is_target": true,
+          "start_ms": 5320,
+          "end_ms": 11560
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "PM (Elena)",
+          "en": "Got it, thanks. Should I plan around Thursday, or could it slip?",
+          "ko": "알겠어, 고마워. 목요일 기준으로 계획하면 돼, 아니면 밀릴 수도 있어?",
+          "is_target": false,
+          "start_ms": 11910,
+          "end_ms": 17350
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thursday should be safe. I'll ping you the moment he approves it.",
+          "ko": "목요일이면 안전할 거예요. 승인되는 대로 바로 알려드릴게요.",
+          "is_target": true,
+          "start_ms": 17700,
+          "end_ms": 20980
+        }
+      ]
+    }
+  ]
+}
