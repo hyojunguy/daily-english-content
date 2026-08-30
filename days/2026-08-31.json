@@ -29,7 +29,8 @@
           "role_ko": "나",
           "en": "I've never posted in their channel before — should I tag someone specific or just ask openly?",
           "ko": "저 채널에 질문 올리는 거 처음인데, 특정 사람 태그해야 할까요 아니면 그냥 공개로 물어봐도 될까요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Since it's my first post, should I tag someone or ask openly?"
         },
         {
           "n": 3,
@@ -45,7 +46,8 @@
           "role_ko": "나",
           "en": "I'll add 'For visibility:' at the top so the on-call engineer catches it too.",
           "ko": "그럼 맨 위에 'For visibility:'라고 붙여서 온콜 엔지니어도 보게 할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll add a note on top so the other engineer sees it."
         }
       ]
     },
@@ -70,7 +72,8 @@
           "role_ko": "나",
           "en": "Yeah, first time. I wasn't sure if 'ambiguous' and 'unclear' were the same label or different ones.",
           "ko": "네, 처음이에요. 'ambiguous'랑 'unclear'가 같은 라벨인지 다른 건지 확신이 안 서서요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "This is my first time, so I wasn't sure about 'unclear'."
         },
         {
           "n": 3,
@@ -86,7 +89,8 @@
           "role_ko": "나",
           "en": "That explains a lot. Can you point me to wherever that merge is actually documented?",
           "ko": "그거였군요. 그 합친 내용이 어디 문서화돼 있는지 알려주실 수 있어요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "That makes sense, so where did you document that merge?"
         }
       ]
     },
@@ -103,7 +107,8 @@
           "role_ko": "나",
           "en": "I've drafted my first question for the platform channel — can you check the tone before I post it?",
           "ko": "플랫폼 채널에 올릴 첫 질문 초안 썼는데, 올리기 전에 톤 좀 봐줄래?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can you check the tone before I post in the platform channel?"
         },
         {
           "n": 2,
@@ -119,7 +124,8 @@
           "role_ko": "나",
           "en": "Right, let me soften it: 'No rush, but could you confirm the endpoint's rate limit?'",
           "ko": "맞네, 좀 부드럽게 바꿔볼게: 'No rush, but 엔드포인트 레이트 리밋 좀 확인해줄 수 있어요?'",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "No rush, but could you confirm the endpoint's rate limit?"
         },
         {
           "n": 4,
@@ -135,7 +141,8 @@
           "role_ko": "나",
           "en": "Thanks, posting it now — hopefully someone from platform picks it up by tomorrow.",
           "ko": "고마워, 지금 올릴게 — 내일까지는 플랫폼팀 누군가 봐주면 좋겠다.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Thanks, I'll post it and hope the platform team answers by tomorrow."
         }
       ]
     },
@@ -160,7 +167,8 @@
           "role_ko": "나",
           "en": "Yes, that was me — it's my first time asking your team anything, sorry if it's a basic question.",
           "ko": "네, 저예요 — 그쪽 팀에 뭔가 물어보는 거 처음이라, 기초적인 질문이면 죄송해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "That was me, and sorry if this is a basic question."
         },
         {
           "n": 3,
@@ -176,7 +184,8 @@
           "role_ko": "나",
           "en": "Got it, that's exactly what I needed to plan around for next month's deployment.",
           "ko": "알겠습니다, 그게 딱 다음 달 배포 일정 잡는 데 필요했던 정보예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Got it, that's what I needed to plan next month's deployment."
         }
       ]
     },
@@ -193,7 +202,8 @@
           "role_ko": "나",
           "en": "I posted my first question in the search team's channel yesterday, but nobody's replied yet.",
           "ko": "어제 서치팀 채널에 처음 질문 올렸는데 아직 아무도 답이 없어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I posted my question in the search channel, but no one answered."
         },
         {
           "n": 2,
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "Okay, I'll wait a bit more and then just say 'Following up on my question above.'",
           "ko": "네, 조금 더 기다렸다가 'Following up on my question above.'라고 짧게 남길게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll wait longer and then ask my question again."
         },
         {
           "n": 4,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "Got it, I'll keep the follow-up short and link back to my original message.",
           "ko": "알겠습니다, 팔로업은 짧게 하고 원래 메시지 링크만 붙여둘게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Got it, I'll keep the reply short and link my original message."
         }
       ]
     }
