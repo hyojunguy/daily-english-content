@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 19,
+  "date": "2026-08-30",
+  "week": 3,
+  "block": "team-daily",
+  "theme": "비동기 소통 — 슬랙과 문서로 일하기",
+  "topic": "잘못 보낸 정보를 정정하고 사과하기",
+  "difficulty": 1,
+  "situations": [
+    {
+      "id": "d019-s1",
+      "title_ko": "스탠드업에서 잘못 보낸 GPU 숫자 바로잡기",
+      "context_ko": "어제 슬랙에 공유한 GPU 할당 숫자가 실제와 달라, 스탠드업 시작 전에 팀 리드가 확인하고 학습자가 정정합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Before we start, did that GPU allocation number from yesterday's message get straightened out?",
+          "ko": "시작하기 전에, 어제 메시지로 보낸 GPU 할당 숫자는 정리됐나요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sorry, that was on me — I typed 16 instead of 8. For visibility: the correct number is 8.",
+          "ko": "죄송해요, 제 실수였어요 — 16이라고 잘못 썼더라고요. 공지 차원에서 말씀드리면, 정확한 숫자는 8이에요.",
+          "is_target": true,
+          "en_easy": "Sorry, the correct number is 8."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Good catch. Did infra already provision based on the wrong number, or are we still okay?",
+          "ko": "다행이네요. 인프라 쪽에서 잘못된 숫자로 이미 프로비저닝을 시작했나요, 아니면 아직 괜찮은가요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Still okay — I caught it and messaged them before they started provisioning anything.",
+          "ko": "아직 괜찮아요 — 그쪽에서 프로비저닝 시작하기 전에 발견해서 바로 메시지 보냈어요.",
+          "is_target": true,
+          "en_easy": "It's still okay, I told them before they started."
+        }
+      ]
+    },
+    {
+      "id": "d019-s2",
+      "title_ko": "1:1에서 잘못 공유한 평가 스크립트 사과하기",
+      "context_ko": "어제 학습자가 동료에게 공유한 평가 스크립트가 구버전이었다는 걸 뒤늦게 알아채고, 유리벽 회의실에서 짧게 사과하며 새 링크를 전달합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey, do you have a second? I need to correct something I sent you yesterday.",
+          "ko": "저기, 잠깐 시간 괜찮으세요? 어제 보내드린 것 중에 정정할 게 있어서요.",
+          "is_target": true,
+          "en_easy": "Do you have a second to fix something from yesterday?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Sure, what's up?",
+          "ko": "그럼요, 무슨 일이에요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The eval script I shared was an old version — it's missing the new tokenizer fix.",
+          "ko": "제가 공유해드린 평가 스크립트가 구버전이었어요 — 새 토크나이저 수정이 빠져 있더라고요.",
+          "is_target": true,
+          "en_easy": "I shared an old script, and it's missing the new fix."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Ah, that explains the weird numbers I got this morning.",
+          "ko": "아, 그래서 오늘 아침에 이상한 숫자가 나왔던 거였군요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sorry about that. I just re-shared the correct link — mind rerunning it whenever you can?",
+          "ko": "죄송해요. 방금 올바른 링크로 다시 공유해드렸어요 — 시간 되실 때 다시 돌려주실 수 있을까요?",
+          "is_target": true,
+          "en_easy": "I shared the right link, so please run it again."
+        }
+      ]
+    },
+    {
+      "id": "d019-s3",
+      "title_ko": "화상회의에서 잘못된 체크포인트 경로 정정 팔로업하기",
+      "context_ko": "시차 나는 원격 동료에게 어젯밤 보낸 메시지에 체크포인트 경로가 잘못 적혀 있었던 걸 화상회의 시작하자마자 바로잡습니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Following up on the message I sent last night — the checkpoint path I gave you was wrong.",
+          "ko": "어젯밤에 보낸 메시지 이어서 말씀드리면 — 알려드린 체크포인트 경로가 잘못됐었어요.",
+          "is_target": true,
+          "en_easy": "I sent you the wrong checkpoint path last night."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "원격 동료",
+          "en": "Oh, I was about to try loading it. What's the right path?",
+          "ko": "아, 마침 그걸로 불러오려던 참이었어요. 맞는 경로가 뭔가요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It's under the 'v3' folder, not 'v2' — sorry, I copied the old one by mistake.",
+          "ko": "'v2'가 아니라 'v3' 폴더 아래에 있어요 — 죄송해요, 실수로 옛날 경로를 복사했더라고요.",
+          "is_target": true,
+          "en_easy": "It's in version 3 instead of version 2, sorry."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "원격 동료",
+          "en": "No worries, good thing you caught it before I wasted an hour.",
+          "ko": "괜찮아요, 한 시간 날리기 전에 잡아주셔서 다행이네요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah, I felt bad the second I noticed — I'll double-check paths before sending next time.",
+          "ko": "네, 알아차리자마자 마음이 좀 불편했어요 — 다음부턴 보내기 전에 경로를 한 번 더 확인할게요.",
+          "is_target": true,
+          "en_easy": "Yeah, I'll check paths again before sending it next time."
+        }
+      ]
+    },
+    {
+      "id": "d019-s4",
+      "title_ko": "동료 책상 옆에서 잘못 적은 러닝레이트 값 정정하기",
+      "context_ko": "학습자가 공유 문서에 적어둔 러닝레이트 값이 실험 노트와 다르다는 걸 발견하고, 동료 책상 옆에 걸터앉아 바로잡습니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Quick thing — the learning rate I wrote in the doc is off by a decimal point.",
+          "ko": "잠깐만요 — 문서에 적어둔 러닝레이트가 소수점 한 자리 잘못됐더라고요.",
+          "is_target": true,
+          "en_easy": "The learning rate in the doc is wrong."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Oh no, I already started a run with that value.",
+          "ko": "이런, 저 그 값으로 벌써 실험 하나 돌리기 시작했는데요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No rush, but you might want to kill it and restart with the corrected 3e-4.",
+          "ko": "급하진 않지만, 그거 중단하고 정정된 3e-4 값으로 다시 시작하시는 게 나을 것 같아요.",
+          "is_target": true,
+          "en_easy": "No rush, but you should stop it and start again with 0.0003."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Got it, I'll restart it after lunch then.",
+          "ko": "알겠어요, 그럼 점심 먹고 나서 다시 시작할게요.",
+          "is_target": false
+        }
+      ]
+    },
+    {
+      "id": "d019-s5",
+      "title_ko": "탕비실 가는 복도에서 잘못 태그한 채널 사과하기",
+      "context_ko": "학습자가 실수로 다른 채널에 민감한 실험 결과를 올렸다가 지운 뒤, 복도에서 마주친 관련 동료에게 짧게 사과하고 정정 사실을 알립니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey, sorry — I accidentally posted those results in the wrong channel earlier.",
+          "ko": "저기, 죄송해요 — 아까 그 결과를 실수로 다른 채널에 올렸었어요.",
+          "is_target": true,
+          "en_easy": "Sorry, I posted the results in the wrong channel."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Yeah, I saw it pop up and got a bit confused.",
+          "ko": "네, 알림 뜨는 거 보고 좀 헷갈렸어요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I deleted it and reposted it in the right one, so it should be sorted now.",
+          "ko": "지워서 맞는 채널에 다시 올렸으니 이제 정리됐을 거예요.",
+          "is_target": true,
+          "en_easy": "I fixed it and posted it in the right channel."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Good, thanks for letting me know directly.",
+          "ko": "잘됐네요, 직접 알려줘서 고마워요.",
+          "is_target": false
+        }
+      ]
+    }
+  ]
+}
