@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 20,
+  "date": "2026-08-31",
+  "week": 3,
+  "block": "team-daily",
+  "theme": "비동기 소통 — 슬랙과 문서로 일하기",
+  "topic": "다른 팀 채널에 처음 질문 올리기",
+  "difficulty": 1,
+  "situations": [
+    {
+      "id": "d020-s1",
+      "title_ko": "서버룸 앞에서 인프라팀 채널에 처음 질문 올리기",
+      "context_ko": "학습자와 팀 동료 Jamie가 서버 랙 앞에서 GPU 노드 드라이버 문제를 확인하다가, 인프라팀 채널에 처음으로 질문을 올리는 방법을 상의합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 동료 Jamie",
+          "en": "These two nodes still show the old driver version — that's probably what's crashing your job.",
+          "ko": "이 노드 두 개는 아직 예전 드라이버 버전이야 — 그것 때문에 학습 잡이 죽는 걸 수도 있어.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I've never posted in their channel before — should I tag someone specific or just ask openly?",
+          "ko": "저 채널에 질문 올리는 거 처음인데, 특정 사람 태그해야 할까요 아니면 그냥 공개로 물어봐도 될까요?",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 동료 Jamie",
+          "en": "Just post in the channel and tag it for visibility so the on-call person sees it too.",
+          "ko": "그냥 채널에 올리고 온콜 담당자도 보게 가시성 태그 붙여.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll add 'For visibility:' at the top so the on-call engineer catches it too.",
+          "ko": "그럼 맨 위에 'For visibility:'라고 붙여서 온콜 엔지니어도 보게 할게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d020-s2",
+      "title_ko": "화상회의로 데이터팀 엔지니어와 첫 질문 이어서 확인하기",
+      "context_ko": "학습자가 데이터팀 채널에 처음 올린 라벨 정의 질문을 두고, 데이터팀 엔지니어 Priya와 짧은 화상회의로 세부 내용을 확인합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "데이터팀 엔지니어 Priya",
+          "en": "Hey, saw your message in our channel — first time posting there, right? What's confusing you about the labels?",
+          "ko": "채널에 올린 메시지 봤어요 — 저희 채널에 처음 올리신 거죠? 라벨 뭐가 헷갈리세요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah, first time. I wasn't sure if 'ambiguous' and 'unclear' were the same label or different ones.",
+          "ko": "네, 처음이에요. 'ambiguous'랑 'unclear'가 같은 라벨인지 다른 건지 확신이 안 서서요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "데이터팀 엔지니어 Priya",
+          "en": "Good catch, they used to be separate but we merged them last quarter without updating the docs.",
+          "ko": "잘 짚으셨어요, 원래는 따로였는데 지난 분기에 합치고 문서 업데이트를 안 했어요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That explains a lot. Can you point me to wherever that merge is actually documented?",
+          "ko": "그거였군요. 그 합친 내용이 어디 문서화돼 있는지 알려주실 수 있어요?",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d020-s3",
+      "title_ko": "모니터 여러 대 자리에서 플랫폼팀에 보낼 첫 질문 톤 다듬기",
+      "context_ko": "학습자가 플랫폼팀 채널에 올릴 첫 질문 초안을 화면에 띄워놓고, 같은 팀 동료 Marco에게 재촉하는 느낌이 없는지 톤을 봐달라고 부탁합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I've drafted my first question for the platform channel — can you check the tone before I post it?",
+          "ko": "플랫폼 채널에 올릴 첫 질문 초안 썼는데, 올리기 전에 톤 좀 봐줄래?",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "같은 팀 동료 Marco",
+          "en": "Sure, let me see... this line sounds a little demanding, like you need it right now.",
+          "ko": "어디 보자... 이 문장은 좀 지금 당장 필요하다는 것처럼 재촉하는 느낌이야.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Right, let me soften it: 'No rush, but could you confirm the endpoint's rate limit?'",
+          "ko": "맞네, 좀 부드럽게 바꿔볼게: 'No rush, but 엔드포인트 레이트 리밋 좀 확인해줄 수 있어요?'",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "같은 팀 동료 Marco",
+          "en": "Much better, that keeps it casual since it's your first message to a channel you don't normally post in.",
+          "ko": "훨씬 낫다, 평소 안 올리던 채널에 처음 올리는 거니까 그 정도로 캐주얼한 게 맞아.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks, posting it now — hopefully someone from platform picks it up by tomorrow.",
+          "ko": "고마워, 지금 올릴게 — 내일까지는 플랫폼팀 누군가 봐주면 좋겠다.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d020-s4",
+      "title_ko": "복도에서 마주친 보안팀 엔지니어에게 첫 질문 이어가기",
+      "context_ko": "학습자가 보안팀 채널에 처음 올린 API 키 로테이션 질문을, 복도에서 우연히 마주친 보안팀 엔지니어 Elena와 직접 확인합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "보안팀 엔지니어 Elena",
+          "en": "Oh, you're the one who posted in our channel about the API key rotation policy, right?",
+          "ko": "아, API 키 로테이션 정책 관련해서 우리 채널에 질문 올리신 분이시죠?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yes, that was me — it's my first time asking your team anything, sorry if it's a basic question.",
+          "ko": "네, 저예요 — 그쪽 팀에 뭔가 물어보는 거 처음이라, 기초적인 질문이면 죄송해요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "보안팀 엔지니어 Elena",
+          "en": "Not at all, we get a lot of first-timers. Rotation happens every ninety days unless you request an exception.",
+          "ko": "전혀요, 처음 물어보시는 분들 많아요. 예외 요청 없으면 로테이션은 90일마다 돌아가요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Got it, that's exactly what I needed to plan around for next month's deployment.",
+          "ko": "알겠습니다, 그게 딱 다음 달 배포 일정 잡는 데 필요했던 정보예요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d020-s5",
+      "title_ko": "유리벽 회의실 1:1에서 응답 없는 첫 질문 팔로업 상의하기",
+      "context_ko": "학습자가 서치팀 채널에 처음 올린 질문에 응답이 없어, 매니저 Sam과의 1:1에서 언제 어떻게 팔로업할지 상의합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I posted my first question in the search team's channel yesterday, but nobody's replied yet.",
+          "ko": "어제 서치팀 채널에 처음 질문 올렸는데 아직 아무도 답이 없어요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저 Sam",
+          "en": "That channel gets busy fast — give it until end of day, then nudge them once.",
+          "ko": "그 채널이 원래 바빠서 그래, 오늘 끝날 때까지 기다렸다가 한 번 더 찔러봐.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Okay, I'll wait a bit more and then just say 'Following up on my question above.'",
+          "ko": "네, 조금 더 기다렸다가 'Following up on my question above.'라고 짧게 남길게요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저 Sam",
+          "en": "That's the right tone — short and polite works better than a long re-explanation.",
+          "ko": "그 톤이 맞아 — 길게 재설명하는 것보다 짧고 정중한 게 더 잘 먹혀.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Got it, I'll keep the follow-up short and link back to my original message.",
+          "ko": "알겠습니다, 팔로업은 짧게 하고 원래 메시지 링크만 붙여둘게요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
