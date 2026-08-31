@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-08-30T21:22:03+00:00",
+  "updated": "2026-08-31T21:09:51+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 20,
-  "total_days": 14,
-  "total_turns": 308,
-  "total_target_turns": 168,
+  "latest_day": 21,
+  "total_days": 15,
+  "total_turns": 330,
+  "total_target_turns": 180,
   "days": [
     {
       "day": 1,
@@ -230,6 +230,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-08-31.json"
+    },
+    {
+      "day": 21,
+      "date": "2026-09-01",
+      "week": 3,
+      "block": "team-daily",
+      "theme": "비동기 소통 — 슬랙과 문서로 일하기",
+      "topic": "받은 도움에 구체적으로 감사 표현하기",
+      "difficulty": 1,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-01.json"
     }
   ]
 }

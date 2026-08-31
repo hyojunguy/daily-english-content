@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 21,
+  "date": "2026-09-01",
+  "week": 3,
+  "block": "team-daily",
+  "theme": "비동기 소통 — 슬랙과 문서로 일하기",
+  "topic": "받은 도움에 구체적으로 감사 표현하기",
+  "difficulty": 1,
+  "situations": [
+    {
+      "id": "d021-s1",
+      "title_ko": "스탠드업에서 밤새 도와준 동료에게 공개적으로 감사 표현하기",
+      "context_ko": "학습자와 팀 동료 Priya가 스탠드업이 시작되기 전 화이트보드 앞에 모여 있습니다. 어젯밤 트레이닝 잡이 새벽에 멈췄을 때 Priya가 끝까지 같이 원인을 찾아준 일을 학습자가 팀 앞에서 짚고 넘어가려 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Before we jump in, I want to say thanks to Priya for staying on the incident with me last night.",
+          "ko": "시작하기 전에, 어젯밤 인시던트 끝까지 같이 봐준 Priya한테 고맙다고 말하고 싶어요.",
+          "is_target": true,
+          "en_easy": "Before we start, thanks for staying on the incident last night."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 동료 Marco (스탠드업 진행)",
+          "en": "Nice, sounds like it was a rough one. What happened?",
+          "ko": "오, 힘든 밤이었나 보네요. 무슨 일이었어요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The training run crashed at 2am from an OOM, and she helped me trace the memory leak until it was fixed.",
+          "ko": "새벽 2시에 트레이닝이 OOM으로 죽었는데, Priya가 메모리 릭 원인을 잡을 때까지 같이 봐줬어요.",
+          "is_target": true,
+          "en_easy": "Training crashed at 2am, and you helped me fix the memory leak."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 동료 Marco (스탠드업 진행)",
+          "en": "Good save. Anything blocking today?",
+          "ko": "다행이네요. 오늘 막힌 건 없어요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No blockers, just wanted that on the record since she went out of her way for it.",
+          "ko": "막힌 건 없어요, 그냥 Priya가 애써준 걸 팀 앞에서 짚고 넘어가고 싶었어요.",
+          "is_target": true,
+          "en_easy": "No blockers, I just wanted to thank her for the extra effort."
+        }
+      ]
+    },
+    {
+      "id": "d021-s2",
+      "title_ko": "1:1에서 매니저의 스코프 조정에 구체적으로 감사 인사하기",
+      "context_ko": "학습자가 매니저 Sam과 짧은 1:1을 위해 유리벽 회의실에 마주 앉아 있습니다. 로드맵 리뷰에서 Sam이 다른 업무를 대신 막아준 덕분에 학습자는 이번 주 평가 파이프라인 작업에 집중할 수 있었습니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저 Sam",
+          "en": "You wanted to grab five minutes — what's up?",
+          "ko": "잠깐 얘기하자고 했었죠, 무슨 일이에요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I just wanted to thank you for pushing back on the roadmap review so I could stay focused on the eval pipeline.",
+          "ko": "로드맵 리뷰에서 제 일을 막아주셔서 평가 파이프라인에 집중할 수 있었어요, 그거 감사하다고 말씀드리고 싶었어요.",
+          "is_target": true,
+          "en_easy": "Thanks for blocking the roadmap review, so I could focus on evals."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저 Sam",
+          "en": "Of course, that pipeline needed the attention more than another dashboard.",
+          "ko": "당연하죠, 그 파이프라인이 대시보드 하나보다 훨씬 급했으니까요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It made a real difference, I actually shipped the drift detection this week because of that.",
+          "ko": "덕분에 정말 도움 됐어요, 그 덕에 이번 주에 드리프트 탐지 기능까지 배포했거든요.",
+          "is_target": true,
+          "en_easy": "It helped so much, I shipped drift detection this week."
+        }
+      ]
+    },
+    {
+      "id": "d021-s3",
+      "title_ko": "모니터 여러 대 앞에서 페어링 도와준 동료에게 감사 전하기",
+      "context_ko": "학습자가 모니터 여러 대가 놓인 자리에서 동료 Jon과 함께 어제 저녁 발견된 추론 서빙 메모리 릭 배포가 끝난 걸 확인하고 있습니다. 끝까지 같이 붙어준 Jon에게 고마움을 전합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 Jon",
+          "en": "Hey, did you get the serving fix merged?",
+          "ko": "어, 서빙 쪽 수정 사항 머지했어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah, it's in. Following up on yesterday's pairing session, thanks for sticking with me through that memory leak.",
+          "ko": "네, 들어갔어요. 어제 같이 페어링한 거 관련해서, 그 메모리 릭 끝까지 같이 봐줘서 고마워요.",
+          "is_target": true,
+          "en_easy": "Yes it's in, thanks for the help with that leak."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 Jon",
+          "en": "No problem, it was a nasty one. Glad we caught it before the release.",
+          "ko": "별말씀을요, 진짜 골치 아팠죠. 릴리스 전에 잡아서 다행이에요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Same, I would've been stuck till midnight without your help on the profiler.",
+          "ko": "그러니까요, 프로파일러 봐주지 않았으면 저 자정까지 붙잡고 있었을 거예요.",
+          "is_target": true,
+          "en_easy": "Same, your help saved me from working very late."
+        }
+      ]
+    },
+    {
+      "id": "d021-s4",
+      "title_ko": "화상회의에서 원격 동료의 문서 도움에 감사하고 팀에 공유 예고하기",
+      "context_ko": "학습자가 원격으로 일하는 동료 Elena와 화상통화를 시작합니다. Elena가 어제 남긴 디버깅 문서 덕분에 학습자는 몇 시간을 아꼈고, 그 문서를 다른 팀에도 공유하겠다고 알립니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Elena, before we start, thanks for that debugging doc you wrote, it saved me hours yesterday.",
+          "ko": "Elena, 시작하기 전에요, 어제 써준 디버깅 문서 덕분에 몇 시간을 아꼈어요, 고마워요.",
+          "is_target": true,
+          "en_easy": "Before we start, thanks for the doc that saved me hours yesterday."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "원격 동료 Elena",
+          "en": "Oh, I'm glad it helped, I wasn't sure anyone would read it.",
+          "ko": "오, 도움 됐다니 다행이에요, 누가 읽을지 확신이 없었거든요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "For visibility: I'm sharing it in the infra channel too, since others are hitting the same error.",
+          "ko": "다들 볼 수 있게, 그 문서 인프라 채널에도 공유할게요, 다른 사람들도 같은 에러를 겪고 있어서요.",
+          "is_target": true,
+          "en_easy": "I'll share it in the channel too, since others see this error."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "원격 동료 Elena",
+          "en": "Good call, I'll pin it so it doesn't get buried.",
+          "ko": "좋은 생각이에요, 묻히지 않게 제가 고정해둘게요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Following up on that later today, I'll add a note about the fix once I confirm it works in staging.",
+          "ko": "그거 이따가 다시 챙겨서, 스테이징에서 확인되면 수정 내용 메모도 추가할게요.",
+          "is_target": true,
+          "en_easy": "I'll add a note later once it works in staging."
+        }
+      ]
+    },
+    {
+      "id": "d021-s5",
+      "title_ko": "탕비실 가는 길에 빠른 PR 리뷰 도와준 동료에게 감사하기",
+      "context_ko": "학습자가 점심을 먹고 돌아오는 길, 탕비실 근처에서 동료 Noah와 마주칩니다. 오늘 아침 급하게 올린 PR을 Noah가 바로 봐준 덕분에 잘못된 설정이 배포되기 전에 잡혔습니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 Noah",
+          "en": "Hey, heading back from lunch?",
+          "ko": "어, 점심 먹고 오는 길이에요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah. Actually, thanks for reviewing my PR so fast this morning, that review saved me from shipping a broken config.",
+          "ko": "네. 아 맞다, 아침에 PR 빨리 봐줘서 고마워요, 그 리뷰 덕분에 잘못된 설정 배포될 뻔한 거 막았어요.",
+          "is_target": true,
+          "en_easy": "Thanks, your fast review saved me from a bad config."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 Noah",
+          "en": "No worries, I had it open anyway. Anything else you need?",
+          "ko": "별거 아니에요, 어차피 열어놓고 있었어요. 더 필요한 거 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No rush, but if you have five minutes later, I'd love your eyes on the eval script too.",
+          "ko": "급한 건 아닌데, 나중에 5분만 시간 되면 평가 스크립트도 한번 봐주면 좋겠어요.",
+          "is_target": true,
+          "en_easy": "No rush, but could you look at the eval script later?"
+        }
+      ]
+    }
+  ]
+}
