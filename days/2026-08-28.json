@@ -37,7 +37,8 @@
           "ko": "아직요. 어젯밤에 베를린에 있는 프리야한테 남긴 리뷰 요청, 지금 다시 팔로우업하고 있어요.",
           "is_target": true,
           "start_ms": 4360,
-          "end_ms": 11560
+          "end_ms": 11560,
+          "en_easy": "Not yet, I'm still checking the review request from last night."
         },
         {
           "n": 3,
@@ -57,7 +58,8 @@
           "ko": "네, 답 오는 대로 채널에 업데이트 남길게요.",
           "is_target": true,
           "start_ms": 17140,
-          "end_ms": 20900
+          "end_ms": 20900,
+          "en_easy": "Yes, I'll post an update in the channel when she answers."
         }
       ]
     },
@@ -80,7 +82,8 @@
           "ko": "이 메시지 보내기 전에 한번 봐주실 수 있어요? 너무 재촉하는 것처럼 안 보였으면 해서요.",
           "is_target": true,
           "start_ms": 250,
-          "end_ms": 34490
+          "end_ms": 34490,
+          "en_easy": "Can you check this message before I send it?"
         },
         {
           "n": 2,
@@ -100,7 +103,8 @@
           "ko": "마르코한테 목요일까지 컨피그 변경 리뷰해달라고 하는 건데, 걔는 시차가 9시간이나 나요.",
           "is_target": true,
           "start_ms": 38950,
-          "end_ms": 44390
+          "end_ms": 44390,
+          "en_easy": "I'm asking him to review config by Thursday, but he's far ahead."
         },
         {
           "n": 4,
@@ -120,7 +124,8 @@
           "ko": "그러네요. '급한 건 아닌데, 목요일까지 봐줄 수 있어요?'로 시작할게요.",
           "is_target": true,
           "start_ms": 93890,
-          "end_ms": 100930
+          "end_ms": 100930,
+          "en_easy": "I'll say no rush, but look by Thursday."
         }
       ]
     },
@@ -153,7 +158,8 @@
           "ko": "공유 컨피그 건드리는 거라 'For visibility:' 붙여서 플랫폼 리드도 같이 태그할게요.",
           "is_target": true,
           "start_ms": 4360,
-          "end_ms": 12120
+          "end_ms": 12120,
+          "en_easy": "I'll tag the platform lead because this touches shared config."
         },
         {
           "n": 3,
@@ -173,7 +179,8 @@
           "ko": "맞아요, 혹시 다음 주까지 넘어갈 수도 있으니까 다른 사람도 알고 있었으면 해서요.",
           "is_target": true,
           "start_ms": 17780,
-          "end_ms": 25940
+          "end_ms": 25940,
+          "en_easy": "Someone else should know if this continues into next week."
         }
       ]
     },
@@ -196,7 +203,8 @@
           "ko": "일찍 들어와줘서 고마워요. 거긴 아직 어두울 시간일 텐데.",
           "is_target": true,
           "start_ms": 250,
-          "end_ms": 4170
+          "end_ms": 4170,
+          "en_easy": "Thanks for joining early, it's still dark for you."
         },
         {
           "n": 2,
@@ -216,7 +224,8 @@
           "ko": "리뷰 요청 관련해서 다시 팔로우업하는 건데, 이번 주 안에 컨피그 PR 한번 봐줄 수 있어요?",
           "is_target": true,
           "start_ms": 9830,
-          "end_ms": 14550
+          "end_ms": 14550,
+          "en_easy": "Could you review the config changes this week?"
         },
         {
           "n": 4,
@@ -236,7 +245,8 @@
           "ko": "좋아요. 급한 건 아니니까, 큰 문제 보이면 스레드에 그냥 표시만 해주세요.",
           "is_target": true,
           "start_ms": 19810,
-          "end_ms": 27810
+          "end_ms": 27810,
+          "en_easy": "That's fine, just tell me if you find a big problem."
         }
       ]
     },
@@ -269,7 +279,8 @@
           "ko": "지금 마르코 비동기 리뷰 기다리는 중이에요. 스레드에 참고하시라고 같이 넣어놨어요.",
           "is_target": true,
           "start_ms": 5320,
-          "end_ms": 11560
+          "end_ms": 11560,
+          "en_easy": "It's waiting for his review, and I added you to see it."
         },
         {
           "n": 3,
@@ -289,7 +300,8 @@
           "ko": "목요일이면 안전할 거예요. 승인되는 대로 바로 알려드릴게요.",
           "is_target": true,
           "start_ms": 17700,
-          "end_ms": 20980
+          "end_ms": 20980,
+          "en_easy": "Thursday should be safe, I'll ping you when he approves it."
         }
       ]
     }
