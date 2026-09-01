@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 22,
+  "date": "2026-09-02",
+  "week": 4,
+  "block": "team-daily",
+  "theme": "1:1 — 매니저와 진짜 대화하기",
+  "topic": "이번 분기 우선순위가 맞는지 매니저와 확인하기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d022-s1",
+      "title_ko": "유리벽 회의실 1:1, 인프라 대응과 평가 파이프라인 우선순위 확인",
+      "context_ko": "분기 중반 1:1 미팅. 이번 분기 계속 인프라 장애 대응에 시간을 뺏기면서, 애초에 합의했던 평가 파이프라인 작업이 뒷전으로 밀리고 있어 매니저에게 확인하려 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "How's the quarter feeling so far — are you still on track with what we planned?",
+          "ko": "이번 분기 어때요? 계획했던 대로 잘 진행되고 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd like to get your read on something — is the eval pipeline still our top priority, or should infra fires win?",
+          "ko": "여쭤보고 싶은 게 있는데요 — 평가 파이프라인이 여전히 최우선인가요, 아니면 인프라 장애 대응이 먼저인가요?",
+          "is_target": true,
+          "en_easy": "Is the eval pipeline still top priority, or are system issues first?"
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Infra keeps blowing up on us, so that's a fair question. Tell me what's actually competing for your time right now.",
+          "ko": "인프라가 계속 터지니까 그럴 만한 질문이네요. 지금 시간을 뭐가 제일 많이 잡아먹고 있는지 얘기해볼까요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Honestly, firefighting eats about half my week, so the pipeline work keeps slipping behind schedule.",
+          "ko": "솔직히 장애 대응에 한 주의 절반쯤 쓰다 보니, 파이프라인 작업이 계속 밀리고 있어요.",
+          "is_target": true,
+          "en_easy": "I spend half my week fixing problems, so pipeline work is late."
+        }
+      ]
+    },
+    {
+      "id": "d022-s2",
+      "title_ko": "화상회의, 원격 매니저에게 우선순위 판단 근거 설명하기",
+      "context_ko": "다른 시간대에 있는 매니저와의 화상 1:1. 지난주부터 노트북 화면 너머로 로드맵을 띄워놓고, 자신이 고른 우선순위가 매니저의 기대와 같은지 다시 확인한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저 (화상)",
+          "en": "I saw you spent most of last week on the checkpoint recovery tooling instead of the benchmark suite.",
+          "ko": "지난주에 벤치마크 슈트보다 체크포인트 복구 툴에 대부분 시간을 쓴 것 같던데요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah — I made that call because outages were blocking every experiment we had queued up.",
+          "ko": "네 — 대기 중인 실험들이 다 막혀 있어서 그렇게 판단했어요.",
+          "is_target": true,
+          "en_easy": "Yeah, I decided that because problems blocked all our planned experiments."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저 (화상)",
+          "en": "Makes sense in the moment, but I want to understand your reasoning going forward.",
+          "ko": "그 순간엔 맞는 판단이었겠죠. 앞으로도 어떤 기준으로 판단할 건지 이해하고 싶어요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "What I'm optimizing for is keeping experiments running, even if it means benchmarks slip a few days.",
+          "ko": "제가 최적화하려는 건 실험이 멈추지 않는 거예요, 벤치마크가 며칠 늦어지더라도요.",
+          "is_target": true,
+          "en_easy": "I want experiments running, even if benchmarks slip a few days."
+        }
+      ]
+    },
+    {
+      "id": "d022-s3",
+      "title_ko": "스탠드업 화이트보드 앞, 두 달 전 우선순위 목록 다시 짚기",
+      "context_ko": "아침 스탠드업. 화이트보드에 적힌 이번 분기 우선순위 목록이 두 달 전 그대로인데, 실제로는 순서가 바뀐 것 같아 팀 앞에서 다시 짚는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Quick standup — anything blocking, or should we just run through the board?",
+          "ko": "스탠드업 시작할게요 — 막힌 거 있어요, 아니면 바로 보드 훑을까요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Can we revisit the priority order on the board? Half of it hasn't matched what we're actually shipping.",
+          "ko": "보드에 있는 우선순위 순서 다시 짚어봐도 될까요? 실제로 진행하는 것과 반쯤 안 맞아요.",
+          "is_target": true,
+          "en_easy": "Can we check the priority order again because half doesn't match shipping?"
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Fair — that list is from kickoff. What would you move up?",
+          "ko": "맞아요, 그 리스트 킥오프 때 거네요. 뭘 위로 올리고 싶어요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd put the eval automation above the new sampler work; it's blocking three other people right now.",
+          "ko": "평가 자동화를 새 샘플러 작업보다 위로 올리고 싶어요, 지금 다른 세 명이 그거 때문에 막혀 있거든요.",
+          "is_target": true,
+          "en_easy": "I'd put eval work above tool work because it blocks several people."
+        }
+      ]
+    },
+    {
+      "id": "d022-s4",
+      "title_ko": "모니터 여러 대 자리, 로드맵 스프레드시트로 우선순위 재배열 확인",
+      "context_ko": "매니저가 잠깐 자리로 와서, 화면에 띄운 분기 로드맵 스프레드시트를 같이 보며 우선순위 순서를 다시 맞춘다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Since you're here — can I walk you through how I've been ranking these three workstreams?",
+          "ko": "마침 오셨으니 — 이 세 워크스트림 우선순위 어떻게 매겼는지 봐주실래요?",
+          "is_target": true,
+          "en_easy": "Since you're here, can I show you how I ranked these projects?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Go ahead, I've got a few minutes before my next call.",
+          "ko": "네, 다음 미팅까지 몇 분 여유 있어요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I ranked the serving latency fix above the new eval harness, since it's already affecting other teams' demos.",
+          "ko": "서빙 지연 수정을 새 평가 하네스보다 위에 뒀어요, 이미 다른 팀 데모에 영향 주고 있어서요.",
+          "is_target": true,
+          "en_easy": "I ranked latency fix above the harness, because it hurts team demos."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "That tracks with what I'm hearing from the demo team too. Keep that ranking.",
+          "ko": "데모 팀에서 듣던 얘기랑 맞네요. 그 순서 그대로 가요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good — I'll flag it in the doc so nobody assumes the harness comes first anymore.",
+          "ko": "좋아요 — 문서에 표시해둘게요, 하네스가 먼저라고 오해 안 하게요.",
+          "is_target": true,
+          "en_easy": "I'll flag it in the doc so nobody assumes harness comes first."
+        }
+      ]
+    },
+    {
+      "id": "d022-s5",
+      "title_ko": "점심 테이블, 캐주얼하게 분기 우선순위 재확인하기",
+      "context_ko": "구내식당 점심 테이블. 공식 회의는 아니지만, 다음 주 로드맵 발표 전에 매니저에게 우선순위가 여전히 유효한지 캐주얼하게 확인해둔다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Since I've got you for a minute — has anything changed on the priority list since last month?",
+          "ko": "잠깐 시간 되시니 — 지난달 이후로 우선순위 리스트에 바뀐 거 있어요?",
+          "is_target": true,
+          "en_easy": "Did anything change on the priority list since last month?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Not officially, but leadership's been asking more about inference cost lately.",
+          "ko": "공식적으론 없는데, 요즘 경영진이 추론 비용 쪽을 자주 물어봐요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Should I shift some of my time toward cost work, or keep pushing on the eval pipeline for now?",
+          "ko": "그럼 제 시간을 비용 작업 쪽으로 좀 옮길까요, 아니면 평가 파이프라인을 계속 미세요?",
+          "is_target": true,
+          "en_easy": "Should I shift time to cost work, or keep the eval pipeline?"
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Keep the pipeline as the main focus — I'll tell you if that changes before the roadmap review.",
+          "ko": "파이프라인을 메인으로 계속 가요 — 바뀌면 로드맵 리뷰 전에 미리 말해줄게요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Great, that's what I needed to hear before I lock in next week's plan.",
+          "ko": "좋아요, 다음 주 계획 확정하기 전에 딱 필요했던 답이네요.",
+          "is_target": true,
+          "en_easy": "Great, that's what I needed before I set next week's plan."
+        }
+      ]
+    }
+  ]
+}

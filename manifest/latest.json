@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-08-31T21:09:51+00:00",
+  "updated": "2026-09-01T21:08:58+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 21,
-  "total_days": 15,
-  "total_turns": 330,
-  "total_target_turns": 180,
+  "latest_day": 22,
+  "total_days": 16,
+  "total_turns": 352,
+  "total_target_turns": 192,
   "days": [
     {
       "day": 1,
@@ -246,6 +246,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-01.json"
+    },
+    {
+      "day": 22,
+      "date": "2026-09-02",
+      "week": 4,
+      "block": "team-daily",
+      "theme": "1:1 — 매니저와 진짜 대화하기",
+      "topic": "이번 분기 우선순위가 맞는지 매니저와 확인하기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-02.json"
     }
   ]
 }
