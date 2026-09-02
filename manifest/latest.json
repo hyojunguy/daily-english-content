@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-01T21:08:58+00:00",
+  "updated": "2026-09-02T21:07:55+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 22,
-  "total_days": 16,
-  "total_turns": 352,
-  "total_target_turns": 192,
+  "latest_day": 23,
+  "total_days": 17,
+  "total_turns": 374,
+  "total_target_turns": 204,
   "days": [
     {
       "day": 1,
@@ -262,6 +262,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-02.json"
+    },
+    {
+      "day": 23,
+      "date": "2026-09-03",
+      "week": 4,
+      "block": "team-daily",
+      "theme": "1:1 — 매니저와 진짜 대화하기",
+      "topic": "업무량이 과하다고 신호 보내기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-03.json"
     }
   ]
 }

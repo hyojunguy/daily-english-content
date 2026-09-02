@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 23,
+  "date": "2026-09-03",
+  "week": 4,
+  "block": "team-daily",
+  "theme": "1:1 — 매니저와 진짜 대화하기",
+  "topic": "업무량이 과하다고 신호 보내기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d023-s1",
+      "title_ko": "유리벽 회의실 1:1, 업무량 신호 보내기",
+      "context_ko": "매니저와의 정기 1:1. 세 개의 실험을 동시에 돌리느라 리뷰가 밀리고 있어, {name}이 먼저 우선순위 조정을 요청한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Before status updates — can I flag something about my workload this sprint?",
+          "ko": "상태 업데이트 전에, 이번 스프린트 업무량 관련해서 잠깐 말씀드려도 될까요?",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Of course, go ahead. What's going on?",
+          "ko": "그럼요, 말씀하세요. 무슨 일이에요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'm running three experiments in parallel and I'd like to get your read on what to cut.",
+          "ko": "지금 실험 세 개를 동시에 돌리고 있는데, 뭘 줄여야 할지 매니저님 의견을 듣고 싶어요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Walk me through the three and I'll tell you what I'd protect.",
+          "ko": "세 개가 뭔지 설명해주시면, 제가 뭘 지켜야 할지 말씀드릴게요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The tokenizer ablation can slip a week — the eval pipeline can't.",
+          "ko": "토크나이저 어블레이션은 일주일 늦춰도 되는데, 평가 파이프라인은 안 돼요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d023-s2",
+      "title_ko": "스탠드업 화이트보드 앞, 업무 과중 짧게 신호 보내기",
+      "context_ko": "아침 스탠드업. {name}은 밀린 평가 스위트 작업을 짧게 언급하고, 자세한 논의는 1:1로 미루자고 제안한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Quick round — anything blocking or at risk this week?",
+          "ko": "빠르게 돌아가죠. 이번 주 막힌 거나 위험한 거 있나요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'm behind on the eval suite — I'm juggling too many threads right now.",
+          "ko": "평가 스위트가 밀렸어요. 지금 여러 작업을 동시에 돌리다 보니 벅차네요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "C",
+          "role_ko": "동료",
+          "en": "Same boat, honestly — the on-call rotation ate my whole week.",
+          "ko": "저도 마찬가지예요. 온콜 순번 때문에 이번 주를 통째로 날렸어요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let's talk after standup — I want to get ahead of it before it slips further.",
+          "ko": "스탠드업 끝나고 따로 얘기해요. 더 밀리기 전에 미리 정리하고 싶어서요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d023-s3",
+      "title_ko": "동료 책상 옆에 걸터앉아, 1:1 전에 말할 내용 다듬기",
+      "context_ko": "매니저에게 업무량을 알리기 전, {name}이 동료 책상에 잠시 걸터앉아 어떻게 구체적으로 전달할지 상의한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "You mentioned being swamped — are you actually going to raise it with Sam?",
+          "ko": "요즘 정신없다고 했잖아요. 진짜 Sam한테 얘기할 거예요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah, I want to be specific instead of just saying I'm busy.",
+          "ko": "네, 그냥 바쁘다고만 하지 않고 구체적으로 얘기하려고요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Good call — vague complaints just get a 'hang in there.'",
+          "ko": "좋은 생각이에요. 막연하게 얘기하면 그냥 '조금만 버텨봐요' 하고 끝나거든요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Exactly — I'm going to lay out the three threads and ask what to drop.",
+          "ko": "맞아요. 지금 하고 있는 세 가지를 나열하고 뭘 빼야 할지 물어보려고요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d023-s4",
+      "title_ko": "화상회의, 원격 매니저와 우선순위 확정하기",
+      "context_ko": "지난주 꺼낸 업무 과중 이야기를 화상 1:1에서 마무리 짓는다. {name}이 무엇을 우선할지 명확히 정리해 전달한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Following up on what I raised last week — can we lock in what stays and what goes?",
+          "ko": "지난주에 말씀드린 거 이어서, 뭘 남기고 뭘 뺄지 이번에 확정할 수 있을까요?",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "원격 매니저",
+          "en": "Yes, let's settle it now. What's the tradeoff you're seeing?",
+          "ko": "네, 지금 정리하죠. 어떤 트레이드오프가 보이세요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "What I'm optimizing for is shipping the pipeline rewrite, even if the ablation slips.",
+          "ko": "제가 지금 최우선으로 두는 건 파이프라인 재작성을 내보내는 거예요, 어블레이션이 밀리더라도요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "원격 매니저",
+          "en": "Agreed. I'll tell the research lead the ablation moves to next sprint.",
+          "ko": "동의해요. 어블레이션은 다음 스프린트로 미룬다고 리서치 리드한테 전달할게요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks — that's the clarity I needed to plan the rest of my week.",
+          "ko": "감사해요. 이제 남은 한 주를 어떻게 짤지 명확해졌어요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d023-s5",
+      "title_ko": "탕비실 가는 복도에서, 지난 1:1 내용 다시 짚기",
+      "context_ko": "매니저와 우연히 복도에서 마주쳤다. 지난 1:1에서 정리했던 우선순위가 여전히 버겁다는 걸 짚고, 다음 1:1에서 다시 다루자고 제안한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Hey — did dropping the ablation actually help this week?",
+          "ko": "저기, 어블레이션 뺀 게 이번 주에 실제로 도움이 됐어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It helped, but the pipeline rewrite is still eating every evening.",
+          "ko": "도움은 됐는데, 파이프라인 재작성이 여전히 매일 저녁을 다 잡아먹고 있어요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "That's not sustainable. What do you need changed?",
+          "ko": "그건 계속 유지하기 힘들죠. 뭐가 바뀌어야 할까요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Can we revisit the timeline next 1:1? I think the scope is still too big.",
+          "ko": "다음 1:1에서 일정을 다시 짚어볼 수 있을까요? 스코프가 아직도 너무 큰 것 같아요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
