@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 24,
+  "date": "2026-09-04",
+  "week": 4,
+  "block": "team-daily",
+  "theme": "1:1 — 매니저와 진짜 대화하기",
+  "topic": "관심 있는 프로젝트로 옮기고 싶다고 말하기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d024-s1",
+      "title_ko": "유리벽 회의실 1:1, 관심 프로젝트로 옮기고 싶다고 처음 꺼내기",
+      "context_ko": "분기 계획 시즌, 매니저 Jordan과의 정기 1:1에서 {name}이 최근 관심을 두고 있던 평가 인프라 팀으로의 이동을 처음으로 조심스럽게 꺼낸다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Before we get into the usual updates, I wanted to bring up something I've been thinking about.",
+          "ko": "평소 하던 업데이트 전에, 요즘 계속 생각하고 있던 걸 먼저 말씀드리고 싶어요.",
+          "is_target": true,
+          "en_easy": "Before we start updates, I want to share something."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Sure, go ahead — is this about the roadmap review or something else?",
+          "ko": "그래, 편하게 말해봐. 로드맵 리뷰 관련된 얘기야, 아니면 다른 거야?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd like to get your read on me moving onto the eval infrastructure team next quarter.",
+          "ko": "다음 분기에 제가 평가 인프라 팀으로 옮기는 것에 대해 의견을 듣고 싶어요.",
+          "is_target": true,
+          "en_easy": "What do you think about me moving to eval infrastructure next quarter?"
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "That's interesting — what's pulling you toward eval infra specifically?",
+          "ko": "흥미롭네. 구체적으로 뭐가 평가 인프라 쪽으로 끌리게 만든 거야?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The evaluation pipeline work touches research questions I actually want to dig into long-term.",
+          "ko": "평가 파이프라인 작업이 제가 장기적으로 파고들고 싶은 연구 주제들과 맞닿아 있어요.",
+          "is_target": true,
+          "en_easy": "This work touches research questions I want to study."
+        }
+      ]
+    },
+    {
+      "id": "d024-s2",
+      "title_ko": "스탠드업 화이트보드 앞, 팀 리드에게 오늘 있을 대화 미리 알리기",
+      "context_ko": "매니저와의 1:1을 앞둔 아침 스탠드업. {name}이 팀 리드 Sam에게 오늘 이동 얘기를 꺼낼 거라고 짧게 귀띔한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Anything blocking on your end before we wrap standup?",
+          "ko": "스탠드업 마치기 전에 막힌 거 있어?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Nothing blocking, but heads up — I'm talking to Jordan today about switching onto eval infra.",
+          "ko": "막힌 건 없는데, 미리 말씀드리면 오늘 Jordan이랑 평가 인프라로 옮기는 얘기를 할 거예요.",
+          "is_target": true,
+          "en_easy": "Nothing is blocking, but I'm talking about switching to eval work today."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Got it, thanks for flagging — let us know how it goes.",
+          "ko": "알겠어, 알려줘서 고마워. 결과 나오면 알려줘.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Will do. I'll loop the team in once there's an actual decision made.",
+          "ko": "네, 실제 결정이 나면 바로 팀에 공유할게요.",
+          "is_target": true,
+          "en_easy": "I will tell the team once we decide."
+        }
+      ]
+    },
+    {
+      "id": "d024-s3",
+      "title_ko": "동료 책상에 걸터앉아, 어떻게 말을 꺼낼지 조언 구하기",
+      "context_ko": "점심 전, {name}이 동료 Mina의 책상에 걸터앉아 매니저에게 이동 얘기를 어떻게 꺼내야 할지 조언을 구한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Can I run something by you? I'm thinking about asking to move onto eval infra.",
+          "ko": "잠깐 얘기 좀 해도 돼? 평가 인프라로 옮기게 해달라고 얘기해볼까 고민 중이야.",
+          "is_target": true,
+          "en_easy": "Can I ask about moving to eval work?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Oh nice, that team's been swamped. Did you already mention it to Jordan?",
+          "ko": "오, 좋다. 거기 요즘 완전 바쁘던데. Jordan한테는 벌써 얘기했어?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not yet — I want to frame it around impact, not just personal interest.",
+          "ko": "아직. 그냥 개인적인 관심이 아니라 임팩트 중심으로 얘기하고 싶어서.",
+          "is_target": true,
+          "en_easy": "Not yet, I want to focus on impact instead."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "That'll land better. Just be specific about what you'd actually own there.",
+          "ko": "그게 훨씬 잘 먹힐 거야. 거기서 실제로 뭘 맡을지만 구체적으로 얘기해.",
+          "is_target": false
+        }
+      ]
+    },
+    {
+      "id": "d024-s4",
+      "title_ko": "화상회의, 원격 매니저에게 이동 이유 구체적으로 설명하기",
+      "context_ko": "며칠 뒤 화상회의. 다른 지사에 있는 Jordan과 이어서, {name}이 왜 옮기고 싶은지 더 구체적으로 설명한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks for making time on video since you're between offices this week.",
+          "ko": "이번 주에 사무실 옮겨 다니시는데 화상으로 시간 내주셔서 감사해요.",
+          "is_target": true,
+          "en_easy": "Thanks for meeting on video since you're moving between offices this week."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저(원격)",
+          "en": "Of course. So tell me more about what's driving this move for you.",
+          "ko": "당연하지. 이 이동을 원하는 이유를 좀 더 자세히 얘기해줘.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "What I'm optimizing for is deeper research exposure, not just keeping infra running.",
+          "ko": "제가 중요하게 생각하는 건 단순히 인프라 유지가 아니라 더 깊은 연구 경험이에요.",
+          "is_target": true,
+          "en_easy": "I care more about research experience than keeping systems running."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저(원격)",
+          "en": "That makes sense given your background. Let me check headcount on that team.",
+          "ko": "네 배경을 생각하면 이해돼. 그 팀 인원 상황 확인해볼게.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Appreciate it — even a rough timeline would help me plan my current handoffs.",
+          "ko": "감사해요. 대략적인 일정만 알려주셔도 지금 인수인계 계획 짜는 데 도움이 될 것 같아요.",
+          "is_target": true,
+          "en_easy": "Thanks, even a rough date would help me plan my current work."
+        }
+      ]
+    },
+    {
+      "id": "d024-s5",
+      "title_ko": "복도에서 마주쳐, 지난주 헤드카운트 얘기 다시 짚기",
+      "context_ko": "일주일 뒤 복도에서 우연히 마주친 Jordan에게, {name}이 지난 화상회의에서 나온 헤드카운트 얘기를 다시 짚는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey, do you have a second? Can we revisit the headcount question from last week?",
+          "ko": "저기, 잠깐 시간 되세요? 지난주에 얘기했던 인원 관련 건 다시 짚어볼 수 있을까요?",
+          "is_target": true,
+          "en_easy": "Do you have a minute to talk about the staff question again?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Right, I meant to follow up — it looks like there's an opening in October.",
+          "ko": "맞다, 다시 얘기하려고 했는데, 10월에 자리가 하나 날 것 같아.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That timing actually works well with wrapping up my current project cleanly.",
+          "ko": "그 시기면 지금 프로젝트를 깔끔하게 마무리하는 것과도 잘 맞아요.",
+          "is_target": true,
+          "en_easy": "That timing works well for finishing my current project."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Let's put something on the calendar this week to make it official.",
+          "ko": "이번 주 안에 캘린더에 일정 잡아서 공식적으로 정리하자.",
+          "is_target": false
+        }
+      ]
+    }
+  ]
+}

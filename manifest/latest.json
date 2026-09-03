@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-02T21:07:55+00:00",
+  "updated": "2026-09-03T21:05:55+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 23,
-  "total_days": 17,
-  "total_turns": 374,
-  "total_target_turns": 204,
+  "latest_day": 24,
+  "total_days": 18,
+  "total_turns": 396,
+  "total_target_turns": 216,
   "days": [
     {
       "day": 1,
@@ -278,6 +278,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-03.json"
+    },
+    {
+      "day": 24,
+      "date": "2026-09-04",
+      "week": 4,
+      "block": "team-daily",
+      "theme": "1:1 — 매니저와 진짜 대화하기",
+      "topic": "관심 있는 프로젝트로 옮기고 싶다고 말하기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-04.json"
     }
   ]
 }
