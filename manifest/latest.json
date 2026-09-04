@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-03T21:05:55+00:00",
+  "updated": "2026-09-04T21:07:03+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 24,
-  "total_days": 18,
-  "total_turns": 396,
-  "total_target_turns": 216,
+  "latest_day": 25,
+  "total_days": 19,
+  "total_turns": 418,
+  "total_target_turns": 228,
   "days": [
     {
       "day": 1,
@@ -294,6 +294,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-04.json"
+    },
+    {
+      "day": 25,
+      "date": "2026-09-05",
+      "week": 4,
+      "block": "team-daily",
+      "theme": "1:1 — 매니저와 진짜 대화하기",
+      "topic": "받은 피드백에 방어하지 않고 되묻기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-05.json"
     }
   ]
 }

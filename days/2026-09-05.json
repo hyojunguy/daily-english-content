@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 25,
+  "date": "2026-09-05",
+  "week": 4,
+  "block": "team-daily",
+  "theme": "1:1 — 매니저와 진짜 대화하기",
+  "topic": "받은 피드백에 방어하지 않고 되묻기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d025-s1",
+      "title_ko": "유리벽 회의실 1:1, 리포트 피드백에 방어 대신 예시 요청하기",
+      "context_ko": "매니저가 지난주 공유한 평가 리포트가 읽기 어려웠다고 말한다. {name}은 반박하지 않고 어떤 지점이 문제였는지 구체적으로 되묻는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Your eval report from last week was hard to follow — I lost track of which metric mattered.",
+          "ko": "지난주 공유한 평가 리포트가 읽기 어려웠어요. 어떤 지표가 중요한지 놓쳤어요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Can we revisit the section on latency? I want to know exactly where it lost you.",
+          "ko": "레이턴시 부분 다시 짚어볼까요? 정확히 어디서 놓치셨는지 알고 싶어요.",
+          "is_target": true,
+          "en_easy": "Where exactly did the latency part lose you?"
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Right after the throughput table — I couldn't tell if higher was better or worse.",
+          "ko": "처리량 표 바로 다음이요. 높은 게 좋은 건지 나쁜 건지 구분이 안 됐어요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Got it, that's on me — I'll add units and a one-line takeaway above each table.",
+          "ko": "제 잘못이네요. 단위 표시하고 표마다 한 줄 요약을 위에 추가할게요.",
+          "is_target": true,
+          "en_easy": "My mistake, I'll add units and a summary to each table."
+        }
+      ]
+    },
+    {
+      "id": "d025-s2",
+      "title_ko": "화상회의, 받은 피드백 다시 꺼내 되묻기",
+      "context_ko": "{name}은 어제 매니저가 남긴 짧은 코멘트—업데이트가 너무 간결해서 맥락이 안 보인다는—를 화상회의에서 먼저 꺼내 구체적으로 확인한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd like to get your read on yesterday's comment — was it the lack of blockers, or just tone?",
+          "ko": "어제 남기신 코멘트 관련해서 의견을 듣고 싶어요 — 블로커가 없어서였나요, 아니면 톤 때문이었나요?",
+          "is_target": true,
+          "en_easy": "About yesterday's comment, was it no blockers or just tone?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "원격 매니저",
+          "en": "Mostly blockers. I open your update and still don't know if you're stuck.",
+          "ko": "주로 블로커 때문이에요. 업데이트를 열어도 막힌 게 있는지 없는지 모르겠더라고요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That's fair — I'll lead with 'blocked on X' whenever there's one, starting today.",
+          "ko": "맞는 말씀이에요. 막힌 게 있으면 오늘부터 'blocked on X'로 먼저 쓸게요.",
+          "is_target": true,
+          "en_easy": "I'll say blocked on first, starting today."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "원격 매니저",
+          "en": "That would help a lot, especially on days I can't join the standup live.",
+          "ko": "그러면 정말 도움이 될 것 같아요, 특히 스탠드업에 실시간으로 못 들어가는 날엔요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Noted. I'll also flag it in the channel directly so it's not buried in the thread.",
+          "ko": "알겠습니다. 채널에도 바로 표시해서 스레드에 묻히지 않게 할게요.",
+          "is_target": true,
+          "en_easy": "I'll flag it in the channel so it doesn't get lost."
+        }
+      ]
+    },
+    {
+      "id": "d025-s3",
+      "title_ko": "모니터 여러 대 자리, 실험 설계 피드백에 되묻기",
+      "context_ko": "시니어 동료가 화면을 함께 보며 {name}의 ablation 실험이 한 번에 너무 많은 변수를 바꾼다고 지적한다. {name}은 반박 대신 동료가 정확히 무엇을 우려하는지 구체적으로 묻는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "시니어 동료",
+          "en": "You're changing the learning rate and the batch size in the same run — I can't isolate what helped.",
+          "ko": "같은 실행에서 러닝레이트랑 배치 사이즈를 동시에 바꾸셨네요. 뭐가 효과 있었는지 구분이 안 돼요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Fair point. Which variable would you want isolated first, rate or batch size?",
+          "ko": "맞는 지적이에요. 러닝레이트랑 배치 사이즈 중 어느 걸 먼저 분리하면 좋을까요?",
+          "is_target": true,
+          "en_easy": "Which would you isolate first, rate or batch size?"
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "시니어 동료",
+          "en": "Learning rate — that's the one reviewers usually question first in the writeup.",
+          "ko": "러닝레이트요. 리뷰어들이 보통 그걸 먼저 물어보거든요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Makes sense. I'll rerun with rate fixed and batch size as the only variable.",
+          "ko": "알겠습니다. 러닝레이트는 고정하고 배치 사이즈만 변수로 다시 돌릴게요.",
+          "is_target": true,
+          "en_easy": "I'll run it again with rate fixed, changing only batch size."
+        }
+      ]
+    },
+    {
+      "id": "d025-s4",
+      "title_ko": "복도에서 마주쳐, 회의 태도 피드백에 예시 되묻기",
+      "context_ko": "팀 리드가 복도에서 지나가다 {name}이 어제 회의에서 다른 사람 말을 자주 끊었다고 짧게 언급한다. {name}은 방어하지 않고 구체적인 순간을 되짚어 확인한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Quick thing — in yesterday's review you cut off Priya a couple of times.",
+          "ko": "잠깐만요 — 어제 리뷰에서 Priya 말을 몇 번 끊으셨더라고요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks for flagging it. Can you point to the moment it stood out most?",
+          "ko": "짚어주셔서 감사해요. 가장 눈에 띈 순간이 언제였는지 알려주실 수 있어요?",
+          "is_target": true,
+          "en_easy": "Thanks for flagging it, when was it clearest to you?"
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "When she was walking through the ablation results — you jumped in twice.",
+          "ko": "그분이 ablation 결과 설명하는 중에요 — 두 번 끼어드셨어요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Got it. I'll wait for a pause and take notes instead of interrupting next time.",
+          "ko": "알겠습니다. 다음부터는 멈출 때까지 기다리고 메모부터 할게요.",
+          "is_target": true,
+          "en_easy": "Next time, I'll wait for a pause and take notes."
+        }
+      ]
+    },
+    {
+      "id": "d025-s5",
+      "title_ko": "점심 테이블, 발표 피드백에 우선순위 설명하며 되묻기",
+      "context_ko": "매니저가 점심 자리에서 지난주 발표가 너무 빨리 넘어갔다는 팀 피드백을 전한다. {name}은 방어하지 않고 자신의 의도를 설명한 뒤 매니저의 판단을 구체적으로 구한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "What I'm optimizing for is speed over depth in that deck — did it backfire?",
+          "ko": "본론 들어가기 전에요 — 그 발표에서 제가 우선시한 건 깊이보다 속도였는데, 그게 역효과였나요?",
+          "is_target": true,
+          "en_easy": "I chose speed over depth in that talk, but did it fail?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "A bit — two people said they lost the thread around the third slide.",
+          "ko": "조금요 — 세 번째 슬라이드쯤에서 흐름을 놓쳤다는 사람이 두 명 있었어요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Got it. I'll slow down there and add a recap slide before moving on.",
+          "ko": "알겠습니다. 거기서 속도를 늦추고 넘어가기 전에 요약 슬라이드를 넣을게요.",
+          "is_target": true,
+          "en_easy": "I'll pause there and add a summary slide before I continue."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "That should help. It's a good deck, just paced for people already in the weeds.",
+          "ko": "그러면 도움이 될 거예요. 좋은 자료인데, 이미 세부 내용을 아는 사람 기준으로 속도가 맞춰진 것 같아요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Appreciate you passing that along directly instead of letting it stay secondhand feedback.",
+          "ko": "간접적으로 전해 듣는 대신 직접 말씀해주셔서 감사해요.",
+          "is_target": true,
+          "en_easy": "Thank you for telling me this directly, not through someone else."
+        }
+      ]
+    }
+  ]
+}
