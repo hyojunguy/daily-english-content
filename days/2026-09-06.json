@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 26,
+  "date": "2026-09-06",
+  "week": 4,
+  "block": "team-daily",
+  "theme": "1:1 — 매니저와 진짜 대화하기",
+  "topic": "동료와의 마찰을 매니저에게 중립적으로 설명하기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d026-s1",
+      "title_ko": "매니저에게 동료와의 마찰 처음 알리기",
+      "context_ko": "플랫폼팀 동료 Jordan이 공유 서빙 설정을 사전 공지 없이 두 번이나 바꿔 평가 실행이 깨졌다. 정기 1:1에서 매니저에게 이 사실을 처음으로 전한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Before we get to the roadmap stuff, is there something else on your mind?",
+          "ko": "로드맵 얘기 하기 전에, 따로 마음에 걸리는 거 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah, there's a recurring friction with Jordan on the platform team I want to flag.",
+          "ko": "네, 플랫폼팀 Jordan이랑 계속 부딪히는 부분이 있어서 말씀드리고 싶었어요.",
+          "is_target": true,
+          "en_easy": "Yeah, I keep having trouble with someone on the platform team."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Go ahead — what's been going on between you two?",
+          "ko": "말해봐요 — 둘 사이에 무슨 일이 있었던 거예요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "He's changed our serving config twice without warning — I'd like to get your read on how to handle it.",
+          "ko": "서빙 설정을 두 번이나 예고 없이 바꿨더라고요 — 이걸 어떻게 다뤄야 할지 매니저님 의견을 듣고 싶어요.",
+          "is_target": true,
+          "en_easy": "What should I do since he changed it twice without warning?"
+        }
+      ]
+    },
+    {
+      "id": "d026-s2",
+      "title_ko": "화상 1:1에서 비난 대신 목표로 프레이밍하기",
+      "context_ko": "매니저가 화상 1:1에서 이 갈등이 Jordan 개인의 잘못인지 확인하려 한다. 학습자는 비난이 아니라 원하는 결과에 초점을 맞춰 설명한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "So is this a Jordan problem, or is this bigger than that?",
+          "ko": "그럼 이게 Jordan 개인 문제예요, 아니면 그보다 더 큰 거예요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It's not really about him — what I'm optimizing for is a clear rule for who touches shared configs.",
+          "ko": "그 사람 개인 문제라기보단 — 제가 원하는 건 공유 설정을 누가 건드릴지에 대한 명확한 규칙이에요.",
+          "is_target": true,
+          "en_easy": "This isn't about him, I want a rule for who touches configs."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Fair. So you're not asking me to talk to him directly?",
+          "ko": "알겠어요. 그럼 제가 그 사람한테 직접 얘기하길 바라는 건 아니라는 거죠?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not yet — I'd rather we agree on a change-notification process first, then see if the friction actually goes away.",
+          "ko": "아직은요 — 먼저 변경 알림 프로세스에 합의하고, 그걸로 마찰이 실제로 줄어드는지 보고 싶어요.",
+          "is_target": true,
+          "en_easy": "Not yet, let's agree on notice rules then see if it helps."
+        }
+      ]
+    },
+    {
+      "id": "d026-s3",
+      "title_ko": "스탠드업 후 화이트보드 앞에서 지난 합의 다시 짚기",
+      "context_ko": "2주 전 1:1에서 합의한 설정 변경 알림 규칙이 아직 지켜지지 않고 있다. 스탠드업이 끝난 직후 화이트보드 앞에서 매니저를 붙잡고 짚는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Got a second? Can we revisit the config-notification rule we agreed on two weeks ago?",
+          "ko": "잠깐 시간 돼요? 2주 전에 합의했던 설정 변경 알림 규칙, 다시 짚어봐도 될까요?",
+          "is_target": true,
+          "en_easy": "Do you have a minute to review the rule we agreed on?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Sure — did it not stick?",
+          "ko": "그럼요 — 아직 안 지켜지고 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Right, Jordan pushed another change yesterday and nobody on our side got a message about it.",
+          "ko": "네, 어제도 Jordan이 변경을 올렸는데 저희 쪽엔 아무도 메시지를 못 받았어요.",
+          "is_target": true,
+          "en_easy": "Right, they pushed another change yesterday and nobody told us."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Got it — let me ping his lead and make sure that rule actually gets enforced this time.",
+          "ko": "알겠어요 — 그 사람 리드한테 연락해서 이번엔 규칙이 실제로 지켜지게 할게요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks — I just didn't want this to quietly slide for another two weeks.",
+          "ko": "감사해요 — 이게 또 2주 동안 흐지부지되는 건 원하지 않아서요.",
+          "is_target": true,
+          "en_easy": "Thanks, I didn't want this to slide again."
+        }
+      ]
+    },
+    {
+      "id": "d026-s4",
+      "title_ko": "모니터 여러 대 자리에서 로그로 구체적 사례 짚어주기",
+      "context_ko": "매니저가 직접 사례를 보고 싶다고 해서, 학습자는 모니터에 타임스탬프가 찍힌 로그를 띄워 감정을 빼고 사실만 짚는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Here — this is the log from Tuesday, timestamped right when my eval run failed.",
+          "ko": "여기요 — 화요일 로그인데, 제 평가 실행이 실패한 시점이 정확히 찍혀 있어요.",
+          "is_target": true,
+          "en_easy": "Here's the log from Tuesday, it shows when my eval run failed."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "And that lines up with when the config changed?",
+          "ko": "그게 설정이 바뀐 시점이랑 정확히 맞아떨어지는 거예요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Exactly, down to the minute — this happened three times in the last month, all the same pattern.",
+          "ko": "네, 분 단위까지 정확히요 — 지난 한 달 동안 세 번이나 같은 패턴으로 반복됐어요.",
+          "is_target": true,
+          "en_easy": "Exactly, this happened several times last month in the same pattern."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Okay, this is more concrete than I expected — send me these three timestamps after this.",
+          "ko": "생각보다 훨씬 구체적이네요 — 이거 끝나고 이 세 타임스탬프 저한테 보내줘요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Will do — I just wanted this to be about the pattern, not about pointing fingers.",
+          "ko": "네 그럴게요 — 그냥 이 패턴 자체를 짚고 싶었던 거지, 누구를 탓하려던 건 아니에요.",
+          "is_target": true,
+          "en_easy": "Okay, I want to focus on the pattern not blame anyone."
+        }
+      ]
+    },
+    {
+      "id": "d026-s5",
+      "title_ko": "점심 자리에서 진행 상황 캐주얼하게 업데이트하기",
+      "context_ko": "규칙이 어느 정도 자리 잡은 뒤, 점심 자리에서 매니저가 가볍게 안부를 묻는다. 학습자는 남은 조치 하나를 짧게 요청한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "So, has the Jordan situation actually calmed down?",
+          "ko": "그래서, Jordan이랑은 진짜 좀 잠잠해졌어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Mostly — the notification rule's holding, and I haven't lost an eval run in two weeks.",
+          "ko": "거의요 — 알림 규칙이 잘 지켜지고 있고, 2주 동안 평가 실행이 날아간 적이 없어요.",
+          "is_target": true,
+          "en_easy": "Mostly, the rule is holding and I didn't lose an eval run."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Good, that's real progress. Anything still open on your end?",
+          "ko": "좋네요, 확실히 나아졌네요. 아직 남은 거 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Just one thing — can we get that rule written down somewhere both teams can actually see it?",
+          "ko": "딱 하나 있어요 — 그 규칙을 양쪽 팀이 다 볼 수 있는 곳에 문서로 남길 수 있을까요?",
+          "is_target": true,
+          "en_easy": "Can we post that rule where both teams can see it?"
+        }
+      ]
+    }
+  ]
+}
