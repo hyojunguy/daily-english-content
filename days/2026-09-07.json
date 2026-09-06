@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 27,
+  "date": "2026-09-07",
+  "week": 4,
+  "block": "team-daily",
+  "theme": "1:1 — 매니저와 진짜 대화하기",
+  "topic": "성장하고 싶은 방향을 구체적으로 말하기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d027-s1",
+      "title_ko": "1:1에서 성장 방향을 구체적으로 처음 꺼내기",
+      "context_ko": "분기 목표 논의를 시작하기 전, {name}은 매니저 Priya와의 1:1에서 파이프라인 유지보수보다 모델 평가 리서치 쪽에 더 시간을 쓰고 싶다는 방향을 처음으로 구체적으로 꺼낸다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd like to get your read on something before we get into the roadmap — my longer-term direction.",
+          "ko": "로드맵 얘기 전에, 제 장기적인 방향에 대해 매니저님 의견을 먼저 듣고 싶어요.",
+          "is_target": true,
+          "en_easy": "Before the roadmap, can I ask your opinion on my direction?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Sure, go ahead. Is this about the eval work you've been doing lately?",
+          "ko": "네, 말씀하세요. 요즘 하고 계신 평가 작업 관련인가요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "What I'm optimizing for is spending less time on pipeline upkeep and more on evaluation research.",
+          "ko": "제가 지금 맞추고 싶은 방향은 파이프라인 유지보수 시간을 줄이고 평가 리서치에 더 쓰는 거예요.",
+          "is_target": true,
+          "en_easy": "I want less pipeline work and more eval research."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "That's a real shift. Who picks up the on-call load if you step back from that?",
+          "ko": "꽤 큰 변화네요. 그쪽에서 손을 떼면 온콜은 누가 맡죠?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Maybe we start with one day a week ring-fenced for eval research, and revisit after a month.",
+          "ko": "우선 일주일에 하루만 평가 리서치에 확실히 떼어두고, 한 달 뒤에 다시 점검해보면 어떨까요?",
+          "is_target": true,
+          "en_easy": "Let's set one day weekly for eval research and review next month."
+        }
+      ]
+    },
+    {
+      "id": "d027-s2",
+      "title_ko": "화상회의에서 스트레치 프로젝트 다시 꺼내기",
+      "context_ko": "지난달 1:1에서 스치듯 나왔던 분산 학습 시스템 스트레치 프로젝트를, {name}이 원격 화상 통화에서 매니저에게 다시 꺼내 구체적으로 확인한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Can we revisit the distributed training project you mentioned last month? I've been thinking about it since.",
+          "ko": "지난달에 말씀하신 분산 학습 프로젝트, 다시 짚어봐도 될까요? 그 뒤로 계속 생각하고 있었어요.",
+          "is_target": true,
+          "en_easy": "Can we discuss the distributed training project from last month again?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "원격 매니저",
+          "en": "Of course. What specifically caught your interest?",
+          "ko": "물론이죠. 구체적으로 어떤 부분이 흥미로우셨어요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The scaling and checkpointing side — I want to build depth there instead of staying purely on eval.",
+          "ko": "스케일링이랑 체크포인팅 쪽이요 — 평가 쪽에만 머무르지 않고 그쪽에 깊이를 쌓고 싶어요.",
+          "is_target": true,
+          "en_easy": "I want to build depth in scaling and checkpoints, not just eval."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "원격 매니저",
+          "en": "That lines up with where the team's headed. Let me see if there's a slice you could own this quarter.",
+          "ko": "팀이 가려는 방향이랑도 맞네요. 이번 분기에 맡을 만한 부분이 있는지 확인해볼게요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That would help a lot — even a small piece would give me a real foothold there.",
+          "ko": "정말 도움이 될 것 같아요 — 작은 부분이라도 맡으면 확실한 발판이 될 거예요.",
+          "is_target": true,
+          "en_easy": "A small part would give me a good start there."
+        }
+      ]
+    },
+    {
+      "id": "d027-s3",
+      "title_ko": "스탠드업 직후 팀 리드에게 오늘 대화 미리 알리기",
+      "context_ko": "스탠드업이 끝난 직후 화이트보드 앞에서, {name}은 팀 리드 Marco에게 이따 매니저와의 1:1에서 성장 방향 얘기를 꺼낼 거라고 미리 알린다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Quick one before we scatter — anything on your mind for today?",
+          "ko": "다들 흩어지기 전에 잠깐, 오늘 뭐 신경 쓰이는 거 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Just a heads-up: I'm planning to bring up my growth direction with Priya later.",
+          "ko": "그냥 미리 말씀드리는 건데, 이따 Priya와의 1:1에서 제 성장 방향 얘기를 꺼낼 계획이에요.",
+          "is_target": true,
+          "en_easy": "I plan to tell my manager about my growth direction later."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Good to know. Anything you need from me before that conversation?",
+          "ko": "알겠어요. 그 전에 저한테 필요한 게 있나요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not really — just wanted you looped in, since it might touch your team's roadmap too.",
+          "ko": "딱히는 없어요 — 팀 로드맵에도 걸릴 수 있어서 미리 알려드리고 싶었어요.",
+          "is_target": true,
+          "en_easy": "No, I wanted to tell you because of your roadmap."
+        }
+      ]
+    },
+    {
+      "id": "d027-s4",
+      "title_ko": "탕비실 가는 복도에서 조언 구하기",
+      "context_ko": "탕비실로 가는 복도에서 우연히 마주친 동료 Sam에게, {name}은 이따 있을 성장 방향 대화를 어떻게 시작하면 좋을지 짧게 조언을 구한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "You look like you're rehearsing something. What's up?",
+          "ko": "뭔가 연습하는 표정인데요. 무슨 일이에요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'm about to tell Priya I want to shift toward research. Any advice on how to open it?",
+          "ko": "Priya에게 리서치 쪽으로 옮기고 싶다고 말할 참인데, 어떻게 운을 떼면 좋을지 조언 좀 해줄래요?",
+          "is_target": true,
+          "en_easy": "How should I tell my manager I want to move to research?"
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Lead with what you want, not what you're unhappy with — keep it forward-looking.",
+          "ko": "불만보다는 원하는 걸 먼저 말해요 — 앞을 보고 얘기하는 게 나아요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That's fair — I'll frame it around the research I want to grow into, not the ops work I want to drop.",
+          "ko": "맞는 말이에요 — 지금 하기 싫은 운영 업무보다는, 앞으로 키우고 싶은 리서치 쪽을 중심으로 얘기해볼게요.",
+          "is_target": true,
+          "en_easy": "That's fair and I'll focus on research I want, not operations work."
+        }
+      ]
+    },
+    {
+      "id": "d027-s5",
+      "title_ko": "점심 자리에서 대화 결과 가볍게 공유하기",
+      "context_ko": "1:1이 끝난 뒤 점심 테이블에서, {name}은 동료 Jin에게 매니저와 나눈 성장 방향 얘기 결과를 가볍게 공유한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "How'd the growth conversation with Priya go?",
+          "ko": "Priya랑 성장 방향 얘기는 어떻게 됐어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Better than expected — she's carving out a day a week for me on eval research.",
+          "ko": "생각보다 잘 됐어요 — 일주일에 하루를 평가 리서치용으로 떼어주기로 했어요.",
+          "is_target": true,
+          "en_easy": "She's giving me one day a week for eval research."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "That's great. Did you mention the distributed training stuff too?",
+          "ko": "잘됐네요. 분산 학습 쪽 얘기도 꺼냈어요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah, she's looking for a slice of that project I could own this quarter.",
+          "ko": "네, 이번 분기에 제가 맡을 수 있는 그 프로젝트의 일부를 찾아보겠다고 하셨어요.",
+          "is_target": true,
+          "en_easy": "She's finding a part of that project I can own this quarter."
+        }
+      ]
+    }
+  ]
+}
