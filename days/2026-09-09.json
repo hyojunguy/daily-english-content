@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 29,
+  "date": "2026-09-09",
+  "week": 5,
+  "block": "team-daily",
+  "theme": "일정과 추정 — 못 지킬 약속을 하지 않기",
+  "topic": "실험 하나가 며칠 걸릴지 근거와 함께 추정하기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d029-s1",
+      "title_ko": "스탠드업 화이트보드 앞, 새 실험 소요 기간 추정하기",
+      "context_ko": "스탠드업에서 팀 리드가 다음 스프린트에 넣을 새 ablation 실험이 며칠 걸릴지 묻고, {name}은 근거를 들어 추정치를 제시한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Before I commit to a date, can I check how many seeds we're running per config?",
+          "ko": "날짜 확정하기 전에, 컨피그당 시드를 몇 개 돌리는지부터 확인해도 될까요?",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Good question — three seeds, same as last sprint's sweep.",
+          "ko": "좋은 질문이에요 — 지난 스프린트 스윕과 똑같이 시드 3개예요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Okay, my rough estimate is three to four days, assuming the cluster's free.",
+          "ko": "그럼 대략 3~4일 정도로 보는데, 클러스터가 비어 있다는 전제예요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "It might not be — infra's running a big job through Wednesday.",
+          "ko": "그게 안 비어 있을 수도 있어요 — 인프라 팀이 수요일까지 큰 잡을 돌리고 있거든요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Then I'd rather scope it down than slip — I'll cut it to two seeds.",
+          "ko": "그러면 일정 늦추느니 범위를 줄이는 쪽이 낫겠네요 — 시드 2개로 줄일게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d029-s2",
+      "title_ko": "유리벽 회의실 1:1, 출시 전 전체 재학습 기간 추정하기",
+      "context_ko": "1:1에서 매니저가 새 데이터 파이프라인을 반영한 전체 재학습이 출시 전에 끝날 수 있는지 확인하려 하고, {name}은 조건부로 답한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Launch is in two weeks — can the full retrain be done by then?",
+          "ko": "출시가 2주 남았는데, 그때까지 전체 재학습이 끝날 수 있을까요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That depends on whether we're reusing the old data loader or rebuilding it.",
+          "ko": "그건 기존 데이터 로더를 재사용하는지, 새로 만드는지에 따라 달라져요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "We'd need the new one, since the schema changed last week.",
+          "ko": "지난주에 스키마가 바뀌어서 새로 만들어야 할 거예요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Then it's closer to five days just for the pipeline, plus training time.",
+          "ko": "그럼 파이프라인만으로 5일 가까이 걸리고, 학습 시간은 별도예요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d029-s3",
+      "title_ko": "화상회의, 데모 전 벤치마크 평가 파이프라인 소요 시간 확인하기",
+      "context_ko": "화상회의에서 원격 PM이 목요일 데모 전에 벤치마크 결과가 나올 수 있는지 묻고, {name}은 변수를 짚으며 답한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "PM (원격)",
+          "en": "For the demo Thursday, can we have benchmark numbers by Wednesday morning?",
+          "ko": "목요일 데모를 위해 수요일 아침까지 벤치마크 수치를 받을 수 있을까요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Realistically, I'd say two days for the full suite — tight, but doable.",
+          "ko": "현실적으로 전체 스위트에 이틀 정도 걸릴 것 같은데, 빠듯하지만 가능은 해요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "PM (원격)",
+          "en": "What could push that back?",
+          "ko": "그게 밀릴 만한 변수가 있을까요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Mainly the inference queue — if it backs up, I'll trim the eval set instead.",
+          "ko": "주로 추론 큐 문제인데, 밀리면 평가 데이터셋을 줄이는 쪽으로 갈게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d029-s4",
+      "title_ko": "동료 책상에 걸터앉아, 분산 학습 잡 소요 시간 가늠하기",
+      "context_ko": "동료가 GPU 할당 계획을 세우려고 분산 학습 잡이 얼마나 걸릴지 묻고, {name}은 노드 구성에 따라 근거를 들어 답한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "How many nodes are you planning to request for this run?",
+          "ko": "이번 런에 노드를 몇 개나 요청할 계획이에요?",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Four nodes, eight GPUs each, but I'm not sure that's enough.",
+          "ko": "노드 4개, GPU 8개씩 생각 중인데, 충분할지 모르겠어요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "With that setup, figure two days per epoch if the data loader keeps up.",
+          "ko": "그 구성이면 데이터 로더만 버텨주면 에폭당 이틀 정도로 보면 돼요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "And if the loader can't keep up with that many GPUs?",
+          "ko": "만약 로더가 그 많은 GPU를 못 따라가면요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Then it stalls on I/O, so let's profile it first before locking the node count.",
+          "ko": "그럼 I/O에서 병목이 생기니까, 노드 수 확정 전에 먼저 프로파일링해 봐요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d029-s5",
+      "title_ko": "서버룸 앞, 하이퍼파라미터 스윕 마감 전 소요 시간 확인하기",
+      "context_ko": "서버룸에서 인프라 담당자와 GPU 노드 상태를 확인하며, 다음 릴리스 전에 하이퍼파라미터 스윕이 끝날 수 있을지 {name}이 가늠한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "인프라 담당자",
+          "en": "Rack three just freed up — is that enough for your sweep?",
+          "ko": "3번 랙이 방금 비었는데, 스윕 돌리기에 충분할까요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That should cover it, if I keep the search space to twenty configs.",
+          "ko": "탐색 범위를 20개 컨피그로 제한하면 그걸로 충분할 것 같아요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "인프라 담당자",
+          "en": "And if you need more than that?",
+          "ko": "만약 그보다 더 필요하면요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Then I'll queue the rest overnight instead of blocking today's deadline.",
+          "ko": "그럼 오늘 마감을 붙잡고 있지 말고, 나머지는 밤새 큐에 넣어둘게요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}

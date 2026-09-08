@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-08T21:05:55+00:00",
+  "updated": "2026-09-08T21:13:44+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 28,
-  "total_days": 22,
-  "total_turns": 483,
-  "total_target_turns": 263,
+  "latest_day": 29,
+  "total_days": 23,
+  "total_turns": 505,
+  "total_target_turns": 275,
   "days": [
     {
       "day": 1,
@@ -358,6 +358,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-08.json"
+    },
+    {
+      "day": 29,
+      "date": "2026-09-09",
+      "week": 5,
+      "block": "team-daily",
+      "theme": "일정과 추정 — 못 지킬 약속을 하지 않기",
+      "topic": "실험 하나가 며칠 걸릴지 근거와 함께 추정하기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-09.json"
     }
   ]
 }
