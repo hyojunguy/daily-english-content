@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "Before I commit to a date, can I check how many seeds we're running per config?",
           "ko": "날짜 확정하기 전에, 컨피그당 시드를 몇 개 돌리는지부터 확인해도 될까요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Before I set a date, how many seeds run per config?"
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "Okay, my rough estimate is three to four days, assuming the cluster's free.",
           "ko": "그럼 대략 3~4일 정도로 보는데, 클러스터가 비어 있다는 전제예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It will take 3 or 4 days if the cluster is free."
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "Then I'd rather scope it down than slip — I'll cut it to two seeds.",
           "ko": "그러면 일정 늦추느니 범위를 줄이는 쪽이 낫겠네요 — 시드 2개로 줄일게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll shrink the scope and use 2 seeds instead of slipping."
         }
       ]
     },
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "That depends on whether we're reusing the old data loader or rebuilding it.",
           "ko": "그건 기존 데이터 로더를 재사용하는지, 새로 만드는지에 따라 달라져요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Do we use the old data tool again, or build new?"
         },
         {
           "n": 3,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "Then it's closer to five days just for the pipeline, plus training time.",
           "ko": "그럼 파이프라인만으로 5일 가까이 걸리고, 학습 시간은 별도예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Then the pipeline alone takes almost 5 days, plus training time."
         }
       ]
     },
@@ -119,7 +124,8 @@
           "role_ko": "나",
           "en": "Realistically, I'd say two days for the full suite — tight, but doable.",
           "ko": "현실적으로 전체 스위트에 이틀 정도 걸릴 것 같은데, 빠듯하지만 가능은 해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I think the full suite takes about 2 days, tight but possible."
         },
         {
           "n": 3,
@@ -135,7 +141,8 @@
           "role_ko": "나",
           "en": "Mainly the inference queue — if it backs up, I'll trim the eval set instead.",
           "ko": "주로 추론 큐 문제인데, 밀리면 평가 데이터셋을 줄이는 쪽으로 갈게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "If the inference queue gets busy, I'll trim the eval set instead."
         }
       ]
     },
@@ -152,7 +159,8 @@
           "role_ko": "나",
           "en": "How many nodes are you planning to request for this run?",
           "ko": "이번 런에 노드를 몇 개나 요청할 계획이에요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "How many nodes will you request for this run?"
         },
         {
           "n": 2,
@@ -168,7 +176,8 @@
           "role_ko": "나",
           "en": "With that setup, figure two days per epoch if the data loader keeps up.",
           "ko": "그 구성이면 데이터 로더만 버텨주면 에폭당 이틀 정도로 보면 돼요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Plan 2 days per round if the data tool works fast."
         },
         {
           "n": 4,
@@ -184,7 +193,8 @@
           "role_ko": "나",
           "en": "Then it stalls on I/O, so let's profile it first before locking the node count.",
           "ko": "그럼 I/O에서 병목이 생기니까, 노드 수 확정 전에 먼저 프로파일링해 봐요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It stalls on disk speed, so test it before locking node count."
         }
       ]
     },
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "That should cover it, if I keep the search space to twenty configs.",
           "ko": "탐색 범위를 20개 컨피그로 제한하면 그걸로 충분할 것 같아요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "That should be enough if I limit the search to 20 configs."
         },
         {
           "n": 3,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "Then I'll queue the rest overnight instead of blocking today's deadline.",
           "ko": "그럼 오늘 마감을 붙잡고 있지 말고, 나머지는 밤새 큐에 넣어둘게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll queue the rest overnight instead of delaying today's deadline."
         }
       ]
     }
