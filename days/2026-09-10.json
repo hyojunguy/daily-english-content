@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 30,
+  "date": "2026-09-10",
+  "week": 5,
+  "block": "team-daily",
+  "theme": "일정과 추정 — 못 지킬 약속을 하지 않기",
+  "topic": "추정이 틀렸음을 일찍 알리고 재조정 제안하기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d030-s1",
+      "title_ko": "유리벽 회의실 1:1, 파이프라인 지연을 먼저 알리기",
+      "context_ko": "매니저와의 정기 체크인 자리에서, 어제 발견된 라벨링 이슈로 피처 파이프라인 일정이 밀릴 조짐이 보이자 이를 먼저 알리는 상황.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저 Priya",
+          "en": "Quick check-in — is the feature pipeline still on track for Thursday?",
+          "ko": "잠깐 체크인 할게요 — 피처 파이프라인은 목요일까지 문제없죠?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I want to flag this early — we hit a labeling issue in the feature pipeline yesterday.",
+          "ko": "미리 말씀드리는 게 나을 것 같아서요 — 어제 피처 파이프라인에서 라벨링 문제가 발견됐어요.",
+          "is_target": true,
+          "en_easy": "I want to warn you early about a labeling issue yesterday."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저 Priya",
+          "en": "Okay, how far off are we talking?",
+          "ko": "그렇군요, 얼마나 밀리는 건가요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "My rough estimate is three extra days, but I'd rather tell you now than surprise you Thursday.",
+          "ko": "대략 사흘 정도 더 걸릴 것 같아요, 목요일에 놀라시는 것보다 지금 말씀드리는 게 나을 것 같아서요.",
+          "is_target": true,
+          "en_easy": "I'd rather tell you now than surprise you later."
+        }
+      ]
+    },
+    {
+      "id": "d030-s2",
+      "title_ko": "스탠드업 화이트보드 앞, 벤치마크 지연 조기 신호",
+      "context_ko": "아침 스탠드업이 끝나갈 무렵, GPU 노드 불안정으로 벤치마크 스위트가 지난주 추정보다 늦어질 것 같다고 팀 리드에게 미리 알리는 상황.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Before standup wraps — the benchmark suite is going to run over what I quoted last week.",
+          "ko": "스탠드업 끝나기 전에요 — 벤치마크 스위트가 지난주에 말씀드린 것보다 더 걸릴 것 같아요.",
+          "is_target": true,
+          "en_easy": "Before standup ends, the benchmark suite will take longer than I said."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 리드 Marco",
+          "en": "How much over? We promised the demo team Friday numbers.",
+          "ko": "얼마나 더요? 데모 팀한테는 금요일까지 결과 준다고 했는데요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Two of the GPU nodes keep dropping, so I'd rather scope it down than slip the whole thing.",
+          "ko": "GPU 노드 두 대가 계속 떨어져서요, 전체를 늦추느니 범위를 줄이는 게 나을 것 같아요.",
+          "is_target": true,
+          "en_easy": "Some GPU nodes fail, so I'd rather reduce scope than delay it."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 리드 Marco",
+          "en": "What would you cut first?",
+          "ko": "그럼 뭐부터 빼실 건가요?",
+          "is_target": false
+        }
+      ]
+    },
+    {
+      "id": "d030-s3",
+      "title_ko": "화상회의, 재학습 잡 추정을 조건부로 설명하기",
+      "context_ko": "원격 팀 리드와의 화상회의에서, 재학습 잡 소요 시간이 체크포인트 포맷 호환 여부에 달려 있다고 조건을 붙여 설명하는 상황.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "원격 팀 리드 Sam",
+          "en": "Sam here — the retraining job estimate you gave last week, are we still good for that?",
+          "ko": "Sam이에요 — 지난주에 주신 재학습 잡 추정 말인데, 그대로 가도 되는 거죠?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That depends on whether the new checkpoint format still works with our current sharding setup.",
+          "ko": "그건 새 체크포인트 포맷이 지금 샤딩 설정이랑 그대로 맞는지에 달려 있어요.",
+          "is_target": true,
+          "en_easy": "It depends if the new checkpoint format still fits our setup."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "원격 팀 리드 Sam",
+          "en": "And if it doesn't?",
+          "ko": "만약 안 맞으면요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Then we're looking at another day of debugging, so let's pencil in a buffer just in case.",
+          "ko": "그러면 디버깅에 하루 더 걸릴 테니, 혹시 몰라서 여유를 좀 잡아두죠.",
+          "is_target": true,
+          "en_easy": "Then we'll need another day to debug, so let's add a buffer."
+        }
+      ]
+    },
+    {
+      "id": "d030-s4",
+      "title_ko": "동료 책상에 걸터앉아, 지연 소식 전할 말 다듬기",
+      "context_ko": "팀 리드에게 평가 파이프라인 지연을 알리기 전, 동료 책상에 잠시 걸터앉아 어떻게 말을 꺼낼지 미리 다듬어보는 상황.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Can I run something by you before I tell Marco the eval numbers are late?",
+          "ko": "Marco한테 평가 수치 늦어진다고 말하기 전에, 먼저 좀 봐줄 수 있어요?",
+          "is_target": true,
+          "en_easy": "Can I ask you something before I tell him numbers are late?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 Jordan",
+          "en": "Sure, what's going on?",
+          "ko": "그럼요, 무슨 일인데요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I don't want it to sound like an excuse, so I'm leading with the number, not the reason.",
+          "ko": "변명처럼 들리지 않게, 이유보다 숫자부터 먼저 말하려고요.",
+          "is_target": true,
+          "en_easy": "This isn't an excuse, so I'll give the number first."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 Jordan",
+          "en": "That's smart. What's the number?",
+          "ko": "그거 괜찮네요. 숫자는 어떻게 되는데요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Two days late, and I already have a plan to cut the slowest eval set.",
+          "ko": "이틀 늦어질 것 같은데, 제일 느린 평가 세트를 빼는 방안도 이미 생각해뒀어요.",
+          "is_target": true,
+          "en_easy": "I'll be late, but I can cut the slowest eval set."
+        }
+      ]
+    },
+    {
+      "id": "d030-s5",
+      "title_ko": "탕비실 가는 복도에서, 라벨링 배치 지연 조기 공유",
+      "context_ko": "업데이트 미팅 직전 복도에서 마주친 동료에게, 어노테이터 이탈로 라벨링 배치 추정이 빠듯해졌다는 것을 먼저 공유하는 상황.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey, before the update meeting — the labeling batch estimate we gave is already looking tight.",
+          "ko": "저기, 업데이트 미팅 전에요 — 우리가 드린 라벨링 배치 추정이 벌써 빠듯해 보여요.",
+          "is_target": true,
+          "en_easy": "Before the meeting, our labeling estimate already looks tight."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 Elena",
+          "en": "Tight how? We told the PM two days.",
+          "ko": "얼마나 빠듯한데요? PM한테는 이틀이라고 했잖아요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "One annotator dropped out, so realistically it's closer to four days now.",
+          "ko": "어노테이터 한 명이 빠져서, 현실적으로는 나흘에 더 가까워요.",
+          "is_target": true,
+          "en_easy": "One person left, so it will take more days now."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 Elena",
+          "en": "Do we push the deadline or cut the batch size?",
+          "ko": "마감을 미룰까요, 아니면 배치 크기를 줄일까요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let's cut the batch size — I'd rather flag it today than explain a miss on Friday.",
+          "ko": "배치 크기를 줄이죠 — 금요일에 못 지킨 걸 설명하느니 오늘 미리 말하는 게 나아요.",
+          "is_target": true,
+          "en_easy": "Let's cut the batch size, so I can warn you before Friday."
+        }
+      ]
+    }
+  ]
+}
