@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-09T21:09:04+00:00",
+  "updated": "2026-09-11T21:12:53+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 30,
-  "total_days": 24,
-  "total_turns": 527,
-  "total_target_turns": 287,
+  "latest_day": 31,
+  "total_days": 25,
+  "total_turns": 548,
+  "total_target_turns": 298,
   "days": [
     {
       "day": 1,
@@ -390,6 +390,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-10.json"
+    },
+    {
+      "day": 31,
+      "date": "2026-09-11",
+      "week": 5,
+      "block": "team-daily",
+      "theme": "일정과 추정 — 못 지킬 약속을 하지 않기",
+      "topic": "범위를 줄여서 기한을 지키자고 협상하기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 21,
+      "target_turns": 11,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-11.json"
     }
   ]
 }
