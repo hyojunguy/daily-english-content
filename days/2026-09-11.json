@@ -29,7 +29,8 @@
           "role_ko": "나",
           "en": "My rough estimate is three more days if we run the entire suite as planned.",
           "ko": "제 대략적인 추정으로는 전체 슈트를 계획대로 다 돌리면 사흘은 더 걸려요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I think it'll take 3 more days if we run the suite."
         },
         {
           "n": 3,
@@ -45,7 +46,8 @@
           "role_ko": "나",
           "en": "Let's cut it to the five benchmarks stakeholders care about and finish those by Friday.",
           "ko": "그럼 이해관계자들이 실제로 신경 쓰는 벤치마크 다섯 개로 줄여서 금요일까지 끝낼게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Let's pick the 5 benchmarks people care about and finish by Friday."
         }
       ]
     },
@@ -62,7 +64,8 @@
           "role_ko": "나",
           "en": "Before we start, I want to flag something about the ablation study for the submission.",
           "ko": "시작하기 전에, 제출용 ablation study 관련해서 말씀드릴 게 있어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Before we start, I want to flag one thing about the study."
         },
         {
           "n": 2,
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "That depends on whether we need every variant or just the ones reviewers will actually question.",
           "ko": "리뷰어들이 실제로 물어볼 만한 변형만 할지, 전부 다 돌릴지에 따라 달라져요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It depends on how many versions people need to check."
         },
         {
           "n": 4,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "I'd rather scope it down than slip — three core ablations, and I'll note the rest as future work.",
           "ko": "저는 밀리느니 범위를 줄이는 쪽이 나아요 — 핵심 ablation 세 개만 하고 나머지는 향후 과제로 남길게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'd rather cut scope than be late, so I'll keep 3 studies."
         }
       ]
     },
@@ -119,7 +124,8 @@
           "role_ko": "나",
           "en": "That depends on whether we need all three random seeds or just one for the initial validation.",
           "ko": "랜덤 시드 세 개를 다 필요로 하는지, 아니면 초기 검증용으로 하나면 되는지에 따라 달라져요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It depends on how many seeds we need for the first check."
         },
         {
           "n": 3,
@@ -135,7 +141,8 @@
           "role_ko": "나",
           "en": "Then one seed gets us there — I'll queue the other two for after the demo.",
           "ko": "그럼 시드 하나로 충분해요 — 나머지 두 개는 데모 끝난 후에 돌릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "One seed is enough, and I'll run the rest after the demo."
         }
       ]
     },
@@ -160,7 +167,8 @@
           "role_ko": "나",
           "en": "I need to tell my manager I can't hit the full scope by the launch date.",
           "ko": "출시일까지 전체 범위를 다 못 맞춘다고 매니저한테 말해야 해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I must tell my manager we will miss the launch date."
         },
         {
           "n": 3,
@@ -176,7 +184,8 @@
           "role_ko": "나",
           "en": "Good call — I'll open with the number instead of explaining why I'm behind.",
           "ko": "좋은 팁이네요 — 왜 늦었는지 설명하는 대신 숫자부터 말할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Good idea, I'll give the number first instead of explaining the delay."
         }
       ]
     },
@@ -201,7 +210,8 @@
           "role_ko": "나",
           "en": "Realistically, that optimization alone adds another week on top of the deployment work.",
           "ko": "현실적으로 그 최적화만 따로 하면 배포 작업 위에 일주일이 더 붙어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "That optimization alone adds one more week to deployment."
         },
         {
           "n": 3,
@@ -217,7 +227,8 @@
           "role_ko": "나",
           "en": "Then let's ship on single-GPU now and treat the optimization as a fast follow next week.",
           "ko": "그럼 일단 단일 GPU로 배포하고, 최적화는 다음 주 후속 작업으로 돌릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Then let's ship on one GPU and add the optimization next week."
         }
       ]
     }
