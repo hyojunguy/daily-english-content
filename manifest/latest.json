@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-11T21:12:53+00:00",
+  "updated": "2026-09-11T21:20:06+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 31,
-  "total_days": 25,
-  "total_turns": 548,
-  "total_target_turns": 298,
+  "latest_day": 32,
+  "total_days": 26,
+  "total_turns": 570,
+  "total_target_turns": 310,
   "days": [
     {
       "day": 1,
@@ -406,6 +406,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-11.json"
+    },
+    {
+      "day": 32,
+      "date": "2026-09-12",
+      "week": 5,
+      "block": "team-daily",
+      "theme": "일정과 추정 — 못 지킬 약속을 하지 않기",
+      "topic": "다른 팀 의존성 때문에 늦어진다고 설명하기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-12.json"
     }
   ]
 }

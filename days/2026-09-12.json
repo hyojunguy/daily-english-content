@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 32,
+  "date": "2026-09-12",
+  "week": 5,
+  "block": "team-daily",
+  "theme": "일정과 추정 — 못 지킬 약속을 하지 않기",
+  "topic": "다른 팀 의존성 때문에 늦어진다고 설명하기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d032-s1",
+      "title_ko": "화상회의로 인프라팀에 클러스터 일정 확인하기",
+      "context_ko": "{name}은 화상회의로 인프라팀 리드 Sam에게 분산 학습에 쓸 GPU 클러스터 마이그레이션 진행 상황을 확인한다. 클러스터가 언제 풀리느냐에 따라 학습 시작일이 통째로 밀린다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey, just checking in — is the GPU cluster migration still on track?",
+          "ko": "안녕하세요, 확인차 여쭤보는데 GPU 클러스터 마이그레이션은 일정대로 가고 있나요?",
+          "is_target": true,
+          "en_easy": "Is the GPU cluster migration still on schedule?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "인프라팀 리드",
+          "en": "Sorry for the late reply — we're still finishing the migration on our end.",
+          "ko": "답장이 늦었네요. 저희 쪽 마이그레이션이 아직 안 끝났어요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That depends on whether it wraps today or slips into next week.",
+          "ko": "그건 오늘 끝나느냐 다음 주로 넘어가느냐에 달려 있겠네요.",
+          "is_target": true,
+          "en_easy": "It might finish today or slip to next week."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "인프라팀 리드",
+          "en": "Realistically it's probably Thursday before the nodes are free.",
+          "ko": "현실적으로는 목요일은 돼야 노드가 풀릴 것 같아요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Okay, then my rough estimate is we can kick off training Friday morning.",
+          "ko": "알겠어요, 그럼 제 대략적인 예상으로는 금요일 아침에나 학습을 시작할 수 있을 것 같아요.",
+          "is_target": true,
+          "en_easy": "Okay, I guess we can start training Friday morning."
+        }
+      ]
+    },
+    {
+      "id": "d032-s2",
+      "title_ko": "유리벽 회의실에서 팀 리드에게 지연 원인 설명하기",
+      "context_ko": "{name}은 유리벽 회의실에서 팀 리드 Jordan과 1:1을 하며, 평가 파이프라인이 플랫폼팀의 클러스터 수정 때문에 늦어지고 있다고 설명하고 범위를 줄이자고 제안한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The eval run is blocked on the platform team's cluster fix, so we'll lose two days minimum.",
+          "ko": "평가 실행이 플랫폼팀 클러스터 수정에 막혀서, 최소 이틀은 밀릴 것 같습니다.",
+          "is_target": true,
+          "en_easy": "The platform team's fix blocks our eval, so we lose several days."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Does that push the whole benchmark suite past the deadline?",
+          "ko": "그럼 전체 벤치마크 스위트가 마감을 넘기게 되는 건가요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "If I run every configuration, yes. I'd rather scope it down than slip the whole deadline.",
+          "ko": "설정을 다 돌리면 그렇게 됩니다. 전체 마감을 놓치느니 범위를 줄이는 쪽이 낫다고 봐요.",
+          "is_target": true,
+          "en_easy": "I'd rather shrink it than miss the whole deadline."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Fine, pick the two most important configs and we'll report those.",
+          "ko": "좋아요, 가장 중요한 설정 두 개만 골라서 그걸로 보고합시다.",
+          "is_target": false
+        }
+      ]
+    },
+    {
+      "id": "d032-s3",
+      "title_ko": "복도에서 데이터팀 엔지니어와 마주쳐 라벨링 지연 확인하기",
+      "context_ko": "{name}은 탕비실로 가는 복도에서 데이터팀 엔지니어 Elena와 마주쳐, 평가용 데이터셋 라벨링 배치가 언제 끝나는지 즉석에서 확인한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "데이터팀 엔지니어",
+          "en": "Oh hey, were you looking for me about the labeling batch?",
+          "ko": "어, 마침 잘 만났네요. 라벨링 배치 때문에 저 찾으셨어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah, I need to know if it'll be done before I can start the eval run.",
+          "ko": "네, 평가를 시작하려면 그게 언제 끝나는지 알아야 해서요.",
+          "is_target": true,
+          "en_easy": "Yeah, I need to know when it finishes."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "데이터팀 엔지니어",
+          "en": "Honestly, it's still stuck in QA — maybe two more days.",
+          "ko": "솔직히 아직 QA에 걸려 있어요. 한 이틀은 더 걸릴 것 같아요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Then I'll plan around Thursday and flag the delay to my lead today.",
+          "ko": "그럼 목요일 기준으로 계획을 짜고, 오늘 팀 리드한테 지연 상황을 알릴게요.",
+          "is_target": true,
+          "en_easy": "I'll plan for Thursday and flag the delay to my lead today."
+        }
+      ]
+    },
+    {
+      "id": "d032-s4",
+      "title_ko": "모니터 여러 대 자리에서 재학습 지연 원인 함께 확인하기",
+      "context_ko": "{name}은 모니터 여러 대가 붙은 자리에서 동료 Marco와 함께 로그를 보며, 상류 데이터 수집 서비스의 오류 때문에 재학습 일정 전체가 묶여 있다는 걸 확인한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Look, the retry loop's still failing on their ingestion service.",
+          "ko": "봐봐요, 그쪽 인제스천 서비스에서 리트라이 루프가 계속 실패하고 있어요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "So until they patch that, our whole retraining schedule stays stuck, right?",
+          "ko": "그럼 그쪽에서 그걸 고칠 때까지 우리 재학습 일정 전체가 묶여 있는 거네요?",
+          "is_target": true,
+          "en_easy": "So our whole training schedule stays stuck until they fix it, right?"
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Basically, yeah. No way around it without a patch on their side.",
+          "ko": "거의 그렇죠. 그쪽에서 패치 안 하면 저희도 방법이 없어요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Got it. I'll tell the team the estimate is tied to their fix, not us.",
+          "ko": "알겠어요. 일정은 저희가 아니라 그쪽 수정에 달려 있다고 팀에 전할게요.",
+          "is_target": true,
+          "en_easy": "I'll tell the team the estimate depends on their fix, not ours."
+        }
+      ]
+    },
+    {
+      "id": "d032-s5",
+      "title_ko": "점심 자리에서 지연 설명이 잘 통했다고 나누기",
+      "context_ko": "{name}은 점심 테이블에서 동료 Priya에게, 팀 리드에게 지연 원인을 설명하고 범위를 줄이자고 제안했던 대화가 잘 마무리됐다고 전한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I finally told Jordan the eval delay is on the platform team, not us.",
+          "ko": "드디어 Jordan한테 평가 지연은 우리가 아니라 플랫폼팀 때문이라고 말했어요.",
+          "is_target": true,
+          "en_easy": "I told him the platform team caused the eval delay, not us."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "How'd that land? Did they push back on the timeline?",
+          "ko": "반응이 어땠어요? 일정 갖고 뭐라고 안 하던가요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not really — once I said I'd rather scope it down than slip, they agreed.",
+          "ko": "딱히요. 밀리느니 범위를 줄이겠다고 하니까 바로 동의하더라고요.",
+          "is_target": true,
+          "en_easy": "They quickly agreed once I said I'd rather shrink it than slip."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Smart move. Better than promising a date you can't hit.",
+          "ko": "잘했네요. 못 지킬 날짜 약속하는 것보단 훨씬 낫죠.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Exactly. I'd rather under-promise now than explain a miss later.",
+          "ko": "맞아요. 나중에 못 지킨 이유 설명하느니 지금 낮춰 부르는 게 낫죠.",
+          "is_target": true,
+          "en_easy": "I'd rather promise less now than explain a miss later."
+        }
+      ]
+    }
+  ]
+}
