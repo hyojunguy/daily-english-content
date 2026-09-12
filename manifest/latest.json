@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-11T21:20:06+00:00",
+  "updated": "2026-09-12T21:12:27+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 32,
-  "total_days": 26,
-  "total_turns": 570,
-  "total_target_turns": 310,
+  "latest_day": 33,
+  "total_days": 27,
+  "total_turns": 591,
+  "total_target_turns": 321,
   "days": [
     {
       "day": 1,
@@ -422,6 +422,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-12.json"
+    },
+    {
+      "day": 33,
+      "date": "2026-09-13",
+      "week": 5,
+      "block": "team-daily",
+      "theme": "일정과 추정 — 못 지킬 약속을 하지 않기",
+      "topic": "무리한 마감 요청을 근거를 들어 거절하기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 21,
+      "target_turns": 11,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-13.json"
     }
   ]
 }

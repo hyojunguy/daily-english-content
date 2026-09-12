@@ -1,0 +1,236 @@
+{
+  "schema": 1,
+  "day": 33,
+  "date": "2026-09-13",
+  "week": 5,
+  "block": "team-daily",
+  "theme": "일정과 추정 — 못 지킬 약속을 하지 않기",
+  "topic": "무리한 마감 요청을 근거를 들어 거절하기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d033-s1",
+      "title_ko": "스탠드업 화이트보드 앞, 무리한 데모 일정 되돌리기",
+      "context_ko": "금요일 고객 데모를 앞두고 프로덕트 매니저가 스탠드업에서 전체 재학습과 배포를 요구한다. {name}은 근거를 들어 현실적인 일정을 제시해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "프로덕트 매니저",
+          "en": "The customer demo is Friday — can we have the retrained model shipped by then?",
+          "ko": "고객 데모가 금요일인데, 그때까지 재학습된 모델 배포 가능할까요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "My rough estimate is early next week — Friday doesn't leave time to eval after retraining.",
+          "ko": "제 대략적인 예상으론 다음 주 초예요. 금요일까지는 재학습 후 평가할 시간이 안 나와요.",
+          "is_target": true,
+          "en_easy": "I guess early next week because Friday leaves no test time."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "프로덕트 매니저",
+          "en": "That's tight. Could we ship the current checkpoint instead and add updates after the demo?",
+          "ko": "빠듯하네요. 그럼 일단 지금 체크포인트로 배포하고 업데이트는 데모 후에 반영할까요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That works better — I can polish the current checkpoint and show the retrain as a follow-up.",
+          "ko": "그게 낫겠어요. 지금 체크포인트를 다듬어서 보여드리고, 재학습 결과는 후속으로 공유할게요.",
+          "is_target": true,
+          "en_easy": "I will improve the checkpoint now and train again later."
+        }
+      ]
+    },
+    {
+      "id": "d033-s2",
+      "title_ko": "유리벽 회의실 1:1, 전체 벤치마크 요구에 선 긋기",
+      "context_ko": "이틀 뒤 이사회 리뷰를 앞두고 디렉터가 모든 모델 변형에 대한 벤치마크 비교를 요청한다. {name}은 범위를 조정해 현실적인 대안을 제안한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "디렉터",
+          "en": "The board wants a full benchmark comparison across every model variant before Wednesday's review.",
+          "ko": "이사회에서 수요일 리뷰 전까지 모든 모델 변형에 대한 전체 벤치마크 비교를 원해요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That depends on whether you need all variants or just the top three candidates.",
+          "ko": "그건 전체 변형이 다 필요한지, 아니면 상위 세 개 후보만으로 충분한지에 달려 있어요.",
+          "is_target": true,
+          "en_easy": "It depends on needing all versions or just the top 3."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "디렉터",
+          "en": "Ideally all of them, but I get that's a lot to ask in two days.",
+          "ko": "이상적으로는 전부 다요. 근데 이틀 안에 그건 무리한 요청인 것도 알아요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Running all variants would take through the weekend — let's prioritize the top three and flag the rest as pending.",
+          "ko": "전체를 다 돌리면 주말까지 걸려요. 상위 세 개부터 우선 진행하고 나머지는 보류로 표시해두죠.",
+          "is_target": true,
+          "en_easy": "Let's run the top 3 first and mark the rest pending."
+        }
+      ]
+    },
+    {
+      "id": "d033-s3",
+      "title_ko": "화상회의, 서빙 마이그레이션 일정 리스크 먼저 꺼내기",
+      "context_ko": "원격 근무 중인 타 팀 PM이 금요일 론칭에 맞춰 서빙 마이그레이션 완료를 기대하고 있다. {name}은 화상회의를 시작하자마자 일정 리스크를 먼저 짚는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Before we dive in, I want to flag that the migration timeline might be tighter than planned.",
+          "ko": "본격적으로 들어가기 전에, 마이그레이션 일정이 계획보다 빠듯할 수 있다는 걸 먼저 말씀드리고 싶어요.",
+          "is_target": true,
+          "en_easy": "Before we start, the schedule may be tighter than planned."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "타 팀 PM (원격)",
+          "en": "Okay — we were hoping to have it live by Friday for the launch. Is that not realistic?",
+          "ko": "아, 저희는 론칭에 맞춰 금요일까지 라이브를 기대하고 있었는데요. 그게 현실적으로 어려운가요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "My rough estimate is one and a half weeks once we include load testing.",
+          "ko": "제 대략적인 예상으론 부하 테스트까지 포함하면 일주일 반 정도 걸려요.",
+          "is_target": true,
+          "en_easy": "My guess is one and a half weeks with load testing."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "타 팀 PM (원격)",
+          "en": "That's rough, launch is locked to Friday. Is there anything we could cut to compress it?",
+          "ko": "곤란하네요, 론칭은 금요일로 고정돼 있어서요. 일정을 줄이려면 뭘 빼야 할까요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That depends on whether we're willing to skip load testing, and I wouldn't recommend that.",
+          "ko": "그건 부하 테스트를 생략할지에 달려 있는데, 저는 그걸 추천하고 싶지 않아요.",
+          "is_target": true,
+          "en_easy": "It depends on dropping load testing, but I don't recommend that."
+        }
+      ]
+    },
+    {
+      "id": "d033-s4",
+      "title_ko": "서버룸 앞, 밤샘 분산 학습 요청에 검증을 지키기",
+      "context_ko": "내일 배포 빌드에 넣기 위해 운영 리드가 분산 학습 잡을 오늘 밤 안에 끝내달라고 재촉한다. {name}은 검증을 포기하지 않는 대안을 제시한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "운영 리드",
+          "en": "Can the distributed job finish tonight? We need it in for tomorrow's release build.",
+          "ko": "분산 학습 잡을 오늘 밤 안에 끝낼 수 있을까요? 내일 배포 빌드에 넣어야 해서요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Finishing tonight means cutting corners on validation — I'm not comfortable shipping that into release.",
+          "ko": "오늘 밤 끝내려면 검증을 대충 넘겨야 하는데, 그 상태로 배포하는 건 마음이 안 놓여요.",
+          "is_target": true,
+          "en_easy": "Finishing tonight means dropping tests, and I'm not comfortable shipping that."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "운영 리드",
+          "en": "Fair enough — is there a smaller version we could still land by tonight?",
+          "ko": "그건 맞는 말이네요. 그럼 오늘 밤까지 낼 수 있는 더 작은 버전이 있을까요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let's run two seeds instead of five so we still land something solid before the cutoff.",
+          "ko": "시드 다섯 개 대신 두 개만 돌려서, 마감 전까지 그래도 믿을 만한 결과를 내볼게요.",
+          "is_target": true,
+          "en_easy": "Let's run 2 seeds instead of 5 before the deadline."
+        }
+      ]
+    },
+    {
+      "id": "d033-s5",
+      "title_ko": "복도에서 마주친 임원의 급한 요청, 범위 줄여 응답하기",
+      "context_ko": "복도에서 마주친 스킵레벨 임원이 내일 아침 리더십 리뷰 전까지 업데이트된 모델 배포를 캐주얼하게 요청한다. {name}은 전체 대신 부분 결과로 범위를 좁혀 제안한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "스킵레벨 임원",
+          "en": "Hey, quick one — any chance we ship the updated model by tomorrow morning for the review?",
+          "ko": "저기, 잠깐만요 — 혹시 내일 아침 리뷰 전까지 업데이트된 모델 배포 가능할까요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd rather scope it down than slip the whole review — I can show partial results by then.",
+          "ko": "전체 리뷰를 미루느니 범위를 줄이는 게 나아요. 그때까지 일부 결과는 보여드릴 수 있어요.",
+          "is_target": true,
+          "en_easy": "I'd rather cut scope than delay the review, and share results soon."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "스킵레벨 임원",
+          "en": "That could work. What would the partial version cover?",
+          "ko": "그거 괜찮네요. 부분 버전에는 뭐가 들어가나요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll have the accuracy numbers ready, just not the full latency benchmarks yet.",
+          "ko": "정확도 수치는 준비될 텐데, 전체 레이턴시 벤치마크는 아직 안 나와요.",
+          "is_target": true,
+          "en_easy": "I'll have the accuracy numbers ready, but not the latency benchmarks yet."
+        }
+      ]
+    }
+  ]
+}
