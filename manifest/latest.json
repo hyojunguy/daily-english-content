@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-13T21:10:55+00:00",
+  "updated": "2026-09-14T21:08:29+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 34,
-  "total_days": 28,
-  "total_turns": 613,
-  "total_target_turns": 333,
+  "latest_day": 35,
+  "total_days": 29,
+  "total_turns": 635,
+  "total_target_turns": 344,
   "days": [
     {
       "day": 1,
@@ -454,6 +454,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-14.json"
+    },
+    {
+      "day": 35,
+      "date": "2026-09-15",
+      "week": 5,
+      "block": "team-daily",
+      "theme": "일정과 추정 — 못 지킬 약속을 하지 않기",
+      "topic": "일정 변경을 이해관계자에게 공지하기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 11,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-15.json"
     }
   ]
 }

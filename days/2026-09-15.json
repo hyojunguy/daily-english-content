@@ -1,0 +1,244 @@
+{
+  "schema": 1,
+  "day": 35,
+  "date": "2026-09-15",
+  "week": 5,
+  "block": "team-daily",
+  "theme": "일정과 추정 — 못 지킬 약속을 하지 않기",
+  "topic": "일정 변경을 이해관계자에게 공지하기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d035-s1",
+      "title_ko": "화이트보드 스탠드업, 재학습 완료일이 밀렸다고 팀에 공지하기",
+      "context_ko": "스탠드업에서 팀 리드가 재학습 완료 예정일을 묻자, {name}이 이미 밀린 일정을 팀 전체 앞에서 공식적으로 공지하는 상황.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Quick check — is the retraining job still on track to finish by Friday like we planned?",
+          "ko": "잠깐 확인할게요, 재학습 잡이 계획대로 금요일까지 끝나는 거 맞아요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I need to flag a slip — it'll finish Monday instead, so I wanted to say it here first.",
+          "ko": "일정이 밀렸다는 걸 먼저 말씀드릴게요, 금요일 대신 월요일에 끝날 것 같아서 여기서 먼저 공유해요.",
+          "is_target": true,
+          "en_easy": "I want to say this first, the date moved to Monday."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Thanks for saying it now. What's driving the three-day shift?",
+          "ko": "지금 말해줘서 고마워요. 삼 일이나 밀린 이유가 뭐예요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The cluster queue backed up over the weekend, so my rough estimate is Monday afternoon at the latest.",
+          "ko": "주말에 클러스터 대기열이 밀려서요, 대략 어림잡아 늦어도 월요일 오후까지는 될 것 같아요.",
+          "is_target": true,
+          "en_easy": "The queue grew over the weekend, so Monday afternoon is my guess."
+        },
+        {
+          "n": 5,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Got it. I'll let the product side know Friday's off the table.",
+          "ko": "알겠어요. 금요일은 안 된다고 제품 쪽에 전달할게요.",
+          "is_target": false
+        }
+      ]
+    },
+    {
+      "id": "d035-s2",
+      "title_ko": "유리벽 회의실 1:1, 매니저에게 평가 결과 발표일 연기를 먼저 알리기",
+      "context_ko": "매니저와의 1:1에서 {name}이 다음 주 평가 결과 발표 일정을 며칠 늦춰야 한다고 먼저 꺼내는 상황.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I wanted to raise this before you hear it from stakeholders — the eval readout needs to move.",
+          "ko": "다른 데서 먼저 듣기 전에 저한테서 먼저 들으시면 좋을 것 같아서요, 평가 결과 발표를 옮겨야 해서요.",
+          "is_target": true,
+          "en_easy": "I want to tell you first, the eval report needs to move."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Okay, how far out are we talking, and what changed?",
+          "ko": "알겠어요, 얼마나 밀리는 거고 뭐가 바뀐 거예요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That depends on whether the benchmark suite finishes rerunning by Wednesday or slips further.",
+          "ko": "그건 벤치마크 스위트가 수요일까지 재실행을 끝내는지, 아니면 더 밀리는지에 따라 달라요.",
+          "is_target": true,
+          "en_easy": "It depends if the benchmark suite finishes by Wednesday."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Let's plan for Thursday then, and I'll draft the note to stakeholders once you confirm.",
+          "ko": "그럼 목요일로 잡죠, 확정되면 제가 이해관계자들한테 보낼 공지 초안 써둘게요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sounds good — I'll confirm by tomorrow morning so you're not stuck waiting on me.",
+          "ko": "좋아요, 내일 아침까지 확정해서 드릴게요, 저 때문에 무작정 기다리지 않으시게요.",
+          "is_target": true,
+          "en_easy": "Sounds good, I'll confirm by tomorrow so you don't wait for me."
+        }
+      ]
+    },
+    {
+      "id": "d035-s3",
+      "title_ko": "동료 책상 옆에 걸터앉아, 다른 팀에 보낼 지연 공지 문구를 함께 다듬기",
+      "context_ko": "동료가 지나가다 걸터앉아, {name}이 다른 팀 이해관계자들에게 보낼 데이터 파이프라인 지연 공지 문구를 같이 검토해주는 상황.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Can you skim this before I send it? I don't want the delay notice to sound like an excuse.",
+          "ko": "보내기 전에 한번 훑어봐 줄래요? 지연 공지가 변명처럼 들리지 않았으면 해서요.",
+          "is_target": true,
+          "en_easy": "Can you check this before I send it?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "It reads fine, but lead with the new date — people scan for that first.",
+          "ko": "괜찮아 보이는데, 새 날짜부터 먼저 쓰는 게 좋겠어요, 사람들이 그거부터 찾거든요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good call, let me move that up and keep the reason short underneath.",
+          "ko": "좋은 지적이에요, 그거 위로 올리고 이유는 짧게 밑에 넣을게요.",
+          "is_target": true,
+          "en_easy": "Good idea, I'll put that first and keep the reason short."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "That'll land better. People just want to know what to plan around.",
+          "ko": "그게 더 잘 전달될 거예요. 사람들은 뭘 기준으로 일정을 짜야 하는지가 궁금한 거니까요.",
+          "is_target": false
+        }
+      ]
+    },
+    {
+      "id": "d035-s4",
+      "title_ko": "화상회의, 서빙 마이그레이션 완료일 변경을 여러 팀에 동시에 공지하기",
+      "context_ko": "화상회의에서 {name}이 인프라팀과 제품팀이 함께 있는 자리에서 서빙 마이그레이션 완료일이 늦춰졌다고 공식적으로 알리는 상황.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I want to give everyone a heads-up now — the migration date is shifting from Friday to next Tuesday.",
+          "ko": "지금 미리 알려드릴게요, 마이그레이션 완료일이 금요일에서 다음 주 화요일로 밀려요.",
+          "is_target": true,
+          "en_easy": "I want to tell everyone now, the migration date moves to Tuesday."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "제품팀 담당자",
+          "en": "That's a big shift. Does it affect the customer rollout we scheduled for Monday?",
+          "ko": "꽤 많이 밀리네요. 월요일로 잡은 고객 배포에 영향 있나요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That depends on whether we can run the rollout on the old stack until Tuesday's ready.",
+          "ko": "그건 화요일 준비가 끝날 때까지 기존 스택으로 배포를 돌릴 수 있는지에 따라 달라요.",
+          "is_target": true,
+          "en_easy": "It depends on deploying on the old stack until Tuesday."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "제품팀 담당자",
+          "en": "The old stack should hold fine, so let's keep Monday's rollout as is.",
+          "ko": "기존 스택으로도 충분할 것 같으니, 월요일 배포는 그대로 가죠.",
+          "is_target": false
+        }
+      ]
+    },
+    {
+      "id": "d035-s5",
+      "title_ko": "점심 테이블, 일정 공지가 잘 전달됐는지 동료와 가볍게 되짚기",
+      "context_ko": "점심 자리에서 동료가 아까 화상회의에서의 마이그레이션 지연 공지가 어떻게 받아들여졌는지 묻는 상황.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "How'd the migration delay announcement go earlier? Did product push back much?",
+          "ko": "아까 마이그레이션 지연 공지는 어떻게 됐어요? 제품팀이 많이 반발했어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not really — I led with the new date first, and that seemed to settle most of the questions.",
+          "ko": "생각보다 아니었어요, 새 날짜부터 먼저 말했더니 질문이 대부분 정리되더라고요.",
+          "is_target": true,
+          "en_easy": "Not really, telling the date first solved most questions."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Nice, that's usually the part people panic about when it's buried at the end.",
+          "ko": "좋네요, 보통 그 부분을 맨 끝에 숨겨놓으면 사람들이 더 불안해하잖아요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Next time I'd rather scope it down than slip a public date again, so I'm flagging changes earlier.",
+          "ko": "다음엔 마감을 놓치느니 범위를 미리 줄이는 쪽으로 할게요, 변경 사항도 더 일찍 알리고요.",
+          "is_target": true,
+          "en_easy": "Next time I'll cut the scope instead of missing the date."
+        }
+      ]
+    }
+  ]
+}
