@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "Let me share my screen — I want to walk you through the eval numbers from last night's run.",
           "ko": "화면 공유할게요 — 어젯밤 돌린 실험 평가 결과 같이 보면서 설명드릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Let me share my screen and explain last night's eval numbers."
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "So here's the accuracy curve — it dipped about four points on the harder split.",
           "ko": "이 정확도 그래프 보시면, 어려운 split에서 4포인트 정도 떨어졌어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "This chart shows the score dropped 4 points on the harder split."
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "Exactly, and I think it's a tokenization issue, not the model itself.",
           "ko": "맞아요, 모델 자체 문제라기보다는 토크나이징 이슈인 것 같아요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I think it's a token issue, not the model itself."
         }
       ]
     },
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "Yeah, I noticed that too. It lines up with when we swapped the data shard.",
           "ko": "네, 저도 봤어요. 데이터 샤드 교체한 시점이랑 딱 맞물려요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Yeah, it matches when we changed the data."
         },
         {
           "n": 3,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "I think it's the loader — let's rerun with the old shard order to confirm.",
           "ko": "로더 쪽인 것 같아요 — 예전 샤드 순서로 다시 돌려서 확인해봐요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I think the loading step is wrong, so let's test it again."
         }
       ]
     },
@@ -111,7 +116,8 @@
           "role_ko": "나",
           "en": "I've got the latency comparison pulled up — can you see it against the baseline?",
           "ko": "레이턴시 비교 자료 띄워놨는데, 베이스라인이랑 같이 잘 보이세요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can you see my latency comparison against the baseline?"
         },
         {
           "n": 2,
@@ -127,7 +133,8 @@
           "role_ko": "나",
           "en": "So the p99 latency actually dropped twelve percent on the new serving config.",
           "ko": "새 서빙 설정에서 p99 레이턴시가 12% 정도 줄었어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The latency dropped 12% with the new setup."
         },
         {
           "n": 4,
@@ -143,7 +150,8 @@
           "role_ko": "나",
           "en": "Dropped — twelve percent lower, so this clears the bar for the demo.",
           "ko": "줄었어요 — 12% 낮아져서 데모 기준은 넘겼어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It dropped 12%, so it is good enough for the demo."
         }
       ]
     },
@@ -160,7 +168,8 @@
           "role_ko": "나",
           "en": "Got a sec? I want to show you something odd in my ablation results.",
           "ko": "잠깐 시간 돼요? 어블레이션 결과에서 좀 이상한 게 있어서 보여드리고 싶어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Do you have a minute to see something odd in my results?"
         },
         {
           "n": 2,
@@ -176,7 +185,8 @@
           "role_ko": "나",
           "en": "This row here — dropping the regularizer term actually improved validation loss, not hurt it.",
           "ko": "이 행 보시면, 정규화 항을 뺐더니 오히려 검증 손실이 개선됐어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Removing this part improved the loss, not hurt it."
         },
         {
           "n": 4,
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "Pretty well, actually — she wants the full write-up before Friday's sync.",
           "ko": "꽤 잘 됐어요 — 금요일 싱크 전까지 전체 정리본을 원하시더라고요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Pretty well, she wants the full report before Friday's sync."
         },
         {
           "n": 3,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "I'll drop it in the thread so the whole team can see the numbers too.",
           "ko": "스레드에 올려놓을게요 — 팀 전체도 결과 수치 같이 볼 수 있게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll post it in the chat so the team sees it too."
         }
       ]
     }
