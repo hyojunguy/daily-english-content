@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 37,
+  "date": "2026-09-17",
+  "week": 6,
+  "block": "team-daily",
+  "theme": "리모트 협업 — 화면 너머의 사람",
+  "topic": "화면 공유하며 실험 결과 짚어주기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d037-s1",
+      "title_ko": "화상회의로 실험 결과 화면 공유하며 설명하기",
+      "context_ko": "리모트 팀원 Priya와의 화상통화. {name}이 어젯밤 돌린 실험의 평가 결과를 화면 공유로 짚어주며 정확도가 떨어진 구간을 함께 짚어본다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let me share my screen — I want to walk you through the eval numbers from last night's run.",
+          "ko": "화면 공유할게요 — 어젯밤 돌린 실험 평가 결과 같이 보면서 설명드릴게요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "원격 팀원 (Priya)",
+          "en": "Go ahead, I've got about fifteen minutes before my next call.",
+          "ko": "네, 편하게 하세요. 다음 미팅 전까지 15분 정도 여유 있어요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "So here's the accuracy curve — it dipped about four points on the harder split.",
+          "ko": "이 정확도 그래프 보시면, 어려운 split에서 4포인트 정도 떨어졌어요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "원격 팀원 (Priya)",
+          "en": "Wait, is that the split with the longer context windows?",
+          "ko": "잠깐, 그게 컨텍스트 길이가 긴 split 맞죠?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Exactly, and I think it's a tokenization issue, not the model itself.",
+          "ko": "맞아요, 모델 자체 문제라기보다는 토크나이징 이슈인 것 같아요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d037-s2",
+      "title_ko": "여러 모니터 앞에서 손실 그래프 함께 들여다보기",
+      "context_ko": "동료 Sam이 {name}의 자리로 와서 나란히 앉아, 세 대의 모니터 중 하나에 띄운 학습 손실 그래프의 이상한 스파이크를 함께 원인 분석한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 (Sam)",
+          "en": "Pull up the loss curve again — that spike around step 40k looks off.",
+          "ko": "손실 그래프 다시 띄워봐요 — 4만 스텝 근처 스파이크가 이상한데요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah, I noticed that too. It lines up with when we swapped the data shard.",
+          "ko": "네, 저도 봤어요. 데이터 샤드 교체한 시점이랑 딱 맞물려요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 (Sam)",
+          "en": "So is it the shard itself, or something in how we're loading it?",
+          "ko": "그럼 샤드 자체 문제예요, 아니면 로딩 방식 쪽이에요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I think it's the loader — let's rerun with the old shard order to confirm.",
+          "ko": "로더 쪽인 것 같아요 — 예전 샤드 순서로 다시 돌려서 확인해봐요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d037-s3",
+      "title_ko": "유리벽 회의실에서 원격 리드에게 레이턴시 결과 보고하기",
+      "context_ko": "{name}이 유리벽 소회의실에 혼자 앉아 노트북으로 원격 팀 리드 Jordan과 화상통화 중이다. 새 서빙 설정의 레이턴시 결과를 화면 공유로 보여주며 데모 기준 통과 여부를 확인한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I've got the latency comparison pulled up — can you see it against the baseline?",
+          "ko": "레이턴시 비교 자료 띄워놨는데, 베이스라인이랑 같이 잘 보이세요?",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 리드 (원격, Jordan)",
+          "en": "Yeah, I can see it. Go ahead and walk me through it.",
+          "ko": "네, 잘 보여요. 설명 이어가 주세요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "So the p99 latency actually dropped twelve percent on the new serving config.",
+          "ko": "새 서빙 설정에서 p99 레이턴시가 12% 정도 줄었어요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 리드 (원격, Jordan)",
+          "en": "You cut out for a second — did you say it dropped or went up?",
+          "ko": "잠깐 끊겼어요 — 줄었다고 하신 거예요, 늘었다고 하신 거예요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Dropped — twelve percent lower, so this clears the bar for the demo.",
+          "ko": "줄었어요 — 12% 낮아져서 데모 기준은 넘겼어요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d037-s4",
+      "title_ko": "동료 책상에 걸터앉아 이상한 실험 결과 보여주기",
+      "context_ko": "{name}이 노트북을 들고 동료 Marco의 책상 옆에 걸터앉아, 어블레이션 실험에서 나온 예상 밖의 결과를 보여주며 의견을 구한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Got a sec? I want to show you something odd in my ablation results.",
+          "ko": "잠깐 시간 돼요? 어블레이션 결과에서 좀 이상한 게 있어서 보여드리고 싶어요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 (Marco)",
+          "en": "Sure, what am I looking at?",
+          "ko": "네, 뭘 보면 되는 거예요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "This row here — dropping the regularizer term actually improved validation loss, not hurt it.",
+          "ko": "이 행 보시면, 정규화 항을 뺐더니 오히려 검증 손실이 개선됐어요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 (Marco)",
+          "en": "Huh, that's backwards from what the paper claims. Did you rerun it to be sure?",
+          "ko": "어, 논문 주장이랑 반대네요. 확실히 하려고 다시 돌려본 거예요?",
+          "is_target": false
+        }
+      ]
+    },
+    {
+      "id": "d037-s5",
+      "title_ko": "점심 자리에서 결과 보고 마무리 이야기 나누기",
+      "context_ko": "{name}과 동료 Sam이 구내식당 테이블에서 점심을 먹으며, 오전에 있었던 리드와의 결과 보고가 어떻게 됐는지 가볍게 이야기한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 (Sam)",
+          "en": "So how'd the results walkthrough go with the lead this morning?",
+          "ko": "오늘 아침 리드한테 결과 설명한 거 어떻게 됐어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Pretty well, actually — she wants the full write-up before Friday's sync.",
+          "ko": "꽤 잘 됐어요 — 금요일 싱크 전까지 전체 정리본을 원하시더라고요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 (Sam)",
+          "en": "Are you going to send her the notebook directly, or post it somewhere?",
+          "ko": "노트북 파일을 바로 보낼 거예요, 아니면 어딘가에 올릴 거예요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll drop it in the thread so the whole team can see the numbers too.",
+          "ko": "스레드에 올려놓을게요 — 팀 전체도 결과 수치 같이 볼 수 있게요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}

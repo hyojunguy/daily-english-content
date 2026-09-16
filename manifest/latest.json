@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-16T21:11:19+00:00",
+  "updated": "2026-09-16T21:18:52+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 36,
-  "total_days": 30,
-  "total_turns": 655,
-  "total_target_turns": 354,
+  "latest_day": 37,
+  "total_days": 31,
+  "total_turns": 677,
+  "total_target_turns": 366,
   "days": [
     {
       "day": 1,
@@ -486,6 +486,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-16.json"
+    },
+    {
+      "day": 37,
+      "date": "2026-09-17",
+      "week": 6,
+      "block": "team-daily",
+      "theme": "리모트 협업 — 화면 너머의 사람",
+      "topic": "화면 공유하며 실험 결과 짚어주기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-17.json"
     }
   ]
 }
