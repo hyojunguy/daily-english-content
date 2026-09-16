@@ -1,0 +1,227 @@
+{
+  "schema": 1,
+  "day": 36,
+  "date": "2026-09-16",
+  "week": 6,
+  "block": "team-daily",
+  "theme": "리모트 협업 — 화면 너머의 사람",
+  "topic": "화상회의 연결 문제를 처리하며 대화 이어가기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d036-s1",
+      "title_ko": "스탠드업 중 동료 발표가 끊겼을 때",
+      "context_ko": "원격 스탠드업 화상회의 중 다른 팀 엔지니어 Marco가 실험 결과를 발표하다 연결이 끊기고, {name}이 놓친 수치를 다시 확인해야 하는 상황.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "다른 팀 엔지니어",
+          "en": "So the new sampler cut inference latency by almost thirty percent, but then—",
+          "ko": "새 샘플러로 추론 지연을 거의 30% 줄였는데, 그게—",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey Marco, you cut out for a second. Can you repeat the latency number?",
+          "ko": "마르코, 방금 잠깐 끊겼어요. 레이턴시 수치 다시 말해줄래요?",
+          "is_target": true,
+          "en_easy": "You froze for a second, can you repeat the latency number?"
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "다른 팀 엔지니어",
+          "en": "Sorry about that. It dropped to about thirty percent, roughly forty milliseconds per request.",
+          "ko": "미안해요, 다시 말하면 30% 정도 줄었고, 요청당 한 40밀리초 정도예요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Got it, thanks. Let's keep going and follow up if it drops again.",
+          "ko": "알겠어요, 고마워요. 계속 진행하고, 또 끊기면 그때 다시 확인해요.",
+          "is_target": true,
+          "en_easy": "Let's continue and check again if it drops."
+        }
+      ]
+    },
+    {
+      "id": "d036-s2",
+      "title_ko": "데모 콜 직전 화면 공유가 안 잡힐 때",
+      "context_ko": "외부 이해관계자와의 데모 콜 직전, {name}의 다중 모니터 자리에서 화면 공유가 바로 잡히지 않아 잠깐 지연이 생기는 상황.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "We're on with the client now. Can you pull up the eval dashboard?",
+          "ko": "지금 클라이언트랑 연결됐어요. 평가 대시보드 좀 띄워줄 수 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "One sec, let me share my screen. It's not picking up my second display.",
+          "ko": "잠깐만요, 화면 공유할게요. 보조 모니터가 안 잡히네요.",
+          "is_target": true,
+          "en_easy": "I'll share my screen, but it does not see my second display."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "No rush, take your time. They're still introducing themselves.",
+          "ko": "천천히 하세요, 아직 서로 인사 나누는 중이에요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Okay, sharing now. You should see the latency chart on the left.",
+          "ko": "네, 이제 공유됐어요. 왼쪽에 레이턴시 차트 보일 거예요.",
+          "is_target": true,
+          "en_easy": "I'm sharing now, and the latency chart is on the left."
+        }
+      ]
+    },
+    {
+      "id": "d036-s3",
+      "title_ko": "1:1 화상통화 중 자꾸 끊기는 연결",
+      "context_ko": "유리벽 회의실에서 {name}이 원격 동료 Jonas와 1:1 화상통화를 하는데 오디오가 계속 끊겨, 세부 수치를 슬랙 스레드로 넘기기로 하는 상황.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "원격 동료",
+          "en": "Wait, did you say the eval set needs five hundred or five thousand samples?",
+          "ko": "잠깐, 평가 세트가 500개 필요하다고 했어요, 아니면 5000개?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It cut out right there. The connection's been really choppy today.",
+          "ko": "방금 거기서 끊겼어요. 오늘따라 연결이 계속 끊기네요.",
+          "is_target": true,
+          "en_easy": "It stopped right there, the connection was bad all day."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "원격 동료",
+          "en": "Yeah, mine too. Might be the office wifi acting up again.",
+          "ko": "저도 그래요. 사무실 와이파이 때문인가 봐요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let's not fight it. I'll drop it in the thread with the exact numbers.",
+          "ko": "억지로 붙잡고 있지 말고, 정확한 숫자는 스레드에 남겨둘게요.",
+          "is_target": true,
+          "en_easy": "Let's stop, I will send the exact numbers in a message."
+        }
+      ]
+    },
+    {
+      "id": "d036-s4",
+      "title_ko": "탕비실에서 방금 화상회의 되짚기",
+      "context_ko": "방금 끝난 화상회의가 유독 불안정했던 것에 대해, {name}이 탕비실 가는 길에 팀 리드 Sam과 가볍게 되짚는 상황.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "That call was rough. Did you catch everything Marco said?",
+          "ko": "아까 그 회의 좀 힘들었죠. 마르코가 한 말 다 들었어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Mostly. I asked him to repeat it once his audio cut out.",
+          "ko": "거의요. 한 번 끊겼을 때는 다시 말해달라고 했어요.",
+          "is_target": true,
+          "en_easy": "Mostly, I asked him to repeat it when his audio froze."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Good call. We should just switch to audio-only next time.",
+          "ko": "잘하셨네요. 다음부턴 그냥 음성으로만 진행하는 게 나을 것 같아요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Agreed. Maybe we default to cameras off so the connection stays stable.",
+          "ko": "동의해요. 카메라를 기본적으로 꺼두면 연결이 좀 더 안정적일 수도 있어요.",
+          "is_target": true,
+          "en_easy": "Agreed, let's keep cameras off by default for a stable connection."
+        }
+      ]
+    },
+    {
+      "id": "d036-s5",
+      "title_ko": "점심 자리, 오늘 화상회의 총평",
+      "context_ko": "점심 자리에서 오늘 화상회의들이 계속 버벅였던 것에 대해 이야기하며, {name}이 다음부터 스레드로 핵심 내용을 정리하자고 제안하는 상황.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "데이터 엔지니어",
+          "en": "Three calls today, and all of them glitched at some point.",
+          "ko": "오늘 회의 세 개 다 어느 순간엔 다 버벅였어요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Right, I had to repeat myself twice during the demo alone.",
+          "ko": "맞아요, 데모하는 동안에만 두 번이나 다시 말해야 했어요.",
+          "is_target": true,
+          "en_easy": "Right, I repeated myself twice just during the demo."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "데이터 엔지니어",
+          "en": "Maybe it's the new router on our floor.",
+          "ko": "우리 층 새 라우터 때문일 수도 있어요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Could be. Either way, let's keep summarizing key points in the thread.",
+          "ko": "그럴 수도 있죠. 어쨌든 핵심 내용은 계속 스레드에 정리해둬요.",
+          "is_target": true,
+          "en_easy": "Maybe, let's keep summarizing key points in a message."
+        }
+      ]
+    }
+  ]
+}

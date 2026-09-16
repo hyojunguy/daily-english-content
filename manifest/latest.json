@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-14T21:08:29+00:00",
+  "updated": "2026-09-16T21:11:19+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 35,
-  "total_days": 29,
-  "total_turns": 635,
-  "total_target_turns": 344,
+  "latest_day": 36,
+  "total_days": 30,
+  "total_turns": 655,
+  "total_target_turns": 354,
   "days": [
     {
       "day": 1,
@@ -470,6 +470,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-15.json"
+    },
+    {
+      "day": 36,
+      "date": "2026-09-16",
+      "week": 6,
+      "block": "team-daily",
+      "theme": "리모트 협업 — 화면 너머의 사람",
+      "topic": "화상회의 연결 문제를 처리하며 대화 이어가기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 20,
+      "target_turns": 10,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-16.json"
     }
   ]
 }
