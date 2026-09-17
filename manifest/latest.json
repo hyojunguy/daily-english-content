@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-16T21:18:52+00:00",
+  "updated": "2026-09-17T21:13:14+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 37,
-  "total_days": 31,
-  "total_turns": 677,
-  "total_target_turns": 366,
+  "latest_day": 38,
+  "total_days": 32,
+  "total_turns": 698,
+  "total_target_turns": 377,
   "days": [
     {
       "day": 1,
@@ -502,6 +502,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-17.json"
+    },
+    {
+      "day": 38,
+      "date": "2026-09-18",
+      "week": 6,
+      "block": "team-daily",
+      "theme": "리모트 협업 — 화면 너머의 사람",
+      "topic": "말이 겹쳤을 때 순서 정리하기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 21,
+      "target_turns": 11,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-18.json"
     }
   ]
 }

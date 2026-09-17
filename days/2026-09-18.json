@@ -1,0 +1,236 @@
+{
+  "schema": 1,
+  "day": 38,
+  "date": "2026-09-18",
+  "week": 6,
+  "block": "team-daily",
+  "theme": "리모트 협업 — 화면 너머의 사람",
+  "topic": "말이 겹쳤을 때 순서 정리하기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d038-s1",
+      "title_ko": "화상 스탠드업에서 말이 겹쳤을 때 순서 정리하기",
+      "context_ko": "화상 스탠드업에서 리드가 질문을 던지자마자 리드와 {name}이 동시에 말을 시작해 겹친다. {name}이 먼저 순서를 정리하고, 중간에 연결이 끊긴 부분도 확인하며 대화를 이어간다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sorry — I think we both started talking at the same time there.",
+          "ko": "아, 죄송해요 — 저희 둘이 동시에 말을 시작했네요.",
+          "is_target": true,
+          "en_easy": "Sorry, we both started talking at the same time."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "No worries, go ahead — I'll wait until you're—",
+          "ko": "괜찮아요, 먼저 말씀하세요 — 저는 기다릴게요—",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "You cut out for a second — did you say you'll wait or you won't?",
+          "ko": "잠깐 끊겼어요 — 기다린다고 하신 거예요, 못 기다린다고 하신 거예요?",
+          "is_target": true,
+          "en_easy": "You froze for a second, will you wait or not?"
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Sorry, bad connection — I said I'll wait, please go ahead.",
+          "ko": "죄송해요, 연결이 안 좋네요 — 기다린다고 했어요, 먼저 말씀하세요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Great, thanks — the eval pipeline finished overnight and the results look solid.",
+          "ko": "네, 감사합니다 — 평가 파이프라인이 밤새 끝났는데 결과가 꽤 괜찮아 보여요.",
+          "is_target": true,
+          "en_easy": "Thanks, the eval pipeline finished and results look solid."
+        }
+      ]
+    },
+    {
+      "id": "d038-s2",
+      "title_ko": "유리벽 회의실에서 말이 겹쳤을 때 화면 공유로 정리하기",
+      "context_ko": "팀 리드와의 1:1 중 둘 다 동시에 말을 꺼내며 겹친다. {name}이 순서를 양보한 뒤 화면을 공유해 일정을 함께 짚는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "So about the eval schedule — I was going to ask you about the—",
+          "ko": "평가 일정 얘긴데요 — 제가 물어보려던 게—",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sorry, we talked over each other again — you go first, I'll wait.",
+          "ko": "죄송해요, 또 말이 겹쳤네요 — 먼저 말씀하세요, 저는 기다릴게요.",
+          "is_target": true,
+          "en_easy": "Sorry we spoke at the same time again, so go first."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "No, it's fine, you had something too — what were you going to say?",
+          "ko": "아니에요, 괜찮아요, 하실 말씀 있으셨잖아요 — 뭐라고 하려던 거예요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let me share my screen — it's easier to walk through the timeline together.",
+          "ko": "제가 화면 공유할게요 — 일정을 같이 보면서 얘기하는 게 더 쉬울 것 같아요.",
+          "is_target": true,
+          "en_easy": "Let me share my screen, it's easier to explain the schedule together."
+        }
+      ]
+    },
+    {
+      "id": "d038-s3",
+      "title_ko": "탕비실에서 마주쳐 발표 순서 정리하기",
+      "context_ko": "탕비실 가는 길에 동료 Marco와 마주쳐 다음 미팅에서 누가 어떤 파트를 발표할지 동시에 말을 꺼낸다. {name}이 역할을 나누고 자료 공유 방식을 정한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "C",
+          "role_ko": "동료 엔지니어 (Marco)",
+          "en": "Hey — are you presenting the benchmark numbers, or should I take that part?",
+          "ko": "저기, 벤치마크 수치는 네가 발표하는 거야, 아니면 내가 할까?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We just talked over each other — you take the numbers, I'll cover the setup.",
+          "ko": "방금 또 말이 겹쳤네 — 수치는 네가 맡고, 셋업은 내가 설명할게.",
+          "is_target": true,
+          "en_easy": "You take the numbers, I'll cover the setup."
+        },
+        {
+          "n": 3,
+          "speaker": "C",
+          "role_ko": "동료 엔지니어 (Marco)",
+          "en": "Sounds good. Should I send you my slide before the meeting starts?",
+          "ko": "좋아. 회의 시작 전에 내 슬라이드 보내줄까?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Don't worry about it — I'll drop it in the thread so we're both aligned.",
+          "ko": "신경 안 써도 돼 — 내가 스레드에 올려놓을게, 그럼 서로 확인할 수 있으니까.",
+          "is_target": true,
+          "en_easy": "Don't worry, I'll put it in the message so we agree."
+        }
+      ]
+    },
+    {
+      "id": "d038-s4",
+      "title_ko": "모니터 앞에서 녹화본 보며 겹친 발화 되짚기",
+      "context_ko": "모니터 여러 대가 붙은 자리에서 동료와 이전 화상회의 녹화본을 함께 보다가, {name}과 Marco가 말이 겹쳤던 구간을 발견하고 다음엔 어떻게 정리할지 이야기한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Watching the recording — you and Marco basically talked over each other for a minute there.",
+          "ko": "녹화본 보고 있는데, 너랑 Marco랑 한동안 계속 말이 겹치더라.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah, we both thought the other one had finished — pretty confusing to watch back.",
+          "ko": "맞아, 서로 상대가 끝난 줄 알았나 봐 — 다시 보니까 꽤 헷갈리네.",
+          "is_target": true,
+          "en_easy": "Yeah, we both thought the other person finished."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Maybe we should just say 'go ahead' explicitly before jumping in next time?",
+          "ko": "다음부턴 끼어들기 전에 그냥 '먼저 말해'라고 확실히 말하는 게 어때?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good idea — I'll suggest that convention in the next sync so it sticks.",
+          "ko": "좋은 생각이야 — 다음 싱크 때 그 규칙을 제안해서 정착시켜볼게.",
+          "is_target": true,
+          "en_easy": "Good idea, I'll suggest that in the next sync so it sticks."
+        }
+      ]
+    },
+    {
+      "id": "d038-s5",
+      "title_ko": "점심 자리에서 오늘 회의의 겹친 발화 되짚기",
+      "context_ko": "점심을 먹으며 오전 화상회의 초반에 여러 명이 동시에 답하려다 겹쳤던 순간을 {name}이 동료와 가볍게 되짚는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "That call earlier was chaos for the first two minutes, wasn't it?",
+          "ko": "아까 그 콜 처음 2분은 완전 정신없지 않았어?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Right, three of us tried to answer the same question at once.",
+          "ko": "맞아, 셋이 동시에 같은 질문에 답하려고 했잖아.",
+          "is_target": true,
+          "en_easy": "Right, all of us tried to answer the same question at once."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "At least you guys sorted it out pretty fast once you caught it.",
+          "ko": "그래도 알아채고 나서는 꽤 빨리 정리하더라.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah, once we just started saying 'you go first' it got way smoother.",
+          "ko": "응, '먼저 말해'라고 딱 말하기 시작하니까 훨씬 부드러워지더라고.",
+          "is_target": true,
+          "en_easy": "Yeah, saying 'you go first' made things smoother."
+        }
+      ]
+    }
+  ]
+}
