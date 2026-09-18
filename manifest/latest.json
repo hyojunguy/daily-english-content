@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-17T21:13:14+00:00",
+  "updated": "2026-09-18T21:11:02+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 38,
-  "total_days": 32,
-  "total_turns": 698,
-  "total_target_turns": 377,
+  "latest_day": 39,
+  "total_days": 33,
+  "total_turns": 720,
+  "total_target_turns": 389,
   "days": [
     {
       "day": 1,
@@ -518,6 +518,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-18.json"
+    },
+    {
+      "day": 39,
+      "date": "2026-09-19",
+      "week": 6,
+      "block": "team-daily",
+      "theme": "리모트 협업 — 화면 너머의 사람",
+      "topic": "회의 중 딴 얘기로 새는 흐름 되돌리기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-19.json"
     }
   ]
 }

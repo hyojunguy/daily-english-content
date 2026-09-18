@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 39,
+  "date": "2026-09-19",
+  "week": 6,
+  "block": "team-daily",
+  "theme": "리모트 협업 — 화면 너머의 사람",
+  "topic": "회의 중 딴 얘기로 새는 흐름 되돌리기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d039-s1",
+      "title_ko": "화상회의 중 다른 주제로 새는 흐름을 화면 공유로 되돌리기",
+      "context_ko": "화상회의로 진행 중인 아키텍처 리뷰 중 원격 동료 Marco가 다른 워크숍 얘기로 화제를 돌린다. 연결도 잠깐 끊겨 {name}이 흐름을 다시 잡아야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sorry, you cut out for a second — can you repeat the part about the checkpoint format?",
+          "ko": "죄송해요, 잠깐 끊겼어요 — 체크포인트 포맷 얘기했던 부분 다시 말씀해 주실래요?",
+          "is_target": true,
+          "en_easy": "Can you repeat the checkpoint format part?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "원격 협업 엔지니어 (Marco)",
+          "en": "Sure — I was just saying it's compatible with the old loader, but actually, are you going to the workshop next month?",
+          "ko": "네 — 기존 로더랑 호환된다고 말씀드리던 참이었어요, 근데 다음 달 워크숍 가세요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let's stay on the format question for now — let me share my screen and show the diff.",
+          "ko": "일단 포맷 얘기부터 마무리할게요 — 제가 화면 공유해서 diff 보여드릴게요.",
+          "is_target": true,
+          "en_easy": "Let me share my screen and show the changes."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "원격 협업 엔지니어 (Marco)",
+          "en": "Oh good, yeah go ahead — that'll make this clearer than me describing it.",
+          "ko": "오 좋네요, 그렇게 해주세요 — 말로 설명하는 것보다 훨씬 명확하겠어요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Okay, sharing now — see this line? That's the part that broke compatibility.",
+          "ko": "네, 지금 공유할게요 — 이 줄 보이세요? 여기가 호환성을 깨뜨린 부분이에요.",
+          "is_target": true,
+          "en_easy": "Look, this line caused the problem."
+        }
+      ]
+    },
+    {
+      "id": "d039-s2",
+      "title_ko": "화이트보드 스탠드업, 벤더 얘기로 새는 흐름을 블로커로 되돌리기",
+      "context_ko": "화이트보드 앞 스탠드업에서 동료 Priya가 본인의 블로커를 얘기하다가 갑자기 GPU 벤더 협상 얘기로 샌다. {name}은 시간 안에 블로커 논의를 끝내야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 (Priya)",
+          "en": "The eval pipeline's still blocked, and by the way, procurement is fighting with that GPU vendor again over pricing.",
+          "ko": "평가 파이프라인이 아직 막혀 있고, 참고로 구매팀이 그 GPU 벤더랑 가격 때문에 또 싸우고 있대요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let's park the vendor stuff — I'll drop it in the thread and finish the eval blocker first.",
+          "ko": "벤더 얘기는 잠깐 미뤄둘게요 — 제가 스레드에 올려둘 테니 일단 평가 블로커부터 끝내죠.",
+          "is_target": true,
+          "en_easy": "Let's postpone the vendor topic and finish the eval blocker first."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 (Priya)",
+          "en": "Fair, so it's timing out on the larger checkpoints during validation.",
+          "ko": "그러죠, 그래서 큰 체크포인트 검증할 때 타임아웃이 나는 거예요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Is that the same timeout as last week, or a new failure mode?",
+          "ko": "그거 지난주랑 같은 타임아웃이에요, 아니면 새로운 실패 패턴이에요?",
+          "is_target": true,
+          "en_easy": "Is this the same timeout as before, or new?"
+        }
+      ]
+    },
+    {
+      "id": "d039-s3",
+      "title_ko": "유리벽 회의실 1:1, 리드의 다른 팀 얘기를 로드맵 체크인으로 되돌리기",
+      "context_ko": "유리벽 회의실에서 팀 리드 Sam과 주간 로드맵 체크인을 하는데, 리드가 다른 팀 인원 이동 얘기로 새기 시작한다. {name}은 정해진 시간 안에 로드맵 항목을 확인해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Before we get into that, can we wrap up the roadmap items first?",
+          "ko": "그 얘기 하기 전에, 로드맵 항목부터 먼저 정리해도 될까요?",
+          "is_target": true,
+          "en_easy": "Before we discuss that, can we finish the roadmap first?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 리드 (Sam)",
+          "en": "Sure, sorry — I got sidetracked. So where were we on the retraining timeline?",
+          "ko": "네, 죄송해요 — 딴 길로 샜네요. 재학습 일정 어디까지 얘기했었죠?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We're on track for Thursday, but I need your call on the eval scope.",
+          "ko": "목요일까지는 문제없는데, 평가 범위는 리드님 결정이 필요해요.",
+          "is_target": true,
+          "en_easy": "We're ready for Thursday, but I need your eval scope decision."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 리드 (Sam)",
+          "en": "Got it, let's lock that in — send me the scope doc after this.",
+          "ko": "알겠어요, 그걸로 확정하죠 — 끝나고 범위 문서 보내주세요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll send it right after standup, along with the updated benchmark numbers.",
+          "ko": "스탠드업 끝나자마자 바로 보낼게요, 업데이트된 벤치마크 수치도 같이요.",
+          "is_target": true,
+          "en_easy": "I'll send it right after standup, along with the updated benchmark numbers."
+        }
+      ]
+    },
+    {
+      "id": "d039-s4",
+      "title_ko": "모니터 여러 대 자리, 다른 버그 얘기로 새는 디버깅 콜을 되돌리기",
+      "context_ko": "여러 모니터가 붙은 자리에서 원격 동료 Jin과 화상통화로 페어 디버깅 중, Jin이 다른 프로젝트 버그 얘기로 샌다. {name}은 지금 실패 중인 테스트로 대화를 되돌려야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "원격 동료 (Jin)",
+          "en": "This reminds me of a bug we had in the old pipeline last quarter, totally different issue though.",
+          "ko": "예전 파이프라인에서 있었던 버그 생각나네요, 근데 완전히 다른 이슈긴 해요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let's stay on this one — the retry test is still failing on the same assertion.",
+          "ko": "일단 이거부터 볼게요 — 재시도 테스트가 아직 같은 assertion에서 실패하고 있어요.",
+          "is_target": true,
+          "en_easy": "The repeat test is still failing on the same assertion."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "원격 동료 (Jin)",
+          "en": "Right, sorry. Okay, so line 42 is where it throws the mismatch error.",
+          "ko": "아, 맞다 죄송해요. 42번째 줄에서 mismatch 에러가 나는 거네요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Can you scroll up so I can see the input shape it's rejecting?",
+          "ko": "위로 좀 스크롤해줄래요? 거부하는 입력 shape을 보고 싶어서요.",
+          "is_target": true,
+          "en_easy": "Can you move up so I can see the rejected input shape?"
+        }
+      ]
+    },
+    {
+      "id": "d039-s5",
+      "title_ko": "서버룸 앞, 컨퍼런스 잡담을 체크리스트 점검으로 되돌리기",
+      "context_ko": "서버룸 앞에서 분산 학습 job을 점검하러 가기 직전, 동료 Dana가 컨퍼런스 얘기로 대화를 돌린다. {name}은 점검 전에 체크리스트를 먼저 맞춰야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어 (Dana)",
+          "en": "Oh, are you going to that inference conference next month? I heard the talks are great.",
+          "ko": "아, 다음 달 그 추론 컨퍼런스 가세요? 발표들이 괜찮다던데요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Maybe — let's finish the checklist first so we're not stuck in here all night.",
+          "ko": "글쎄요 — 일단 체크리스트부터 끝내죠, 밤새 여기 갇혀 있고 싶지 않으니까요.",
+          "is_target": true,
+          "en_easy": "Let's finish the list first so we don't stay here all night."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어 (Dana)",
+          "en": "Ha, fair. Okay, nodes two and three are already synced and ready to go.",
+          "ko": "하하, 그렇죠. 노드 2번이랑 3번은 이미 동기화돼서 준비됐어요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good, let's confirm the checkpoint path before we kick off the run.",
+          "ko": "좋아요, 실행하기 전에 체크포인트 경로부터 확인하죠.",
+          "is_target": true,
+          "en_easy": "Good, let's confirm the checkpoint path before we start the run."
+        }
+      ]
+    }
+  ]
+}
