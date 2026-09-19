@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-18T21:11:02+00:00",
+  "updated": "2026-09-19T21:08:48+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 39,
-  "total_days": 33,
-  "total_turns": 720,
-  "total_target_turns": 389,
+  "latest_day": 40,
+  "total_days": 34,
+  "total_turns": 742,
+  "total_target_turns": 400,
   "days": [
     {
       "day": 1,
@@ -534,6 +534,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-19.json"
+    },
+    {
+      "day": 40,
+      "date": "2026-09-20",
+      "week": 6,
+      "block": "team-daily",
+      "theme": "리모트 협업 — 화면 너머의 사람",
+      "topic": "카메라를 끈 사람에게 의견 물어보기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 11,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-20.json"
     }
   ]
 }

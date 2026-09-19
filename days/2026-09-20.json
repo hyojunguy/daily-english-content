@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 40,
+  "date": "2026-09-20",
+  "week": 6,
+  "block": "team-daily",
+  "theme": "리모트 협업 — 화면 너머의 사람",
+  "topic": "카메라를 끈 사람에게 의견 물어보기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d040-s1",
+      "title_ko": "화상 스탠드업, 카메라 끈 동료에게 직접 의견 묻기",
+      "context_ko": "평가 임계값을 확정하기 전 마지막 스탠드업. 한 동료는 계속 카메라를 끄고 있어 의견을 낼 기회가 없었고, 오디오도 잠깐씩 끊긴다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Marco, I know your camera's off — but I'd like your read on the eval thresholds before we finalize them.",
+          "ko": "Marco, 카메라 꺼놓은 거 알아요, 근데 평가 임계값 확정하기 전에 의견 좀 듣고 싶어요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 (카메라 끔)",
+          "en": "Sorry, was on mute. I think the 0.8 threshold is too strict for the smaller models.",
+          "ko": "아, 음소거였네요. 0.8 임계값은 작은 모델들한테는 너무 엄격한 것 같아요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "You cut out for a second there — can you say the threshold number again?",
+          "ko": "잠깐 소리가 끊겼는데, 그 임계값 숫자 다시 한번 말해줄래요?",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 (카메라 끔)",
+          "en": "Yeah, 0.8. I'd drop it to 0.75 so we don't overflag borderline cases.",
+          "ko": "네, 0.8이요. 경계선 케이스 과다 플래그 안 나게 0.75로 낮추는 게 나을 것 같아요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Got it, 0.75. Let me share my screen so we can adjust the config together.",
+          "ko": "네, 0.75로요. 화면 공유할게요, 같이 설정 값 조정해봐요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d040-s2",
+      "title_ko": "유리벽 회의실 1:1, 조용한 팀원 참여 방법 논의",
+      "context_ko": "스탠드업이 끝난 직후, 팀 리드가 따로 불러 카메라도 안 켜고 말도 잘 안 하는 팀원을 어떻게 참여시킬지 상의한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "I noticed Marco never turns his camera on and barely says anything unless someone calls on him directly.",
+          "ko": "Marco는 카메라도 안 켜고, 누가 직접 지목 안 하면 거의 말을 안 하더라고요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I try to ask him something specific instead of open questions — that usually gets a real answer.",
+          "ko": "저는 열린 질문 대신 구체적인 걸 물어봐요, 그러면 대체로 제대로 된 답이 나와요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "That's smart. Can you keep doing that in the eval reviews too?",
+          "ko": "좋은 방법이네요. 평가 리뷰에서도 계속 그렇게 해줄 수 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sure, I'll make a point of pulling him in by name when we hit his area.",
+          "ko": "네, 그의 담당 부분 나올 때는 이름 불러서 꼭 끌어들일게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d040-s3",
+      "title_ko": "모니터 여러 대 앞, 녹화본 다시 보며 놓친 의견 확인",
+      "context_ko": "회의 녹화본을 다시 돌려보다가 동료가 카메라 끈 팀원이 답을 안 한 줄 알았는데 사실 채팅으로 남겼던 걸 발견한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Rewatching this clip — Marco never unmuted after the third question. Did we lose him?",
+          "ko": "이 부분 다시 보는데, Marco가 세 번째 질문 이후로 음소거를 안 풀었네요. 놓친 건가?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No, he answered in chat actually — I'll drop it in the thread so everyone sees his notes.",
+          "ko": "아뇨, 채팅으로 답했더라고요, 스레드에 올려서 다들 볼 수 있게 할게요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Good, because his chat answer was actually the sharper take on the metric choice.",
+          "ko": "다행이네요, 그 채팅 답변이 지표 선택에 대해 더 날카로운 의견이었거든요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah, next time I'll just ask him to unmute instead of assuming chat is enough.",
+          "ko": "맞아요, 다음부턴 채팅이면 충분하다고 넘겨짚지 말고 그냥 음소거 풀어달라고 할게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d040-s4",
+      "title_ko": "탕비실에서 마주친 카메라 끈 동료에게 다시 물어보기",
+      "context_ko": "회의에서 계속 조용했던 동료를 탕비실에서 우연히 마주쳐, 아까 못 들은 의견을 자연스럽게 물어본다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 (Marco)",
+          "en": "Hey, sorry I was so quiet on the call earlier — my camera's been acting up too.",
+          "ko": "아까 회의 때 너무 조용해서 미안해요, 카메라도 요즘 말썽이라.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No worries — I wanted to hear your take on the eval threshold anyway, got a minute now?",
+          "ko": "괜찮아요, 어차피 임계값에 대한 의견 듣고 싶었는데, 지금 시간 좀 있어요?",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 (Marco)",
+          "en": "Sure. Honestly I think 0.75 is still a bit tight for the 7B model.",
+          "ko": "네. 솔직히 0.75도 7B 모델한테는 아직 좀 빡빡한 것 같아요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That's useful — let me grab a doc so I can note it down properly.",
+          "ko": "그거 도움 되네요, 문서 하나 켜서 제대로 적어둘게요.",
+          "is_target": true
+        },
+        {
+          "n": 5,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 (Marco)",
+          "en": "Sounds good, I'll send you the numbers after lunch.",
+          "ko": "좋아요, 점심 먹고 수치 보내드릴게요.",
+          "is_target": false
+        }
+      ]
+    },
+    {
+      "id": "d040-s5",
+      "title_ko": "점심 테이블, 오늘 조용한 팀원 참여시킨 후기 나누기",
+      "context_ko": "점심을 먹으며 동료와 오늘 회의에서 카메라 끈 팀원을 어떻게 참여시켰는지, 효과가 있었는지 가볍게 되짚는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Did Marco actually turn his camera on today, or same as always?",
+          "ko": "오늘은 Marco가 카메라 켰어요, 아니면 늘 그렇듯이?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Still off, but he gave a real answer this time once I asked him by name.",
+          "ko": "여전히 꺼져 있었는데, 이름 불러서 물어보니까 이번엔 제대로 된 답을 주더라고요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Nice, maybe we just need to keep doing that instead of hoping people volunteer.",
+          "ko": "잘됐네요, 다들 자발적으로 말하길 기대하기보다 그냥 계속 그렇게 하는 게 나을 것 같아요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah, I'll bring it up in the retro so the rest of the team does the same.",
+          "ko": "맞아요, 회고 때 얘기해서 다른 팀원들도 똑같이 하게 할게요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
