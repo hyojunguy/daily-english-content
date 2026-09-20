@@ -1,0 +1,225 @@
+{
+  "schema": 1,
+  "day": 41,
+  "date": "2026-09-21",
+  "week": 6,
+  "block": "team-daily",
+  "theme": "리모트 협업 — 화면 너머의 사람",
+  "topic": "회의 대신 문서로 하자고 제안하기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d041-s1",
+      "title_ko": "스탠드업에서 추가 미팅 대신 문서 제안하기",
+      "context_ko": "화이트보드 앞 스탠드업 중, 팀 리드가 평가 결과를 자세히 논의할 콜을 또 잡자고 한다. {name}은 시간대가 다른 팀원들을 고려해 문서로 정리하자고 제안한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "We should probably set up another call to go over the eval results in detail.",
+          "ko": "평가 결과 자세히 보려면 콜을 하나 더 잡아야 할 것 같아요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Could we just write it up in a doc instead? Everyone's in different time zones.",
+          "ko": "그냥 문서로 정리하면 안 될까요? 다들 시간대가 달라서요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Fair point, a call would be hard to schedule with the timezone spread.",
+          "ko": "맞는 말이네요, 시간대 때문에 콜 잡기가 힘들긴 하죠.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll put together a short doc and drop it in the thread by tomorrow.",
+          "ko": "제가 짧게 문서 정리해서 내일까지 스레드에 올려둘게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d041-s2",
+      "title_ko": "1:1에서 주간 정기 미팅 대신 문서 업데이트 제안하기",
+      "context_ko": "유리벽 회의실에서 매니저와 1:1 중, 매니저가 인프라 현황 공유를 위한 주간 정기 회의를 새로 만들자고 한다. {name}은 매주 업데이트되는 공유 문서로 대체하자고 제안한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "I'm thinking we add a weekly sync just for infra status updates.",
+          "ko": "인프라 현황만 다루는 주간 미팅을 하나 새로 만들까 생각 중이에요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Honestly, a shared doc might work better than one more recurring meeting.",
+          "ko": "솔직히 정기 미팅 하나 더 만드는 것보다 공유 문서가 나을 것 같아요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "What would that look like on a weekly basis?",
+          "ko": "그럼 주 단위로는 어떤 식으로 하게 되는 거죠?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll update a running doc every Friday, so you can read it whenever.",
+          "ko": "매주 금요일마다 문서를 업데이트할게요, 편하실 때 보시면 돼요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d041-s3",
+      "title_ko": "화상회의 연결 문제로 문서 정리를 제안하기",
+      "context_ko": "재학습 결과를 논의하는 화상회의 도중 연결이 자꾸 끊긴다. 동료의 말이 잘렸을 때, {name}은 다시 콜을 잡는 대신 문서로 정리해서 공유하자고 제안한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sorry, you cut out for a second — could you repeat the last part?",
+          "ko": "죄송한데 잠깐 소리가 끊겼어요, 마지막 부분만 다시 말씀해주실래요?",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "I said the retraining numbers look off, we might need another call to dig in.",
+          "ko": "재학습 수치가 이상해 보인다고 했어요, 파고들려면 콜을 또 잡아야 할 것 같아요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Given how spotty this connection is, maybe I write up the numbers in a doc instead.",
+          "ko": "연결 상태가 이래서, 그냥 제가 수치를 문서로 정리하는 게 나을 것 같아요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "That could actually be easier to review than trying to talk through it live.",
+          "ko": "그게 실시간으로 말로 풀어가는 것보다 오히려 보기 편할 수도 있겠네요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll drop it in the thread tonight so everyone can comment async.",
+          "ko": "오늘 밤에 스레드에 올려둘게요, 다들 편할 때 댓글 달 수 있게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d041-s4",
+      "title_ko": "화면 공유로 미팅 대신 초안 문서 바로 보여주기",
+      "context_ko": "모니터 여러 대가 붙은 자리에서 동료가 결과를 논의할 콜을 잡자고 묻는다. {name}은 그 자리에서 화면을 공유해 이미 작성해둔 문서를 바로 보여준다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Want to hop on a quick call to walk through the loss curves?",
+          "ko": "손실 그래프 같이 볼 겸 짧게 콜 하나 잡을까요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let me share my screen right now instead, it's faster than scheduling a call.",
+          "ko": "그냥 지금 바로 화면 공유할게요, 콜 잡는 것보다 빠를 거예요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Oh nice, that actually works better for me too.",
+          "ko": "오 좋네요, 저한테도 그게 더 편해요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I already wrote the summary in a doc, so we can skip the meeting.",
+          "ko": "요약은 이미 문서로 써놨어요, 그래서 미팅은 건너뛰어도 될 것 같아요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d041-s5",
+      "title_ko": "탕비실에서 정기 미팅 없앤 후기 나누기",
+      "context_ko": "탕비실에서 마주친 동료가 자기 팀은 월요일 상태 회의를 없앴다고 말한다. {name}은 자신도 지난주에 같은 제안을 했다고 이야기하며 어떻게 됐는지 나눈다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Did you hear our team killed the Monday status meeting?",
+          "ko": "우리 팀 월요일 상태 회의 없어진 거 들었어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah, I actually proposed the same thing for our weekly sync last week.",
+          "ko": "네, 사실 저도 지난주에 저희 주간 미팅에 똑같이 제안했어요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "How'd that go over with your manager?",
+          "ko": "매니저는 그거 어떻게 받아들이셨어요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "She agreed, as long as I keep the doc updated before each deadline.",
+          "ko": "제가 마감 전마다 문서만 업데이트해두면 괜찮다고 하셨어요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}

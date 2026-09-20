@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-19T21:08:48+00:00",
+  "updated": "2026-09-20T21:09:59+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 40,
-  "total_days": 34,
-  "total_turns": 742,
-  "total_target_turns": 400,
+  "latest_day": 41,
+  "total_days": 35,
+  "total_turns": 763,
+  "total_target_turns": 411,
   "days": [
     {
       "day": 1,
@@ -550,6 +550,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-20.json"
+    },
+    {
+      "day": 41,
+      "date": "2026-09-21",
+      "week": 6,
+      "block": "team-daily",
+      "theme": "리모트 협업 — 화면 너머의 사람",
+      "topic": "회의 대신 문서로 하자고 제안하기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 21,
+      "target_turns": 11,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-21.json"
     }
   ]
 }
