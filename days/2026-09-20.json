@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "Marco, I know your camera's off — but I'd like your read on the eval thresholds before we finalize them.",
           "ko": "Marco, 카메라 꺼놓은 거 알아요, 근데 평가 임계값 확정하기 전에 의견 좀 듣고 싶어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Your camera's off, but I want your opinion on eval thresholds now."
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "You cut out for a second there — can you say the threshold number again?",
           "ko": "잠깐 소리가 끊겼는데, 그 임계값 숫자 다시 한번 말해줄래요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I lost you for a second, can you repeat the threshold number?"
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "Got it, 0.75. Let me share my screen so we can adjust the config together.",
           "ko": "네, 0.75로요. 화면 공유할게요, 같이 설정 값 조정해봐요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll set it to 0.75 and share my screen to adjust it."
         }
       ]
     },
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "I try to ask him something specific instead of open questions — that usually gets a real answer.",
           "ko": "저는 열린 질문 대신 구체적인 걸 물어봐요, 그러면 대체로 제대로 된 답이 나와요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Instead of open questions, I ask something specific and get real answers."
         },
         {
           "n": 3,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "Sure, I'll make a point of pulling him in by name when we hit his area.",
           "ko": "네, 그의 담당 부분 나올 때는 이름 불러서 꼭 끌어들일게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Sure, I'll ask him by name when we reach his part."
         }
       ]
     },
@@ -119,7 +124,8 @@
           "role_ko": "나",
           "en": "No, he answered in chat actually — I'll drop it in the thread so everyone sees his notes.",
           "ko": "아뇨, 채팅으로 답했더라고요, 스레드에 올려서 다들 볼 수 있게 할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "No, he replied in chat and I'll post his notes for everyone."
         },
         {
           "n": 3,
@@ -135,7 +141,8 @@
           "role_ko": "나",
           "en": "Yeah, next time I'll just ask him to unmute instead of assuming chat is enough.",
           "ko": "맞아요, 다음부턴 채팅이면 충분하다고 넘겨짚지 말고 그냥 음소거 풀어달라고 할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Yeah, next time I'll ask him to speak instead of using chat."
         }
       ]
     },
@@ -160,7 +167,8 @@
           "role_ko": "나",
           "en": "No worries — I wanted to hear your take on the eval threshold anyway, got a minute now?",
           "ko": "괜찮아요, 어차피 임계값에 대한 의견 듣고 싶었는데, 지금 시간 좀 있어요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I wanted your opinion on the threshold, do you have a minute?"
         },
         {
           "n": 3,
@@ -176,7 +184,8 @@
           "role_ko": "나",
           "en": "That's useful — let me grab a doc so I can note it down properly.",
           "ko": "그거 도움 되네요, 문서 하나 켜서 제대로 적어둘게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "That's useful, let me open a doc to record it properly."
         },
         {
           "n": 5,
@@ -209,7 +218,8 @@
           "role_ko": "나",
           "en": "Still off, but he gave a real answer this time once I asked him by name.",
           "ko": "여전히 꺼져 있었는데, 이름 불러서 물어보니까 이번엔 제대로 된 답을 주더라고요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "He stayed off camera, but answered well when I said his name."
         },
         {
           "n": 3,
@@ -225,7 +235,8 @@
           "role_ko": "나",
           "en": "Yeah, I'll bring it up in the retro so the rest of the team does the same.",
           "ko": "맞아요, 회고 때 얘기해서 다른 팀원들도 똑같이 하게 할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Yeah, I'll mention it in the retro so the team does too."
         }
       ]
     }
