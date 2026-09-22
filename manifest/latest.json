@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-22T08:32:29+00:00",
+  "updated": "2026-09-22T21:10:27+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 42,
-  "total_days": 36,
-  "total_turns": 783,
-  "total_target_turns": 421,
+  "latest_day": 43,
+  "total_days": 37,
+  "total_turns": 804,
+  "total_target_turns": 432,
   "days": [
     {
       "day": 1,
@@ -582,6 +582,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-22.json"
+    },
+    {
+      "day": 43,
+      "date": "2026-09-23",
+      "week": 7,
+      "block": "team-daily",
+      "theme": "동료와의 마찰 — 부드럽게 반대하기",
+      "topic": "동료의 접근법에 근거를 들어 반대하기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 21,
+      "target_turns": 11,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-23.json"
     }
   ]
 }
