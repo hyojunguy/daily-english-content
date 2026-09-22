@@ -29,7 +29,8 @@
           "role_ko": "나",
           "en": "Before we commit to that, can we check if a later slot still gives them enough coverage?",
           "ko": "확정하기 전에, 조금 더 늦은 시간으로 해도 그쪽 커버리지가 충분한지 먼저 확인해볼 수 있을까요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Does a later slot still give them enough coverage?"
         },
         {
           "n": 3,
@@ -45,7 +46,8 @@
           "role_ko": "나",
           "en": "What if we did 7 AM my time instead — that's still 9:30 PM for them, not too late.",
           "ko": "그럼 제가 아침 7시로 하면 어때요? 그쪽 밤 9시 반이니까 그렇게 늦지도 않고요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "What if we did 7 AM my time instead?"
         }
       ]
     },
@@ -70,7 +72,8 @@
           "role_ko": "나",
           "en": "Sorry, you cut out for a second — can you repeat the time you just said?",
           "ko": "죄송한데 잠깐 끊겼어요 — 방금 말씀하신 시간 다시 한 번 말해주시겠어요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Sorry, can you say the time again?"
         },
         {
           "n": 3,
@@ -86,7 +89,8 @@
           "role_ko": "나",
           "en": "That's right, but I'll probably still be commuting then, so 9 would be safer.",
           "ko": "맞아요, 근데 그 시간엔 아마 출근 중일 것 같아서 9시가 더 안전할 것 같아요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "That's right, but 9 is safer since I'll be traveling then."
         }
       ]
     },
@@ -111,7 +115,8 @@
           "role_ko": "나",
           "en": "Honestly, it's rough every day, but every other day would be manageable for me.",
           "ko": "솔직히 매일은 좀 힘든데, 하루 걸러 하루면 저도 감당할 수 있을 것 같아요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Every day is hard, but every other day works for me."
         },
         {
           "n": 3,
@@ -127,7 +132,8 @@
           "role_ko": "나",
           "en": "Yeah, can we alternate it with a later slot so it's not always on me?",
           "ko": "네, 늦은 시간이랑 번갈아 가면서 하면 안 될까요? 계속 저만 부담하지 않게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can we switch with a later slot so it's not always me?"
         }
       ]
     },
@@ -152,7 +158,8 @@
           "role_ko": "나",
           "en": "Let me share my screen — I think there's a narrow window around your evening.",
           "ko": "제 화면 공유할게요 — 그쪽 저녁 시간대로 좁은 틈이 하나 있는 것 같아요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I found a narrow window around your evening."
         },
         {
           "n": 3,
@@ -168,7 +175,8 @@
           "role_ko": "나",
           "en": "It's 7 PM your time, which is 6 AM Tokyo and 6 AM New York.",
           "ko": "그쪽 기준 저녁 7시인데, 도쿄로는 오전 6시고 뉴욕도 오전 6시예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It's evening for you, but 6 in the morning for them."
         }
       ]
     },
@@ -193,7 +201,8 @@
           "role_ko": "나",
           "en": "Just us so far — I'll drop it in the thread so the rest of the team can confirm.",
           "ko": "아직 저희끼리만 정한 거라서, 스레드에 올려서 나머지 팀도 확인하게 할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Only us so far, I'll share it so the team can confirm."
         },
         {
           "n": 3,
@@ -209,7 +218,8 @@
           "role_ko": "나",
           "en": "If they do, I'd rather adjust now than renegotiate this again next month.",
           "ko": "그러면 지금 조정하는 게 다음 달에 또 다시 논의하는 것보다 나을 것 같아요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "If they do, I'd rather adjust now than discuss this next month."
         }
       ]
     }
