@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-22T21:10:27+00:00",
+  "updated": "2026-09-23T21:11:20+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 43,
-  "total_days": 37,
-  "total_turns": 804,
-  "total_target_turns": 432,
+  "latest_day": 44,
+  "total_days": 38,
+  "total_turns": 825,
+  "total_target_turns": 443,
   "days": [
     {
       "day": 1,
@@ -598,6 +598,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-23.json"
+    },
+    {
+      "day": 44,
+      "date": "2026-09-24",
+      "week": 7,
+      "block": "team-daily",
+      "theme": "동료와의 마찰 — 부드럽게 반대하기",
+      "topic": "내 제안이 거절당했을 때 이유 캐묻기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 21,
+      "target_turns": 11,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-24.json"
     }
   ]
 }
