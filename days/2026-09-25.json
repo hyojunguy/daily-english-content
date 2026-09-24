@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 45,
+  "date": "2026-09-25",
+  "week": 7,
+  "block": "team-daily",
+  "theme": "동료와의 마찰 — 부드럽게 반대하기",
+  "topic": "말을 자르는 동료에게 선을 긋기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d045-s1",
+      "title_ko": "스탠드업에서 계속 말을 끼워 넣는 동료 막기",
+      "context_ko": "화이트보드 앞 스탠드업에서 {name}이 학습 파이프라인 진행 상황을 보고하는 중, 동료 Marco가 계속 끼어들어 자기 추측을 얘기한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Wait, before you go on — did you check whether the data loader is the bottleneck?",
+          "ko": "잠깐, 계속하기 전에 — 데이터 로더가 병목인지 확인해봤어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let me finish this part first — I'll get to your question right after.",
+          "ko": "이 부분만 먼저 끝낼게요 — 질문엔 바로 이어서 답할게요.",
+          "is_target": true,
+          "en_easy": "Let me finish this, then I'll answer your question."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Fair enough. I just think the checkpoint restore looks fine, so it has to be upstream.",
+          "ko": "알겠어요. 근데 체크포인트 복구는 문제없어 보여서, 앞단이 원인일 것 같아요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Help me understand why you're ruling out the checkpoint — the loss spike lines up right with it.",
+          "ko": "체크포인트를 왜 배제하는지 알려줄래요 — 로스 급등 시점이 정확히 거기랑 맞물려요.",
+          "is_target": true,
+          "en_easy": "Why exclude the checkpoint, when the loss jumped right there?"
+        }
+      ]
+    },
+    {
+      "id": "d045-s2",
+      "title_ko": "유리벽 회의실 1:1, 제안 설명 중 끼어드는 리드에게 선 긋기",
+      "context_ko": "유리벽 회의실에서 {name}이 평가 파이프라인 개선안을 리드 Priya에게 설명하는데, Priya가 문장마다 끼어들어 다른 대안을 제시한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Actually, why not just reuse the old scoring script instead of writing a new one?",
+          "ko": "사실 새로 짜지 말고 예전 스코어링 스크립트를 그냥 재사용하면 안 돼요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Give me one more minute to lay out the full proposal, then I'd love your take.",
+          "ko": "제안을 다 설명할 시간 1분만 더 주세요, 그다음 의견 꼭 듣고 싶어요.",
+          "is_target": true,
+          "en_easy": "Give me one more minute to explain, then I want your opinion."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Okay, go ahead. I still think the old script would save us time though.",
+          "ko": "네, 계속하세요. 그래도 예전 스크립트가 시간을 아껴줄 거라고는 생각해요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I see it differently — here's why: the old script doesn't handle the new multi-turn cases at all.",
+          "ko": "저는 다르게 봐요 — 이유는, 예전 스크립트는 새로운 멀티턴 케이스를 전혀 처리 못 해요.",
+          "is_target": true,
+          "en_easy": "I disagree, because the old script does not handle new conversations."
+        }
+      ]
+    },
+    {
+      "id": "d045-s3",
+      "title_ko": "화상회의 화면 공유 중 자꾸 끊는 동료에게 발언권 지키기",
+      "context_ko": "화상회의에서 {name}이 화면 공유로 추론 레이턴시 수치를 설명하는데, 동료 Sam이 매번 화면이 넘어가기 전에 말을 끊고 자기 해석을 던진다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Hold on, that p99 number can't be right — are you sure the batching config is the same?",
+          "ko": "잠깐만요, 그 p99 수치가 맞을 리가 없는데 — 배칭 설정이 같은 게 확실해요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'm not done with this slide — can you hold that thought for thirty seconds?",
+          "ko": "이 화면 아직 안 끝났어요 — 그 얘기 30초만 잠깐 참아줄래요?",
+          "is_target": true,
+          "en_easy": "Since I'm not done with this slide, can you wait 30 seconds?"
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Sure, sorry. But once you're done, I really think the config drifted somewhere.",
+          "ko": "네, 죄송해요. 근데 다 끝나면, 설정이 어딘가 틀어진 것 같긴 해요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I might be missing something, but the config file hash matches last week's run exactly.",
+          "ko": "제가 뭔가 놓쳤을 수도 있는데, 설정 파일 해시가 지난주 실행이랑 정확히 같아요.",
+          "is_target": true,
+          "en_easy": "I might be missing something, but the config matches last week's run."
+        }
+      ]
+    },
+    {
+      "id": "d045-s4",
+      "title_ko": "탕비실에서 마주친 동료에게 말 끼어들기 직접 이야기하기",
+      "context_ko": "회의가 끝난 후 탕비실에서 {name}이 자주 말을 끊는 동료 Elena를 마주쳐, 부담스럽지 않게 그 얘기를 꺼낸다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey, got a second? I wanted to mention something from the meeting, nothing major.",
+          "ko": "저기, 잠깐 시간 돼요? 회의 때 얘기 하나만 짧게 하고 싶어서요, 별건 아니고요.",
+          "is_target": true,
+          "en_easy": "Do you have a minute to talk about the meeting?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Sure, what's up? Did I say something wrong?",
+          "ko": "네, 무슨 일이에요? 제가 뭐 잘못 말했어요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not wrong, just — a few times you jumped in before I finished my point today.",
+          "ko": "잘못은 아니고요 — 오늘 몇 번 제가 말 끝내기 전에 끼어드셨더라고요.",
+          "is_target": true,
+          "en_easy": "You did not let me finish my point a few times today."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Oh, I didn't even realize — I get excited and just jump in, sorry.",
+          "ko": "아, 그건 몰랐네요 — 흥분하면 그냥 바로 끼어들게 돼서요, 죄송해요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No worries at all — just give me a beat to land the thought, that's all I need.",
+          "ko": "괜찮아요, 정말로요 — 그냥 생각 마무리할 틈만 좀 주시면 그걸로 충분해요.",
+          "is_target": true,
+          "en_easy": "It's fine, just give me a moment to finish my thought."
+        }
+      ]
+    },
+    {
+      "id": "d045-s5",
+      "title_ko": "점심 테이블에서 동료에게 선 그은 후기 나누기",
+      "context_ko": "점심시간, {name}이 동료 Jordan에게 아까 Elena와 나눈 대화 — 말 끊는 습관에 대해 선을 그은 이야기 — 를 짧게 전한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "So I finally talked to Elena about cutting me off in meetings — it went better than I expected.",
+          "ko": "아까 Elena한테 회의 때 말 끊는 거 얘기했는데 — 생각보다 훨씬 잘 넘어갔어요.",
+          "is_target": true,
+          "en_easy": "I talked to her about not letting me finish, it went well."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Nice, how did she take it? I always figured she just didn't notice.",
+          "ko": "잘됐네요, 반응 어땠어요? 저는 원래 본인이 모르는 거라고 생각했어요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Pretty well, actually — she just needed a clear, low-key heads-up, not a big confrontation.",
+          "ko": "생각보다 괜찮았어요 — 그냥 가볍게 툭 짚어주는 게 필요했던 거지, 거창한 대화가 필요했던 게 아니었어요.",
+          "is_target": true,
+          "en_easy": "It went well, she just needed a clear warning."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Good call. I should probably say something to her too, honestly.",
+          "ko": "잘했네요. 저도 솔직히 한번 얘기해봐야 할 것 같아요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Do it soon — the trick is just saying it right after, while it's still fresh.",
+          "ko": "빨리 얘기해보세요 — 요령은 그냥 바로, 기억 생생할 때 짧게 말하는 거예요.",
+          "is_target": true,
+          "en_easy": "Say it soon, before you forget it."
+        }
+      ]
+    }
+  ]
+}

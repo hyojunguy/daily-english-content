@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-23T21:11:20+00:00",
+  "updated": "2026-09-24T21:09:47+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 44,
-  "total_days": 38,
-  "total_turns": 825,
-  "total_target_turns": 443,
+  "latest_day": 45,
+  "total_days": 39,
+  "total_turns": 847,
+  "total_target_turns": 455,
   "days": [
     {
       "day": 1,
@@ -614,6 +614,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-24.json"
+    },
+    {
+      "day": 45,
+      "date": "2026-09-25",
+      "week": 7,
+      "block": "team-daily",
+      "theme": "동료와의 마찰 — 부드럽게 반대하기",
+      "topic": "말을 자르는 동료에게 선을 긋기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-25.json"
     }
   ]
 }
