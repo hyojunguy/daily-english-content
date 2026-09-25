@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-24T21:09:47+00:00",
+  "updated": "2026-09-25T21:07:32+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 45,
-  "total_days": 39,
-  "total_turns": 847,
-  "total_target_turns": 455,
+  "latest_day": 46,
+  "total_days": 40,
+  "total_turns": 868,
+  "total_target_turns": 466,
   "days": [
     {
       "day": 1,
@@ -630,6 +630,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-25.json"
+    },
+    {
+      "day": 46,
+      "date": "2026-09-26",
+      "week": 7,
+      "block": "team-daily",
+      "theme": "동료와의 마찰 — 부드럽게 반대하기",
+      "topic": "공로를 가로챈 상황을 조용히 바로잡기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 21,
+      "target_turns": 11,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-26.json"
     }
   ]
 }
