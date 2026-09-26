@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-25T21:07:32+00:00",
+  "updated": "2026-09-26T21:09:58+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 46,
-  "total_days": 40,
-  "total_turns": 868,
-  "total_target_turns": 466,
+  "latest_day": 47,
+  "total_days": 41,
+  "total_turns": 890,
+  "total_target_turns": 478,
   "days": [
     {
       "day": 1,
@@ -646,6 +646,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-26.json"
+    },
+    {
+      "day": 47,
+      "date": "2026-09-27",
+      "week": 7,
+      "block": "team-daily",
+      "theme": "동료와의 마찰 — 부드럽게 반대하기",
+      "topic": "합의가 안 될 때 결정권자에게 올리자고 제안하기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-27.json"
     }
   ]
 }

@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 47,
+  "date": "2026-09-27",
+  "week": 7,
+  "block": "team-daily",
+  "theme": "동료와의 마찰 — 부드럽게 반대하기",
+  "topic": "합의가 안 될 때 결정권자에게 올리자고 제안하기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d047-s1",
+      "title_ko": "스탠드업에서 롤백이냐 패치냐로 갈릴 때 온콜 리드에게 결정 넘기기",
+      "context_ko": "화이트보드 앞 스탠드업 중, 새벽에 배포한 서빙 코드에서 지연이 튀는 문제로 팀 리드와 학습자의 의견이 롤백이냐 패치냐로 갈린다. 시간이 촉박해 논쟁이 길어지고 있다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "I still think we patch forward — we're close, and a rollback means redoing the whole deploy.",
+          "ko": "그래도 패치로 가는 게 낫다고 봐요 — 거의 다 됐는데 롤백하면 배포를 통째로 다시 해야 하잖아요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I see it differently — here's why: patching under this load risks breaking something else downstream.",
+          "ko": "저는 좀 다르게 봐요 — 이 부하 상태에서 패치하면 다른 데서 또 터질 위험이 있거든요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Maybe, but rolling back costs us another twenty minutes we don't really have.",
+          "ko": "그럴 수도 있는데, 롤백하면 지금 없는 20분을 또 써야 해요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We're not going to agree in the next five minutes. Let's just ask Priya to make the call.",
+          "ko": "우리끼리는 5분 안에 결론 안 나요. 그냥 프리야한테 결정하라고 하죠.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d047-s2",
+      "title_ko": "유리벽 회의실 1:1, 아키텍처 선택 이견을 매니저에게 올리기",
+      "context_ko": "동료 엔지니어와 1:1로 새 피처의 모델 아키텍처를 정하는 자리. 트랜스포머 기반이냐 경량 모델이냐를 두고 이십 분째 평행선을 달리고 있다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어(Marco)",
+          "en": "I really think the lightweight model is enough here — we don't need the extra capacity.",
+          "ko": "여기선 경량 모델로도 충분하다고 생각해요 — 굳이 용량을 더 키울 필요는 없어 보여요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Help me understand why you're so confident it'll hit our latency target under real traffic.",
+          "ko": "실제 트래픽에서 레이턴시 목표를 맞출 거라고 확신하는 근거가 뭔지 설명해 줄래요?",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어(Marco)",
+          "en": "Gut feeling, honestly, plus it worked fine on the last project.",
+          "ko": "솔직히 감이에요, 게다가 지난 프로젝트에서도 잘 됐고요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We keep going in circles. Let's write up both options and let Jordan decide this week.",
+          "ko": "계속 제자리걸음이네요. 두 안 다 정리해서 이번 주에 조던이 결정하게 하죠.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d047-s3",
+      "title_ko": "동료 책상 옆에서 평가 지표 이견을 리서치 리드에게 올리기",
+      "context_ko": "동료 책상 옆에 걸터앉아 다음 주 리포트에 쓸 평가 지표를 정하는 중. 자동 지표만으로 충분하다는 동료와 사람 평가가 꼭 필요하다는 학습자가 부딪힌다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 리서처(Sam)",
+          "en": "The automatic scores already show a clear win, I don't think we need human eval too.",
+          "ko": "자동 지표에서 이미 확실히 앞서니까 굳이 사람 평가까지 할 필요는 없을 것 같은데요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I might be missing something, but automatic metrics alone haven't matched user complaints in the past.",
+          "ko": "제가 뭘 놓쳤을 수도 있는데, 예전에도 자동 지표만으로는 사용자 불만을 못 잡아냈잖아요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 리서처(Sam)",
+          "en": "That's fair, but human eval adds another week we don't have before the report is due.",
+          "ko": "그건 맞는데, 사람 평가까지 하면 리포트 마감 전에 일주일이 더 필요해요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Since we can't agree on the tradeoff, let's put it to Renata and let her decide.",
+          "ko": "트레이드오프에 합의가 안 되니, 레나타한테 맡기고 그 결정 따르죠.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d047-s4",
+      "title_ko": "화상회의에서 인프라 방식 이견을 두 팀 매니저에게 올리기",
+      "context_ko": "다른 팀 엔지니어와 화상회의로 추론 클러스터 오토스케일링 정책을 정하는 중. 큐 기반이냐 지표 기반이냐로 서로 물러서지 않는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I see it differently — here's why: queue-based scaling reacts faster when traffic spikes suddenly.",
+          "ko": "저는 좀 다르게 봐요 — 트래픽이 갑자기 튈 때는 큐 기반이 훨씬 빠르게 반응하거든요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "타 팀 엔지니어(Devon)",
+          "en": "Sure, but metric-based scaling is way more stable when the queue length is noisy.",
+          "ko": "그렇긴 한데, 큐 길이가 들쭉날쭉할 땐 지표 기반이 훨씬 안정적이에요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Help me understand what happens during a sudden burst — doesn't the metric lag behind by design?",
+          "ko": "갑자기 트래픽이 몰릴 때는 어떻게 되는지 설명해 줄래요 — 지표 방식은 원래 반응이 늦잖아요?",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "타 팀 엔지니어(Devon)",
+          "en": "It lags a little, but we tune the thresholds tighter to compensate for that.",
+          "ko": "조금 늦긴 한데, 그걸 감안해서 임계값을 더 타이트하게 잡아요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We're both dug in here. Let's bring this to both our managers and let them decide.",
+          "ko": "둘 다 물러설 생각이 없네요. 이건 양쪽 매니저한테 올려서 결정하게 하죠.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d047-s5",
+      "title_ko": "서버룸 앞에서 GPU 우선순위 이견을 인프라 리드에게 올리기",
+      "context_ko": "서버룸 앞에서 동료와 이번 주 GPU 할당 우선순위를 두고 부딪힌다. 학습자 팀의 실험이 먼저라는 입장과 동료 팀의 마감이 급하다는 입장이 맞선다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I might be missing something, but our experiments have been queued for three days already.",
+          "ko": "제가 뭘 놓쳤을 수도 있는데, 저희 실험은 벌써 사흘째 대기 중이에요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어(Nadia)",
+          "en": "I get that, but our deadline is Friday and we can't slip it again.",
+          "ko": "그건 아는데, 저희는 금요일 마감이라 또 밀리면 안 돼요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Help me understand why your job can't run on the smaller partition instead.",
+          "ko": "그쪽 작업이 작은 파티션에서는 왜 안 돌아가는지 설명해 줄래요?",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어(Nadia)",
+          "en": "It needs the full node for the batch size, otherwise the run just fails.",
+          "ko": "배치 사이즈 때문에 풀 노드가 필요해요, 안 그러면 그냥 실패해요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Neither of us can give way here. Let's ask the infra lead to set the priority.",
+          "ko": "둘 다 양보가 안 되네요. 인프라 리드한테 우선순위를 정해달라고 하죠.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
