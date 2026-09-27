@@ -1,0 +1,225 @@
+{
+  "schema": 1,
+  "day": 48,
+  "date": "2026-09-28",
+  "week": 7,
+  "block": "team-daily",
+  "theme": "동료와의 마찰 — 부드럽게 반대하기",
+  "topic": "내가 틀렸음을 인정하고 방향 바꾸기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d048-s1",
+      "title_ko": "학습률 스케줄 판단 실수 인정하기",
+      "context_ko": "지난주 {name}가 강하게 밀었던 학습률 워밍업 스케줄이 실제로는 수렴을 늦추고 있다는 게 오늘 아침 지표로 드러났다. 화이트보드 앞에서 팀 리드 Priya가 그래프를 가리키며 묻는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "The warmup schedule you pushed for is still lagging the baseline after three days.",
+          "ko": "네가 밀었던 그 워밍업 스케줄, 사흘째인데 아직 베이스라인보다 느려.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Help me understand what changed between the pilot run and this one.",
+          "ko": "파일럿 실행이랑 이번 거 사이에 뭐가 달라졌는지 설명해줄 수 있어?",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Same data, but the pilot only ran two epochs — this dip shows up later.",
+          "ko": "데이터는 같은데, 파일럿은 두 에폭만 돌렸잖아 — 이 지연은 나중에 나타나.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Okay, that explains it. I was wrong to push for the longer warmup — let's revert.",
+          "ko": "아, 그래서 그랬구나. 워밍업 더 길게 가자고 한 내가 틀렸어 — 되돌리자.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d048-s2",
+      "title_ko": "밀어붙인 평가 프레임워크의 확장성 문제 인정하기",
+      "context_ko": "한 달 전 {name}가 강하게 추천했던 평가 프레임워크가 새 벤치마크 세트에서 메모리 문제로 자꾸 죽는다. 매니저와의 1:1에서 이 문제를 어떻게 풀지 논의한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "The eval framework you recommended keeps crashing on the larger benchmark set.",
+          "ko": "네가 추천한 평가 프레임워크가 더 큰 벤치마크 세트에서 계속 죽어.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I might be missing something, but is it the memory footprint or the batching logic?",
+          "ko": "내가 뭔가 놓쳤을 수도 있는데, 메모리 문제야 아니면 배칭 로직 문제야?",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Both, honestly — it wasn't built for datasets this size.",
+          "ko": "솔직히 둘 다야 — 이 정도 크기 데이터셋용으로 만든 게 아니었어.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Then I was wrong to push for it here. Let's switch to the lighter framework instead.",
+          "ko": "그럼 여기 쓰자고 한 내가 틀렸네. 더 가벼운 프레임워크로 바꾸자.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d048-s3",
+      "title_ko": "고집했던 캐싱 전략 접고 동료 제안 받아들이기",
+      "context_ko": "{name}가 우겨서 도입한 추론 캐싱 방식이 실제로는 지연 시간을 더 늘리고 있다. 동료 Marco의 책상 옆에 걸터앉아 원래 그가 제안했던 방식으로 되돌리자고 말한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I see it differently — here's why I assumed the eviction policy was the real bottleneck.",
+          "ko": "나는 좀 다르게 봤어 — 이유를 말하자면, 병목이 축출 정책이라고 생각했거든.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "That's what I thought too, until I profiled it — the cache lookup itself is the slow part.",
+          "ko": "나도 그렇게 생각했는데, 프로파일링해보니까 캐시 조회 자체가 느린 부분이더라.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Help me understand how you isolated that in the profiler.",
+          "ko": "그걸 프로파일러에서 어떻게 분리해냈는지 설명해줄래?",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "I disabled caching entirely and reran — latency dropped back to normal.",
+          "ko": "캐싱을 아예 꺼버리고 다시 돌렸더니 지연 시간이 정상으로 돌아왔어.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Fair enough, I was wrong about the bottleneck. Let's roll back to your original design.",
+          "ko": "그렇다면 인정. 병목에 대해 내가 틀렸어 — 네 원래 설계로 되돌리자.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d048-s4",
+      "title_ko": "밀어붙인 아키텍처 선택이 확장 안 된다는 것 인정하기",
+      "context_ko": "지난 스프린트에 {name}가 강력히 주장했던 모델 아키텍처가 더 큰 배치 사이즈에서 OOM이 반복된다. 타 팀과의 화상회의에서 다음 스텝을 정한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "타 팀 리드",
+          "en": "We're still seeing OOM errors on the architecture you proposed last sprint.",
+          "ko": "지난 스프린트에 네가 제안한 아키텍처에서 아직도 OOM 에러가 나.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I might be missing something, but did we test it above batch size two-fifty-six?",
+          "ko": "내가 놓친 게 있을 수도 있는데, 배치 사이즈 256 넘겨서 테스트해본 거야?",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "타 팀 리드",
+          "en": "We did, and it fails consistently past one-twenty-eight.",
+          "ko": "해봤는데, 128 넘어가면 계속 실패해.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Then I was wrong about it scaling. Let's fall back to the smaller variant for now.",
+          "ko": "그럼 확장된다고 한 내가 틀렸네. 일단 작은 버전으로 돌아가자.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d048-s5",
+      "title_ko": "벤치마크에 반대했던 것 철회하고 인정하기",
+      "context_ko": "지난주 {name}가 새 벤치마크 도입에 반대했지만, 다시 검토해보니 실제로 유용하다는 걸 깨달았다. 탕비실에서 마주친 동료에게 그 얘기를 꺼낸다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "You were pretty against adding that benchmark last week — still feel that way?",
+          "ko": "너 지난주에 그 벤치마크 추가하는 거 꽤 반대했잖아 — 아직도 그 생각이야?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Actually, no. I reran it on our real workloads and it caught two regressions we'd missed.",
+          "ko": "아니, 사실 아니야. 실제 워크로드로 다시 돌려봤더니 우리가 놓친 리그레션 두 개를 잡아내더라.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "So you're on board now?",
+          "ko": "그럼 이제 찬성이야?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah, I was wrong to push back — let's add it to the CI pipeline.",
+          "ko": "응, 반대한 내가 틀렸어 — CI 파이프라인에 추가하자.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}

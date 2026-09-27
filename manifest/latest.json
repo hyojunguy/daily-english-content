@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-26T21:09:58+00:00",
+  "updated": "2026-09-27T21:07:10+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 47,
-  "total_days": 41,
-  "total_turns": 890,
-  "total_target_turns": 478,
+  "latest_day": 48,
+  "total_days": 42,
+  "total_turns": 911,
+  "total_target_turns": 489,
   "days": [
     {
       "day": 1,
@@ -662,6 +662,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-27.json"
+    },
+    {
+      "day": 48,
+      "date": "2026-09-28",
+      "week": 7,
+      "block": "team-daily",
+      "theme": "동료와의 마찰 — 부드럽게 반대하기",
+      "topic": "내가 틀렸음을 인정하고 방향 바꾸기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 21,
+      "target_turns": 11,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-28.json"
     }
   ]
 }
