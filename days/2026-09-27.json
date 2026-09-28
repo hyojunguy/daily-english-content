@@ -29,7 +29,8 @@
           "role_ko": "나",
           "en": "I see it differently — here's why: patching under this load risks breaking something else downstream.",
           "ko": "저는 좀 다르게 봐요 — 이 부하 상태에서 패치하면 다른 데서 또 터질 위험이 있거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I disagree, because patching under this load may break other services."
         },
         {
           "n": 3,
@@ -45,7 +46,8 @@
           "role_ko": "나",
           "en": "We're not going to agree in the next five minutes. Let's just ask Priya to make the call.",
           "ko": "우리끼리는 5분 안에 결론 안 나요. 그냥 프리야한테 결정하라고 하죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We do not agree, so let's ask our lead to decide."
         }
       ]
     },
@@ -70,7 +72,8 @@
           "role_ko": "나",
           "en": "Help me understand why you're so confident it'll hit our latency target under real traffic.",
           "ko": "실제 트래픽에서 레이턴시 목표를 맞출 거라고 확신하는 근거가 뭔지 설명해 줄래요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Why are you sure we'll meet the latency target in real traffic?"
         },
         {
           "n": 3,
@@ -86,7 +89,8 @@
           "role_ko": "나",
           "en": "We keep going in circles. Let's write up both options and let Jordan decide this week.",
           "ko": "계속 제자리걸음이네요. 두 안 다 정리해서 이번 주에 조던이 결정하게 하죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Let's write both options, then our lead can decide this week."
         }
       ]
     },
@@ -111,7 +115,8 @@
           "role_ko": "나",
           "en": "I might be missing something, but automatic metrics alone haven't matched user complaints in the past.",
           "ko": "제가 뭘 놓쳤을 수도 있는데, 예전에도 자동 지표만으로는 사용자 불만을 못 잡아냈잖아요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Maybe I'm wrong, but automatic metrics alone missed user complaints before."
         },
         {
           "n": 3,
@@ -127,7 +132,8 @@
           "role_ko": "나",
           "en": "Since we can't agree on the tradeoff, let's put it to Renata and let her decide.",
           "ko": "트레이드오프에 합의가 안 되니, 레나타한테 맡기고 그 결정 따르죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Let's ask our manager to decide and we will follow."
         }
       ]
     },
@@ -144,7 +150,8 @@
           "role_ko": "나",
           "en": "I see it differently — here's why: queue-based scaling reacts faster when traffic spikes suddenly.",
           "ko": "저는 좀 다르게 봐요 — 트래픽이 갑자기 튈 때는 큐 기반이 훨씬 빠르게 반응하거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I disagree, because queue scaling reacts faster to sudden traffic."
         },
         {
           "n": 2,
@@ -160,7 +167,8 @@
           "role_ko": "나",
           "en": "Help me understand what happens during a sudden burst — doesn't the metric lag behind by design?",
           "ko": "갑자기 트래픽이 몰릴 때는 어떻게 되는지 설명해 줄래요 — 지표 방식은 원래 반응이 늦잖아요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Doesn't the metric react slowly during a sudden traffic burst?"
         },
         {
           "n": 4,
@@ -176,7 +184,8 @@
           "role_ko": "나",
           "en": "We're both dug in here. Let's bring this to both our managers and let them decide.",
           "ko": "둘 다 물러설 생각이 없네요. 이건 양쪽 매니저한테 올려서 결정하게 하죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We both refuse to move, so let's ask both managers to decide."
         }
       ]
     },
@@ -193,7 +202,8 @@
           "role_ko": "나",
           "en": "I might be missing something, but our experiments have been queued for three days already.",
           "ko": "제가 뭘 놓쳤을 수도 있는데, 저희 실험은 벌써 사흘째 대기 중이에요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I may be wrong, but our experiments waited 3 days."
         },
         {
           "n": 2,
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "Help me understand why your job can't run on the smaller partition instead.",
           "ko": "그쪽 작업이 작은 파티션에서는 왜 안 돌아가는지 설명해 줄래요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Why does your job not run on the smaller partition?"
         },
         {
           "n": 4,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "Neither of us can give way here. Let's ask the infra lead to set the priority.",
           "ko": "둘 다 양보가 안 되네요. 인프라 리드한테 우선순위를 정해달라고 하죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We both need it, so let's ask the lead to decide priority."
         }
       ]
     }
