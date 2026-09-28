@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 49,
+  "date": "2026-09-29",
+  "week": 7,
+  "block": "team-daily",
+  "theme": "동료와의 마찰 — 부드럽게 반대하기",
+  "topic": "긴장된 대화를 마무리하고 관계 복구하기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d049-s1",
+      "title_ko": "복도에서 평가 리뷰 후 어색함 풀기",
+      "context_ko": "평가 리뷰에서 서로 언성을 높인 뒤, 동료가 복도에서 {name}을 붙잡고 먼저 사과한다. 내일 숫자를 같이 보기로 해서 관계도 풀고 이견도 이어가야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Hey, hold on. I think I was pretty sharp with you in that eval review. That wasn't fair.",
+          "ko": "저기, 잠깐만요. 아까 평가 리뷰에서 제가 좀 날카로웠던 것 같아요. 그건 좀 아니었어요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No worries, I was pushing hard too. I still see it differently — here's why — but I shouldn't have interrupted you.",
+          "ko": "아니에요, 저도 세게 밀어붙였죠. 저는 여전히 다르게 보는데, 이유는 이래요. 그래도 말 끊은 건 제가 잘못했어요.",
+          "is_target": true,
+          "en_easy": "I still disagree, but I was wrong to stop you."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Thanks. Honestly, I'd rather hear the why than have you nod along and stay quiet. Can we look at the numbers together tomorrow?",
+          "ko": "고마워요. 솔직히 그냥 고개 끄덕이고 말 안 하는 것보다 이유를 듣는 게 나아요. 내일 같이 숫자 볼까요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sure. Let's grab thirty minutes after standup, and I'll bring the ablation results so we're both looking at the same thing.",
+          "ko": "좋아요. 스탠드업 끝나고 30분만 잡죠. 제가 ablation 결과 가져올게요. 같은 자료를 보면서 얘기해요.",
+          "is_target": true,
+          "en_easy": "Let's meet for half an hour after the meeting."
+        }
+      ]
+    },
+    {
+      "id": "d049-s2",
+      "title_ko": "랩 앞에서 체크포인트 갈등 풀기",
+      "context_ko": "체크포인트 주기 문제로 다퉈 서먹해진 동료를 {name}이 학습 클러스터 랩 앞에서 먼저 찾아간다. 학습 하룻밤이 날아간 일이 감정의 뿌리다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Marco, got a minute? I didn't like how we left things about the checkpoint schedule.",
+          "ko": "마르코, 잠깐 시간 돼요? 체크포인트 주기 얘기 그렇게 끝난 게 계속 마음에 걸려서요.",
+          "is_target": true,
+          "en_easy": "Do you have time to talk about the checkpoint schedule?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "인프라 동료",
+          "en": "Yeah, me neither. I was annoyed because we lost a whole night of training last week, and it felt like nobody listened.",
+          "ko": "네, 저도요. 지난주에 학습 하룻밤을 통째로 날렸는데 아무도 안 들어주는 느낌이라 짜증이 났어요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That's fair. Help me understand what you'd change, though — I want to fix the real problem, not just win the argument.",
+          "ko": "그럴 만해요. 그래도 어떻게 바꾸고 싶은지 좀 알려주세요. 논쟁에서 이기려는 게 아니라 진짜 문제를 고치고 싶어요.",
+          "is_target": true,
+          "en_easy": "What would you change to fix the real problem?"
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "인프라 동료",
+          "en": "Save every thousand steps instead of every five thousand. Storage costs more, but a crash wouldn't hurt like that again.",
+          "ko": "5천 스텝마다 말고 1천 스텝마다 저장하죠. 스토리지 비용은 늘어도 또 죽어도 그렇게까지 아프진 않을 거예요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Okay, that makes sense. Let's try it for a week and check the storage bill before we decide.",
+          "ko": "알겠어요, 일리 있네요. 일주일만 해보고 스토리지 비용 확인한 다음에 결정해요.",
+          "is_target": true,
+          "en_easy": "Let's try it for a week, then check the storage bill."
+        }
+      ]
+    },
+    {
+      "id": "d049-s3",
+      "title_ko": "점심 자리에서 로드맵 오해 풀기",
+      "context_ko": "기획 회의 이후 말수가 줄어든 {name}에게 동료가 점심 자리에서 직접 묻는다. 평가 하나를 없애기로 한 건지 미루기로 한 건지에 대한 오해가 쌓여 있었다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 리서처",
+          "en": "You've barely said a word since the planning meeting. Are we okay, or are you still mad about the roadmap thing?",
+          "ko": "기획 회의 이후로 거의 말이 없네요. 우리 괜찮은 거죠? 아니면 로드맵 건으로 아직 화났어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not mad, just frustrated. I might be missing something, but I thought we'd agreed to cut the eval, not delay it.",
+          "ko": "화난 건 아니고 답답했어요. 제가 놓친 게 있을 수도 있는데, 그 평가는 미루는 게 아니라 빼기로 한 줄 알았거든요.",
+          "is_target": true,
+          "en_easy": "I'm not mad, but I thought we agreed to cut the eval."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 리서처",
+          "en": "No, you're right — that was the plan. I changed it in my head and never told you. Sorry about that.",
+          "ko": "아뇨, 맞아요. 원래 계획이 그랬어요. 제가 머릿속으로 바꿔놓고 말을 안 했네요. 미안해요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks for saying that. Let's post the updated plan in the channel today so nobody else gets surprised.",
+          "ko": "말해줘서 고마워요. 바뀐 계획을 오늘 채널에 올려서 다른 사람들도 놀라지 않게 해요.",
+          "is_target": true,
+          "en_easy": "Thanks, let's post the new plan in the channel today."
+        }
+      ]
+    },
+    {
+      "id": "d049-s4",
+      "title_ko": "화상회의 끝난 뒤 리드에게 사과하기",
+      "context_ko": "롤아웃 논의에서 여러 사람 앞에서 리드의 말을 끊었던 {name}이 다른 참석자들이 나간 뒤에도 화상회의에 남아 사과한다. 앞으로 우려는 사전에 공유하기로 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Before you drop off, I wanted to say the last ten minutes got tense, and I'm sorry for cutting you off.",
+          "ko": "나가시기 전에 한마디만요. 마지막 10분이 좀 날이 서 있었고, 말씀 끊어서 죄송했어요.",
+          "is_target": true,
+          "en_easy": "I'm sorry I stopped you at the end of the meeting."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Appreciate that. I didn't love the pushback in front of the whole group, but I get that you care about the rollout.",
+          "ko": "고마워요. 다들 있는 앞에서 반박하는 건 별로였지만, 롤아웃을 신경 쓰는 마음은 알아요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I do, and next time I'll raise concerns with you first, before the meeting instead of during it.",
+          "ko": "맞아요. 다음부턴 회의 중에 말하지 않고, 회의 전에 먼저 리드님께 우려를 말씀드릴게요.",
+          "is_target": true,
+          "en_easy": "Yes, next time I'll tell you my concerns before the meeting."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Good. And send me your rollout concerns in writing so I can actually think them through.",
+          "ko": "좋아요. 롤아웃 우려 사항도 글로 보내줘요. 제대로 생각해볼 수 있게요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Will do. I'll write them up tonight and send them over before you sign off for the day.",
+          "ko": "그럴게요. 오늘 밤에 정리해서 퇴근하시기 전에 보내드릴게요.",
+          "is_target": true,
+          "en_easy": "I'll write them tonight and send them before you leave."
+        }
+      ]
+    },
+    {
+      "id": "d049-s5",
+      "title_ko": "화이트보드 앞에서 토론 마무리하기",
+      "context_ko": "한 시간째 샘플링 방식을 두고 토론한 {name}과 동료가 화이트보드 앞에서 결론을 낸다. 이기고 지는 것보다 지표를 먼저 합의해 뒷말을 막는 게 목표다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 리서처",
+          "en": "Okay, we've been going back and forth for an hour. I still prefer my sampling approach, but I'll run your version first.",
+          "ko": "자, 한 시간째 공방이네요. 저는 아직 제 샘플링 방식이 낫다고 보지만, 일단 당신 버전부터 돌려볼게요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks, I appreciate that. Whichever wins, let's agree on the metric now, so neither of us argues about it later.",
+          "ko": "고마워요. 어느 쪽이 이기든 지표는 지금 합의해 두죠. 나중에 서로 그걸로 다투지 않게요.",
+          "is_target": true,
+          "en_easy": "Let's agree on the metric now, so we don't argue later."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 리서처",
+          "en": "Deal. Held-out perplexity plus the human preference score. And hey, thanks for not taking it personally today.",
+          "ko": "좋아요. 홀드아웃 perplexity랑 사람 선호도 점수로 가죠. 그리고 오늘 감정 상하지 않게 받아줘서 고마워요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Same to you. Debating with you actually makes my designs better, even when it gets a little heated.",
+          "ko": "저도요. 좀 격해질 때도 있지만, 당신이랑 토론하면 제 설계가 실제로 더 좋아져요.",
+          "is_target": true,
+          "en_easy": "Arguing with you improves my designs, even when it's hard."
+        }
+      ]
+    }
+  ]
+}
