@@ -29,7 +29,8 @@
           "role_ko": "나",
           "en": "Help me understand what changed between the pilot run and this one.",
           "ko": "파일럿 실행이랑 이번 거 사이에 뭐가 달라졌는지 설명해줄 수 있어?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "What changed between the pilot run and this run?"
         },
         {
           "n": 3,
@@ -45,7 +46,8 @@
           "role_ko": "나",
           "en": "Okay, that explains it. I was wrong to push for the longer warmup — let's revert.",
           "ko": "아, 그래서 그랬구나. 워밍업 더 길게 가자고 한 내가 틀렸어 — 되돌리자.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I was wrong, so let's use the old one again."
         }
       ]
     },
@@ -70,7 +72,8 @@
           "role_ko": "나",
           "en": "I might be missing something, but is it the memory footprint or the batching logic?",
           "ko": "내가 뭔가 놓쳤을 수도 있는데, 메모리 문제야 아니면 배칭 로직 문제야?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Maybe I'm wrong, but is it memory or batching?"
         },
         {
           "n": 3,
@@ -86,7 +89,8 @@
           "role_ko": "나",
           "en": "Then I was wrong to push for it here. Let's switch to the lighter framework instead.",
           "ko": "그럼 여기 쓰자고 한 내가 틀렸네. 더 가벼운 프레임워크로 바꾸자.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I was wrong, so let's use a smaller framework."
         }
       ]
     },
@@ -103,7 +107,8 @@
           "role_ko": "나",
           "en": "I see it differently — here's why I assumed the eviction policy was the real bottleneck.",
           "ko": "나는 좀 다르게 봤어 — 이유를 말하자면, 병목이 축출 정책이라고 생각했거든.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I saw it differently, because I thought the policy was the problem."
         },
         {
           "n": 2,
@@ -119,7 +124,8 @@
           "role_ko": "나",
           "en": "Help me understand how you isolated that in the profiler.",
           "ko": "그걸 프로파일러에서 어떻게 분리해냈는지 설명해줄래?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "How did you find that with the tool?"
         },
         {
           "n": 4,
@@ -135,7 +141,8 @@
           "role_ko": "나",
           "en": "Fair enough, I was wrong about the bottleneck. Let's roll back to your original design.",
           "ko": "그렇다면 인정. 병목에 대해 내가 틀렸어 — 네 원래 설계로 되돌리자.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I was wrong, so let's use your first design."
         }
       ]
     },
@@ -160,7 +167,8 @@
           "role_ko": "나",
           "en": "I might be missing something, but did we test it above batch size two-fifty-six?",
           "ko": "내가 놓친 게 있을 수도 있는데, 배치 사이즈 256 넘겨서 테스트해본 거야?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Maybe I missed something, but did we test above batch size 256?"
         },
         {
           "n": 3,
@@ -176,7 +184,8 @@
           "role_ko": "나",
           "en": "Then I was wrong about it scaling. Let's fall back to the smaller variant for now.",
           "ko": "그럼 확장된다고 한 내가 틀렸네. 일단 작은 버전으로 돌아가자.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I was wrong about that, so let's use the smaller one now."
         }
       ]
     },
@@ -201,7 +210,8 @@
           "role_ko": "나",
           "en": "Actually, no. I reran it on our real workloads and it caught two regressions we'd missed.",
           "ko": "아니, 사실 아니야. 실제 워크로드로 다시 돌려봤더니 우리가 놓친 리그레션 두 개를 잡아내더라.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "No, I tested it again and it found new problems."
         },
         {
           "n": 3,
@@ -217,7 +227,8 @@
           "role_ko": "나",
           "en": "Yeah, I was wrong to push back — let's add it to the CI pipeline.",
           "ko": "응, 반대한 내가 틀렸어 — CI 파이프라인에 추가하자.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I was wrong to say no, so let's add it."
         }
       ]
     }
