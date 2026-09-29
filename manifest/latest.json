@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-28T22:53:20+00:00",
+  "updated": "2026-09-29T21:03:25+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 49,
-  "total_days": 43,
-  "total_turns": 933,
-  "total_target_turns": 501,
+  "latest_day": 50,
+  "total_days": 44,
+  "total_turns": 955,
+  "total_target_turns": 513,
   "days": [
     {
       "day": 1,
@@ -694,6 +694,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-09-29.json"
+    },
+    {
+      "day": 50,
+      "date": "2026-09-30",
+      "week": 8,
+      "block": "team-daily",
+      "theme": "1블록 통합 — 하루를 영어로 살기",
+      "topic": "아침 스탠드업부터 오후 리뷰까지 연결된 하루",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-09-30.json"
     }
   ]
 }

@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 50,
+  "date": "2026-09-30",
+  "week": 8,
+  "block": "team-daily",
+  "theme": "1블록 통합 — 하루를 영어로 살기",
+  "topic": "아침 스탠드업부터 오후 리뷰까지 연결된 하루",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d050-s1",
+      "title_ko": "아침 스탠드업: 야간 평가 실패 담당 정하기",
+      "context_ko": "화이트보드 앞 아침 스탠드업. 야간 평가 잡이 3번 샤드에서 또 실패했고, 팀 리드가 오늘 누가 맡을지 정하려 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Morning, everyone. Quick round: the nightly eval failed again on shard three, and I need to know who's picking that up today.",
+          "ko": "좋은 아침이에요. 간단히 공유할게요. 야간 평가가 또 3번 샤드에서 터졌는데, 오늘 누가 잡을 건가요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Circling back on yesterday's failure: it's a timeout, not bad data. I'll add retries and have a fix up by noon.",
+          "ko": "어제 실패 건 다시 말씀드리면, 데이터 문제가 아니라 타임아웃이에요. 재시도 넣어서 점심 전에 수정 올릴게요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Good. But retries will hide the real problem if the storage node keeps stalling. Can you also open a ticket with the infra team?",
+          "ko": "좋아요. 근데 스토리지 노드가 계속 멈추면 재시도가 진짜 문제를 가릴 수 있어요. 인프라 팀에 티켓도 열어줄래요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sure. I'll attach the logs and flag it as blocking, so they see it before their planning meeting this afternoon.",
+          "ko": "네. 로그 첨부하고 블로킹으로 표시해 둘게요. 그래야 오후 플래닝 회의 전에 보실 테니까요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d050-s2",
+      "title_ko": "점심 자리: 콘퍼런스 때문에 온콜 교대 부탁하기",
+      "context_ko": "점심 테이블. 다음 주 목요일에 콘퍼런스 발표가 있어서 온콜을 바꿔야 하는데, 동료도 논문 마감이 겹쳐 있다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Priya, could you swap on-call weeks with me? I have a conference talk next Thursday and I'd be traveling.",
+          "ko": "프리야, 온콜 주 나랑 바꿔줄 수 있어요? 다음 주 목요일에 콘퍼런스 발표가 있어서 출장이거든요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Thursday is tough, I'm on a paper deadline. I could take Friday to Sunday, but not the weekday shifts. Would splitting it work?",
+          "ko": "목요일은 어려워요, 논문 마감이라서요. 금요일부터 일요일까진 할 수 있는데 평일은 안 돼요. 나눠서 하면 어때요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Splitting works for me. I'll take Monday to Wednesday, you take Friday onward, and we'll sort out Thursday separately.",
+          "ko": "나눠서 좋아요. 월요일부터 수요일은 제가 하고 금요일부터는 프리야가 하고, 목요일은 따로 정리해요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Deal. Just put it in the shared calendar today so the rotation bot doesn't page the wrong person on Monday.",
+          "ko": "좋아요. 오늘 공용 캘린더에 꼭 넣어둬요. 안 그러면 월요일에 로테이션 봇이 엉뚱한 사람을 호출해요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Will do. To close the loop, I'll post the new schedule in the team channel right after lunch.",
+          "ko": "그럴게요. 마무리 차원에서 점심 끝나자마자 팀 채널에 새 일정 올릴게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d050-s3",
+      "title_ko": "화상회의: 지연 시간 목표를 두고 금요일 출시 조율",
+      "context_ko": "노트북 화상회의. 프로덕트 매니저가 파트너에게 약속한 p95 지연 시간 300ms를 못 맞췄다며 금요일 출시가 가능한지 묻는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "프로덕트 매니저",
+          "en": "We promised the partner p95 latency under 300 milliseconds, but your benchmark shows 420. Can we still ship the new model on Friday?",
+          "ko": "파트너한테 p95 지연 300ms 미만으로 약속했는데 벤치마크는 420이 나왔잖아요. 그래도 금요일에 새 모델 출시할 수 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not yet. Where we landed was quantization plus batching, which gets us to about 310 milliseconds.",
+          "ko": "아직은 아니에요. 지금까지 정리된 건 양자화에 배칭을 더하는 건데, 그러면 310ms 정도까지 내려가요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "프로덕트 매니저",
+          "en": "Ten milliseconds over could be a dealbreaker for them. What would it take to get under 300 without hurting accuracy?",
+          "ko": "10ms 초과도 그쪽엔 치명적일 수 있어요. 정확도 안 떨어뜨리고 300 아래로 내리려면 뭐가 필요해요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I need two more days to test a smaller draft model. I'd rather ship Monday than promise Friday and miss again.",
+          "ko": "더 작은 드래프트 모델 테스트하는 데 이틀 더 필요해요. 금요일 약속하고 또 놓치느니 월요일에 내는 게 낫죠.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d050-s4",
+      "title_ko": "랩 앞 복도: 예약된 GPU 노드 나눠 쓰기",
+      "context_ko": "서버룸 앞에서 동료와 마주쳤다. 동료의 하이퍼파라미터 스윕이 GPU 8장을 잡고 있어서, 어제부터 대기 중인 내 학습 잡이 못 돌고 있다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Marco, are those eight GPUs still reserved for your sweep? My training run has been queued since yesterday.",
+          "ko": "마르코, 저 GPU 8장 아직 스윕용으로 잡혀 있어요? 제 학습 잡이 어제부터 대기 중이거든요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 리서처",
+          "en": "Half of them, yeah. The sweep is only at trial forty out of eighty, and I don't want to kill it now.",
+          "ko": "절반은요. 스윕이 80개 중에 이제 40번째 트라이얼이라, 지금 끊고 싶진 않아요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Could you stop the trials that are clearly behind? Then I could start my run on four nodes tonight.",
+          "ko": "확실히 뒤처지는 트라이얼만 먼저 중단해 주실 수 있어요? 그럼 오늘 밤에 노드 네 개로 제 잡을 시작할 수 있거든요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 리서처",
+          "en": "Fair enough. I'll prune the bottom half now and free up four nodes within the hour.",
+          "ko": "그럴 만하네요. 지금 하위 절반 쳐내고 한 시간 안에 노드 네 개 비워 줄게요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks, that helps a lot. I'll check the scheduler at three and ping you if the nodes still look busy.",
+          "ko": "고마워요, 큰 도움이 돼요. 3시에 스케줄러 확인해 보고 노드가 여전히 차 있으면 연락드릴게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d050-s5",
+      "title_ko": "오후 리뷰: 아침 수정이 통했는지 확인하고 후속 정리",
+      "context_ko": "유리벽 작은 회의실에서 하루를 마무리하는 리뷰. 팀 리드가 아침에 넣은 재시도 수정이 오후 재실행에서 통했는지 묻는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Before we wrap up, did this morning's retry fix hold on the afternoon rerun of the nightly eval?",
+          "ko": "마무리하기 전에, 아침에 넣은 재시도 수정이 오후에 야간 평가 재실행해 봤을 때 통했어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yes, all shards passed. Circling back on the storage node, infra confirmed it needs a firmware update this weekend.",
+          "ko": "네, 샤드 전부 통과했어요. 스토리지 노드 건은 인프라 팀이 이번 주말에 펌웨어 업데이트가 필요하다고 확인해 줬어요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Great. Then let's keep the retries in for now and remove them once the firmware is patched. Can you write that down?",
+          "ko": "좋네요. 그럼 일단 재시도는 유지하고 펌웨어 패치되면 빼죠. 그거 기록해 둘래요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sure. I'll add a cleanup task to the backlog with a due date so we don't forget the retries later.",
+          "ko": "그럼요. 나중에 재시도 코드를 잊지 않도록 기한 넣어서 백로그에 정리 작업 추가해 둘게요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
