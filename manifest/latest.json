@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-09-30T21:05:19+00:00",
+  "updated": "2026-10-01T21:05:58+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 51,
-  "total_days": 45,
-  "total_turns": 977,
-  "total_target_turns": 525,
+  "latest_day": 52,
+  "total_days": 46,
+  "total_turns": 999,
+  "total_target_turns": 537,
   "days": [
     {
       "day": 1,
@@ -726,6 +726,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-10-01.json"
+    },
+    {
+      "day": 52,
+      "date": "2026-10-02",
+      "week": 8,
+      "block": "team-daily",
+      "theme": "1블록 통합 — 하루를 영어로 살기",
+      "topic": "동료가 휴가라 인수인계를 받는 하루",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-10-02.json"
     }
   ]
 }

@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 52,
+  "date": "2026-10-02",
+  "week": 8,
+  "block": "team-daily",
+  "theme": "1블록 통합 — 하루를 영어로 살기",
+  "topic": "동료가 휴가라 인수인계를 받는 하루",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d052-s1",
+      "title_ko": "화이트보드 앞에서 돌아가는 학습 인수인계 받기",
+      "context_ko": "내일부터 휴가인 Priya가 화이트보드에 돌아가는 학습 세 개를 그려 놓고 마지막 인수인계를 해준다. {name}은 어느 것을 집중해서 봐야 하고, 문제가 생기면 무엇을 해야 하는지 물어야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "휴가 가는 동료 Priya",
+          "en": "Okay, last stop on the board: three runs are live, and the ablation sweep finishes tonight. If it stalls, just restart from the last checkpoint.",
+          "ko": "마지막으로 보드 보자. 학습 세 개가 돌고 있고, 어블레이션 스윕은 오늘 밤에 끝나. 멈추면 마지막 체크포인트에서 재시작하면 돼.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Got it. Which of the three should I watch most closely, and where do I find the restart command?",
+          "ko": "알겠어. 셋 중에 어느 걸 제일 신경 써서 봐야 해? 재시작 명령어는 어디 있어?",
+          "is_target": true,
+          "en_easy": "Which one should I watch, and where is the start command?"
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "휴가 가는 동료 Priya",
+          "en": "The sweep. Restart command is pinned in the team channel. Honestly, don't touch the other two unless the loss spikes; they're just soaking.",
+          "ko": "스윕이지. 재시작 명령어는 팀 채널에 고정해 뒀어. 솔직히 나머지 둘은 loss만 튀지 않으면 건드리지 마. 그냥 돌려놓는 거야.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Understood. I'll only intervene if the loss spikes, and I'll write everything down in your handover doc as I go.",
+          "ko": "알겠어. loss가 튈 때만 손댈게. 하면서 생기는 건 전부 네 인수인계 문서에 적어 둘게.",
+          "is_target": true,
+          "en_easy": "I'll only act if the loss goes up fast."
+        }
+      ]
+    },
+    {
+      "id": "d052-s2",
+      "title_ko": "모니터 앞에서 불안정한 야간 평가 판단 기준 묻기",
+      "context_ko": "Priya의 자리에서 모니터 여러 대로 야간 평가 대시보드를 보는 중이다. 최근 자주 빨간불이 뜨는데, {name}은 진짜 성능 하락과 일시적 오류를 구분하는 기준을 받아 두려 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "휴가 가는 동료 Priya",
+          "en": "This dashboard is the nightly eval. It's been flaky lately, so a red run might not mean a real regression. Use your judgment.",
+          "ko": "이게 야간 평가 대시보드야. 요즘 불안정해서 빨간불이 떠도 진짜 성능 하락이 아닐 수 있어. 네가 판단해야 해.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "How do I tell a flaky failure from a real one? Is there a rule you use, like rerunning twice?",
+          "ko": "일시적 실패랑 진짜 실패는 어떻게 구분해? 두 번 돌려본다든지, 쓰는 기준 있어?",
+          "is_target": true,
+          "en_easy": "How can I tell a random failure from a real one?"
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "휴가 가는 동료 Priya",
+          "en": "Rerun once. If the same metric drops again by more than half a point, it's real. Then ping the research lead before anyone rolls back.",
+          "ko": "한 번만 다시 돌려. 같은 지표가 또 0.5포인트 넘게 떨어지면 진짜야. 그땐 롤백하기 전에 리서치 리드한테 먼저 알려.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Perfect. So rerun once, check for a half-point drop, and ping the lead first. Can I put that in the doc?",
+          "ko": "좋아. 한 번 재실행하고, 0.5포인트 하락 확인하고, 리드한테 먼저 알리는 거지. 이거 문서에 넣어도 돼?",
+          "is_target": true,
+          "en_easy": "So I run it again once, then tell the lead?"
+        }
+      ]
+    },
+    {
+      "id": "d052-s3",
+      "title_ko": "화상회의에서 타 팀에 지연 시간 수치 약속 조정하기",
+      "context_ko": "다른 팀의 Marco가 Priya에게 요청했던 지연 시간 수치를 기다리고 있다. Priya의 초안은 예전 배치 사이즈로 돌린 거라, {name}은 정확한 수치와 빠른 답 사이에서 일정을 조율해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hi Marco, {name} here. Circling back on the latency numbers you asked Priya for; she's on leave from tomorrow, so I'm covering.",
+          "ko": "안녕하세요 Marco, {name}입니다. Priya에게 요청하셨던 지연 시간 수치 건으로 다시 연락드려요. Priya는 내일부터 휴가라 제가 대신 맡았어요.",
+          "is_target": true,
+          "en_easy": "I'll take the latency numbers because she's away tomorrow."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "타 팀 리드 Marco",
+          "en": "Thanks. We need them by Thursday for our capacity plan. Priya said they'd be ready, but I haven't seen anything yet.",
+          "ko": "고마워요. 용량 계획 때문에 목요일까지 필요해요. Priya가 준비된다고 했는데 아직 아무것도 못 받았어요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I found her draft run. It used the old batch size, so I'd rather rerun it than send you wrong numbers.",
+          "ko": "Priya가 돌려둔 초안은 찾았어요. 예전 배치 사이즈로 돌린 거라, 틀린 수치를 드리느니 다시 돌리는 게 낫겠어요.",
+          "is_target": true,
+          "en_easy": "Her run used the old batch size, so I'll run it again."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "타 팀 리드 Marco",
+          "en": "Fair, but a rerun costs a day. Can you give me a rough range today so we can keep planning?",
+          "ko": "맞는 말인데, 재실행하면 하루가 걸리잖아요. 계획을 이어갈 수 있게 오늘 대략적인 범위라도 줄 수 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sure. I'll send a rough range by end of day, then the clean numbers Thursday morning.",
+          "ko": "그럼요. 오늘 퇴근 전에 대략적인 범위를 보내고, 정확한 수치는 목요일 아침에 드릴게요.",
+          "is_target": true,
+          "en_easy": "I'll send a rough range today and clean numbers Thursday morning."
+        }
+      ]
+    },
+    {
+      "id": "d052-s4",
+      "title_ko": "서버룸 앞에서 점검 일정 때문에 스윕 지키기",
+      "context_ko": "{name}이 인수받은 어블레이션 스윕이 도는 랙 앞이다. 오늘 밤 점검으로 노드가 비워지면 학습이 중간에 죽을 수 있어서, 인프라 담당 Dana와 일정을 협의해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey Dana, the ablation sweep on this rack is Priya's, and it's mine this week. Is tonight's maintenance still happening?",
+          "ko": "Dana, 이 랙에서 도는 어블레이션 스윕이 Priya 건인데 이번 주는 제가 맡았어요. 오늘 밤 점검 그대로 해요?",
+          "is_target": true,
+          "en_easy": "Is tonight's maintenance still happening for this server?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어 Dana",
+          "en": "Yes, node fourteen gets drained at ten. Your job is on it. If it's not done by then, it gets killed.",
+          "ko": "네, 14번 노드는 10시에 비워요. 그 위에 당신 잡이 있어요. 그때까지 안 끝나면 죽어요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It won't finish by ten. Can you push the drain to tomorrow morning, or move us to a spare node?",
+          "ko": "10시까지는 안 끝나요. 비우는 걸 내일 아침으로 미루거나, 여분 노드로 옮겨주실 수 있어요?",
+          "is_target": true,
+          "en_easy": "Can you move the drain to tomorrow morning?"
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어 Dana",
+          "en": "I can delay the drain by six hours, no more. Other teams are queued behind it.",
+          "ko": "여섯 시간까지는 미룰 수 있는데 그 이상은 안 돼요. 뒤에 다른 팀들이 대기 중이라서요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Where we landed was a six-hour delay, so I'll resume from the checkpoint if it gets cut off. Thanks, Dana.",
+          "ko": "그럼 여섯 시간 미루는 걸로 정리하죠. 중간에 끊기면 체크포인트에서 재개할게요. 고마워요, Dana.",
+          "is_target": true,
+          "en_easy": "I'll continue from the checkpoint if it stops."
+        }
+      ]
+    },
+    {
+      "id": "d052-s5",
+      "title_ko": "유리벽 회의실에서 남은 이슈를 매니저와 마무리하기",
+      "context_ko": "작은 유리벽 회의실에서 매니저 Sam과 1:1을 한다. {name}은 인수받은 일 중 주인이 없는 야간 평가 불안정 문제를 짚고, 누가 맡을지 정리해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저 Sam",
+          "en": "So how's covering Priya's work going? Anything I should know before she's back, or anything blocked?",
+          "ko": "Priya 일 대신 맡아 보니까 어때요? 돌아오기 전에 알아야 할 것이나 막힌 게 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Mostly fine. One open item: the nightly eval flakiness. To close the loop, can you confirm who owns fixing it long-term?",
+          "ko": "대체로 괜찮아요. 하나 남은 건 야간 평가 불안정 문제예요. 마무리 차원에서, 장기적으로 누가 고칠지 확인해 주실 수 있어요?",
+          "is_target": true,
+          "en_easy": "Can you confirm who will fix the evaluation problem later?"
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저 Sam",
+          "en": "Good catch. Honestly nobody owns it. I'd rather it not wait for Priya, though. Could you draft a short proposal?",
+          "ko": "잘 짚었네요. 솔직히 아무도 안 맡고 있어요. 그래도 Priya 돌아올 때까지 두긴 싫은데, 짧게 제안서 초안 써볼래요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sure. I'll write a one-page proposal by Friday and tag Priya so she can add context when she's back.",
+          "ko": "네. 금요일까지 한 페이지짜리 제안서 쓰고, Priya가 돌아와서 맥락을 더할 수 있게 태그해 둘게요.",
+          "is_target": true,
+          "en_easy": "I'll write a short plan by Friday and tell her."
+        }
+      ]
+    }
+  ]
+}
