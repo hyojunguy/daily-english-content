@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 53,
+  "date": "2026-10-03",
+  "week": 8,
+  "block": "team-daily",
+  "theme": "1블록 통합 — 하루를 영어로 살기",
+  "topic": "온콜 당번을 맡아 상황을 공유하는 하루",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d053-s1",
+      "title_ko": "알림이 또 울릴 때 페이징 시점 정하기",
+      "context_ko": "모니터 여러 대가 붙은 자리에서 {name}과 보조 온콜 Priya가 배치 추론 클러스터의 p99 지연 알림을 보고 있다. 모델 오너를 지금 호출할지 더 지켜볼지 정해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "보조 온콜 동료",
+          "en": "The p99 latency alert just fired again on the batch inference cluster. Do we page the model owner now, or wait ten minutes?",
+          "ko": "배치 추론 클러스터 p99 지연 알림이 또 떴어요. 모델 오너를 지금 호출할까요, 10분 더 볼까요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let's wait five minutes. Circling back on last night's incident, the same autoscaler lag showed up before the spike.",
+          "ko": "5분만 더 봐요. 어젯밤 건 다시 보면, 그때도 스파이크 전에 똑같은 오토스케일러 지연이 있었거든요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "보조 온콜 동료",
+          "en": "Fair, but if customers hit timeouts, we'll be explaining why we sat on it. What's your threshold for escalating?",
+          "ko": "일리는 있는데, 고객이 타임아웃 맞으면 왜 가만있었냐고 해명해야 해요. 에스컬레이션 기준이 뭐예요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "If error rate crosses two percent or the queue keeps growing past five minutes, I'll page the owner immediately.",
+          "ko": "에러율이 2%를 넘거나 큐가 5분 넘게 계속 늘면 바로 오너를 호출할게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d053-s2",
+      "title_ko": "장애 브리지에서 복구 시각 약속 피하기",
+      "context_ko": "화상 장애 브리지에서 {name}이 상황을 공유하자 지원팀 리드 Marco가 고객에게 전할 확정 시각을 요구한다. {name}은 검증 전에 약속하고 싶지 않다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Quick status: the serving errors started at 10:12, and we've rolled back the latest model config. Recovery is in progress.",
+          "ko": "상황 공유드릴게요. 서빙 에러는 10시 12분에 시작됐고, 최신 모델 설정은 롤백했습니다. 지금 복구 중이에요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "지원팀 리드",
+          "en": "Support has three enterprise tickets open. Can I tell them it's fixed by noon? I need a firm time for the customers.",
+          "ko": "지원팀에 엔터프라이즈 티켓이 세 건 열려 있어요. 정오까지 해결된다고 말해도 될까요? 고객에게 줄 확실한 시간이 필요해요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I can't promise noon yet. Where we landed was a rollback, and I need thirty clean minutes before confirming.",
+          "ko": "정오는 아직 약속드리기 어렵습니다. 지금은 롤백으로 정리한 상태고, 확정하려면 30분은 이상 없이 지켜봐야 해요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "지원팀 리드",
+          "en": "Okay. Then what should I tell them right now? They're asking for something concrete, even if it's not a final answer.",
+          "ko": "알겠어요. 그럼 지금은 뭐라고 말하죠? 최종 답이 아니어도 뭔가 구체적인 걸 달라고 해서요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Tell them we've found the cause, a rollback is in place, and we'll confirm by one o'clock.",
+          "ko": "원인은 찾았고, 롤백이 적용돼 있고, 1시까지 확인해서 다시 알려드린다고 전해 주세요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d053-s3",
+      "title_ko": "비상계단 앞에서 포스트모템 일정 조정하기",
+      "context_ko": "계단 앞에서 마주친 PM Dana가 경영진이 오늘 안에 포스트모템을 원한다고 전한다. 아직 온콜 중인 {name}은 요약본 먼저, 전체 문서는 내일로 하고 싶다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "프로덕트 매니저",
+          "en": "Hey, saw the incident channel. Leadership wants a written postmortem by end of day. Is that realistic, given you're still on call?",
+          "ko": "장애 채널 봤어요. 경영진이 오늘 안에 포스트모템 문서를 원해요. 아직 온콜 중인데 가능할까요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Honestly, I'd rather send a short summary today and the full postmortem tomorrow, once I've checked the logs properly.",
+          "ko": "솔직히 오늘은 짧은 요약만 보내고, 로그를 제대로 확인한 뒤 내일 전체 포스트모템을 드리고 싶어요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "프로덕트 매니저",
+          "en": "A summary works, but they'll ask whether this can happen again. What should I tell them?",
+          "ko": "요약이면 괜찮은데, 같은 일이 또 생길 수 있냐고 물어볼 거예요. 뭐라고 하죠?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Tell them we know the trigger, and the fix is in review. To close the loop, I'll add an alert tomorrow.",
+          "ko": "트리거는 파악했고 수정은 리뷰 중이라고 전해 주세요. 마무리 차원에서 내일 알림도 하나 추가할게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d053-s4",
+      "title_ko": "서버룸 앞에서 불량 GPU 노드 교체 협의하기",
+      "context_ko": "서버룸 앞에서 {name}이 하드웨어 담당 Sam에게 메모리 오류가 반복되는 GPU 노드를 교체해 달라고 요청한다. 노드를 비우면 돌고 있는 파인튜닝이 끊긴다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks for coming down. Node 14 keeps throwing memory errors, and the training job on it just failed twice.",
+          "ko": "와 주셔서 감사해요. 14번 노드가 계속 메모리 오류를 내고, 거기서 돌던 학습 잡이 방금 두 번 실패했어요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "하드웨어 엔지니어",
+          "en": "I see the ECC counts. I can pull it for a swap, but that means draining everything on it. Any jobs you can't interrupt?",
+          "ko": "ECC 카운트 보이네요. 빼서 교체할 수 있는데, 그러려면 올라간 걸 전부 비워야 해요. 못 끊는 잡 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "One long fine-tuning run, but it checkpoints hourly. I'd rather lose twenty minutes than risk corrupt weights.",
+          "ko": "긴 파인튜닝이 하나 있는데 한 시간마다 체크포인트를 저장해요. 가중치가 깨지는 것보단 20분 날리는 게 나아요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "하드웨어 엔지니어",
+          "en": "Okay, but the spare cards are in the other building. A swap might take two hours. Is that acceptable?",
+          "ko": "알겠어요, 근데 예비 카드가 다른 건물에 있어서 교체에 두 시간쯤 걸릴 수 있어요. 괜찮아요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That's fine. Cordon the node now, and I'll reschedule the jobs onto the healthy nodes before the next checkpoint.",
+          "ko": "괜찮아요. 지금 노드를 격리해 주시면, 다음 체크포인트 전에 제가 잡들을 정상 노드로 다시 옮길게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d053-s5",
+      "title_ko": "퇴근 전 다음 온콜에게 열린 이슈 넘기기",
+      "context_ko": "퇴근 시간에 {name}이 동료 Kenji의 책상 옆에 걸터앉아 오늘 온콜의 남은 이슈를 넘겨준다. Kenji는 밤새 알림이 다시 울리면 어떻게 할지 알아야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "다음 온콜 동료",
+          "en": "Thanks for walking me through the day. What's still open before I take the pager tonight?",
+          "ko": "오늘 하루 설명해 줘서 고마워요. 제가 오늘 밤 페이저 받기 전에 아직 열려 있는 게 뭐예요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Two things are open: the node swap and the alert threshold. The swap is waiting until morning.",
+          "ko": "두 가지가 남았어요. 노드 교체랑 알림 임계값이요. 교체는 내일 아침까지 기다리기로 했어요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "다음 온콜 동료",
+          "en": "Got it. And if the latency alert fires again overnight, do I roll back or wait for you?",
+          "ko": "알겠어요. 그리고 밤에 지연 알림이 또 울리면, 롤백할까요 아니면 기다릴까요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Roll back right away, no need to wait for me. The runbook link is pinned, and I'll note it in the channel.",
+          "ko": "기다리지 말고 바로 롤백하세요. 런북 링크는 고정해 뒀고, 채널에도 제가 남겨 놓을게요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}

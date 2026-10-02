@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-10-01T21:05:58+00:00",
+  "updated": "2026-10-02T21:05:27+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 52,
-  "total_days": 46,
-  "total_turns": 999,
-  "total_target_turns": 537,
+  "latest_day": 53,
+  "total_days": 47,
+  "total_turns": 1021,
+  "total_target_turns": 549,
   "days": [
     {
       "day": 1,
@@ -742,6 +742,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-10-02.json"
+    },
+    {
+      "day": 53,
+      "date": "2026-10-03",
+      "week": 8,
+      "block": "team-daily",
+      "theme": "1블록 통합 — 하루를 영어로 살기",
+      "topic": "온콜 당번을 맡아 상황을 공유하는 하루",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-10-03.json"
     }
   ]
 }
