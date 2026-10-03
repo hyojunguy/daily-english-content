@@ -29,7 +29,8 @@
           "role_ko": "나",
           "en": "Let's wait five minutes. Circling back on last night's incident, the same autoscaler lag showed up before the spike.",
           "ko": "5분만 더 봐요. 어젯밤 건 다시 보면, 그때도 스파이크 전에 똑같은 오토스케일러 지연이 있었거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Let's wait 5 minutes, because last night had the same lag."
         },
         {
           "n": 3,
@@ -45,7 +46,8 @@
           "role_ko": "나",
           "en": "If error rate crosses two percent or the queue keeps growing past five minutes, I'll page the owner immediately.",
           "ko": "에러율이 2%를 넘거나 큐가 5분 넘게 계속 늘면 바로 오너를 호출할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "If errors pass 2% or the queue grows, I'll call the owner."
         }
       ]
     },
@@ -62,7 +64,8 @@
           "role_ko": "나",
           "en": "Quick status: the serving errors started at 10:12, and we've rolled back the latest model config. Recovery is in progress.",
           "ko": "상황 공유드릴게요. 서빙 에러는 10시 12분에 시작됐고, 최신 모델 설정은 롤백했습니다. 지금 복구 중이에요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Serving errors started, so we did a rollback and recovery continues."
         },
         {
           "n": 2,
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "I can't promise noon yet. Where we landed was a rollback, and I need thirty clean minutes before confirming.",
           "ko": "정오는 아직 약속드리기 어렵습니다. 지금은 롤백으로 정리한 상태고, 확정하려면 30분은 이상 없이 지켜봐야 해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I need 30 minutes to check, so no promise yet."
         },
         {
           "n": 4,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "Tell them we've found the cause, a rollback is in place, and we'll confirm by one o'clock.",
           "ko": "원인은 찾았고, 롤백이 적용돼 있고, 1시까지 확인해서 다시 알려드린다고 전해 주세요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Tell them we found the cause and will confirm by one."
         }
       ]
     },
@@ -119,7 +124,8 @@
           "role_ko": "나",
           "en": "Honestly, I'd rather send a short summary today and the full postmortem tomorrow, once I've checked the logs properly.",
           "ko": "솔직히 오늘은 짧은 요약만 보내고, 로그를 제대로 확인한 뒤 내일 전체 포스트모템을 드리고 싶어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll send a short summary today and the full report tomorrow."
         },
         {
           "n": 3,
@@ -135,7 +141,8 @@
           "role_ko": "나",
           "en": "Tell them we know the trigger, and the fix is in review. To close the loop, I'll add an alert tomorrow.",
           "ko": "트리거는 파악했고 수정은 리뷰 중이라고 전해 주세요. 마무리 차원에서 내일 알림도 하나 추가할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Tell them we know the trigger, and the fix is in review."
         }
       ]
     },
@@ -152,7 +159,8 @@
           "role_ko": "나",
           "en": "Thanks for coming down. Node 14 keeps throwing memory errors, and the training job on it just failed twice.",
           "ko": "와 주셔서 감사해요. 14번 노드가 계속 메모리 오류를 내고, 거기서 돌던 학습 잡이 방금 두 번 실패했어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Node 14 keeps showing memory errors, and its job failed twice."
         },
         {
           "n": 2,
@@ -168,7 +176,8 @@
           "role_ko": "나",
           "en": "One long fine-tuning run, but it checkpoints hourly. I'd rather lose twenty minutes than risk corrupt weights.",
           "ko": "긴 파인튜닝이 하나 있는데 한 시간마다 체크포인트를 저장해요. 가중치가 깨지는 것보단 20분 날리는 게 나아요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It saves every hour, so I'd rather lose 20 minutes."
         },
         {
           "n": 4,
@@ -184,7 +193,8 @@
           "role_ko": "나",
           "en": "That's fine. Cordon the node now, and I'll reschedule the jobs onto the healthy nodes before the next checkpoint.",
           "ko": "괜찮아요. 지금 노드를 격리해 주시면, 다음 체크포인트 전에 제가 잡들을 정상 노드로 다시 옮길게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Stop the node now, and I'll move the jobs first."
         }
       ]
     },
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "Two things are open: the node swap and the alert threshold. The swap is waiting until morning.",
           "ko": "두 가지가 남았어요. 노드 교체랑 알림 임계값이요. 교체는 내일 아침까지 기다리기로 했어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The node swap and the alert limit are still open."
         },
         {
           "n": 3,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "Roll back right away, no need to wait for me. The runbook link is pinned, and I'll note it in the channel.",
           "ko": "기다리지 말고 바로 롤백하세요. 런북 링크는 고정해 뒀고, 채널에도 제가 남겨 놓을게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Do the rollback now, don't wait for me."
         }
       ]
     }
