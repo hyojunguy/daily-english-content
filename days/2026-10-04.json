@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 54,
+  "date": "2026-10-04",
+  "week": 8,
+  "block": "team-daily",
+  "theme": "1블록 통합 — 하루를 영어로 살기",
+  "topic": "신규 입사자에게 내가 온보딩을 해주는 하루",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d054-s1",
+      "title_ko": "탕비실에서 만난 입사 첫날 신입, 막힌 클러스터 접근 권한",
+      "context_ko": "입사 첫날 아침, {name}이 탕비실에서 신입 Dana를 만난다. 클러스터 계정이 아직 안 만들어져 Dana는 아무것도 못 하고 있다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "신입 팀원 Dana",
+          "en": "Morning! My laptop works, but the cluster login keeps saying my account doesn't exist. Is that normal on day one?",
+          "ko": "안녕하세요! 노트북은 되는데 클러스터 로그인이 계정이 없다고만 떠요. 첫날엔 원래 이런가요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Pretty normal, unfortunately. I filed your access ticket last week, so I'll ping the infra team right now.",
+          "ko": "아쉽게도 흔한 일이에요. 지난주에 권한 티켓 올려놨는데, 지금 인프라팀에 바로 다시 물어볼게요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "신입 팀원 Dana",
+          "en": "Thanks. In the meantime, is there anything I can do without GPUs? I don't want to just sit around reading docs.",
+          "ko": "고마워요. 그동안 GPU 없이 할 수 있는 게 있을까요? 문서만 읽으면서 앉아 있고 싶진 않아서요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yes, clone the eval repo and run the smoke tests on CPU. I'll come grab you at ten for a proper walkthrough.",
+          "ko": "네, eval 레포 클론해서 CPU로 스모크 테스트 돌려보세요. 10시에 제가 데리러 가서 제대로 설명해 드릴게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d054-s2",
+      "title_ko": "신입 책상 옆에서 첫 학습 잡 설정 봐주기",
+      "context_ko": "접근 권한이 풀려서 Dana가 첫 학습 잡을 돌리려 한다. {name}은 Dana 책상 옆에 걸터앉아, 기본 설정이 GPU 8장을 요청하는 걸 바로잡아 준다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "신입 팀원 Dana",
+          "en": "Okay, I'm in. The runbook says to launch with the default config, but it requests eight GPUs. That seems like a lot for a first run.",
+          "ko": "좋아요, 들어왔어요. 런북엔 기본 설정으로 띄우라는데 GPU를 8장이나 요청하네요. 첫 실행치고는 많아 보여요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good catch. Drop it to one GPU and a tiny subset of the data, so a mistake doesn't block anyone else's queue.",
+          "ko": "잘 봤어요. GPU 한 장에 데이터는 아주 일부만 쓰세요. 실수해도 다른 사람 큐를 막지 않게요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "신입 팀원 Dana",
+          "en": "Got it. And if the job crashes halfway, do I restart it myself, or should I tell someone first?",
+          "ko": "알겠어요. 그리고 잡이 중간에 죽으면 제가 다시 돌리면 되나요, 아니면 먼저 누구한테 알려야 하나요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Restart it yourself from the last checkpoint. If it fails twice, ping me and paste the log link.",
+          "ko": "마지막 체크포인트부터 직접 다시 돌리세요. 두 번 실패하면 저한테 로그 링크 붙여서 알려 주세요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d054-s3",
+      "title_ko": "점심 자리에서 신입의 '질문 공개 채널 vs DM' 고민 풀어주기",
+      "context_ko": "점심을 같이 먹으며 {name}이 팀의 리모트 소통 규칙을 알려 준다. Dana는 첫 주에 기초 질문을 공개로 하는 게 창피하다고 망설인다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Put questions in the team channel, not a DM. Someone in another time zone might answer faster than me.",
+          "ko": "질문은 DM 말고 팀 채널에 올리세요. 다른 시간대에 있는 누군가가 저보다 더 빨리 답할 수도 있거든요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "신입 팀원 Dana",
+          "en": "I'm just worried about looking clueless in my first week. Won't a basic question in public be embarrassing?",
+          "ko": "첫 주부터 아무것도 모르는 사람처럼 보일까 걱정돼서요. 기초 질문을 공개로 하면 창피하지 않을까요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Honestly, no. Everyone asks basic questions here, and the answers end up in the channel for the next new hire.",
+          "ko": "솔직히 전혀요. 여기선 다들 기초 질문 하고, 그 답이 채널에 남아서 다음 신입한테도 도움이 돼요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "신입 팀원 Dana",
+          "en": "Okay, that helps. Also, I asked three people about standup time this morning and got three different answers. What's the real one?",
+          "ko": "네, 도움이 됐어요. 그리고 아침에 세 명한테 스탠드업 시간을 물어봤는데 답이 전부 달랐어요. 진짜 시간이 뭐예요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Circling back on standup time: I checked with Marco, and it's locked at ten thirty. Changes get posted in the channel.",
+          "ko": "스탠드업 시간 말인데요, 마르코한테 확인했고 10시 30분으로 확정이래요. 바뀌면 채널에 공지돼요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d054-s4",
+      "title_ko": "화이트보드 앞에서 평가 파이프라인 설명하고 첫 프로젝트 정하기",
+      "context_ko": "{name}이 화이트보드에 야간 평가 파이프라인을 그려 설명한다. Dana가 하네스를 통째로 갈아엎겠다고 해서, 이미 내린 팀 결론을 알려 주고 현실적인 첫 프로젝트를 제안한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "So the nightly eval has three stages: pull the checkpoint, run the benchmark suite, and push scores to the dashboard.",
+          "ko": "그러니까 야간 평가는 세 단계예요. 체크포인트 가져오고, 벤치마크 스위트 돌리고, 점수를 대시보드에 올리죠.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "신입 팀원 Dana",
+          "en": "That's clean, but the second stage looks slow. Could I rewrite the harness to run benchmarks in parallel as my first project?",
+          "ko": "깔끔한데 두 번째 단계가 느려 보여요. 첫 프로젝트로 하네스를 병렬 실행되게 다시 짜 봐도 될까요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Love the energy, but we debated that. Where we landed was keeping the harness until the new metric is validated.",
+          "ko": "의욕은 좋은데, 그건 이미 논의했어요. 우리 결론은 새 지표가 검증될 때까지 하네스는 그대로 두는 거였어요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "신입 팀원 Dana",
+          "en": "Fair enough. Then what would be a useful first project? I'd like something that actually ships within the first month.",
+          "ko": "그렇군요. 그럼 첫 프로젝트로 뭐가 좋을까요? 한 달 안에 실제로 배포되는 걸 하고 싶어요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Try the flaky-test cleanup in the scoring code. It's small, it's real, and the whole team will notice the improvement.",
+          "ko": "스코어링 코드의 불안정한 테스트 정리를 해 보세요. 작지만 실제 일이고, 팀 전체가 개선을 체감할 거예요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d054-s5",
+      "title_ko": "퇴근 전 유리벽 회의실에서 첫날 마무리 점검",
+      "context_ko": "하루가 끝나갈 무렵 유리벽 회의실에서 {name}과 Dana가 1:1로 마무리한다. Dana는 절반밖에 이해 못 한 것 같다고 불안해하고, 한 GPU 런의 점수도 이상하다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "신입 팀원 Dana",
+          "en": "Thanks for today. I still feel like I only understood about half of what you showed me. Is that okay?",
+          "ko": "오늘 감사했어요. 보여 주신 것 중 절반 정도만 이해한 것 같아요. 괜찮은 건가요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Totally normal. To close the loop, I'll send you today's notes and a reading list, and we'll review them Friday.",
+          "ko": "완전 정상이에요. 정리하자면, 오늘 노트랑 읽을거리 목록을 보내 드릴 테니 금요일에 같이 복습해요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "신입 팀원 Dana",
+          "en": "That works. One more thing: my one-GPU run finished, but the scores look off. Should I be worried?",
+          "ko": "좋아요. 하나 더요. GPU 한 장짜리 런이 끝났는데 점수가 좀 이상해요. 걱정해야 할까요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Send me the run link tonight and I'll check it before standup tomorrow. Probably just a config mismatch.",
+          "ko": "오늘 밤에 런 링크 보내 주세요. 내일 스탠드업 전에 제가 볼게요. 아마 설정이 안 맞았을 거예요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
