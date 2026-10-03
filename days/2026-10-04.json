@@ -29,7 +29,8 @@
           "role_ko": "나",
           "en": "Pretty normal, unfortunately. I filed your access ticket last week, so I'll ping the infra team right now.",
           "ko": "아쉽게도 흔한 일이에요. 지난주에 권한 티켓 올려놨는데, 지금 인프라팀에 바로 다시 물어볼게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I sent your ticket last week, so I'll ask the team again."
         },
         {
           "n": 3,
@@ -45,7 +46,8 @@
           "role_ko": "나",
           "en": "Yes, clone the eval repo and run the smoke tests on CPU. I'll come grab you at ten for a proper walkthrough.",
           "ko": "네, eval 레포 클론해서 CPU로 스모크 테스트 돌려보세요. 10시에 제가 데리러 가서 제대로 설명해 드릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Yes, clone the eval repo and run smoke tests on CPU."
         }
       ]
     },
@@ -70,7 +72,8 @@
           "role_ko": "나",
           "en": "Good catch. Drop it to one GPU and a tiny subset of the data, so a mistake doesn't block anyone else's queue.",
           "ko": "잘 봤어요. GPU 한 장에 데이터는 아주 일부만 쓰세요. 실수해도 다른 사람 큐를 막지 않게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Use one GPU and less data, so mistakes do not block others."
         },
         {
           "n": 3,
@@ -86,7 +89,8 @@
           "role_ko": "나",
           "en": "Restart it yourself from the last checkpoint. If it fails twice, ping me and paste the log link.",
           "ko": "마지막 체크포인트부터 직접 다시 돌리세요. 두 번 실패하면 저한테 로그 링크 붙여서 알려 주세요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Run it again, and tell me if it fails twice."
         }
       ]
     },
@@ -103,7 +107,8 @@
           "role_ko": "나",
           "en": "Put questions in the team channel, not a DM. Someone in another time zone might answer faster than me.",
           "ko": "질문은 DM 말고 팀 채널에 올리세요. 다른 시간대에 있는 누군가가 저보다 더 빨리 답할 수도 있거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Ask in the team channel, not in private messages."
         },
         {
           "n": 2,
@@ -119,7 +124,8 @@
           "role_ko": "나",
           "en": "Honestly, no. Everyone asks basic questions here, and the answers end up in the channel for the next new hire.",
           "ko": "솔직히 전혀요. 여기선 다들 기초 질문 하고, 그 답이 채널에 남아서 다음 신입한테도 도움이 돼요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "No, everyone here asks basic questions because answers help new hires."
         },
         {
           "n": 4,
@@ -135,7 +141,8 @@
           "role_ko": "나",
           "en": "Circling back on standup time: I checked with Marco, and it's locked at ten thirty. Changes get posted in the channel.",
           "ko": "스탠드업 시간 말인데요, 마르코한테 확인했고 10시 30분으로 확정이래요. 바뀌면 채널에 공지돼요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I checked, and the standup time is final."
         }
       ]
     },
@@ -152,7 +159,8 @@
           "role_ko": "나",
           "en": "So the nightly eval has three stages: pull the checkpoint, run the benchmark suite, and push scores to the dashboard.",
           "ko": "그러니까 야간 평가는 세 단계예요. 체크포인트 가져오고, 벤치마크 스위트 돌리고, 점수를 대시보드에 올리죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The eval pulls the checkpoint, runs the benchmarks and posts the scores."
         },
         {
           "n": 2,
@@ -168,7 +176,8 @@
           "role_ko": "나",
           "en": "Love the energy, but we debated that. Where we landed was keeping the harness until the new metric is validated.",
           "ko": "의욕은 좋은데, 그건 이미 논의했어요. 우리 결론은 새 지표가 검증될 때까지 하네스는 그대로 두는 거였어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We discussed that and keep the harness until the metric works."
         },
         {
           "n": 4,
@@ -184,7 +193,8 @@
           "role_ko": "나",
           "en": "Try the flaky-test cleanup in the scoring code. It's small, it's real, and the whole team will notice the improvement.",
           "ko": "스코어링 코드의 불안정한 테스트 정리를 해 보세요. 작지만 실제 일이고, 팀 전체가 개선을 체감할 거예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Try cleaning the bad tests in the scoring code."
         }
       ]
     },
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "Totally normal. To close the loop, I'll send you today's notes and a reading list, and we'll review them Friday.",
           "ko": "완전 정상이에요. 정리하자면, 오늘 노트랑 읽을거리 목록을 보내 드릴 테니 금요일에 같이 복습해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll send you today's notes, and we'll review them Friday."
         },
         {
           "n": 3,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "Send me the run link tonight and I'll check it before standup tomorrow. Probably just a config mismatch.",
           "ko": "오늘 밤에 런 링크 보내 주세요. 내일 스탠드업 전에 제가 볼게요. 아마 설정이 안 맞았을 거예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Send me the run link tonight and I'll check it before standup."
         }
       ]
     }
