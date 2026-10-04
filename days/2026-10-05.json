@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 55,
+  "date": "2026-10-05",
+  "week": 8,
+  "block": "team-daily",
+  "theme": "1블록 통합 — 하루를 영어로 살기",
+  "topic": "스프린트 마지막 날 마무리하는 하루",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d055-s1",
+      "title_ko": "탕비실에서 이월할 티켓 정리하기",
+      "context_ko": "스프린트 마지막 날 오후 리뷰 전, PM이 탕비실에서 보드를 정리하다 {name}의 데이터 로더 리팩터링 티켓이 아직 진행 중인 것을 발견한다. 오늘 끝낼지 이월할지 정해서 이해관계자에게 말해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "프로덕트 매니저",
+          "en": "Hey, I'm updating the sprint board before the review. Your data loader refactor is still marked in progress. Is it landing today?",
+          "ko": "저기, 리뷰 전에 스프린트 보드 정리하는 중인데요. 데이터 로더 리팩터링이 아직 진행 중으로 돼 있어요. 오늘 들어가나요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Honestly, no. The refactor is about seventy percent done, and I don't want to merge it untested on the last day.",
+          "ko": "솔직히 어려울 것 같아요. 리팩터링이 70% 정도 됐는데, 마지막 날에 테스트도 안 하고 머지하고 싶지는 않아서요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "프로덕트 매니저",
+          "en": "Okay, so do we carry it over or split it? I need to tell the stakeholders something before the review at three.",
+          "ko": "알겠어요. 그럼 그대로 이월할까요, 쪼갤까요? 3시 리뷰 전에 이해관계자들한테 뭐라도 말해야 해서요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd split it: the loader change ships today behind a flag once tests pass, and the cache work moves next sprint.",
+          "ko": "쪼개는 게 좋겠어요. 로더 변경은 테스트 통과하면 오늘 플래그 뒤에 넣고, 캐시 작업은 다음 스프린트로 넘길게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d055-s2",
+      "title_ko": "모니터 앞에서 리포트 수치 불일치 바로잡기",
+      "context_ko": "스프린트 리포트를 쓰는 동료의 자리에서 {name}이 자기 대시보드를 가리킨다. 리포트의 지연 시간 수치가 배칭 수정 이전 값이라 실제와 다르다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Circling back on the latency number in the sprint report, Marco: it doesn't match what my dashboard shows.",
+          "ko": "마르코, 스프린트 리포트에 있는 지연 시간 수치 말인데요, 제 대시보드에 나오는 값이랑 달라요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Yeah, I pulled that from Thursday's run. It was the p95 before the batching fix. Which dashboard are you looking at?",
+          "ko": "아, 그거 목요일 실행 결과에서 가져온 거예요. 배칭 수정 전 p95였고요. 어느 대시보드를 보고 계세요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The nightly one, pointing at the latest checkpoint. That run finished after the fix, so the p95 is forty milliseconds lower.",
+          "ko": "나이틀리 대시보드요, 최신 체크포인트 기준으로요. 그 실행은 수정 이후에 끝나서 p95가 40밀리초 정도 낮아요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Got it, so the older number undersells us. Should I swap it in, or keep both and flag the difference for the stakeholders?",
+          "ko": "그렇군요, 그럼 예전 수치가 우리 성과를 낮춰 보이게 하네요. 새 수치로 바꿀까요, 둘 다 두고 차이를 표시할까요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let's keep both with a footnote about the batching fix. Then nobody asks later why the numbers changed.",
+          "ko": "둘 다 두고 배칭 수정에 대한 각주를 달아요. 그러면 나중에 왜 수치가 바뀌었냐고 묻는 사람이 없을 거예요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d055-s3",
+      "title_ko": "점심 자리에서 다음 스프린트 개선점 제안하기",
+      "context_ko": "내일 다음 스프린트 계획을 앞두고 리서치 리드가 점심 자리에서 개선할 점을 묻는다. {name}은 코드 리뷰가 늦어져 어블레이션 실행이 막혔던 점을 꺼낸다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "리서치 리드",
+          "en": "Planning for next sprint starts tomorrow. Is there anything from this one you think we should handle differently?",
+          "ko": "내일부터 다음 스프린트 계획이잖아요. 이번 스프린트에서 다르게 했으면 하는 거 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yes, the review queue. This sprint three of my PRs waited two days, which blocked my ablation runs.",
+          "ko": "네, 리뷰 대기열이요. 이번 스프린트에 제 PR 세 개가 이틀씩 기다리는 바람에 어블레이션 실행이 막혔어요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "리서치 리드",
+          "en": "Fair point. We could set a rule: reviews within one business day, with whoever's on rotation covering. Would that actually fix it for you?",
+          "ko": "맞는 말이에요. 영업일 하루 안에 리뷰하고, 로테이션 담당이 커버하는 규칙을 만들 수 있어요. 그러면 실제로 해결될까요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Mostly yes. Where we landed was a rotation last quarter, but nobody owned it, so please name an owner.",
+          "ko": "대체로요. 지난 분기에도 로테이션으로 정리했는데 아무도 책임지지 않았어요. 담당자를 한 명 정해 주세요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d055-s4",
+      "title_ko": "화상회의에서 타 팀 데이터 접근 요청 마무리하기",
+      "context_ko": "다른 팀 연구자가 {name}에게 요청했던 데이터셋 접근 건을 화상회의에서 마무리한다. 승인은 났지만 일일 내보내기 용량 제한이 문제다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks for joining, Lena. To close the loop on the dataset access request, the security team approved it this morning.",
+          "ko": "레나, 들어와 줘서 고마워요. 데이터셋 접근 요청 건 마무리하자면, 오늘 아침에 보안팀이 승인해 줬어요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "타 팀 연구자",
+          "en": "Great, thanks. Can my team start pulling the data today? We want to kick off our fine-tuning run before our next planning meeting.",
+          "ko": "좋네요, 고마워요. 우리 팀이 오늘부터 데이터를 가져가도 될까요? 다음 계획 회의 전에 파인튜닝을 시작하고 싶어서요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yes, the read-only credentials are in the shared vault. One catch: the export job is capped at 200 GB per day.",
+          "ko": "네, 읽기 전용 자격 증명은 공유 볼트에 있어요. 한 가지 문제는 내보내기 작업이 하루 200GB로 제한돼 있다는 거예요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "타 팀 연구자",
+          "en": "That cap is tight for us. Could you raise it to five hundred, at least for the first few days? Otherwise we'd lose a day.",
+          "ko": "그 제한이면 우리한테는 빠듯해요. 최소한 처음 며칠만이라도 500으로 올려 줄 수 있나요? 안 그러면 하루를 날려요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I can't change it myself, but I'll ask the platform team today and send you their answer by end of day.",
+          "ko": "제가 직접 바꿀 수는 없는데, 오늘 플랫폼 팀에 물어보고 퇴근 전까지 답을 보내 드릴게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d055-s5",
+      "title_ko": "동료 책상 옆에서 런북 검토 부탁하기",
+      "context_ko": "퇴근 10분 전, {name}이 인프라 동료의 책상 옆에 걸터앉아 학습 런북 업데이트를 봐 달라고 한다. 롤백 섹션이 최신인지 확신이 없고, 내일 온콜이 이 문서를 쓰게 된다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어",
+          "en": "You wanted me to look at the training runbook? I've got ten minutes before I head out.",
+          "ko": "학습 런북 좀 봐 달라고 했죠? 퇴근 전에 10분 정도 시간 있어요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yes, thanks. I added the new checkpoint resume steps, but I'm not sure the rollback section is still accurate.",
+          "ko": "네, 고마워요. 체크포인트 재개 절차를 새로 추가했는데, 롤백 섹션이 아직 맞는지 확신이 없어서요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어",
+          "en": "Section three is outdated. We changed the storage path last month. Give me a minute and I'll fix it, but then it's yours to merge.",
+          "ko": "3번 섹션은 옛날 내용이에요. 지난달에 스토리지 경로를 바꿨거든요. 제가 금방 고칠 테니 머지는 그쪽이 해요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Perfect. I'll post the final link in the team channel so on-call can find it first thing tomorrow.",
+          "ko": "좋아요. 최종 링크는 팀 채널에 올려서 내일 아침에 온콜이 바로 찾을 수 있게 할게요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
