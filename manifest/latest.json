@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-10-04T21:05:07+00:00",
+  "updated": "2026-10-05T21:04:39+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 55,
-  "total_days": 49,
-  "total_turns": 1065,
-  "total_target_turns": 573,
+  "latest_day": 56,
+  "total_days": 50,
+  "total_turns": 1087,
+  "total_target_turns": 585,
   "days": [
     {
       "day": 1,
@@ -790,6 +790,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-10-05.json"
+    },
+    {
+      "day": 56,
+      "date": "2026-10-06",
+      "week": 8,
+      "block": "team-daily",
+      "theme": "1블록 통합 — 하루를 영어로 살기",
+      "topic": "1블록 총복습 — 가장 어려웠던 상황 재구성",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-10-06.json"
     }
   ]
 }
