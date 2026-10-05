@@ -29,7 +29,8 @@
           "role_ko": "나",
           "en": "Circling back on yesterday's failure: it's a timeout, not bad data. I'll add retries and have a fix up by noon.",
           "ko": "어제 실패 건 다시 말씀드리면, 데이터 문제가 아니라 타임아웃이에요. 재시도 넣어서 점심 전에 수정 올릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The failure is a timeout, not bad data."
         },
         {
           "n": 3,
@@ -45,7 +46,8 @@
           "role_ko": "나",
           "en": "Sure. I'll attach the logs and flag it as blocking, so they see it before their planning meeting this afternoon.",
           "ko": "네. 로그 첨부하고 블로킹으로 표시해 둘게요. 그래야 오후 플래닝 회의 전에 보실 테니까요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll send the logs and mark it blocking."
         }
       ]
     },
@@ -62,7 +64,8 @@
           "role_ko": "나",
           "en": "Priya, could you swap on-call weeks with me? I have a conference talk next Thursday and I'd be traveling.",
           "ko": "프리야, 온콜 주 나랑 바꿔줄 수 있어요? 다음 주 목요일에 콘퍼런스 발표가 있어서 출장이거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can you change weeks with me for my talk?"
         },
         {
           "n": 2,
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "Splitting works for me. I'll take Monday to Wednesday, you take Friday onward, and we'll sort out Thursday separately.",
           "ko": "나눠서 좋아요. 월요일부터 수요일은 제가 하고 금요일부터는 프리야가 하고, 목요일은 따로 정리해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll take Monday to Wednesday and you take Friday."
         },
         {
           "n": 4,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "Will do. To close the loop, I'll post the new schedule in the team channel right after lunch.",
           "ko": "그럴게요. 마무리 차원에서 점심 끝나자마자 팀 채널에 새 일정 올릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll post the new schedule in the team channel after lunch."
         }
       ]
     },
@@ -119,7 +124,8 @@
           "role_ko": "나",
           "en": "Not yet. Where we landed was quantization plus batching, which gets us to about 310 milliseconds.",
           "ko": "아직은 아니에요. 지금까지 정리된 건 양자화에 배칭을 더하는 건데, 그러면 310ms 정도까지 내려가요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Not yet, but batching makes it much faster."
         },
         {
           "n": 3,
@@ -135,7 +141,8 @@
           "role_ko": "나",
           "en": "I need two more days to test a smaller draft model. I'd rather ship Monday than promise Friday and miss again.",
           "ko": "더 작은 드래프트 모델 테스트하는 데 이틀 더 필요해요. 금요일 약속하고 또 놓치느니 월요일에 내는 게 낫죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I need 2 more days, so I'll ship Monday."
         }
       ]
     },
@@ -152,7 +159,8 @@
           "role_ko": "나",
           "en": "Marco, are those eight GPUs still reserved for your sweep? My training run has been queued since yesterday.",
           "ko": "마르코, 저 GPU 8장 아직 스윕용으로 잡혀 있어요? 제 학습 잡이 어제부터 대기 중이거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Are those 8 GPUs still reserved for your job?"
         },
         {
           "n": 2,
@@ -168,7 +176,8 @@
           "role_ko": "나",
           "en": "Could you stop the trials that are clearly behind? Then I could start my run on four nodes tonight.",
           "ko": "확실히 뒤처지는 트라이얼만 먼저 중단해 주실 수 있어요? 그럼 오늘 밤에 노드 네 개로 제 잡을 시작할 수 있거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Could you stop the slow trials so I can start tonight?"
         },
         {
           "n": 4,
@@ -184,7 +193,8 @@
           "role_ko": "나",
           "en": "Thanks, that helps a lot. I'll check the scheduler at three and ping you if the nodes still look busy.",
           "ko": "고마워요, 큰 도움이 돼요. 3시에 스케줄러 확인해 보고 노드가 여전히 차 있으면 연락드릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll check the nodes at 3 and tell you."
         }
       ]
     },
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "Yes, all shards passed. Circling back on the storage node, infra confirmed it needs a firmware update this weekend.",
           "ko": "네, 샤드 전부 통과했어요. 스토리지 노드 건은 인프라 팀이 이번 주말에 펌웨어 업데이트가 필요하다고 확인해 줬어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Yes, all the tests passed."
         },
         {
           "n": 3,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "Sure. I'll add a cleanup task to the backlog with a due date so we don't forget the retries later.",
           "ko": "그럼요. 나중에 재시도 코드를 잊지 않도록 기한 넣어서 백로그에 정리 작업 추가해 둘게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll add a task with a due date to the backlog."
         }
       ]
     }
