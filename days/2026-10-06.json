@@ -29,7 +29,8 @@
           "role_ko": "나",
           "en": "No worries. Circling back on the dataset licensing question, do we know yet if we can use it for training?",
           "ko": "괜찮아. 지난번 데이터셋 라이선스 건 다시 여쭤보려고요. 학습에 써도 되는지 확인됐나요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Does the dataset license let us train on it?"
         },
         {
           "n": 3,
@@ -45,7 +46,8 @@
           "role_ko": "나",
           "en": "Agreed. Can you forward me the thread? I'll nudge them today and tell the team we're blocked until then.",
           "ko": "동의해요. 스레드 좀 전달해 주실래요? 제가 오늘 다시 재촉하고, 팀에는 그때까지 막혀 있다고 알릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can you send me those messages?"
         }
       ]
     },
@@ -62,7 +64,8 @@
           "role_ko": "나",
           "en": "Quick recap so we're aligned. Where we landed was rerunning the benchmark on Thursday, not tomorrow.",
           "ko": "정리하고 끝낼게요. 결론은 벤치마크를 내일이 아니라 목요일에 다시 돌리는 걸로 했습니다.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We will run the benchmark on Thursday, not tomorrow."
         },
         {
           "n": 2,
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "The first run used a stale tokenizer, so those numbers aren't trustworthy. A number we can't defend would be worse.",
           "ko": "첫 실행에 오래된 토크나이저가 쓰여서 그 수치는 믿을 수 없어요. 방어 못 할 수치를 드리는 게 더 나빠요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The first run used old settings, so do not trust those numbers."
         },
         {
           "n": 4,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "I can share a preliminary range with a clear caveat, and the final numbers by Thursday noon.",
           "ko": "단서를 분명히 단 잠정 범위는 드릴 수 있고, 최종 수치는 목요일 정오까지 드릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I can give a rough range now, and final numbers Thursday."
         }
       ]
     },
@@ -111,7 +116,8 @@
           "role_ko": "나",
           "en": "Sorry, you lost me at the gradient sync part. Could you walk me through why it hangs?",
           "ko": "죄송해요, 그래디언트 동기화 부분에서 놓쳤어요. 왜 멈추는지 처음부터 차근차근 설명해 주실래요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Sorry, can you explain why it stops?"
         },
         {
           "n": 2,
@@ -127,7 +133,8 @@
           "role_ko": "나",
           "en": "So the uneven shard sizes cause one worker to finish early. Did I get that right?",
           "ko": "그러니까 샤드 크기가 고르지 않아서 한 워커가 먼저 끝나는 거네요. 제가 맞게 이해했나요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "So one worker finishes first because the sizes are different, right?"
         },
         {
           "n": 4,
@@ -143,7 +150,8 @@
           "role_ko": "나",
           "en": "Got it. I'll pad the shards and verify the eval split, then message you the results by end of day.",
           "ko": "알겠어요. 샤드 패딩하고 평가 스플릿 확인한 다음, 오늘 중으로 결과 메시지 드릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I will check the test data and send results today."
         }
       ]
     },
@@ -168,7 +176,8 @@
           "role_ko": "나",
           "en": "I'd like to help, but I'm already stretched with the serving migration. Can we rotate it instead?",
           "ko": "돕고 싶은데 서빙 마이그레이션 때문에 이미 여유가 없어요. 대신 돌아가면서 맡으면 어때요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'm too busy with the serving migration, so can we take turns?"
         },
         {
           "n": 3,
@@ -184,7 +193,8 @@
           "role_ko": "나",
           "en": "I can go first this Friday if someone writes a short template, so the next person isn't starting from scratch.",
           "ko": "누가 짧은 템플릿을 만들어 주면 이번 금요일은 제가 먼저 할게요. 다음 사람이 처음부터 시작하지 않게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I can go first on Friday if someone makes a template."
         }
       ]
     },
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "Two are done. To close the loop on the third, the fine-tuning ablation needs one more day on the cluster.",
           "ko": "두 개는 끝났어요. 세 번째는 정리하자면, 파인튜닝 어블레이션이 클러스터에서 하루 더 필요합니다.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The last test needs one more day on the cluster."
         },
         {
           "n": 3,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "It's not blocking the release, but I'd say 'on track with a one-day slip' to avoid surprises next week.",
           "ko": "출시를 막지는 않지만, 다음 주에 놀라는 일 없게 '하루 지연이 있지만 순조롭다'고 말씀하시는 게 좋겠어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Please say we are one day late, but still fine."
         }
       ]
     }
