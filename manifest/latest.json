@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-10-05T21:04:39+00:00",
+  "updated": "2026-10-06T21:04:59+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 56,
-  "total_days": 50,
-  "total_turns": 1087,
-  "total_target_turns": 585,
+  "latest_day": 57,
+  "total_days": 51,
+  "total_turns": 1109,
+  "total_target_turns": 597,
   "days": [
     {
       "day": 1,
@@ -806,6 +806,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-10-06.json"
+    },
+    {
+      "day": 57,
+      "date": "2026-10-07",
+      "week": 9,
+      "block": "tech-comm",
+      "theme": "실험 결과 공유 — 숫자를 말로 옮기기",
+      "topic": "학습 실험 결과를 팀에 요약해 보고하기",
+      "difficulty": 2,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-10-07.json"
     }
   ]
 }

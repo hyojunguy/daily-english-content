@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 57,
+  "date": "2026-10-07",
+  "week": 9,
+  "block": "tech-comm",
+  "theme": "실험 결과 공유 — 숫자를 말로 옮기기",
+  "topic": "학습 실험 결과를 팀에 요약해 보고하기",
+  "difficulty": 2,
+  "situations": [
+    {
+      "id": "d057-s1",
+      "title_ko": "주간 리서치 싱크: 야간 학습 결과 헤드라인 보고",
+      "context_ko": "회의실 프로젝터에 어젯밤 돌린 learning-rate 스케줄 결과표가 떠 있다. 리드는 숫자 하나로 결론을 듣고 싶어 하지만, {name}은 시드별 편차 때문에 평균을 그대로 믿기 어렵다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Okay, {name}, you ran the new learning-rate schedule overnight. Give us the headline before we get into the weeds.",
+          "ko": "{name}, 어젯밤에 새 learning rate 스케줄 돌렸죠? 세부 얘기 전에 결론부터 말해줘요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We saw a 3% lift on our held-out reasoning set, mostly from the warmup change, not the larger batch.",
+          "ko": "홀드아웃 추론 세트에서 3% 올랐고, 대부분 배치 크기가 아니라 warmup 변경 덕분이에요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Three percent sounds good. Is that across all three seeds, or just the best run?",
+          "ko": "3%면 좋네요. 시드 세 개 전부 그런 건가요, 아니면 제일 잘 나온 런만인가요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Two seeds agree, but the third is flat, so I wouldn't read too much into the average yet.",
+          "ko": "두 개는 일치하는데 세 번째는 변화가 없어서, 아직 평균을 너무 믿지는 않는 게 좋겠어요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d057-s2",
+      "title_ko": "라운지 소파에서: 큰 모델에서 효과가 사라졌다는 보고",
+      "context_ko": "오후 늦게 사무실 라운지 소파에서 노트북을 무릎에 올려놓고 대화 중이다. 작은 모델에서 나온 개선 효과가 7B에서는 재현되지 않았고, 제품팀에는 이미 낙관적으로 말해 둔 상태다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Quick update: the gain didn't hold when I scaled the same recipe from the 1B to the 7B model.",
+          "ko": "빠르게 공유할게요. 같은 레시피를 1B에서 7B로 키웠더니 개선 효과가 유지되지 않았어요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 리서처",
+          "en": "Hm, that's annoying. We already told the product team the small-model result would carry over. What happened?",
+          "ko": "음, 곤란하네요. 작은 모델 결과가 그대로 간다고 제품팀에 이미 말해뒀는데. 어떻게 된 거예요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "At 7B the lift dropped to under half a percent. My guess is the learning rate is too high there.",
+          "ko": "7B에서는 개선폭이 0.5% 아래로 떨어졌어요. 거기선 learning rate가 너무 높은 것 같아요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 리서처",
+          "en": "Can you rerun with a lower rate before Thursday? I'd rather tell them it's unconfirmed than promise anything.",
+          "ko": "목요일 전에 낮은 rate로 다시 돌릴 수 있어요? 확답하느니 아직 미확인이라고 말하는 게 낫겠어요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yes, I can queue two runs tonight and post the comparison in the channel tomorrow morning.",
+          "ko": "네, 오늘 밤에 두 개 큐에 넣고 내일 아침에 채널에 비교 결과 올릴게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d057-s3",
+      "title_ko": "카페 가는 길: 매니저에게 처리량 개선 구두 요약",
+      "context_ko": "점심 후 카페로 걸어가는 길에 매니저가 다음 회의 전 10분밖에 없다며 결과를 묻는다. 데이터 로더 변경을 전 클러스터에 배포할지가 걸려 있다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "I've got ten minutes before my next meeting. Did the data-loader change actually speed up training, or not?",
+          "ko": "다음 회의까지 10분밖에 없어요. 데이터 로더 바꾼 게 실제로 학습 빨라졌어요, 아니에요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We saw a 12% lift on training throughput, and loss curves look identical to the baseline so far.",
+          "ko": "학습 처리량이 12% 올랐고, loss 곡선은 지금까지 베이스라인과 똑같아요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Nice. So should I tell the infra team to roll it out to every cluster?",
+          "ko": "좋네요. 그럼 인프라팀한테 전 클러스터에 배포하라고 말해도 될까요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd wait for one more full run first. It's only been two days, and divergence usually shows up later.",
+          "ko": "전체 런을 한 번 더 보고 하는 게 좋겠어요. 이틀밖에 안 됐고 발산은 보통 나중에 나타나거든요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d057-s4",
+      "title_ko": "재택 오디오 허들: 주간 요약 문서에 쓸 숫자 정하기",
+      "context_ko": "{name}은 집 주방 테이블에서 헤드셋을 끼고 해외 시간대의 동료와 오디오 허들 중이다. 동료는 한 시간 뒤 나갈 요약 문서에 깔끔한 숫자 하나를 넣고 싶어 하지만 코드 평가는 단일 런 결과다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Before you write the summary, can I flag that the code-eval number comes from a single run?",
+          "ko": "요약 쓰기 전에 하나만 짚을게요. 코드 평가 수치는 런 한 번에서 나온 거예요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "원격 동료",
+          "en": "Sure, but the doc goes out in an hour and leadership likes one clear number. What can I safely say?",
+          "ko": "알겠는데, 문서가 한 시간 뒤에 나가고 경영진은 명확한 숫자 하나를 좋아해요. 뭐라고 쓰면 안전할까요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Say we saw a 5% lift on code tasks, but it's preliminary and we're confirming with more seeds.",
+          "ko": "코드 태스크에서 5% 올랐지만 예비 결과이고 시드를 더 늘려 확인 중이라고 써주세요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "원격 동료",
+          "en": "Okay. And should I mention the math benchmark? It dropped a little in your table.",
+          "ko": "알겠어요. 수학 벤치마크도 언급해야 할까요? 표를 보면 조금 떨어졌던데요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yes, mention it. It dropped about one point, but the confidence interval overlaps zero, so it's probably noise.",
+          "ko": "네, 언급하세요. 1점쯤 떨어졌는데 신뢰구간이 0을 포함해서 아마 노이즈일 거예요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d057-s5",
+      "title_ko": "프린터 코너에서: 신입에게 부정적 결과 보고 방법 조언",
+      "context_ko": "공용 프린터 앞에서 loss 곡선을 출력하던 중 첫 결과 요약을 쓰는 후배가 다가온다. 어블레이션이 효과가 없었는데, 후배는 이걸 빼야 할지 고민한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "후배 리서처",
+          "en": "I'm writing my first results summary and the ablation was negative. Do I just leave it out?",
+          "ko": "첫 결과 요약을 쓰는 중인데 어블레이션 결과가 안 좋았어요. 그냥 빼도 될까요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No, include it. Say plainly that removing the auxiliary loss gave no lift, and show the table.",
+          "ko": "아뇨, 넣으세요. 보조 loss를 빼도 개선이 없었다고 담담하게 쓰고 표도 보여주세요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "후배 리서처",
+          "en": "Won't it look like the whole project failed? Dana already thinks we're behind.",
+          "ko": "프로젝트 전체가 실패한 것처럼 보이지 않을까요? 다나는 벌써 우리가 늦다고 생각하는데.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not if you frame it as a finding. A clean negative result tells the team what to stop spending GPUs on.",
+          "ko": "발견으로 정리하면 괜찮아요. 깔끔한 부정 결과는 어디에 GPU를 그만 써야 할지 알려주거든요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
