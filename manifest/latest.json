@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-10-06T21:04:59+00:00",
+  "updated": "2026-10-17T21:04:06+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 57,
-  "total_days": 51,
-  "total_turns": 1109,
-  "total_target_turns": 597,
+  "latest_day": 66,
+  "total_days": 52,
+  "total_turns": 1131,
+  "total_target_turns": 609,
   "days": [
     {
       "day": 1,
@@ -822,6 +822,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-10-07.json"
+    },
+    {
+      "day": 66,
+      "date": "2026-10-16",
+      "week": 10,
+      "block": "tech-comm",
+      "theme": "설계 리뷰 — 왜 이렇게 만들었는지",
+      "topic": "확장성 한계를 미리 인정하고 대응 계획 말하기",
+      "difficulty": 3,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-10-16.json"
     }
   ]
 }

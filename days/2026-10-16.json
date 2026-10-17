@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 66,
+  "date": "2026-10-16",
+  "week": 10,
+  "block": "tech-comm",
+  "theme": "설계 리뷰 — 왜 이렇게 만들었는지",
+  "topic": "확장성 한계를 미리 인정하고 대응 계획 말하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d066-s1",
+      "title_ko": "화이트보드 앞에서 스케줄러의 한계를 먼저 밝히기",
+      "context_ko": "평가 작업 스케줄러 설계 리뷰 자리입니다. {name}은 리뷰어가 묻기 전에 이 설계가 동시 작업 약 2,000개에서 한계에 부딪힌다고 먼저 말하고, 샤딩안을 채택하지 않은 이유를 설명해야 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Before you push back, I want to flag that this scheduler tops out around two thousand concurrent eval jobs.",
+          "ko": "지적하시기 전에 먼저 말씀드리면, 이 스케줄러는 동시 평가 작업 2,000개 전후가 한계입니다.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "설계 리뷰어",
+          "en": "Good that you're saying it upfront. We're at about eight hundred jobs today, so what happens when experiments triple next quarter?",
+          "ko": "먼저 말해줘서 좋네요. 지금 800개쯤인데, 다음 분기에 실험이 세 배가 되면 어떻게 되죠?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The main trade-off here is simplicity versus headroom: one scheduler is easy to debug, but it caps out.",
+          "ko": "여기서 핵심 트레이드오프는 단순함 대 여유 용량입니다. 스케줄러 하나면 디버깅은 쉽지만 상한이 있습니다.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "설계 리뷰어",
+          "en": "Fair. Did you look at sharding the queue by team from the start?",
+          "ko": "일리 있네요. 처음부터 팀별로 큐를 샤딩하는 건 검토해봤나요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We ruled that out because cross-team priority rules would need a coordinator anyway, which adds failure modes we can't test.",
+          "ko": "그건 배제했습니다. 팀 간 우선순위 규칙 때문에 어차피 코디네이터가 필요하고, 그러면 테스트하기 어려운 장애 유형이 늘어나서요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d066-s2",
+      "title_ko": "동료 책상 옆에서 메타데이터 저장소 한계 설명하기",
+      "context_ko": "동료가 {name}의 설계 문서를 읽다가 체크포인트 쓰기가 몰리면 단일 데이터베이스가 버틸지 묻습니다. {name}은 한계 수치와 그 전에 울릴 경보, 마이그레이션 계획을 말해야 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "I'm reading your design doc. The metadata store is a single database primary. Is that going to hold when checkpoint writes spike?",
+          "ko": "설계 문서 읽고 있는데요, 메타데이터 저장소가 DB 프라이머리 하나네요. 체크포인트 쓰기가 몰려도 버틸까요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Honestly, no. I expect it to start hurting around fifty writes per second, and our peak today is about twelve.",
+          "ko": "솔직히 아니에요. 초당 쓰기 50건쯤부터 문제가 생길 걸로 보고, 지금 피크는 12건쯤입니다.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "So what's the trigger for revisiting it? I don't want this to become a surprise at midnight when someone's run is stuck.",
+          "ko": "그럼 언제 다시 손보나요? 한밤중에 누구 학습이 멈춰서 갑자기 터지는 건 싫거든요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll add an alert at thirty writes per second, and the doc has a migration plan for batching checkpoint writes.",
+          "ko": "초당 30건에 경보를 걸겠습니다. 체크포인트 쓰기를 묶어서 처리하는 마이그레이션 계획도 문서에 넣어뒀어요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d066-s3",
+      "title_ko": "옥상 벤치에서 매니저에게 단일 노드 추론 서버의 한계 설명하기",
+      "context_ko": "점심 후 옥상 테라스를 걷다가 매니저가 왜 추론 서버를 노드 하나로 만들었는지 묻습니다. {name}은 처리량을 우선할 때 생기는 한계와 확장 계획을 짧게 말해야 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Quick question before the review: why a single-node inference server? Won't that bottleneck once the product team ships to more users?",
+          "ko": "리뷰 전에 하나만요. 추론 서버를 왜 노드 하나로 했죠? 제품팀이 사용자를 늘리면 병목 되지 않나요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "If throughput matters more than tail latency, we'd batch aggressively, and that's where one node stops being enough.",
+          "ko": "꼬리 지연보다 처리량이 중요해지면 배치를 크게 잡아야 하는데, 그때부터 노드 하나로는 부족합니다.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Okay. So what's the plan when we hit that? I'd rather hear it now than in a postmortem.",
+          "ko": "알겠어요. 그 지점에 닿으면 계획이 뭐죠? 포스트모템보다는 지금 듣는 게 낫겠어요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We'll add replicas behind a load balancer, and I've sized it: about three nodes covers four times today's traffic.",
+          "ko": "로드 밸런서 뒤에 레플리카를 추가할 겁니다. 산정도 해뒀는데, 노드 세 대면 현재 트래픽의 네 배를 감당합니다.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d066-s4",
+      "title_ko": "화상회의에서 검색 인덱스 상한과 전환 시점 답하기",
+      "context_ko": "타 팀 플랫폼 엔지니어와의 화상 설계 리뷰입니다. 검색 인덱스를 전부 메모리에 올린 설계의 상한을 묻는 질문에, {name}은 명확한 수치와 전환 기준을 제시해야 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "타 팀 플랫폼 엔지니어",
+          "en": "Your retrieval index lives fully in memory. That's fine at ten million vectors, but what's your ceiling, and what's the move after it?",
+          "ko": "검색 인덱스를 전부 메모리에 올리셨네요. 천만 벡터까진 괜찮은데, 상한이 어디고 그다음엔 뭘 하실 건가요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Our ceiling is roughly fifty million vectors. Past that, we'd move to a disk-backed index with a small cache.",
+          "ko": "상한은 대략 5천만 벡터입니다. 그 이상이면 작은 캐시를 둔 디스크 기반 인덱스로 옮길 겁니다.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "타 팀 플랫폼 엔지니어",
+          "en": "So when exactly do you migrate? I need a trigger, not a feeling.",
+          "ko": "그럼 정확히 언제 옮기죠? 감이 아니라 기준이 필요해요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We switch when memory use passes seventy percent, and I've already benchmarked the disk-backed index so there's no scramble.",
+          "ko": "메모리 사용률이 70%를 넘으면 전환합니다. 디스크 기반 인덱스는 벤치마크를 이미 해뒀어서 허둥댈 일은 없습니다.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d066-s5",
+      "title_ko": "모니터 앞에서 부하 테스트 결과로 한계를 인정하고 해결안 제시하기",
+      "context_ko": "여러 모니터가 붙은 자리에서 부하 테스트 그래프를 보며, 출시 예측치보다 낮은 지점에서 지연이 치솟는 것을 {name}이 팀원에게 설명합니다. 왜 미리 알리지 않았냐는 지적에 답하고 두 가지 해결안을 제시해야 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "As you can see on this graph, p99 latency climbs sharply once we cross about four hundred requests per second.",
+          "ko": "이 그래프 보시면, 초당 요청이 400건쯤 넘어가면서 p99 지연이 급격히 올라갑니다.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀원",
+          "en": "That's below what the launch forecast projects. Why didn't you flag this in the design doc instead of waiting for the load test?",
+          "ko": "출시 예상치보다 낮은데요. 부하 테스트까지 기다리지 말고 설계 문서에서 미리 짚었어야 하지 않나요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It's in the limitations section, but that was too buried. I'll move it to the summary today.",
+          "ko": "한계 항목에 적어뒀는데 너무 묻혀 있었네요. 오늘 중으로 요약 쪽으로 올리겠습니다.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀원",
+          "en": "Thanks. So what's the fix, and how long does it take? Launch is in three weeks.",
+          "ko": "고마워요. 그래서 해결책은 뭐고 얼마나 걸리나요? 출시가 3주 뒤예요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Two options: cache tokenization results for a quick win this week, or rework the queue, which takes about a month.",
+          "ko": "두 가지입니다. 이번 주에 토큰화 결과를 캐싱해서 빠르게 개선하거나, 큐를 재설계하는데 한 달쯤 걸립니다.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
