@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "Thanks for the comments, Priya. On merging the two eval stages, I'd like to walk through why we split them first.",
           "ko": "Priya, 코멘트 감사해요. 평가 두 단계 합치자는 건, 먼저 왜 나눴는지부터 설명드릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Thanks, but first I'll explain why we split the stages."
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "The main trade-off here is debuggability versus cost: the cheap stage filters out about eighty percent of checkpoints before we touch GPUs.",
           "ko": "여기서 핵심 트레이드오프는 디버깅 편의성 대 비용이에요. 값싼 1단계가 GPU 쓰기 전에 체크포인트의 80%쯤을 걸러내거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The cheap stage filters most checkpoints before we use GPUs."
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "We ruled that out because the cheap checks run on CPU. I can unify the config, though, so debugging gets easier.",
           "ko": "그건 검토했다가 뺐어요. 값싼 검사는 CPU로 돌아가거든요. 대신 설정은 하나로 통일해서 디버깅을 쉽게 만들 수 있어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Quick checks run on CPU, but I can make one config."
         }
       ]
     },
@@ -70,7 +73,8 @@
           "role_ko": "나",
           "en": "Marco, I read your comment about removing the dataset registry service. Honestly, I think you might be right.",
           "ko": "Marco, 데이터셋 레지스트리 서비스 없애자는 코멘트 읽었어요. 솔직히 말씀이 맞는 것 같아요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I read your comment, and I think you're right."
         },
         {
           "n": 2,
@@ -86,7 +90,8 @@
           "role_ko": "나",
           "en": "I'd keep lineage in a manifest file in git. We ruled that out at first because I worried about merge conflicts.",
           "ko": "계보 정보는 git의 매니페스트 파일로 남기고 싶어요. 처음엔 머지 충돌이 걱정돼서 그 방식을 뺐었거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'd keep the data history in a file, not a service."
         },
         {
           "n": 4,
@@ -102,7 +107,8 @@
           "role_ko": "나",
           "en": "Sounds good. I'll write a migration script today, and we can retire the registry once the nightly runs pass on the manifests.",
           "ko": "좋아요. 오늘 마이그레이션 스크립트 쓸게요. 매니페스트로 야간 실행이 통과하면 레지스트리는 내리죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Good, I'll write the migration script today."
         }
       ]
     },
@@ -127,7 +133,8 @@
           "role_ko": "나",
           "en": "I get the appeal. If throughput matters more than tail latency, the queue lets us batch and keep GPUs busy.",
           "ko": "단순해지는 장점은 이해해요. 꼬리 지연보다 처리량이 중요하다면, 큐가 있어야 배치로 묶어서 GPU를 계속 돌릴 수 있어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The queue lets us batch and keep GPUs busy."
         },
         {
           "n": 3,
@@ -143,7 +150,8 @@
           "role_ko": "나",
           "en": "Fair question. In last week's load test, batching gave us about 3x more requests per second at the same p95.",
           "ko": "좋은 질문이에요. 지난주 부하 테스트에서 p95는 그대로인데 배칭 덕에 초당 요청 수가 3배쯤 나왔어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Batching gave us many more requests per second in last week's test."
         },
         {
           "n": 5,
@@ -168,7 +176,8 @@
           "role_ko": "나",
           "en": "Before standup ends, can I propose we drop our custom YAML loader and just use the standard config library?",
           "ko": "스탠드업 끝나기 전에 하나만 제안할게요. 우리 커스텀 YAML 로더 버리고 표준 설정 라이브러리를 쓰면 어떨까요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can we use the standard config library instead of our own?"
         },
         {
           "n": 2,
@@ -184,7 +193,8 @@
           "role_ko": "나",
           "en": "The main trade-off here is a one-time migration against ongoing bugs. Last month, two runs picked the wrong override.",
           "ko": "핵심 트레이드오프는 한 번의 마이그레이션이냐, 계속되는 버그냐예요. 지난달에 실행 두 건이 엉뚱한 오버라이드를 집었거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Last month, some runs used the wrong setting."
         },
         {
           "n": 4,
@@ -200,7 +210,8 @@
           "role_ko": "나",
           "en": "Not natively, but a small composition step covers it. I'll prototype on one project and bring the diff to Thursday's review.",
           "ko": "기본 기능으론 안 되는데, 작은 조합 단계 하나로 해결돼요. 프로젝트 하나에 먼저 적용해 보고 목요일 리뷰에 diff 가져올게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "A small step can do it, so I'll test one project."
         }
       ]
     }
