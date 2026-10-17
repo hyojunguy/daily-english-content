@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 67,
+  "date": "2026-10-17",
+  "week": 10,
+  "block": "tech-comm",
+  "theme": "설계 리뷰 — 왜 이렇게 만들었는지",
+  "topic": "리뷰어의 날카로운 지적에 답하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d067-s1",
+      "title_ko": "대회의실 프로젝터 앞에서 정적 배칭을 택한 이유 설명하기",
+      "context_ko": "대회의실 프로젝터 화면에 서빙 구조도가 떠 있고, 리뷰어 Priya가 왜 continuous batching을 안 썼느냐고 묻는다. {name}은 이 선택이 복잡도 때문이었다는 걸 숫자로 방어해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "So this is the serving path. I went with static batching for now, and I'd like to walk you through why.",
+          "ko": "이게 서빙 경로입니다. 일단 static batching으로 갔는데, 왜 그랬는지 설명드리겠습니다.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "설계 리뷰어",
+          "en": "Why not continuous batching? Every other serving stack uses it now, and static batching leaves GPUs idle whenever one request runs long.",
+          "ko": "continuous batching은 왜 안 쓰셨어요? 요즘 다들 쓰고, static은 긴 요청 하나 때문에 GPU가 놉니다.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The main trade-off here is utilization versus complexity. Continuous batching wins on utilization, but we can't maintain that scheduler yet.",
+          "ko": "여기서 핵심 트레이드오프는 활용률 대 복잡도예요. 활용률은 continuous가 낫지만, 그 스케줄러를 지금은 유지보수할 여력이 없습니다.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "설계 리뷰어",
+          "en": "Fair, but how much utilization are we actually losing? If it's under ten percent, I'll drop it. If it's thirty, that's a real problem.",
+          "ko": "일리는 있는데, 실제로 활용률을 얼마나 잃고 있죠? 10% 미만이면 넘어가고, 30%면 큰 문제예요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "On our traffic it's around fifteen percent. I'll add a utilization dashboard so we can revisit this with real numbers.",
+          "ko": "저희 트래픽 기준으로는 15% 정도예요. 활용률 대시보드를 추가해서 실제 수치로 다시 논의하겠습니다.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d067-s2",
+      "title_ko": "복도 창가에서 커스텀 샤드 로더를 만든 이유 답하기",
+      "context_ko": "복도 창가에서 데이터팀 Marco가 왜 표준 스트리밍 라이브러리를 두고 직접 로더를 만들었냐고 묻는다. {name}은 근거를 대되, 검증이 부족했던 부분은 인정해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "데이터팀 동료",
+          "en": "Quick question on your design doc. Why did you build a custom shard loader instead of using the standard streaming dataset library?",
+          "ko": "설계 문서 관련해서 하나만요. 표준 스트리밍 데이터셋 라이브러리 대신 왜 샤드 로더를 직접 만드셨어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We ruled that out because it can't resume mid-epoch deterministically. After a node failure we'd silently replay or skip samples.",
+          "ko": "그건 에포크 중간에 결정적으로 재개가 안 돼서 제외했어요. 노드가 죽으면 샘플이 조용히 중복되거나 빠질 수 있거든요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "데이터팀 동료",
+          "en": "Hm, did you actually test that, or is it a guess? Last I checked, they added resumable state in a recent release.",
+          "ko": "음, 실제로 테스트해보신 거예요, 아니면 추측이에요? 제가 알기론 최근 릴리스에 재개 상태 저장이 추가됐는데요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I tested an older version, so you may be right. I'll rerun the resume test on the latest release today.",
+          "ko": "예전 버전으로 테스트했어서 맞을 수도 있어요. 오늘 최신 릴리스로 재개 테스트를 다시 돌려볼게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d067-s3",
+      "title_ko": "화상 리뷰에서 비동기 체크포인트의 위험 방어하기",
+      "context_ko": "원격 설계 리뷰 화상회의에서 Daniel이 비동기 체크포인트가 데이터 손상 위험이 있지 않느냐고 압박한다. {name}은 처리량과 안정성 사이의 선택을 논리적으로 설명해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "One note on checkpointing: I chose asynchronous writes, which means we could lose the last few steps after a crash.",
+          "ko": "체크포인트 관련해서 하나 말씀드리면, 비동기 쓰기를 택했고 크래시 시 마지막 몇 스텝을 잃을 수 있습니다.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "설계 리뷰어",
+          "en": "Why take that risk? Synchronous checkpoints are simpler, and I'd rather lose ten minutes than debug a corrupted checkpoint at 3 a.m.",
+          "ko": "왜 그 위험을 감수하죠? 동기 방식이 더 단순하고, 새벽 3시에 깨진 체크포인트 디버깅하느니 10분 손해 보는 게 낫습니다.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "If throughput matters more than simplicity, async wins, and for our biggest runs the sync stall costs eight minutes per save.",
+          "ko": "단순함보다 처리량이 중요하다면 비동기가 낫고, 가장 큰 런에서는 동기 방식이 저장마다 8분씩 멈춥니다.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "설계 리뷰어",
+          "en": "Eight minutes every save is brutal, okay. But what protects us from a half-written checkpoint? Show me the failure path.",
+          "ko": "저장할 때마다 8분이면 심하긴 하네요. 그래도 반쯤 쓰인 체크포인트는 어떻게 막죠? 실패 경로를 보여주세요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We write to a temp prefix and only rename after a checksum passes, so a crash leaves the previous checkpoint intact.",
+          "ko": "임시 경로에 쓰고 체크섬이 통과한 뒤에만 이름을 바꾸기 때문에, 크래시가 나도 이전 체크포인트는 그대로 남습니다.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d067-s4",
+      "title_ko": "셔틀버스 옆자리에서 평가셋이 너무 작다는 지적 받기",
+      "context_ko": "퇴근 셔틀버스에서 선임 연구원 Sofia가 평가 제안서의 프롬프트 200개로는 2점 개선을 주장하기 어렵다고 말한다. {name}은 한계를 솔직히 인정하고 현실적인 보완책을 내놓아야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "선임 연구원",
+          "en": "I read your eval proposal. Two hundred prompts feels thin to claim a two-point improvement. How confident are you in that number?",
+          "ko": "평가 제안서 읽었는데, 프롬프트 200개로 2점 개선을 주장하기엔 얇아 보여요. 그 수치에 얼마나 확신하세요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Honestly, not very. With two hundred prompts the confidence interval is wide, so I should say the result is suggestive, not conclusive.",
+          "ko": "솔직히 별로 확신은 없어요. 200개면 신뢰구간이 넓으니, 결론이 아니라 시사점 수준이라고 써야겠습니다.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "선임 연구원",
+          "en": "Right. So what would you change? We don't have budget to label two thousand new examples this quarter.",
+          "ko": "맞아요. 그럼 어떻게 바꾸실 거예요? 이번 분기엔 2천 개를 새로 라벨링할 예산이 없어요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I could bootstrap confidence intervals now, and add five hundred examples from the hardest failure categories. Does that seem reasonable?",
+          "ko": "지금은 부트스트랩으로 신뢰구간을 계산하고, 가장 어려운 실패 유형에서 500개만 추가해볼게요. 괜찮을까요?",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d067-s5",
+      "title_ko": "모니터 여러 대 앞에서 '당연히'라는 표현에 근거 요구받기",
+      "context_ko": "모니터가 여러 대 붙은 자리에서 리뷰어가 문서의 프롬프트 캐싱이 '당연히 효과적'이라는 문장에 적중률 데이터를 요구한다. {name}은 약점을 인정하고 수치를 보강하겠다고 답해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "설계 리뷰어",
+          "en": "You wrote that prompt caching is obviously worth it. Obviously for whom? I don't see any hit-rate data in this section.",
+          "ko": "프롬프트 캐싱이 당연히 가치 있다고 쓰셨는데, 누구에게 당연하죠? 이 섹션엔 적중률 데이터가 안 보여요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Fair point, obviously was a shortcut. Our logs show a forty percent hit rate, but the doc doesn't include the chart.",
+          "ko": "맞는 지적이에요, '당연히'는 건너뛴 표현이었어요. 로그상 적중률이 40%인데 문서에 차트를 안 넣었네요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "설계 리뷰어",
+          "en": "Forty percent on which traffic? If that's all from one batch customer, it won't generalize to interactive users.",
+          "ko": "어떤 트래픽에서 40%죠? 배치 고객 한 곳에서 나온 거면 인터랙티브 사용자에겐 일반화 안 돼요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good catch. Let me split the hit rate by traffic type and add it to the doc before end of day.",
+          "ko": "좋은 지적이에요. 적중률을 트래픽 유형별로 나눠서 오늘 퇴근 전까지 문서에 추가할게요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}

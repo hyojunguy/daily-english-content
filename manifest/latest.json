@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-10-17T21:04:06+00:00",
+  "updated": "2026-10-17T21:08:03+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 66,
-  "total_days": 52,
-  "total_turns": 1131,
-  "total_target_turns": 609,
+  "latest_day": 67,
+  "total_days": 53,
+  "total_turns": 1153,
+  "total_target_turns": 621,
   "days": [
     {
       "day": 1,
@@ -838,6 +838,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-10-16.json"
+    },
+    {
+      "day": 67,
+      "date": "2026-10-17",
+      "week": 10,
+      "block": "tech-comm",
+      "theme": "설계 리뷰 — 왜 이렇게 만들었는지",
+      "topic": "리뷰어의 날카로운 지적에 답하기",
+      "difficulty": 3,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-10-17.json"
     }
   ]
 }
