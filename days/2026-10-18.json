@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "day": 68,
+  "date": "2026-10-18",
+  "week": 10,
+  "block": "tech-comm",
+  "theme": "설계 리뷰 — 왜 이렇게 만들었는지",
+  "topic": "복잡도를 줄이자는 제안을 방어하거나 수용하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d068-s1",
+      "title_ko": "화상 리뷰에서 2단계 평가 파이프라인 합치자는 제안 방어하기",
+      "context_ko": "설계 리뷰 화상회의에서 Priya가 평가 파이프라인의 두 단계를 하나로 합치면 단순해진다고 제안한다. {name}은 단계를 나눈 이유를 설명해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks for the comments, Priya. On merging the two eval stages, I'd like to walk through why we split them first.",
+          "ko": "Priya, 코멘트 감사해요. 평가 두 단계 합치자는 건, 먼저 왜 나눴는지부터 설명드릴게요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "리뷰어 Priya",
+          "en": "Sure. Honestly it looks like extra moving parts to me. One stage with one config would be easier to debug, and fewer places for the checkpoints to get stuck.",
+          "ko": "네. 솔직히 불필요하게 움직이는 부품이 많아 보여요. 설정 하나짜리 단일 단계가 디버깅도 쉽고 체크포인트가 막힐 데도 적을 거예요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The main trade-off here is debuggability versus cost: the cheap stage filters out about eighty percent of checkpoints before we touch GPUs.",
+          "ko": "여기서 핵심 트레이드오프는 디버깅 편의성 대 비용이에요. 값싼 1단계가 GPU 쓰기 전에 체크포인트의 80%쯤을 걸러내거든요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "리뷰어 Priya",
+          "en": "Okay, that's a real saving. But did you consider running the cheap checks inside the same job, as a first step?",
+          "ko": "그건 실질적인 절감이네요. 그런데 값싼 검사를 같은 잡 안에서 첫 스텝으로 돌리는 건 고려해 봤어요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We ruled that out because the cheap checks run on CPU. I can unify the config, though, so debugging gets easier.",
+          "ko": "그건 검토했다가 뺐어요. 값싼 검사는 CPU로 돌아가거든요. 대신 설정은 하나로 통일해서 디버깅을 쉽게 만들 수 있어요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d068-s2",
+      "title_ko": "동료 책상 옆에서 데이터셋 레지스트리 서비스 없애자는 제안 수용하기",
+      "context_ko": "Marco가 리뷰에서 별도 데이터셋 레지스트리 서비스를 없애자고 했다. {name}은 그의 말이 맞다고 보고 대신 무엇을 남길지 합의하려 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Marco, I read your comment about removing the dataset registry service. Honestly, I think you might be right.",
+          "ko": "Marco, 데이터셋 레지스트리 서비스 없애자는 코멘트 읽었어요. 솔직히 말씀이 맞는 것 같아요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 Marco",
+          "en": "Really? I expected a fight. It's one more service to patch and monitor, and only four datasets change often. What would you keep, though?",
+          "ko": "정말요? 싸울 줄 알았는데. 패치하고 모니터링할 서비스가 하나 더 느는 거고, 자주 바뀌는 데이터셋도 네 개뿐이잖아요. 그래도 뭘 남기고 싶어요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd keep lineage in a manifest file in git. We ruled that out at first because I worried about merge conflicts.",
+          "ko": "계보 정보는 git의 매니페스트 파일로 남기고 싶어요. 처음엔 머지 충돌이 걱정돼서 그 방식을 뺐었거든요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 Marco",
+          "en": "Conflicts are rare if each dataset gets its own file. Want to prototype it this week, and delete the service only if it holds up?",
+          "ko": "데이터셋마다 파일을 따로 두면 충돌은 거의 없어요. 이번 주에 프로토타입 해보고, 잘 되면 그때 서비스를 지우는 건 어때요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sounds good. I'll write a migration script today, and we can retire the registry once the nightly runs pass on the manifests.",
+          "ko": "좋아요. 오늘 마이그레이션 스크립트 쓸게요. 매니페스트로 야간 실행이 통과하면 레지스트리는 내리죠.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d068-s3",
+      "title_ko": "엘리베이터 앞에서 요청 큐 레이어를 빼자는 시니어에게 근거 대기",
+      "context_ko": "엘리베이터를 기다리던 중 Dana가 추론 워커 앞의 요청 큐가 정말 필요하냐고 묻는다. {name}은 처리량 수치로 큐의 가치를 짧게 방어해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "시니어 Dana",
+          "en": "Quick thought on your design doc: do we really need the request queue in front of the inference workers? Calling them directly would be simpler.",
+          "ko": "설계 문서 보다가 든 생각인데, 추론 워커 앞에 요청 큐가 정말 필요해요? 직접 호출하면 더 단순할 텐데요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I get the appeal. If throughput matters more than tail latency, the queue lets us batch and keep GPUs busy.",
+          "ko": "단순해지는 장점은 이해해요. 꼬리 지연보다 처리량이 중요하다면, 큐가 있어야 배치로 묶어서 GPU를 계속 돌릴 수 있어요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "시니어 Dana",
+          "en": "Fair, but our users are internal and traffic is bursty. Is batching really buying us that much today?",
+          "ko": "맞는 말이지만 사용자는 사내 사람들이고 트래픽도 들쭉날쭉하잖아요. 지금 배칭이 그렇게까지 이득을 줘요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Fair question. In last week's load test, batching gave us about 3x more requests per second at the same p95.",
+          "ko": "좋은 질문이에요. 지난주 부하 테스트에서 p95는 그대로인데 배칭 덕에 초당 요청 수가 3배쯤 나왔어요.",
+          "is_target": true
+        },
+        {
+          "n": 5,
+          "speaker": "A",
+          "role_ko": "시니어 Dana",
+          "en": "Okay, send me those. If the gain holds I'm fine keeping the queue, but let's drop the retry layer you added on top of it.",
+          "ko": "알겠어요, 그 수치 보내줘요. 이득이 확인되면 큐는 유지해도 좋은데, 그 위에 얹은 재시도 레이어는 뺍시다.",
+          "is_target": false
+        }
+      ]
+    },
+    {
+      "id": "d068-s4",
+      "title_ko": "스탠드업 화이트보드 앞에서 커스텀 설정 로더 폐기 제안하기",
+      "context_ko": "스탠드업 끝자락에 {name}이 직접 만든 YAML 설정 로더를 표준 라이브러리로 바꾸자고 제안한다. Sam은 상속 규칙과 마이그레이션 비용을 걱정한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Before standup ends, can I propose we drop our custom YAML loader and just use the standard config library?",
+          "ko": "스탠드업 끝나기 전에 하나만 제안할게요. 우리 커스텀 YAML 로더 버리고 표준 설정 라이브러리를 쓰면 어떨까요?",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 Sam",
+          "en": "Hm, that loader handles our inheritance rules. Switching means rewriting about forty experiment configs. Why now?",
+          "ko": "음, 그 로더가 우리 상속 규칙을 처리하잖아요. 바꾸면 실험 설정 마흔 개쯤을 다시 써야 해요. 왜 지금이에요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The main trade-off here is a one-time migration against ongoing bugs. Last month, two runs picked the wrong override.",
+          "ko": "핵심 트레이드오프는 한 번의 마이그레이션이냐, 계속되는 버그냐예요. 지난달에 실행 두 건이 엉뚱한 오버라이드를 집었거든요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 Sam",
+          "en": "Okay, that's painful. Can the standard library even express our inheritance? I don't want to lose that.",
+          "ko": "그건 뼈아프네요. 그런데 표준 라이브러리로 우리 상속 구조를 표현할 수는 있어요? 그건 잃고 싶지 않아서요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not natively, but a small composition step covers it. I'll prototype on one project and bring the diff to Thursday's review.",
+          "ko": "기본 기능으론 안 되는데, 작은 조합 단계 하나로 해결돼요. 프로젝트 하나에 먼저 적용해 보고 목요일 리뷰에 diff 가져올게요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
