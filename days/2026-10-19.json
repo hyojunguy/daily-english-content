@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 69,
+  "date": "2026-10-19",
+  "week": 10,
+  "block": "tech-comm",
+  "theme": "설계 리뷰 — 왜 이렇게 만들었는지",
+  "topic": "설계 결정을 문서로 남기겠다고 약속하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d069-s1",
+      "title_ko": "화상 리뷰 끝에 설계 문서 작성 맡기",
+      "context_ko": "샤딩 캐시 설계가 승인됐지만 단일 노드안을 왜 버렸는지 기록이 없다. 리뷰 리드가 {name}에게 문서화를 요청한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "리뷰 리드 Priya",
+          "en": "We approved the sharded cache, but nobody wrote down why we dropped the single-node option. Can you put that in a design doc?",
+          "ko": "샤딩 캐시는 승인됐는데, 단일 노드안을 왜 뺐는지는 아무도 안 적어놨어요. 설계 문서로 남겨주실 수 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sure, I'll write it up by Thursday. The main trade-off here is memory cost against simpler failure handling.",
+          "ko": "네, 목요일까지 정리할게요. 핵심 트레이드오프는 메모리 비용 대 단순한 장애 처리예요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "리뷰 리드 Priya",
+          "en": "Good. Please include the numbers too, otherwise the next reviewer will ask the same question in six months.",
+          "ko": "좋아요. 숫자도 같이 넣어주세요. 안 그러면 반년 뒤에 다른 리뷰어가 똑같은 질문을 할 거예요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Understood, I'll attach the benchmark results and link the notebook so anyone can reproduce them.",
+          "ko": "알겠어요, 벤치마크 결과를 첨부하고 노트북도 링크해서 누구나 재현할 수 있게 할게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d069-s2",
+      "title_ko": "카페 창가 바 테이블에서 느린 토크나이저를 쓴 이유 기록 약속",
+      "context_ko": "동료들이 느린 토크나이저 선택을 실수로 여기고 있다. {name}은 이유를 문서에 적겠다고 먼저 말을 꺼낸다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Quick thing before I forget: I'll add a section on why we picked the slower tokenizer.",
+          "ko": "잊기 전에 하나만요. 우리가 왜 더 느린 토크나이저를 골랐는지 문서에 한 섹션 추가할게요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 Marco",
+          "en": "Honestly, I was going to ask. Everyone assumes it's a mistake. Wasn't the faster one fine for our eval set?",
+          "ko": "사실 저도 물어보려던 참이에요. 다들 실수라고 생각하거든요. 빠른 쪽도 평가셋엔 괜찮지 않았어요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We ruled that out because it silently dropped rare characters, which skewed our multilingual evaluation numbers.",
+          "ko": "그건 희귀 문자를 조용히 날려버려서 다국어 평가 수치가 왜곡돼서 제외했어요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 Marco",
+          "en": "That's exactly what should be in writing. Can you put the failing examples in there as well?",
+          "ko": "바로 그게 글로 남아 있어야 하는 내용이네요. 실패한 예시도 같이 넣어주실래요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good idea, I'll include three concrete examples so the reasoning is obvious without anyone asking me.",
+          "ko": "좋은 생각이에요. 구체적인 예시 세 개를 넣어서, 아무도 저한테 안 물어봐도 이유가 보이게 할게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d069-s3",
+      "title_ko": "모니터 앞에서 신입이 찾은 설정값의 이유 문서화",
+      "context_ko": "새로 온 팀원이 서빙 설정에서 설명 없는 재시도 상한을 발견해 물어본다. {name}은 의도된 값이라고 답하고 기록을 약속한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "신입 팀원 Jin",
+          "en": "I found a retry cap of three in the serving config, with no comment. Is that intentional, or can I raise it?",
+          "ko": "서빙 설정에 재시도 상한이 3으로 돼 있는데 주석이 없더라고요. 의도된 건가요, 아니면 올려도 되나요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It's intentional. Honestly, that should have been documented. I'll add it to the decision log today.",
+          "ko": "의도된 값이에요. 솔직히 문서로 남겼어야 했는데. 오늘 결정 로그에 추가할게요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "신입 팀원 Jin",
+          "en": "Great. What if I want more retries later? Is there a rule of thumb you'd put in there?",
+          "ko": "좋아요. 나중에 재시도를 늘리고 싶으면요? 거기 넣을 만한 기준 같은 게 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "If throughput matters more than tail latency, you can raise it, but I'll note the limits we measured.",
+          "ko": "꼬리 지연보다 처리량이 더 중요하면 올려도 돼요. 대신 우리가 측정한 한계도 같이 적어둘게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d069-s4",
+      "title_ko": "복도에서 매니저에게 체크포인트 변경 기록 약속",
+      "context_ko": "감사 준비 중 체크포인트 포맷 변경이 문서화되지 않은 게 드러났다. 복도에서 마주친 매니저에게 {name}이 기한을 약속한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저 Dana",
+          "en": "I saw the incident review. The checkpoint format change was never written up. Can we get that documented before the audit?",
+          "ko": "장애 리뷰 봤어요. 체크포인트 포맷 변경이 전혀 기록돼 있지 않던데, 감사 전에 문서화할 수 있을까요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yes, I'll draft a short decision record by Friday and tag you so you can review the wording.",
+          "ko": "네, 금요일까지 짧은 의사결정 기록을 초안으로 써서 태그할게요. 표현 검토해주세요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저 Dana",
+          "en": "Perfect. Keep it brief, one page. What are you planning to cover?",
+          "ko": "좋아요. 한 페이지로 짧게요. 뭘 담을 계획이에요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The context, the options we considered, why we chose this one, and what we'd revisit if the scale changes.",
+          "ko": "배경, 검토한 대안들, 이걸 고른 이유, 그리고 규모가 바뀌면 다시 볼 부분을 적을게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d069-s5",
+      "title_ko": "랩 앞에서 탈락한 GPU 배치안을 기록으로 남기기",
+      "context_ko": "GPU 랩 문 앞에서 {name}이 이미 기각한 랙 배치안을 문서에 남겨 재논의를 막자고 제안한다. 근거 자료를 어떻게 보존할지도 정한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "While we're here, can I put the rejected GPU layout in the doc, so nobody proposes it again?",
+          "ko": "온 김에 말인데, 기각된 GPU 배치안을 문서에 넣어도 될까요? 아무도 다시 제안 안 하게요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어 Sam",
+          "en": "Please do. People keep asking why we didn't use the denser rack. Was it only cooling?",
+          "ko": "꼭 넣어주세요. 왜 더 촘촘한 랙을 안 썼냐고 계속 묻거든요. 냉각 때문만이었어요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Mostly cooling, yes. The main trade-off here is density versus airflow, and we hit thermal limits during stress tests.",
+          "ko": "대부분 냉각이에요. 핵심 트레이드오프는 밀도 대 공기 흐름이고, 스트레스 테스트에서 열 한계에 걸렸어요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어 Sam",
+          "en": "Then add the temperature logs. A link to the dashboard will break eventually, so paste the key charts.",
+          "ko": "그럼 온도 로그도 넣어주세요. 대시보드 링크는 언젠가 깨지니까 핵심 차트는 직접 붙여넣고요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good point, I'll export the charts as images and store them next to the doc in the repo.",
+          "ko": "맞는 말씀이에요. 차트를 이미지로 내보내서 레포의 문서 옆에 같이 보관할게요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
