@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 70,
+  "date": "2026-10-20",
+  "week": 10,
+  "block": "tech-comm",
+  "theme": "설계 리뷰 — 왜 이렇게 만들었는지",
+  "topic": "리뷰 후 바뀐 설계를 다시 공유하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d070-s1",
+      "title_ko": "화상회의에서 리뷰 후 바뀐 데이터 로더 설계 공유하기",
+      "context_ko": "지난 설계 리뷰에서 지적받은 데이터 로더를 고친 뒤, {name}이 팀 화상회의에서 변경점과 메모리 비용을 설명한다. 동료는 호스트 메모리가 빠듯하다며 걱정한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks for the comments on the loader design. The biggest change is moving shuffling into the sampler.",
+          "ko": "로더 설계에 의견 주셔서 감사합니다. 가장 큰 변경은 셔플을 샘플러로 옮긴 겁니다.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 동료 Priya",
+          "en": "Nice. But why did you drop the per-worker shuffle buffer? I thought that was the part keeping our memory usage low.",
+          "ko": "좋네요. 근데 워커별 셔플 버퍼는 왜 없앤 거예요? 메모리 낮춰주던 부분인 줄 알았는데요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The main trade-off here is memory versus reproducibility. Global shuffling costs more RAM, but runs now replay exactly after restarts.",
+          "ko": "여기서 핵심 트레이드오프는 메모리 대 재현성입니다. 전역 셔플은 RAM이 더 들지만, 재시작 후에도 실행이 똑같이 재현돼요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "C",
+          "role_ko": "인프라 엔지니어 Marco",
+          "en": "How much more RAM are we talking about per node? Our hosts are already tight during the tokenization stage.",
+          "ko": "노드당 RAM이 얼마나 더 든다는 거예요? 토크나이징 단계에서 호스트 메모리가 이미 빠듯하거든요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "About six gigabytes per node, measured on the full corpus. I'll add the numbers to the doc by tonight.",
+          "ko": "전체 코퍼스 기준으로 노드당 6기가 정도예요. 오늘 밤까지 문서에 수치 추가해 둘게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d070-s2",
+      "title_ko": "점심 자리에서 리뷰어가 제안한 관리형 큐를 쓰지 않은 이유 설명하기",
+      "context_ko": "설계 리뷰에서 시니어 리뷰어가 관리형 큐를 제안했지만 {name}은 쓰지 않았다. 점심을 먹으며 수정본에 그 제안이 왜 빠졌는지 설명한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "시니어 엔지니어 Dana",
+          "en": "I read the revised design. Did you ever look at the managed queue I suggested during the review?",
+          "ko": "수정된 설계 읽어봤어요. 리뷰 때 제가 말한 관리형 큐는 검토해 봤어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yes, we ruled that out because it adds a network hop to every request, and our latency budget is tight.",
+          "ko": "네, 검토했는데 뺐어요. 모든 요청에 네트워크 홉이 하나씩 추가되는데 저희 지연 시간 여유가 빠듯해서요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "시니어 엔지니어 Dana",
+          "en": "Fair. But a custom retry loop is something you'll have to maintain forever. Are you comfortable owning that?",
+          "ko": "일리 있네요. 그래도 직접 만든 재시도 루프는 계속 유지보수해야 하잖아요. 그건 감당할 수 있겠어요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Honestly, yes. It's about eighty lines, and I'd rather own that than debug a service we don't control.",
+          "ko": "솔직히 네. 80줄 정도라서, 우리가 통제 못 하는 서비스를 디버깅하느니 차라리 직접 들고 가겠어요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d070-s3",
+      "title_ko": "서버룸 앞에서 바뀐 배칭 설계가 메모리에 미치는 영향 알리기",
+      "context_ko": "리뷰 후 추론 배칭 설계가 바뀌면서 레플리카당 GPU 메모리가 늘었다. {name}이 새 노드를 랙에 올리려는 인프라 담당자에게 서버룸 앞에서 변경점을 알린다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Quick heads-up before you rack the new nodes: the review changed our batching design, so memory per replica goes up.",
+          "ko": "새 노드 랙에 올리시기 전에 알려드릴 게 있어요. 리뷰 후 배칭 설계가 바뀌어서 레플리카당 메모리가 늘어납니다.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어 Jun",
+          "en": "Up by how much? I sized the racks using the numbers from the first version of the doc.",
+          "ko": "얼마나요? 저는 문서 첫 버전 수치로 랙 용량을 잡아놨는데요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Roughly twenty percent. If throughput matters more than tail latency, we keep the larger batches; otherwise we cap them.",
+          "ko": "대략 20% 정도요. 꼬리 지연보다 처리량이 더 중요하면 큰 배치를 유지하고, 아니면 상한을 둘 거예요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어 Jun",
+          "en": "Throughput is the priority for the overnight evals. Latency only matters for the demo endpoint.",
+          "ko": "야간 평가는 처리량이 우선이에요. 지연 시간은 데모 엔드포인트에서만 중요하고요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Then I'll keep the large batches for evals and cap them on the demo endpoint. Final config goes out today.",
+          "ko": "그럼 평가용은 큰 배치로 두고 데모 엔드포인트만 상한을 걸게요. 최종 설정은 오늘 공유할게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d070-s4",
+      "title_ko": "동료 책상 옆에서 바뀐 평가 집계 방식이 보고서에 주는 영향 설명하기",
+      "context_ko": "평가 설계가 리뷰 후 바뀌어서, 이미 보고서를 쓰던 동료가 숫자가 달라지는지 묻는다. {name}이 영향 범위와 집계 방식을 바꾼 이유를 설명한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "평가 담당 동료 Sam",
+          "en": "I saw the revised eval design. Does the new aggregation change any numbers I already put in my report?",
+          "ko": "수정된 평가 설계 봤어요. 새 집계 방식이면 제 보고서에 이미 넣은 숫자가 바뀌나요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Only the macro averages, and they shift by under half a point. I listed every affected table in the changelog.",
+          "ko": "매크로 평균만 바뀌고, 변동은 0.5점 미만이에요. 영향받는 표는 전부 변경 기록에 적어놨어요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "평가 담당 동료 Sam",
+          "en": "Why not keep per-example scoring and aggregate later? That seemed simpler to me when we discussed it in the review.",
+          "ko": "예제별 점수를 그대로 두고 나중에 집계하면 안 돼요? 리뷰 때 얘기할 땐 그게 더 단순해 보였는데요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We ruled that out because late aggregation made reruns inconsistent. Scoring once at the shard level keeps results identical across runs.",
+          "ko": "그건 뺐어요. 나중에 집계하면 재실행 결과가 들쭉날쭉해서요. 샤드 단위로 한 번만 채점하면 실행마다 결과가 같아요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d070-s5",
+      "title_ko": "스탠드업 화이트보드 앞에서 매니저에게 변경 설계 1분 요약하기",
+      "context_ko": "아침 스탠드업에서 매니저가 화이트보드 앞의 {name}에게 리뷰 후 설계가 뭐가 바뀌었는지 짧게 물어본다. 비용이 걸려 있어서 {name}은 숫자와 함께 답한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 매니저",
+          "en": "Give me the one-minute version. What actually changed after Tuesday's review, and what do I tell leadership?",
+          "ko": "1분 버전으로 말해줘요. 화요일 리뷰 이후에 실제로 뭐가 바뀌었고, 위에는 뭐라고 전하면 돼요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We replaced the shared cache with per-node caches. The main trade-off here is duplicate storage; cold starts are gone.",
+          "ko": "공유 캐시를 노드별 캐시로 바꿨어요. 핵심 트레이드오프는 저장 공간 중복이고, 대신 콜드 스타트는 없어졌습니다.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 매니저",
+          "en": "How bad is the duplicate storage? Finance is watching the object-store bill closely this quarter.",
+          "ko": "저장 공간 중복이 어느 정도예요? 이번 분기엔 재무팀이 오브젝트 스토리지 비용을 유심히 보고 있거든요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "About two percent more, which I think is worth it. I'll post a one-paragraph summary in the channel after standup.",
+          "ko": "약 2% 늘어나는데, 그 정도면 감수할 만하다고 봐요. 스탠드업 끝나고 채널에 한 단락 요약 올릴게요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
