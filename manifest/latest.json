@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-10-19T21:04:01+00:00",
+  "updated": "2026-10-20T21:02:14+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 70,
-  "total_days": 56,
-  "total_turns": 1217,
-  "total_target_turns": 656,
+  "latest_day": 71,
+  "total_days": 57,
+  "total_turns": 1239,
+  "total_target_turns": 668,
   "days": [
     {
       "day": 1,
@@ -902,6 +902,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-10-20.json"
+    },
+    {
+      "day": 71,
+      "date": "2026-10-21",
+      "week": 11,
+      "block": "tech-comm",
+      "theme": "코드 리뷰 — 주고받는 기술",
+      "topic": "동료 PR에 개선 제안을 부드럽게 남기기",
+      "difficulty": 3,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-10-21.json"
     }
   ]
 }

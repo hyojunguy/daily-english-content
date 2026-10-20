@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 71,
+  "date": "2026-10-21",
+  "week": 11,
+  "block": "tech-comm",
+  "theme": "코드 리뷰 — 주고받는 기술",
+  "topic": "동료 PR에 개선 제안을 부드럽게 남기기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d071-s1",
+      "title_ko": "공원 산책 중 동료 PR의 사소한 이름 문제를 부드럽게 짚기",
+      "context_ko": "점심 후 공원 산책로를 걷던 중, {name}은 어젯밤 리뷰한 Priya의 PR에 대해 이야기합니다. 머지를 막을 문제는 아니지만 고쳤으면 하는 점이 두 가지 있습니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey, I went through your PR last night. Overall it looks solid, and I only left a few comments.",
+          "ko": "어젯밤에 네 PR 봤어. 전체적으로 탄탄하더라. 코멘트는 몇 개만 남겼어.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 Priya",
+          "en": "Oh good, I was a little nervous. Is there anything big I should fix before I merge it?",
+          "ko": "아, 다행이다. 좀 긴장했거든. 머지하기 전에 크게 고칠 게 있어?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Nothing blocking. Nit: the variable name tmp_loss is vague, maybe per_token_loss would read better.",
+          "ko": "막을 건 없어. 사소한 건데, tmp_loss는 이름이 좀 모호해서 per_token_loss가 더 읽기 좋을 것 같아.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 Priya",
+          "en": "Fair, I rushed that one. Anything about the eval changes? I wasn't sure about how I handled the batch size.",
+          "ko": "맞아, 그건 급하게 썼어. 평가 쪽 변경에 대해선 없어? 배치 크기 처리가 좀 자신 없었거든.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Non-blocking, but I'd log the batch size in the config, so reruns are easier to compare.",
+          "ko": "꼭 해야 하는 건 아닌데, 배치 크기를 config에 남겨두면 재실행 결과를 비교하기 편할 거야.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d071-s2",
+      "title_ko": "오프사이트 호텔 로비에서 중복된 평가 루프를 공통 함수로 빼자고 제안하기",
+      "context_ko": "팀 오프사이트 중 호텔 로비 소파에서 Marco가 PR을 올리기 직전입니다. 평가 루프를 통째로 복사한 걸 본 {name}이 마감 압박을 알면서도 정리를 제안합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 Marco",
+          "en": "I'm adding a second eval loop to the PR, but copying the first one is faster. Any thoughts before I push?",
+          "ko": "PR에 평가 루프를 하나 더 넣는데, 첫 번째 걸 복사하는 게 빨라서요. 올리기 전에 의견 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Could we pull this out into a shared helper? Then both loops stay in sync when the metrics change.",
+          "ko": "이걸 공통 헬퍼로 뺄 수 있을까요? 그러면 지표가 바뀌어도 두 루프가 같이 유지돼요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 Marco",
+          "en": "I'm worried that slows me down, the deadline is Friday. How big is that refactor, really?",
+          "ko": "그럼 일정이 밀릴까 걱정이에요, 마감이 금요일이라. 그 리팩터링이 실제로 얼마나 커요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Maybe thirty lines. Non-blocking, but if you'd rather ship first, let's open a follow-up ticket.",
+          "ko": "한 서른 줄 정도예요. 필수는 아니고, 먼저 내보내고 싶으면 후속 티켓 하나 만들어 두죠.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d071-s3",
+      "title_ko": "비상계단 층계참에서 첫 PR을 낸 신입의 불안 달래기",
+      "context_ko": "서빙 코드에 첫 PR을 올린 Leo가 코멘트 알림을 보고 긴장해 있습니다. {name}은 비상계단 층계참에서 마주쳐 코멘트의 의도를 차분히 설명합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey Leo, quick thing about your PR. I left three comments, and none of them should worry you.",
+          "ko": "Leo, 네 PR 관련해서 잠깐만. 코멘트 세 개 남겼는데 하나도 걱정할 건 아니야.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "신입 엔지니어 Leo",
+          "en": "Okay... it's my first PR on the serving code. Is something wrong with how I wrote the retry logic?",
+          "ko": "아... 서빙 코드는 제 첫 PR이에요. 재시도 로직을 잘못 짠 건가요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The logic is right. Nit: a comment explaining why retries stop at three would help future readers.",
+          "ko": "로직은 맞아. 사소한 건데, 재시도를 왜 세 번에서 멈추는지 주석으로 적어두면 나중에 읽는 사람이 편할 거야.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "신입 엔지니어 Leo",
+          "en": "I picked three because the old code did. Should I just write that, or change the number?",
+          "ko": "예전 코드가 세 번이라 그대로 했어요. 그냥 그렇게 적을까요, 아니면 숫자를 바꿀까요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Just write that down. And could we pull this timeout out into a named constant? Totally non-blocking.",
+          "ko": "그대로 적어두면 돼. 그리고 이 타임아웃은 이름 붙은 상수로 뺄 수 있을까? 꼭 안 해도 돼.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d071-s4",
+      "title_ko": "택시 뒷좌석에서 출장 전 시니어의 큰 PR에 의견 전하기",
+      "context_ko": "컨퍼런스 가는 택시 안에서 시니어 Tessa가 내일 출장 전 머지하고 싶다며 PR 리뷰를 재촉합니다. {name}은 막지는 않되 분리를 제안하고 사소한 점도 짚습니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "시니어 엔지니어 Tessa",
+          "en": "Be honest, did you get through my PR? I know the sampler change is big, and I'm out tomorrow.",
+          "ko": "솔직히 말해줘, 내 PR 다 봤어? 샘플러 변경이 큰 건 아는데 나 내일부터 자리 비워.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yes. It looks good overall. Non-blocking, but splitting the sampler change from the logging cleanup would make review much easier.",
+          "ko": "네, 다 봤어요. 전체적으로 좋아요. 필수는 아닌데, 샘플러 변경과 로깅 정리를 나누면 리뷰가 훨씬 쉬울 거예요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "시니어 엔지니어 Tessa",
+          "en": "Splitting means rebasing twice, and I'm out Thursday. Can it wait, or will it block the merge?",
+          "ko": "나누면 리베이스를 두 번 해야 하는데 나 목요일에도 없어. 미뤄도 돼, 아니면 머지가 막혀?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It won't block the merge. Nit: the docstring still mentions the old shuffle flag, so please update that.",
+          "ko": "머지는 안 막아요. 사소한 건데, docstring에 예전 shuffle 플래그가 아직 있으니 그것만 고쳐주세요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d071-s5",
+      "title_ko": "사내 도서관 구석에서 너무 직설적이었던 내 리뷰 코멘트 다시 쓰기",
+      "context_ko": "Owen이 {name}의 'this is wrong' 코멘트를 보고 조용한 도서관 구석에서 서운함을 털어놓습니다. {name}은 사과하고 같은 제안을 부드러운 말로 다시 전합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 Owen",
+          "en": "Hey, your comment on my PR said 'this is wrong, use the cache.' It stung a little, honestly.",
+          "ko": "저기, 내 PR에 'this is wrong, use the cache'라고 남겼잖아. 솔직히 좀 서운했어.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'm sorry, that came out harsher than I meant. I'll reword it right now.",
+          "ko": "미안해, 내가 의도한 것보다 말이 세게 나갔어. 지금 바로 고쳐 쓸게.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어 Owen",
+          "en": "Thanks. What did you actually mean? I'm happy to change it if the cache really is better.",
+          "ko": "고마워. 사실 무슨 뜻이었어? 캐시가 정말 더 낫다면 나도 바꿀 생각은 있어.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Non-blocking, but caching the tokenizer output could save minutes per run. Want to look at it together?",
+          "ko": "꼭 필요한 건 아닌데, 토크나이저 출력을 캐싱하면 실행마다 몇 분은 아낄 수 있을 거야. 같이 볼래?",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
