@@ -29,7 +29,8 @@
           "role_ko": "나",
           "en": "Sure, I'll write it up by Thursday. The main trade-off here is memory cost against simpler failure handling.",
           "ko": "네, 목요일까지 정리할게요. 핵심 트레이드오프는 메모리 비용 대 단순한 장애 처리예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Sure, I'll write the memory cost choice by Thursday."
         },
         {
           "n": 3,
@@ -45,7 +46,8 @@
           "role_ko": "나",
           "en": "Understood, I'll attach the benchmark results and link the notebook so anyone can reproduce them.",
           "ko": "알겠어요, 벤치마크 결과를 첨부하고 노트북도 링크해서 누구나 재현할 수 있게 할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Okay, I'll add the results and a link."
         }
       ]
     },
@@ -62,7 +64,8 @@
           "role_ko": "나",
           "en": "Quick thing before I forget: I'll add a section on why we picked the slower tokenizer.",
           "ko": "잊기 전에 하나만요. 우리가 왜 더 느린 토크나이저를 골랐는지 문서에 한 섹션 추가할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll write why we chose the slower method."
         },
         {
           "n": 2,
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "We ruled that out because it silently dropped rare characters, which skewed our multilingual evaluation numbers.",
           "ko": "그건 희귀 문자를 조용히 날려버려서 다국어 평가 수치가 왜곡돼서 제외했어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We didn't use it because it lost rare characters."
         },
         {
           "n": 4,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "Good idea, I'll include three concrete examples so the reasoning is obvious without anyone asking me.",
           "ko": "좋은 생각이에요. 구체적인 예시 세 개를 넣어서, 아무도 저한테 안 물어봐도 이유가 보이게 할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Good idea, I'll add some examples to make it clear."
         }
       ]
     },
@@ -119,7 +124,8 @@
           "role_ko": "나",
           "en": "It's intentional. Honestly, that should have been documented. I'll add it to the decision log today.",
           "ko": "의도된 값이에요. 솔직히 문서로 남겼어야 했는데. 오늘 결정 로그에 추가할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It's on purpose, and I'll add it to the log today."
         },
         {
           "n": 3,
@@ -135,7 +141,8 @@
           "role_ko": "나",
           "en": "If throughput matters more than tail latency, you can raise it, but I'll note the limits we measured.",
           "ko": "꼬리 지연보다 처리량이 더 중요하면 올려도 돼요. 대신 우리가 측정한 한계도 같이 적어둘게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "If throughput matters more, raise it and I'll note the limits."
         }
       ]
     },
@@ -160,7 +167,8 @@
           "role_ko": "나",
           "en": "Yes, I'll draft a short decision record by Friday and tag you so you can review the wording.",
           "ko": "네, 금요일까지 짧은 의사결정 기록을 초안으로 써서 태그할게요. 표현 검토해주세요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Yes, I'll write a short record by Friday and tag you."
         },
         {
           "n": 3,
@@ -176,7 +184,8 @@
           "role_ko": "나",
           "en": "The context, the options we considered, why we chose this one, and what we'd revisit if the scale changes.",
           "ko": "배경, 검토한 대안들, 이걸 고른 이유, 그리고 규모가 바뀌면 다시 볼 부분을 적을게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It lists the options and explains our choice."
         }
       ]
     },
@@ -193,7 +202,8 @@
           "role_ko": "나",
           "en": "While we're here, can I put the rejected GPU layout in the doc, so nobody proposes it again?",
           "ko": "온 김에 말인데, 기각된 GPU 배치안을 문서에 넣어도 될까요? 아무도 다시 제안 안 하게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can I add the rejected GPU layout to the doc?"
         },
         {
           "n": 2,
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "Mostly cooling, yes. The main trade-off here is density versus airflow, and we hit thermal limits during stress tests.",
           "ko": "대부분 냉각이에요. 핵심 트레이드오프는 밀도 대 공기 흐름이고, 스트레스 테스트에서 열 한계에 걸렸어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Yes, it's mostly cooling because the stress tests got too hot."
         },
         {
           "n": 4,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "Good point, I'll export the charts as images and store them next to the doc in the repo.",
           "ko": "맞는 말씀이에요. 차트를 이미지로 내보내서 레포의 문서 옆에 같이 보관할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Good point, I'll save the charts as images next to the doc."
         }
       ]
     }
