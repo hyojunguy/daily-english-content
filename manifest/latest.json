@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-10-20T21:02:14+00:00",
+  "updated": "2026-10-21T21:01:57+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 71,
-  "total_days": 57,
-  "total_turns": 1239,
-  "total_target_turns": 668,
+  "latest_day": 72,
+  "total_days": 58,
+  "total_turns": 1259,
+  "total_target_turns": 679,
   "days": [
     {
       "day": 1,
@@ -918,6 +918,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-10-21.json"
+    },
+    {
+      "day": 72,
+      "date": "2026-10-22",
+      "week": 11,
+      "block": "tech-comm",
+      "theme": "코드 리뷰 — 주고받는 기술",
+      "topic": "구조를 바꿔야 한다는 큰 지적을 전하기",
+      "difficulty": 3,
+      "situations": 4,
+      "turns": 20,
+      "target_turns": 11,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-10-22.json"
     }
   ]
 }

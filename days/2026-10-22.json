@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "day": 72,
+  "date": "2026-10-22",
+  "week": 11,
+  "block": "tech-comm",
+  "theme": "코드 리뷰 — 주고받는 기술",
+  "topic": "구조를 바꿔야 한다는 큰 지적을 전하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d072-s1",
+      "title_ko": "집중 부스 안에서 PR 구조 개편 요청 꺼내기",
+      "context_ko": "마감이 금요일인 Priya의 PR은 평가 지표 코드가 트레이너 클래스 안에 들어 있어 테스트하기 어렵다. {name}은 작은 유리 부스에서 구조를 나누자고 말해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey Priya, got a minute? I read through your PR and have one bigger point about structure.",
+          "ko": "Priya, 잠깐 시간 돼요? PR 읽어봤는데 구조 쪽으로 좀 큰 얘기가 하나 있어요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "PR 작성 동료 Priya",
+          "en": "Sure, go ahead. I was hoping it'd be quick to merge since the deadline is Friday.",
+          "ko": "네, 말해 보세요. 마감이 금요일이라 빨리 머지될 줄 알았는데요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Could we pull this out into its own module? The metric code inside the trainer makes it hard to test.",
+          "ko": "이걸 별도 모듈로 빼면 어떨까요? 트레이너 안에 지표 코드가 있어서 테스트하기가 어려워요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "PR 작성 동료 Priya",
+          "en": "That's a bigger change than I expected. Is it really blocking, or can we do it in a follow-up?",
+          "ko": "생각보다 큰 변경이네요. 꼭 막아야 하는 건가요, 아니면 후속 PR로 해도 되나요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Honestly, I'd do it now, because the follow-up never happens. I can pair with you this afternoon if that helps.",
+          "ko": "솔직히 지금 하는 게 좋아요. 후속 작업은 보통 안 하게 되거든요. 도움 되면 오후에 같이 해요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d072-s2",
+      "title_ko": "공항 탑승구 앞에서 래퍼 구조 지적 설명하기",
+      "context_ko": "Marco는 출장 가는 길에 탑승구에서 {name}의 큰 리뷰 코멘트를 읽고 걱정이 됐다. 릴리스 전에 추론 래퍼를 나눠야 하는지가 걸려 있다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "PR 작성 동료 Marco",
+          "en": "Saw your comments on my PR while I was waiting at the gate. The big one worries me.",
+          "ko": "탑승구에서 기다리다가 PR에 남기신 코멘트 봤어요. 그 큰 지적이 좀 걱정돼요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yeah, sorry to dump it on you. The inference wrapper needs a cleaner boundary before we add more models.",
+          "ko": "네, 갑자기 부담 드려서 미안해요. 모델을 더 붙이기 전에 추론 래퍼 경계를 깔끔하게 해야 해서요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "PR 작성 동료 Marco",
+          "en": "I get the point, but rewriting it means missing the release. Can't we merge and refactor later?",
+          "ko": "말씀은 알겠는데, 다시 짜면 릴리스를 놓쳐요. 일단 머지하고 나중에 리팩터링하면 안 될까요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Non-blocking, but I'd rename the config flags. The wrapper split is the part I'd really fix first.",
+          "ko": "막는 건 아니지만 설정 플래그 이름은 바꾸고 싶어요. 그래도 래퍼 분리가 제일 먼저 고칠 부분이에요.",
+          "is_target": true
+        },
+        {
+          "n": 5,
+          "speaker": "A",
+          "role_ko": "PR 작성 동료 Marco",
+          "en": "Alright. I'll start the wrapper split now and push the update from the hotel tonight.",
+          "ko": "알겠어요. 지금 래퍼 분리부터 시작하고, 오늘 밤 호텔에서 업데이트 올릴게요.",
+          "is_target": false
+        }
+      ]
+    },
+    {
+      "id": "d072-s3",
+      "title_ko": "비 오는 건물 입구에서 시니어에게 스케줄러 분리 제안하기",
+      "context_ko": "비 때문에 건물 입구 처마 밑에 선 {name}이 시니어 Dana에게 스케줄러 PR의 구조 변경을 직접 설명한다. 댓글만으로는 오해를 살 수 있어서다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Dana, I left a long comment on your PR. I wanted to explain it in person before it lands wrong.",
+          "ko": "Dana, PR에 긴 코멘트를 남겼어요. 오해하시기 전에 직접 설명드리고 싶었어요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "시니어 엔지니어 Dana",
+          "en": "I saw it. You want the scheduler split into three services? That's a lot to ask on a Tuesday.",
+          "ko": "봤어요. 스케줄러를 서비스 세 개로 쪼개자는 거죠? 화요일에 부탁하기엔 양이 많네요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'm not saying it's wrong as is. My worry is that one class owns queueing, retries, and GPU placement.",
+          "ko": "지금 방식이 틀렸다는 건 아니에요. 한 클래스가 큐잉, 재시도, GPU 배치를 다 맡는 게 걱정이에요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "시니어 엔지니어 Dana",
+          "en": "It's been that way for a year and it works. What exactly breaks if we leave it?",
+          "ko": "1년째 이 구조로 잘 돌아가요. 그냥 두면 정확히 뭐가 문제가 되죠?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Any retry bug means touching placement code. Even a small split, with retries as their own class, would help.",
+          "ko": "재시도 버그가 생기면 배치 코드까지 건드려야 해요. 재시도만 따로 클래스로 빼는 작은 분리만 해도 도움이 돼요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d072-s4",
+      "title_ko": "오프사이트 빈백 휴게실에서 신입 평가 스크립트 쪼개자고 말하기",
+      "context_ko": "목요일 발표를 앞둔 Jun은 평가 스크립트를 2주 동안 만들었다. {name}은 결과는 맞지만 로딩, 채점, 플로팅이 한 파일에 몰려 있다는 점을 상처 주지 않고 전해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Nit: the variable names in the loader are a bit long. But there's a bigger thing I want to talk through.",
+          "ko": "사소한 건데, 로더 변수 이름이 좀 길어요. 근데 같이 얘기하고 싶은 더 큰 게 있어요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "신입 동료 Jun",
+          "en": "Okay, now I'm nervous. Is the whole eval script wrong? I spent two weeks on it.",
+          "ko": "아, 갑자기 긴장되네요. 평가 스크립트가 통째로 잘못된 건가요? 2주나 걸려서 만들었는데요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "No, the results look right. The issue is that data loading, scoring, and plotting all live in one script.",
+          "ko": "아니요, 결과는 맞아 보여요. 문제는 데이터 로딩, 채점, 플로팅이 한 스크립트에 다 들어 있다는 거예요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "신입 동료 Jun",
+          "en": "So you want me to rewrite it? We present to the team on Thursday.",
+          "ko": "그럼 다시 짜라는 말씀이에요? 목요일에 팀에 발표해야 하는데요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not a rewrite. Could we pull this out into three small functions? The code itself barely changes.",
+          "ko": "다시 짜는 건 아니에요. 이걸 작은 함수 세 개로 빼면 어떨까요? 코드 자체는 거의 그대로예요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
