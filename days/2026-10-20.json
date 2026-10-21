@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "Thanks for the comments on the loader design. The biggest change is moving shuffling into the sampler.",
           "ko": "로더 설계에 의견 주셔서 감사합니다. 가장 큰 변경은 셔플을 샘플러로 옮긴 겁니다.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Thanks for the comments, I moved the data order step."
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "The main trade-off here is memory versus reproducibility. Global shuffling costs more RAM, but runs now replay exactly after restarts.",
           "ko": "여기서 핵심 트레이드오프는 메모리 대 재현성입니다. 전역 셔플은 RAM이 더 들지만, 재시작 후에도 실행이 똑같이 재현돼요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Global mixing uses more memory, but runs now repeat exactly."
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "About six gigabytes per node, measured on the full corpus. I'll add the numbers to the doc by tonight.",
           "ko": "전체 코퍼스 기준으로 노드당 6기가 정도예요. 오늘 밤까지 문서에 수치 추가해 둘게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll add the numbers to the doc by tonight."
         }
       ]
     },
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "Yes, we ruled that out because it adds a network hop to every request, and our latency budget is tight.",
           "ko": "네, 검토했는데 뺐어요. 모든 요청에 네트워크 홉이 하나씩 추가되는데 저희 지연 시간 여유가 빠듯해서요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Yes, we said no because it slows every request."
         },
         {
           "n": 3,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "Honestly, yes. It's about eighty lines, and I'd rather own that than debug a service we don't control.",
           "ko": "솔직히 네. 80줄 정도라서, 우리가 통제 못 하는 서비스를 디버깅하느니 차라리 직접 들고 가겠어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Yes, it's short and I'd rather own it."
         }
       ]
     },
@@ -111,7 +116,8 @@
           "role_ko": "나",
           "en": "Quick heads-up before you rack the new nodes: the review changed our batching design, so memory per replica goes up.",
           "ko": "새 노드 랙에 올리시기 전에 알려드릴 게 있어요. 리뷰 후 배칭 설계가 바뀌어서 레플리카당 메모리가 늘어납니다.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The review changed our design, so each node needs more memory."
         },
         {
           "n": 2,
@@ -127,7 +133,8 @@
           "role_ko": "나",
           "en": "Roughly twenty percent. If throughput matters more than tail latency, we keep the larger batches; otherwise we cap them.",
           "ko": "대략 20% 정도요. 꼬리 지연보다 처리량이 더 중요하면 큰 배치를 유지하고, 아니면 상한을 둘 거예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It needs about 20 percent more memory."
         },
         {
           "n": 4,
@@ -143,7 +150,8 @@
           "role_ko": "나",
           "en": "Then I'll keep the large batches for evals and cap them on the demo endpoint. Final config goes out today.",
           "ko": "그럼 평가용은 큰 배치로 두고 데모 엔드포인트만 상한을 걸게요. 최종 설정은 오늘 공유할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll keep large batches for tests and limit the demo endpoint."
         }
       ]
     },
@@ -168,7 +176,8 @@
           "role_ko": "나",
           "en": "Only the macro averages, and they shift by under half a point. I listed every affected table in the changelog.",
           "ko": "매크로 평균만 바뀌고, 변동은 0.5점 미만이에요. 영향받는 표는 전부 변경 기록에 적어놨어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Only the averages change, by less than half a point."
         },
         {
           "n": 3,
@@ -184,7 +193,8 @@
           "role_ko": "나",
           "en": "We ruled that out because late aggregation made reruns inconsistent. Scoring once at the shard level keeps results identical across runs.",
           "ko": "그건 뺐어요. 나중에 집계하면 재실행 결과가 들쭉날쭉해서요. 샤드 단위로 한 번만 채점하면 실행마다 결과가 같아요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We said no because late scoring gave different results each time."
         }
       ]
     },
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "We replaced the shared cache with per-node caches. The main trade-off here is duplicate storage; cold starts are gone.",
           "ko": "공유 캐시를 노드별 캐시로 바꿨어요. 핵심 트레이드오프는 저장 공간 중복이고, 대신 콜드 스타트는 없어졌습니다.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We replaced the shared cache with a cache per node."
         },
         {
           "n": 3,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "About two percent more, which I think is worth it. I'll post a one-paragraph summary in the channel after standup.",
           "ko": "약 2% 늘어나는데, 그 정도면 감수할 만하다고 봐요. 스탠드업 끝나고 채널에 한 단락 요약 올릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It costs about 2 percent more, and that's fine."
         }
       ]
     }
