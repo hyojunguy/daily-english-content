@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 73,
+  "date": "2026-10-23",
+  "week": 11,
+  "block": "tech-comm",
+  "theme": "코드 리뷰 — 주고받는 기술",
+  "topic": "내 PR에 달린 지적에 근거로 답하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d073-s1",
+      "title_ko": "탕비실에서 배치 크기 변경에 숫자로 답하기",
+      "context_ko": "{name}이 평가 배치 크기를 32에서 64로 올렸더니 리뷰어 Priya가 PR에 위험하다는 코멘트를 남겼다. 커피머신 앞에서 마주친 {name}이 야간 실험 결과를 근거로 설명한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey Priya, about your comment on the batch size bump — I have numbers from last night's run if you want them.",
+          "ko": "프리야, 배치 크기 올린 거에 단 코멘트 말인데요, 어젯밤 돌린 숫자 있어요. 보실래요?",
+          "is_target": true,
+          "en_easy": "I have numbers from last night if you want them."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "리뷰어 Priya",
+          "en": "Yeah, please. My worry is that going from 32 to 64 might change padding behavior and shift the metrics slightly. I didn't see anything backing it up.",
+          "ko": "네, 보여주세요. 32에서 64로 가면 패딩 동작이 달라져서 지표가 살짝 움직일까 봐요. PR에는 근거가 없었거든요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Across three seeds, accuracy moved less than 0.1 points, and throughput rose about 40 percent. I'll link the run.",
+          "ko": "시드 세 개 기준으로 정확도 변화는 0.1포인트 미만이고 처리량은 40퍼센트쯤 올랐어요. 실행 링크 걸어둘게요.",
+          "is_target": true,
+          "en_easy": "Accuracy changed less than 0.1 points, and throughput rose about 40 percent."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "리뷰어 Priya",
+          "en": "That's convincing. Can you add a short note in the PR description with the config and seeds, so future readers don't have to ask?",
+          "ko": "설득력 있네요. PR 설명에 설정이랑 시드를 짧게 적어줄래요? 나중에 보는 사람이 안 물어봐도 되게요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sure. Could you also check the padding mask in the loader? I wasn't sure I covered the last partial batch.",
+          "ko": "그럴게요. 로더의 패딩 마스크도 한번 봐주실래요? 마지막 부분 배치를 제대로 처리했는지 자신이 없어서요.",
+          "is_target": true,
+          "en_easy": "Could you check my code for the last small batch?"
+        }
+      ]
+    },
+    {
+      "id": "d073-s2",
+      "title_ko": "자전거 거치대 앞에서 PR이 너무 크다는 지적에 답하기",
+      "context_ko": "시니어 Marco가 PR이 파일 40개를 건드려서 리뷰하기 어렵다고 코멘트를 남겼다. 퇴근길 자전거 거치대 앞에서 {name}이 변경 라인 수를 근거로 PR 분리를 제안한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "시니어 Marco",
+          "en": "I left a comment that this PR touches 40 files. It's hard to review the loader change next to the logging cleanup.",
+          "ko": "코멘트 남겼는데, 이 PR이 파일 40개를 건드려요. 로깅 정리랑 같이 있으면 로더 변경을 리뷰하기가 힘들어요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Fair point. Roughly 800 of the 1,200 changed lines are logging, so could we pull that out into its own PR?",
+          "ko": "맞는 말씀이에요. 바뀐 1,200줄 중 800줄쯤이 로깅이니까, 그 부분은 따로 PR로 뺄까요?",
+          "is_target": true,
+          "en_easy": "Most changed lines are logging, so can we split those?"
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "시니어 Marco",
+          "en": "Works for me. But the logging changes are already mixed into the same commits. Splitting them will be a pain, honestly.",
+          "ko": "좋아요. 근데 로깅 변경이 이미 같은 커밋들에 섞여 있잖아요. 나누려면 솔직히 꽤 귀찮을 텐데요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I can rebase tonight and keep the loader diff under 300 lines, so you can review it in one sitting.",
+          "ko": "오늘 밤에 리베이스해서 로더 diff를 300줄 아래로 맞출게요. 한 번에 다 보실 수 있게요.",
+          "is_target": true,
+          "en_easy": "Tonight I'll make it under 300 lines, so you can read it."
+        }
+      ]
+    },
+    {
+      "id": "d073-s3",
+      "title_ko": "재택 화상 통화에서 하드코딩된 시드에 근거로 답하기",
+      "context_ko": "시차가 있는 리뷰어 Sam이 평가 스크립트의 하드코딩된 시드를 지적했다. {name}은 노트북 화상 통화에서 일부러 고정한 이유를 설명하고 타협안을 낸다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks for flagging the hardcoded seed. I left it fixed on purpose, because the regression comparison needs identical sampling across runs.",
+          "ko": "하드코딩된 시드 짚어주셔서 고마워요. 일부러 고정해 둔 거예요. 회귀 비교하려면 매 실행마다 샘플링이 같아야 해서요.",
+          "is_target": true,
+          "en_easy": "I fixed the seed on purpose because regression needs identical sampling."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "리뷰어 Sam",
+          "en": "Makes sense, but a hardcoded value buried in the script is easy to miss. Can't we expose it as a flag with the same default?",
+          "ko": "이해는 되는데, 스크립트 안에 묻힌 하드코딩 값은 놓치기 쉬워요. 기본값은 그대로 두고 플래그로 빼면 안 될까요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good idea. I'll add a --seed flag defaulting to 1234 and log the value at the start of every run.",
+          "ko": "좋은 생각이에요. 기본값이 1234인 --seed 플래그를 추가하고, 매 실행 시작할 때 값을 로그에 남길게요.",
+          "is_target": true,
+          "en_easy": "I'll add a --seed flag with default 1234 and log it."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "리뷰어 Sam",
+          "en": "Perfect. Nit: the docstring still says seeds are random. That would confuse people.",
+          "ko": "좋아요. 사소한 건데, docstring에는 아직 시드가 랜덤이라고 적혀 있어요. 사람들이 헷갈릴 거예요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good catch. The README example has the same wording, so I'll fix both in this PR.",
+          "ko": "좋은 지적이에요. README 예시도 같은 표현이라서 이번 PR에서 둘 다 고칠게요.",
+          "is_target": true,
+          "en_easy": "The README has the same words, so I'll fix both."
+        }
+      ]
+    },
+    {
+      "id": "d073-s4",
+      "title_ko": "카풀 차 안에서 재시도 로직 지적에 로그로 답하기",
+      "context_ko": "카풀로 이동 중, 선임 Dana가 재시도 래퍼의 지수 백오프가 과하다고 말한다. {name}은 지난달 로그를 근거로 들고 코드 구조 개선안을 낸다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "선임 Dana",
+          "en": "On the retry wrapper thread, I still think exponential backoff is overkill here. Fixed delays would be simpler to reason about.",
+          "ko": "재시도 래퍼 스레드 말인데, 저는 여기에 지수 백오프는 과하다고 봐요. 고정 지연이 이해하기도 더 쉽고요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Maybe, but last month's logs show 12 percent of requests failing transiently, and fixed retries made the spike worse.",
+          "ko": "그럴 수도 있는데, 지난달 로그에서 요청의 12퍼센트가 일시적으로 실패했고 고정 재시도는 스파이크를 더 키웠어요.",
+          "is_target": true,
+          "en_easy": "Last month 12 percent failed, and fixed waits made it worse."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "선임 Dana",
+          "en": "Hm. Is that in the PR description? I'd want the evidence next to the code, not in someone's memory.",
+          "ko": "음. 그게 PR 설명에 있나요? 근거는 누구 기억이 아니라 코드 옆에 있었으면 해요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not yet, I'll add the log summary. Could we pull the backoff out into a small helper for testing?",
+          "ko": "아직 없어요, 로그 요약 추가할게요. 테스트하기 쉽게 백오프를 작은 헬퍼로 따로 뺄까요?",
+          "is_target": true,
+          "en_easy": "Can we put the wait code in its own function for testing?"
+        }
+      ]
+    },
+    {
+      "id": "d073-s5",
+      "title_ko": "1층 카페 줄에서 신뢰구간 삭제 이유 설명하기",
+      "context_ko": "리뷰어 Jun이 리포트 표에서 신뢰구간을 뺀 이유를 묻는다. 1층 카페 줄에서 {name}이 재실행 결과를 근거로 이유를 말하고 주석으로 남기기로 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "리뷰어 Jun",
+          "en": "Non-blocking, but I'd keep the confidence interval in the report table. Why did you remove it?",
+          "ko": "급하진 않은데, 리포트 표에는 신뢰구간을 남기는 게 좋겠어요. 왜 뺐어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "With 5,000 examples it was narrower than our run-to-run noise across four reruns, so it looked more certain than we are.",
+          "ko": "예시가 5,000개일 때는 네 번 재실행한 편차보다 구간이 좁아서, 실제보다 더 확실해 보였어요.",
+          "is_target": true,
+          "en_easy": "The range was narrower than our noise, so it looked too sure."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "리뷰어 Jun",
+          "en": "Ah, that's a fair reason. Could you say that in a comment? Otherwise someone will add it back in six months.",
+          "ko": "아, 타당한 이유네요. 그걸 주석으로 남겨줄래요? 안 그러면 반년 뒤에 누가 다시 넣을 거예요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Will do. I'll add a comment with the rerun numbers and link the notebook, so the reason stays with the code.",
+          "ko": "그럴게요. 재실행 숫자랑 노트북 링크를 주석으로 달아서, 이유가 코드랑 같이 남게 할게요.",
+          "is_target": true,
+          "en_easy": "I'll add a comment with the new numbers and a link."
+        }
+      ]
+    }
+  ]
+}
