@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "Hey Priya, got a minute? I read through your PR and have one bigger point about structure.",
           "ko": "Priya, 잠깐 시간 돼요? PR 읽어봤는데 구조 쪽으로 좀 큰 얘기가 하나 있어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Do you have time to talk about your code structure?"
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "Could we pull this out into its own module? The metric code inside the trainer makes it hard to test.",
           "ko": "이걸 별도 모듈로 빼면 어떨까요? 트레이너 안에 지표 코드가 있어서 테스트하기가 어려워요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Could we move this into its own module?"
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "Honestly, I'd do it now, because the follow-up never happens. I can pair with you this afternoon if that helps.",
           "ko": "솔직히 지금 하는 게 좋아요. 후속 작업은 보통 안 하게 되거든요. 도움 되면 오후에 같이 해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'd do it now, because later never happens."
         }
       ]
     },
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "Yeah, sorry to dump it on you. The inference wrapper needs a cleaner boundary before we add more models.",
           "ko": "네, 갑자기 부담 드려서 미안해요. 모델을 더 붙이기 전에 추론 래퍼 경계를 깔끔하게 해야 해서요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Sorry, but we need a cleaner boundary before we add more models."
         },
         {
           "n": 3,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "Non-blocking, but I'd rename the config flags. The wrapper split is the part I'd really fix first.",
           "ko": "막는 건 아니지만 설정 플래그 이름은 바꾸고 싶어요. 그래도 래퍼 분리가 제일 먼저 고칠 부분이에요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It's not blocking, but I'd fix the split first."
         },
         {
           "n": 5,
@@ -119,7 +124,8 @@
           "role_ko": "나",
           "en": "Dana, I left a long comment on your PR. I wanted to explain it in person before it lands wrong.",
           "ko": "Dana, PR에 긴 코멘트를 남겼어요. 오해하시기 전에 직접 설명드리고 싶었어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I left a long comment, so I want to explain it."
         },
         {
           "n": 2,
@@ -135,7 +141,8 @@
           "role_ko": "나",
           "en": "I'm not saying it's wrong as is. My worry is that one class owns queueing, retries, and GPU placement.",
           "ko": "지금 방식이 틀렸다는 건 아니에요. 한 클래스가 큐잉, 재시도, GPU 배치를 다 맡는 게 걱정이에요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "One class does too many jobs, and that worries me."
         },
         {
           "n": 4,
@@ -151,7 +158,8 @@
           "role_ko": "나",
           "en": "Any retry bug means touching placement code. Even a small split, with retries as their own class, would help.",
           "ko": "재시도 버그가 생기면 배치 코드까지 건드려야 해요. 재시도만 따로 클래스로 빼는 작은 분리만 해도 도움이 돼요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Even a small split would help us fix bugs."
         }
       ]
     },
@@ -168,7 +176,8 @@
           "role_ko": "나",
           "en": "Nit: the variable names in the loader are a bit long. But there's a bigger thing I want to talk through.",
           "ko": "사소한 건데, 로더 변수 이름이 좀 길어요. 근데 같이 얘기하고 싶은 더 큰 게 있어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The variable names are long, but I have a bigger point."
         },
         {
           "n": 2,
@@ -184,7 +193,8 @@
           "role_ko": "나",
           "en": "No, the results look right. The issue is that data loading, scoring, and plotting all live in one script.",
           "ko": "아니요, 결과는 맞아 보여요. 문제는 데이터 로딩, 채점, 플로팅이 한 스크립트에 다 들어 있다는 거예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The results look right, but one script does all the work."
         },
         {
           "n": 4,
@@ -200,7 +210,8 @@
           "role_ko": "나",
           "en": "Not a rewrite. Could we pull this out into three small functions? The code itself barely changes.",
           "ko": "다시 짜는 건 아니에요. 이걸 작은 함수 세 개로 빼면 어떨까요? 코드 자체는 거의 그대로예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Could we split this into small functions, not rewrite it?"
         }
       ]
     }
