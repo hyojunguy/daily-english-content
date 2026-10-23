@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 74,
+  "date": "2026-10-24",
+  "week": 11,
+  "block": "tech-comm",
+  "theme": "코드 리뷰 — 주고받는 기술",
+  "topic": "리뷰가 늦어지는 것을 재촉하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d074-s1",
+      "title_ko": "유리벽 회의실에서 사흘 묵은 PR 리뷰 재촉하기",
+      "context_ko": "{name}의 평가 하네스 PR이 화요일부터 리뷰를 못 받고 있고, 금요일 벤치마크 실행이 이 PR에 막혀 있다. 유리벽 회의실에서 동료 Priya에게 부담 주지 않으면서 재촉해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey Priya, quick nudge on my eval-harness PR. It's been open since Tuesday, and it's blocking the Friday benchmark run.",
+          "ko": "Priya, 내 평가 하네스 PR 말인데요. 화요일부터 열려 있고 금요일 벤치마크 돌리는 데 막혀 있어서 살짝 여쭤봐요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 Priya",
+          "en": "Oh no, I completely lost track of it. On-call has eaten my week. How big is the diff?",
+          "ko": "아, 완전히 잊고 있었네요. 이번 주 온콜 때문에 정신이 없었어요. diff가 얼마나 커요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "About 400 lines, but most of it is config. Could you just skim the scoring logic first?",
+          "ko": "400줄 정도인데 대부분 설정이에요. 스코어링 로직만 먼저 훑어봐 주실 수 있을까요?",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 Priya",
+          "en": "Sure. Give me until tomorrow noon. Do you want small stuff as comments, or should I just push fixes?",
+          "ko": "그럼요. 내일 점심까지만 시간 주세요. 사소한 건 코멘트로 남길까요, 아니면 제가 바로 고칠까요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Comments are great. Just mark small stuff with Nit: so I know what's blocking and what isn't.",
+          "ko": "코멘트가 좋아요. 사소한 건 Nit:으로 표시해 주세요. 뭐가 머지를 막는 건지 구분이 되게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d074-s2",
+      "title_ko": "화상회의로 시차 있는 리뷰어에게 PR 분리 제안하기",
+      "context_ko": "시차가 있는 Marco가 샘플러·로더·로깅을 한꺼번에 건드린 큰 PR을 계속 미루고 있다. {name}은 퇴근 전에 일부라도 승인받을 수 있게 PR을 쪼개자고 제안한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "원격 리뷰어 Marco",
+          "en": "Sorry, I saw your ping. The PR touches the sampler, the loader, and logging all at once, so I keep putting it off.",
+          "ko": "미안해요, 핑 봤어요. 샘플러, 로더, 로깅을 한꺼번에 건드려서 자꾸 뒤로 미루게 됐어요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That's fair. Could we pull this out into a separate PR for the logging changes? Then you can approve the rest.",
+          "ko": "이해해요. 로깅 변경은 별도 PR로 분리하면 어떨까요? 그러면 나머지는 바로 승인해 주실 수 있잖아요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "원격 리뷰어 Marco",
+          "en": "Good idea, splitting it makes sense. Can you do that in the next hour? I'm offline in two.",
+          "ko": "좋은 생각이에요, 나누는 게 맞겠네요. 한 시간 안에 가능해요? 두 시간 뒤면 저는 오프라인이라서요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yes, I'll push the split in thirty minutes and ping you here when it's ready for review.",
+          "ko": "네, 30분 안에 분리해서 올리고 리뷰 가능해지면 여기서 바로 알려드릴게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d074-s3",
+      "title_ko": "러닝머신 옆에서 동료에게 핵심 부분만 먼저 봐달라고 하기",
+      "context_ko": "사내 체육관에서 우연히 만난 Sam은 학습이 터지는 바람에 {name}의 PR을 못 봤다고 한다. {name}은 위험한 부분만 먼저 봐달라고 범위를 좁혀 부탁한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 Sam",
+          "en": "Hey, saw your ping about the PR. I opened it yesterday, then my training run crashed and ate my whole day.",
+          "ko": "어, PR 핑 봤어요. 어제 열어보긴 했는데 학습이 터져서 하루를 통째로 날렸어요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Non-blocking, but if you only have ten minutes, look at the retry logic. The rest is mostly renames.",
+          "ko": "급한 건 아닌데, 10분밖에 없으면 재시도 로직만 봐주세요. 나머지는 대부분 이름 변경이에요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 Sam",
+          "en": "Ten minutes I can do. I'll look right after this run. Anything you'd like me to ignore?",
+          "ko": "10분은 낼 수 있죠. 이 러닝 끝나고 바로 볼게요. 무시해도 되는 부분 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Skip the notebooks folder. Those are throwaway, and I'll delete them before merge anyway.",
+          "ko": "notebooks 폴더는 건너뛰세요. 임시 파일이라 머지 전에 어차피 지울 거예요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d074-s4",
+      "title_ko": "자판기 앞에서 수정 후 조용해진 PR 상황 묻기",
+      "context_ko": "시니어 Lee가 요청한 수정을 월요일에 반영했는데 PR이 그대로다. 자판기 앞에서 마주친 Lee에게 {name}이 재리뷰 시점과 코멘트의 무게를 확인한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey Lee, I pushed the fixes you asked for on Monday, and the PR has been quiet since.",
+          "ko": "Lee, 월요일에 요청하신 수정 올렸는데 그 뒤로 PR이 조용하네요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "시니어 Lee",
+          "en": "Right, sorry. Planning ate my week. I'll re-review first thing tomorrow, I promise.",
+          "ko": "맞아요, 미안해요. 기획 회의에 한 주를 다 썼어요. 내일 아침 제일 먼저 다시 볼게요, 약속해요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks. Quick check: is your line-forty comment a Nit: or something that blocks the merge?",
+          "ko": "감사합니다. 하나만 확인할게요. 40번째 줄 코멘트는 Nit인가요, 아니면 머지를 막는 건가요?",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "시니어 Lee",
+          "en": "Honestly, a nit. The batching approach is fine, I just don't love the variable name.",
+          "ko": "솔직히 nit이에요. 배칭 방식은 괜찮고, 변수 이름이 좀 마음에 안 들었을 뿐이에요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Great, then I'll rename it tonight so tomorrow's review can focus on the actual logic.",
+          "ko": "다행이네요. 오늘 밤에 이름 바꿔 둘 테니 내일 리뷰는 실제 로직에 집중하실 수 있을 거예요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d074-s5",
+      "title_ko": "늦은 저녁 사무실에서 매니저에게 리뷰어 추천 부탁하기",
+      "context_ko": "로더 PR이 엿새째 리뷰를 못 받았고 릴리스 컷이 월요일이다. {name}은 남을 탓하지 않으면서 매니저 Dana에게 적합한 리뷰어를 추천해 달라고 부탁한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저 Dana",
+          "en": "Is the loader PR still sitting there? It's been almost a week, and the release cut is Monday.",
+          "ko": "로더 PR 아직도 그대로예요? 거의 일주일 됐는데 릴리스 컷이 월요일이잖아요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Six days with no review. I'd rather not escalate, but could you suggest someone who knows the loader code?",
+          "ko": "엿새째 리뷰가 없어요. 일을 키우고 싶진 않은데, 로더 코드를 아는 분을 추천해 주실 수 있을까요?",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저 Dana",
+          "en": "Marco knows it best. I'll message him now. Can you send him a short summary of what to check?",
+          "ko": "Marco가 제일 잘 알아요. 지금 메시지 보낼게요. 확인할 포인트를 짧게 요약해서 보내줄래요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sure. I'll draft a two-line summary and the test results so a new reviewer can start fast.",
+          "ko": "네. 새 리뷰어가 바로 시작할 수 있게 두 줄 요약이랑 테스트 결과를 정리해서 드릴게요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
