@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "Hey, I went through your PR last night. Overall it looks solid, and I only left a few comments.",
           "ko": "어젯밤에 네 PR 봤어. 전체적으로 탄탄하더라. 코멘트는 몇 개만 남겼어.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I read your change last night and it looks good."
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "Nothing blocking. Nit: the variable name tmp_loss is vague, maybe per_token_loss would read better.",
           "ko": "막을 건 없어. 사소한 건데, tmp_loss는 이름이 좀 모호해서 per_token_loss가 더 읽기 좋을 것 같아.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Nothing blocks this, but the loss name is unclear."
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "Non-blocking, but I'd log the batch size in the config, so reruns are easier to compare.",
           "ko": "꼭 해야 하는 건 아닌데, 배치 크기를 config에 남겨두면 재실행 결과를 비교하기 편할 거야.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Not required, but log the batch size in the config."
         }
       ]
     },
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "Could we pull this out into a shared helper? Then both loops stay in sync when the metrics change.",
           "ko": "이걸 공통 헬퍼로 뺄 수 있을까요? 그러면 지표가 바뀌어도 두 루프가 같이 유지돼요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can we share this code between both loops?"
         },
         {
           "n": 3,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "Maybe thirty lines. Non-blocking, but if you'd rather ship first, let's open a follow-up ticket.",
           "ko": "한 서른 줄 정도예요. 필수는 아니고, 먼저 내보내고 싶으면 후속 티켓 하나 만들어 두죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "If you want to ship first, I'll make a ticket."
         }
       ]
     },
@@ -111,7 +116,8 @@
           "role_ko": "나",
           "en": "Hey Leo, quick thing about your PR. I left three comments, and none of them should worry you.",
           "ko": "Leo, 네 PR 관련해서 잠깐만. 코멘트 세 개 남겼는데 하나도 걱정할 건 아니야.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I left some comments, but don't worry about them."
         },
         {
           "n": 2,
@@ -127,7 +133,8 @@
           "role_ko": "나",
           "en": "The logic is right. Nit: a comment explaining why retries stop at three would help future readers.",
           "ko": "로직은 맞아. 사소한 건데, 재시도를 왜 세 번에서 멈추는지 주석으로 적어두면 나중에 읽는 사람이 편할 거야.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Please write a comment about why we stop trying."
         },
         {
           "n": 4,
@@ -143,7 +150,8 @@
           "role_ko": "나",
           "en": "Just write that down. And could we pull this timeout out into a named constant? Totally non-blocking.",
           "ko": "그대로 적어두면 돼. 그리고 이 타임아웃은 이름 붙은 상수로 뺄 수 있을까? 꼭 안 해도 돼.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Could you give this timeout a name?"
         }
       ]
     },
@@ -168,7 +176,8 @@
           "role_ko": "나",
           "en": "Yes. It looks good overall. Non-blocking, but splitting the sampler change from the logging cleanup would make review much easier.",
           "ko": "네, 다 봤어요. 전체적으로 좋아요. 필수는 아닌데, 샘플러 변경과 로깅 정리를 나누면 리뷰가 훨씬 쉬울 거예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It looks good, but please split the logging change."
         },
         {
           "n": 3,
@@ -184,7 +193,8 @@
           "role_ko": "나",
           "en": "It won't block the merge. Nit: the docstring still mentions the old shuffle flag, so please update that.",
           "ko": "머지는 안 막아요. 사소한 건데, docstring에 예전 shuffle 플래그가 아직 있으니 그것만 고쳐주세요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Please fix the old flag in the comment."
         }
       ]
     },
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "I'm sorry, that came out harsher than I meant. I'll reword it right now.",
           "ko": "미안해, 내가 의도한 것보다 말이 세게 나갔어. 지금 바로 고쳐 쓸게.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'm sorry that was too harsh, and I'll change it."
         },
         {
           "n": 3,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "Non-blocking, but caching the tokenizer output could save minutes per run. Want to look at it together?",
           "ko": "꼭 필요한 건 아닌데, 토크나이저 출력을 캐싱하면 실행마다 몇 분은 아낄 수 있을 거야. 같이 볼래?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Want to test a faster way to run this?"
         }
       ]
     }
