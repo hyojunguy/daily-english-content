@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-10-23T21:02:31+00:00",
+  "updated": "2026-10-24T21:02:32+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 74,
-  "total_days": 60,
-  "total_turns": 1303,
-  "total_target_turns": 703,
+  "latest_day": 75,
+  "total_days": 61,
+  "total_turns": 1325,
+  "total_target_turns": 715,
   "days": [
     {
       "day": 1,
@@ -966,6 +966,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-10-24.json"
+    },
+    {
+      "day": 75,
+      "date": "2026-10-25",
+      "week": 11,
+      "block": "tech-comm",
+      "theme": "코드 리뷰 — 주고받는 기술",
+      "topic": "사소한 스타일 지적과 중요한 지적을 구분해 말하기",
+      "difficulty": 3,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-10-25.json"
     }
   ]
 }
