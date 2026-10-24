@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "Hey Priya, quick nudge on my eval-harness PR. It's been open since Tuesday, and it's blocking the Friday benchmark run.",
           "ko": "Priya, 내 평가 하네스 PR 말인데요. 화요일부터 열려 있고 금요일 벤치마크 돌리는 데 막혀 있어서 살짝 여쭤봐요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "My change is still open and it blocks the Friday test."
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "About 400 lines, but most of it is config. Could you just skim the scoring logic first?",
           "ko": "400줄 정도인데 대부분 설정이에요. 스코어링 로직만 먼저 훑어봐 주실 수 있을까요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can you read the scoring logic first?"
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "Comments are great. Just mark small stuff with Nit: so I know what's blocking and what isn't.",
           "ko": "코멘트가 좋아요. 사소한 건 Nit:으로 표시해 주세요. 뭐가 머지를 막는 건지 구분이 되게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Please mark small things so I know what blocks the merge."
         }
       ]
     },
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "That's fair. Could we pull this out into a separate PR for the logging changes? Then you can approve the rest.",
           "ko": "이해해요. 로깅 변경은 별도 PR로 분리하면 어떨까요? 그러면 나머지는 바로 승인해 주실 수 있잖아요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can we make a separate change for logging?"
         },
         {
           "n": 3,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "Yes, I'll push the split in thirty minutes and ping you here when it's ready for review.",
           "ko": "네, 30분 안에 분리해서 올리고 리뷰 가능해지면 여기서 바로 알려드릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Yes, I'll send it in half an hour and tell you here."
         }
       ]
     },
@@ -119,7 +124,8 @@
           "role_ko": "나",
           "en": "Non-blocking, but if you only have ten minutes, look at the retry logic. The rest is mostly renames.",
           "ko": "급한 건 아닌데, 10분밖에 없으면 재시도 로직만 봐주세요. 나머지는 대부분 이름 변경이에요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Read the repeat logic first if you have little time."
         },
         {
           "n": 3,
@@ -135,7 +141,8 @@
           "role_ko": "나",
           "en": "Skip the notebooks folder. Those are throwaway, and I'll delete them before merge anyway.",
           "ko": "notebooks 폴더는 건너뛰세요. 임시 파일이라 머지 전에 어차피 지울 거예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Don't read the temporary files because I'll delete them."
         }
       ]
     },
@@ -152,7 +159,8 @@
           "role_ko": "나",
           "en": "Hey Lee, I pushed the fixes you asked for on Monday, and the PR has been quiet since.",
           "ko": "Lee, 월요일에 요청하신 수정 올렸는데 그 뒤로 PR이 조용하네요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I sent the fixes you wanted, but nobody answered."
         },
         {
           "n": 2,
@@ -168,7 +176,8 @@
           "role_ko": "나",
           "en": "Thanks. Quick check: is your line-forty comment a Nit: or something that blocks the merge?",
           "ko": "감사합니다. 하나만 확인할게요. 40번째 줄 코멘트는 Nit인가요, 아니면 머지를 막는 건가요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Does your comment on that line block the merge?"
         },
         {
           "n": 4,
@@ -184,7 +193,8 @@
           "role_ko": "나",
           "en": "Great, then I'll rename it tonight so tomorrow's review can focus on the actual logic.",
           "ko": "다행이네요. 오늘 밤에 이름 바꿔 둘 테니 내일 리뷰는 실제 로직에 집중하실 수 있을 거예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Good, I'll change the name tonight."
         }
       ]
     },
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "Six days with no review. I'd rather not escalate, but could you suggest someone who knows the loader code?",
           "ko": "엿새째 리뷰가 없어요. 일을 키우고 싶진 않은데, 로더 코드를 아는 분을 추천해 주실 수 있을까요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Who knows this code and can read my change?"
         },
         {
           "n": 3,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "Sure. I'll draft a two-line summary and the test results so a new reviewer can start fast.",
           "ko": "네. 새 리뷰어가 바로 시작할 수 있게 두 줄 요약이랑 테스트 결과를 정리해서 드릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Sure, I'll write a short summary and the test results."
         }
       ]
     }
