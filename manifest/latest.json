@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-10-24T21:02:32+00:00",
+  "updated": "2026-10-25T21:01:59+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 75,
-  "total_days": 61,
-  "total_turns": 1325,
-  "total_target_turns": 715,
+  "latest_day": 76,
+  "total_days": 62,
+  "total_turns": 1346,
+  "total_target_turns": 726,
   "days": [
     {
       "day": 1,
@@ -982,6 +982,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-10-25.json"
+    },
+    {
+      "day": 76,
+      "date": "2026-10-26",
+      "week": 11,
+      "block": "tech-comm",
+      "theme": "코드 리뷰 — 주고받는 기술",
+      "topic": "리뷰에서 합의가 안 될 때 동기 통화 제안하기",
+      "difficulty": 3,
+      "situations": 5,
+      "turns": 21,
+      "target_turns": 11,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-10-26.json"
     }
   ]
 }
