@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-10-25T21:01:59+00:00",
+  "updated": "2026-10-31T08:40:26+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 76,
-  "total_days": 62,
-  "total_turns": 1346,
-  "total_target_turns": 726,
+  "latest_day": 79,
+  "total_days": 63,
+  "total_turns": 1368,
+  "total_target_turns": 738,
   "days": [
     {
       "day": 1,
@@ -998,6 +998,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-10-26.json"
+    },
+    {
+      "day": 79,
+      "date": "2026-10-29",
+      "week": 12,
+      "block": "tech-comm",
+      "theme": "장애 대응 — 압박 속의 영어",
+      "topic": "인시던트 콜에서 현재 상태를 간결히 보고하기",
+      "difficulty": 3,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-10-29.json"
     }
   ]
 }

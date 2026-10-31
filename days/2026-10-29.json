@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 79,
+  "date": "2026-10-29",
+  "week": 12,
+  "block": "tech-comm",
+  "theme": "장애 대응 — 압박 속의 영어",
+  "topic": "인시던트 콜에서 현재 상태를 간결히 보고하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d079-s1",
+      "title_ko": "새벽 인시던트 콜에서 현재 상태 한 줄 보고",
+      "context_ko": "새벽 2시 반, 추론 엔드포인트 장애로 화상 인시던트 콜이 열렸습니다. 지휘를 맡은 Priya가 {name}에게 현재 상황을 한두 문장으로 말해 달라고 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "인시던트 지휘자",
+          "en": "Okay, we're twenty minutes in. {name}, can you give me the current status in one or two sentences?",
+          "ko": "자, 20분 지났네요. {name}, 지금 상황 한두 문장으로 정리해 줄래요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We're seeing p99 latency spike to eight seconds since the 2 a.m. deploy. Error rate is around twelve percent.",
+          "ko": "새벽 2시 배포 이후로 p99 지연이 8초까지 튀고 있고요, 에러율은 12퍼센트 정도입니다.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "인시던트 지휘자",
+          "en": "Got it. Is it hitting all regions, or just one? I need to know whether to page the networking team too.",
+          "ko": "알겠어요. 전 리전이에요, 한 곳이에요? 네트워크 팀도 호출해야 할지 알아야 해서요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Just the primary region. The other two look healthy, so I don't think it's networking.",
+          "ko": "메인 리전만요. 나머지 두 곳은 정상이라 네트워크 문제는 아닌 것 같습니다.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d079-s2",
+      "title_ko": "모니터 앞에서 원인 설정을 롤백하겠다고 알리기",
+      "context_ko": "모니터 여러 대가 붙은 자리에서 Marco가 대기열 그래프를 가리키며 새 배칭 설정이 원인 같다고 합니다. {name}이 롤백을 결정해야 하는데 다른 수정도 같이 되돌려질 위험이 있습니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Look at this graph. Queue depth starts climbing right when the new batching config went out.",
+          "ko": "이 그래프 봐요. 새 배칭 설정 나간 시점부터 대기열이 쭉 올라가기 시작해요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Then I'm going to roll back the batching config to the previous version. Any objection before I start?",
+          "ko": "그럼 배칭 설정을 이전 버전으로 롤백할게요. 시작하기 전에 이견 있어요?",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "No objection from me, but that rollback also reverts the tokenizer fix. We needed that one for the customer bug.",
+          "ko": "난 괜찮은데, 그 롤백하면 토크나이저 수정도 같이 되돌려져요. 그건 고객 버그 때문에 필요했던 거고요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good catch. Let's roll back only the batching change and keep the tokenizer fix, then watch the queue for five minutes.",
+          "ko": "좋은 지적이에요. 배칭 변경만 롤백하고 토크나이저 수정은 유지한 다음, 5분간 대기열을 지켜보죠.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d079-s3",
+      "title_ko": "서버룸 앞에서 한꺼번에 재시작하자는 제안에 제동 걸기",
+      "context_ko": "롤백 후 지연은 내려갔지만 노드 하나가 여전히 느립니다. 서버룸 앞에서 Tom이 전체 재시작과 캐시 비우기를 한 번에 하자고 하자 {name}이 말립니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Latency is back under one second after the rollback, but one node is still slow.",
+          "ko": "롤백하고 나서 지연은 1초 밑으로 돌아왔는데, 노드 하나가 아직 느려요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Let's just restart all the nodes and flush the cache now. That should clear everything in one go.",
+          "ko": "그냥 노드 전부 재시작하고 캐시도 지금 비웁시다. 한 번에 싹 정리될 거예요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let's confirm before we change anything else. If we restart everything, we lose the evidence for the postmortem.",
+          "ko": "더 건드리기 전에 먼저 확인하죠. 전부 재시작하면 사후 분석할 증거가 사라져요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Fair point. What do you want to check first on the slow node?",
+          "ko": "맞는 말이네요. 느린 노드에서 뭐부터 볼까요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll pull its GPU memory and driver logs first, then we restart just that one node.",
+          "ko": "GPU 메모리랑 드라이버 로그부터 뽑아 보고, 그다음에 그 노드 하나만 재시작하죠.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d079-s4",
+      "title_ko": "탕비실에서 매니저에게 해결 여부 짧게 보고",
+      "context_ko": "다음 날 아침 탕비실에서 Sam이 {name}을 붙잡습니다. 10분 뒤 경영진에게 장애 상황을 보고해야 해서, 완전히 해결됐는지 정확히 알고 싶어 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 매니저",
+          "en": "I have to update leadership in ten minutes. Where do we stand, and is it fully resolved?",
+          "ko": "10분 뒤에 경영진한테 업데이트해야 해요. 지금 어디까지 왔고, 완전히 해결된 건가요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Mitigated, not resolved. We rolled back the batching change at 3:10, and latency has been normal since then.",
+          "ko": "완화는 됐지만 해결은 아직입니다. 3시 10분에 배칭 변경을 롤백했고, 그 뒤로 지연은 정상입니다.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 매니저",
+          "en": "Okay. Any risk of it coming back before the real fix ships?",
+          "ko": "알겠어요. 진짜 수정이 나가기 전에 다시 터질 위험은 없나요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Low, but not zero. We're seeing a few slow requests since the rollback, so we're keeping the alert threshold tight.",
+          "ko": "낮지만 제로는 아닙니다. 롤백 이후에도 느린 요청이 몇 건 보여서 알림 임계값은 빡빡하게 유지하고 있어요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d079-s5",
+      "title_ko": "화이트보드 앞에서 다음 온콜에게 인계하기",
+      "context_ko": "아침 스탠드업 화이트보드 앞에서 {name}이 다음 온콜 담당 Jun에게 장애 상태를 인계합니다. 오늘 밤 같은 문제가 재발하면 Jun이 어떻게 움직여야 하는지 알려 줘야 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Quick handoff: the endpoint is stable, but the batching fix isn't merged yet, so the old config is still pinned.",
+          "ko": "간단히 인계할게요. 엔드포인트는 안정적인데 배칭 수정이 아직 머지 안 돼서 예전 설정으로 고정해 둔 상태예요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "다음 온콜 담당",
+          "en": "Got it. If latency spikes again tonight, what's my first move? Should I just roll back again?",
+          "ko": "알겠어요. 오늘 밤 지연이 또 튀면 제일 먼저 뭘 하죠? 그냥 또 롤백하면 되나요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Check the queue depth dashboard first. Don't touch the config until you've confirmed it's the same pattern as last night.",
+          "ko": "대기열 깊이 대시보드부터 보세요. 어젯밤이랑 같은 패턴인지 확인하기 전에는 설정을 건드리지 마시고요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "다음 온콜 담당",
+          "en": "Makes sense. Where do I log what I see during the shift?",
+          "ko": "그렇군요. 근무 중에 본 걸 어디에 기록하면 돼요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Put it in the incident doc under timeline. Please add timestamps, and I'll review it first thing tomorrow.",
+          "ko": "인시던트 문서의 타임라인 항목에 적어 주세요. 시각도 같이 남겨 주시면 내일 아침에 바로 볼게요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
