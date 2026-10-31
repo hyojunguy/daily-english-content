@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 80,
+  "date": "2026-10-30",
+  "week": 12,
+  "block": "tech-comm",
+  "theme": "장애 대응 — 압박 속의 영어",
+  "topic": "원인 가설 여러 개를 두고 우선순위 정하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d080-s1",
+      "title_ko": "유리벽 회의실에서 용의자 셋의 확인 순서 정하기",
+      "context_ko": "배포 직후 지연이 치솟았고 {name}에게는 원인 후보가 셋 있다. 팀 리드와 작은 유리벽 회의실에서 무엇부터 확인할지 정해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Do you have five minutes? We're seeing p99 latency spike since the 2 p.m. deploy, and I have three suspects.",
+          "ko": "잠깐 시간 되세요? 2시 배포 이후로 p99 지연이 튀고 있는데, 의심 가는 게 세 개예요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Okay, walk me through them. We can't chase all three at once, so which one do you think is most likely?",
+          "ko": "좋아요, 하나씩 얘기해봐요. 세 개를 동시에 쫓을 순 없으니까, 제일 가능성 높은 게 뭐라고 봐요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The new batching config is most likely, but a cache eviction change and a driver update are also possible.",
+          "ko": "새 배칭 설정이 제일 유력하고, 캐시 제거 정책 변경이랑 드라이버 업데이트도 가능성은 있어요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Which one is cheapest to rule out? If it takes ten minutes, start there even if it's less likely.",
+          "ko": "뭐가 제일 싸게 배제돼요? 10분이면 끝나는 거면 가능성이 낮아도 거기부터 하죠.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Checking the driver version takes two minutes, so I'll start there, then test the batching config on a canary.",
+          "ko": "드라이버 버전 확인은 2분이면 되니까 거기부터 보고, 그다음에 카나리에서 배칭 설정을 테스트할게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d080-s2",
+      "title_ko": "동료 책상 옆에서 자기 가설만 고집하는 동료 설득하기",
+      "context_ko": "동료 Marco는 업스트림 스키마 변경이 원인이라고 확신한다. {name}은 그의 책상 옆에 걸터앉아 타임라인을 근거로 순위를 조정하려 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 Marco",
+          "en": "I'm pretty sure it's the upstream schema change. Can we just focus on that and skip the other theories?",
+          "ko": "업스트림 스키마 변경이 확실해요. 다른 가설은 접고 이쪽에 집중하면 안 될까요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It's possible, but the timing doesn't match. The first errors showed up forty minutes before that change landed.",
+          "ko": "가능성은 있는데 타이밍이 안 맞아요. 첫 에러가 그 변경이 반영되기 40분 전에 이미 떴거든요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 Marco",
+          "en": "Okay, but I don't want to throw it out completely. Where does it rank for you?",
+          "ko": "알겠는데, 완전히 버리고 싶진 않아요. 당신 기준으론 몇 순위예요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd put it third. We're seeing errors on old and new schemas since early morning, so it's probably not the cause.",
+          "ko": "3순위로 둘게요. 새벽부터 구 스키마, 신 스키마 둘 다에서 에러가 나서 원인일 가능성은 낮아요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d080-s3",
+      "title_ko": "복도에서 매니저에게 가설 순서 승인받기",
+      "context_ko": "{name}이 복도에서 매니저를 붙잡았다. 확인에 몇 시간 걸리는 유력 가설과 10분이면 되는 약한 가설 중 무엇을 먼저 할지 결정이 필요하다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Got a second? I need your call on which hypothesis we test first, since a full retrain check takes hours.",
+          "ko": "잠깐만요. 어떤 가설부터 볼지 판단이 필요해요. 재학습까지 확인하려면 몇 시간이 걸리거든요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Give me the short version. What are the options, and what's the risk if you pick wrong?",
+          "ko": "짧게 말해줘요. 선택지가 뭐고, 잘못 고르면 리스크가 뭐예요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Option one is the tokenizer: likely, but slow to verify. Option two is the config flag: unlikely, but ten minutes.",
+          "ko": "첫째는 토크나이저인데 유력하지만 확인이 오래 걸려요. 둘째는 설정 플래그인데 가능성은 낮지만 10분이면 돼요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Start with the cheap one. If it's clean, move on, but tell me before you touch production.",
+          "ko": "싼 것부터 해요. 아니면 넘어가되, 프로덕션 건드리기 전엔 꼭 말해줘요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Understood. I'm going to roll back the config flag on one replica only, and I'll message you the result.",
+          "ko": "알겠습니다. 설정 플래그를 레플리카 하나에서만 롤백해보고, 결과는 메시지로 드릴게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d080-s4",
+      "title_ko": "화상회의에서 네트워크팀에 가설 확인 요청하기",
+      "context_ko": "네트워크 엔지니어는 자기 쪽은 조용하다고 한다. {name}은 화상회의에서 네트워크 가설이 왜 목록에 있는지 설명하고 지표 확인을 부탁한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "네트워크 엔지니어",
+          "en": "Network side looks quiet to me. Why do you think packet loss is even on the list?",
+          "ko": "네트워크 쪽은 조용해 보이는데요. 패킷 손실이 왜 후보에 올라가 있죠?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Only because we're seeing timeouts between two zones since Tuesday, and it's cheap to rule out. Could you check the link metrics?",
+          "ko": "화요일부터 두 존 사이에서 타임아웃이 보이는데, 배제하기도 싸서요. 링크 지표 좀 확인해주실 수 있어요?",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "네트워크 엔지니어",
+          "en": "Sure, I'll pull the last 48 hours of loss and latency. Give me about fifteen minutes, and please don't restart anything on your side.",
+          "ko": "네, 최근 48시간 손실률이랑 지연 뽑아볼게요. 15분 정도 주시고, 그쪽에서 아무것도 재시작하지 마세요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks. I'll hold off on changes and keep reading storage logs in the meantime. Ping me when you have numbers.",
+          "ko": "고마워요. 저는 변경은 안 하고 그동안 스토리지 로그만 볼게요. 숫자 나오면 알려주세요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d080-s5",
+      "title_ko": "점심 테이블에서 안 맞는 가설 접고 확인부터 하기",
+      "context_ko": "점심 중에도 장애 대응이 이어진다. 한 시간을 쓴 데이터로더 가설을 접자고 하자 동료가 일단 고쳐보자고 한다. {name}은 확인 먼저라고 선을 긋는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "We've burned an hour on the dataloader theory and nothing's moved. Do we keep digging or switch?",
+          "ko": "데이터로더 가설에 한 시간 썼는데 달라진 게 없네요. 계속 파요, 아니면 바꿔요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let's park it. It was fourth on my list, and we're seeing the same errors since the checkpoint reload.",
+          "ko": "일단 접죠. 제 목록에서 4순위였고, 체크포인트를 다시 불러온 뒤로 같은 에러가 계속 나오고 있어요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Makes sense. Should I just patch the loader quickly anyway, in case it helps?",
+          "ko": "일리 있네요. 혹시 모르니 로더를 그냥 빨리 패치해볼까요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let's confirm before we change anything else. I'll compare the checkpoint hashes first, and we can decide in ten minutes.",
+          "ko": "다른 걸 건드리기 전에 먼저 확인해요. 체크포인트 해시부터 비교해보고, 10분 뒤에 정하죠.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}

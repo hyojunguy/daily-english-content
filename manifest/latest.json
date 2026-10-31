@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-10-31T08:40:26+00:00",
+  "updated": "2026-10-31T08:43:33+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 79,
-  "total_days": 63,
-  "total_turns": 1368,
-  "total_target_turns": 738,
+  "latest_day": 80,
+  "total_days": 64,
+  "total_turns": 1390,
+  "total_target_turns": 750,
   "days": [
     {
       "day": 1,
@@ -1014,6 +1014,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-10-29.json"
+    },
+    {
+      "day": 80,
+      "date": "2026-10-30",
+      "week": 12,
+      "block": "tech-comm",
+      "theme": "장애 대응 — 압박 속의 영어",
+      "topic": "원인 가설 여러 개를 두고 우선순위 정하기",
+      "difficulty": 3,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-10-30.json"
     }
   ]
 }
