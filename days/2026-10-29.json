@@ -29,7 +29,8 @@
           "role_ko": "나",
           "en": "We're seeing p99 latency spike to eight seconds since the 2 a.m. deploy. Error rate is around twelve percent.",
           "ko": "새벽 2시 배포 이후로 p99 지연이 8초까지 튀고 있고요, 에러율은 12퍼센트 정도입니다.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Since the deploy, latency is 8 seconds and errors are 12 percent."
         },
         {
           "n": 3,
@@ -45,7 +46,8 @@
           "role_ko": "나",
           "en": "Just the primary region. The other two look healthy, so I don't think it's networking.",
           "ko": "메인 리전만요. 나머지 두 곳은 정상이라 네트워크 문제는 아닌 것 같습니다.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Only the primary region is slow, so it's not networking."
         }
       ]
     },
@@ -70,7 +72,8 @@
           "role_ko": "나",
           "en": "Then I'm going to roll back the batching config to the previous version. Any objection before I start?",
           "ko": "그럼 배칭 설정을 이전 버전으로 롤백할게요. 시작하기 전에 이견 있어요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Any objection if I use the old batching config?"
         },
         {
           "n": 3,
@@ -86,7 +89,8 @@
           "role_ko": "나",
           "en": "Good catch. Let's roll back only the batching change and keep the tokenizer fix, then watch the queue for five minutes.",
           "ko": "좋은 지적이에요. 배칭 변경만 롤백하고 토크나이저 수정은 유지한 다음, 5분간 대기열을 지켜보죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Let's keep the fix and rollback only the batching change."
         }
       ]
     },
@@ -103,7 +107,8 @@
           "role_ko": "나",
           "en": "Latency is back under one second after the rollback, but one node is still slow.",
           "ko": "롤백하고 나서 지연은 1초 밑으로 돌아왔는데, 노드 하나가 아직 느려요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Latency is under 1 second, but one node is slow."
         },
         {
           "n": 2,
@@ -119,7 +124,8 @@
           "role_ko": "나",
           "en": "Let's confirm before we change anything else. If we restart everything, we lose the evidence for the postmortem.",
           "ko": "더 건드리기 전에 먼저 확인하죠. 전부 재시작하면 사후 분석할 증거가 사라져요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Let's check first, or we lose the evidence."
         },
         {
           "n": 4,
@@ -135,7 +141,8 @@
           "role_ko": "나",
           "en": "I'll pull its GPU memory and driver logs first, then we restart just that one node.",
           "ko": "GPU 메모리랑 드라이버 로그부터 뽑아 보고, 그다음에 그 노드 하나만 재시작하죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "First I'll get the GPU memory and driver logs."
         }
       ]
     },
@@ -160,7 +167,8 @@
           "role_ko": "나",
           "en": "Mitigated, not resolved. We rolled back the batching change at 3:10, and latency has been normal since then.",
           "ko": "완화는 됐지만 해결은 아직입니다. 3시 10분에 배칭 변경을 롤백했고, 그 뒤로 지연은 정상입니다.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Latency is normal now, but the cause isn't fixed."
         },
         {
           "n": 3,
@@ -176,7 +184,8 @@
           "role_ko": "나",
           "en": "Low, but not zero. We're seeing a few slow requests since the rollback, so we're keeping the alert threshold tight.",
           "ko": "낮지만 제로는 아닙니다. 롤백 이후에도 느린 요청이 몇 건 보여서 알림 임계값은 빡빡하게 유지하고 있어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The risk is low, but some requests are still slow."
         }
       ]
     },
@@ -193,7 +202,8 @@
           "role_ko": "나",
           "en": "Quick handoff: the endpoint is stable, but the batching fix isn't merged yet, so the old config is still pinned.",
           "ko": "간단히 인계할게요. 엔드포인트는 안정적인데 배칭 수정이 아직 머지 안 돼서 예전 설정으로 고정해 둔 상태예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The endpoint is stable, but we still use the old config."
         },
         {
           "n": 2,
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "Check the queue depth dashboard first. Don't touch the config until you've confirmed it's the same pattern as last night.",
           "ko": "대기열 깊이 대시보드부터 보세요. 어젯밤이랑 같은 패턴인지 확인하기 전에는 설정을 건드리지 마시고요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Check the queue depth dashboard before you change the config."
         },
         {
           "n": 4,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "Put it in the incident doc under timeline. Please add timestamps, and I'll review it first thing tomorrow.",
           "ko": "인시던트 문서의 타임라인 항목에 적어 주세요. 시각도 같이 남겨 주시면 내일 아침에 바로 볼게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Please write the times in the incident doc."
         }
       ]
     }
