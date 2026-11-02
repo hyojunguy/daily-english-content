@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-10-31T23:34:55+00:00",
+  "updated": "2026-11-02T20:23:02+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 81,
-  "total_days": 65,
-  "total_turns": 1412,
-  "total_target_turns": 762,
+  "latest_day": 82,
+  "total_days": 66,
+  "total_turns": 1434,
+  "total_target_turns": 774,
   "days": [
     {
       "day": 1,
@@ -1046,6 +1046,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-10-31.json"
+    },
+    {
+      "day": 82,
+      "date": "2026-11-01",
+      "week": 12,
+      "block": "tech-comm",
+      "theme": "장애 대응 — 압박 속의 영어",
+      "topic": "복구 완료를 알리고 영향 범위 정리하기",
+      "difficulty": 3,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-11-01.json"
     }
   ]
 }

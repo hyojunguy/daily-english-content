@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 82,
+  "date": "2026-11-01",
+  "week": 12,
+  "block": "tech-comm",
+  "theme": "장애 대응 — 압박 속의 영어",
+  "topic": "복구 완료를 알리고 영향 범위 정리하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d082-s1",
+      "title_ko": "비상계단 층계참에서 매니저에게 복구 완료 보고하기",
+      "context_ko": "새벽 장애가 롤백으로 잡힌 직후, {name}이 비상계단 층계참에서 온콜 매니저에게 전화를 겁니다. 매니저는 경영진 업데이트 전에 \"완전 복구\"를 선언해도 되는지 알고 싶어 하고, {name}은 아직 남은 징후가 있어 확답을 미루려 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good news: latency is back to baseline, and the error rate has been flat for twenty minutes.",
+          "ko": "좋은 소식이에요. 지연 시간은 평소 수준으로 돌아왔고, 에러율도 20분째 안정적이에요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "온콜 매니저",
+          "en": "Great. Can I tell the execs we're fully recovered, or is there anything still shaky on your side?",
+          "ko": "좋네요. 경영진한테 완전히 복구됐다고 말해도 될까요, 아니면 아직 불안한 부분이 있나요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not yet. We're seeing a few stale cache entries since the rollback, so let's confirm before we change anything else.",
+          "ko": "아직은 아니에요. 롤백 이후로 오래된 캐시 항목이 몇 개 보여서, 다른 걸 건드리기 전에 먼저 확인하죠.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "온콜 매니저",
+          "en": "Okay, how long do you need to be sure? The exec update goes out at four.",
+          "ko": "알겠어요, 확신하려면 시간이 얼마나 필요해요? 경영진 업데이트가 네 시에 나가요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Give me thirty minutes to flush the cache and compare against yesterday's numbers, then I'll send the all-clear.",
+          "ko": "30분만 주세요. 캐시 비우고 어제 수치랑 비교해 본 다음에 복구 완료 공지 보낼게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d082-s2",
+      "title_ko": "공유 오피스 폰부스에서 고객지원 리드에게 영향 범위 설명하기",
+      "context_ko": "고객 문의가 쏟아지는 중에 고객지원 리드가 화상으로 {name}에게 정확히 누가 얼마나 영향을 받았는지 묻습니다. 고객 답변에 그대로 붙여 넣을 수 있는 정확한 범위와 후속 조치가 필요합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "고객지원 리드",
+          "en": "Support is getting tickets. Which customers were actually affected, and for how long? I need something I can paste into replies.",
+          "ko": "지원팀에 티켓이 들어오고 있어요. 실제로 어떤 고객이 얼마나 영향을 받았죠? 답변에 붙여 넣을 내용이 필요해요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Requests to the batch endpoint failed between 2:10 and 3:05, so roughly four hundred jobs were dropped. Realtime traffic was unaffected.",
+          "ko": "배치 엔드포인트 요청이 2시 10분부터 3시 5분까지 실패해서 약 400개 작업이 유실됐어요. 실시간 트래픽은 영향 없었고요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "고객지원 리드",
+          "en": "Do those jobs need to be resubmitted by the customers, or can we replay them on our side?",
+          "ko": "그 작업들은 고객이 다시 제출해야 하나요, 아니면 우리 쪽에서 재실행할 수 있나요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We can replay them on our side. I'll re-queue the failed jobs tonight and post a confirmation once they finish.",
+          "ko": "우리 쪽에서 재실행할 수 있어요. 오늘 밤에 실패한 작업을 다시 큐에 넣고, 끝나면 확인 공지 올릴게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d082-s3",
+      "title_ko": "회사 앞 공원 벤치에서 연구자에게 손상된 평가 결과 알리기",
+      "context_ko": "점심 산책 중인 연구자에게 {name}이 밤새 돌린 평가 실행이 장애로 끊겼다고 알려야 합니다. 연구자는 일주일치 결과가 날아갈까 걱정하고, 재시작을 서두르다 같은 문제를 또 만날 위험이 있습니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Heads up: the eval runs you launched last night were interrupted, and the checkpoints from after midnight may be corrupted.",
+          "ko": "미리 말씀드릴게요. 어젯밤에 돌리신 평가 실행이 중단됐고, 자정 이후 체크포인트는 손상됐을 수 있어요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "연구자",
+          "en": "Ugh, that's a week of results. Are the earlier checkpoints safe? I don't want to rerun everything from scratch.",
+          "ko": "아, 일주일치 결과인데요. 그 전 체크포인트는 괜찮은 건가요? 전부 처음부터 다시 돌리고 싶진 않아요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Everything before 12:30 passed the checksum, so you only need to rerun the last two stages. I'll restart them first thing.",
+          "ko": "12시 30분 이전 건 전부 체크섬을 통과했어요. 마지막 두 단계만 다시 돌리시면 되고, 아침에 제일 먼저 재시작할게요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "연구자",
+          "en": "Wait, should we hold off on restarting until we know why the jobs died? I'd hate to hit it again.",
+          "ko": "잠깐, 작업이 왜 죽었는지 알 때까지 재시작은 미루는 게 낫지 않을까요? 또 터지면 곤란하잖아요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Fair point. Let's confirm the root cause is fixed before we change anything else.",
+          "ko": "맞는 말씀이에요. 다른 걸 건드리기 전에 근본 원인이 해결됐는지부터 확인하죠.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d082-s4",
+      "title_ko": "택시 뒷좌석에서 디렉터에게 장애 요약과 남은 이슈 보고하기",
+      "context_ko": "밤샘 대응을 마치고 택시로 귀가하는 {name}에게 디렉터가 전화를 걸어 짧은 요약을 요구합니다. 무엇이 깨졌고 얼마나 걸렸는지, 아직 남은 문제가 있는지를 간결하게 답해야 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "디렉터",
+          "en": "I'm reading your incident summary. Walk me through it quickly: what broke, how long were we down, and what recovered?",
+          "ko": "인시던트 요약 읽고 있어요. 빠르게 짚어 줘요. 뭐가 깨졌고, 얼마나 다운됐고, 뭐가 복구됐는지요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "A bad config push broke the model loader at 2:10. We rolled back at 2:55, and serving recovered by 3:05.",
+          "ko": "잘못된 설정 배포가 2시 10분에 모델 로더를 망가뜨렸어요. 2시 55분에 롤백했고, 3시 5분에 서빙이 복구됐어요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "디렉터",
+          "en": "And what's still open? I don't want surprises tomorrow morning.",
+          "ko": "그럼 아직 남은 건 뭐예요? 내일 아침에 깜짝 놀라는 일은 없었으면 해서요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We're seeing high memory on two nodes since the restart, so I'm going to roll back that batch-size change there.",
+          "ko": "재시작 이후로 노드 두 대에서 메모리가 높게 나와서, 거기에 적용한 배치 크기 변경을 롤백하려고 해요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d082-s5",
+      "title_ko": "로비 소파에서 동료의 복구 공지 초안 고쳐 주기",
+      "context_ko": "로비 소파에 나란히 앉은 동료가 \"모든 게 해결됐고 영향 없음\"이라는 공지 초안을 보여 줍니다. {name}은 실제 영향이 있었으니 사실대로 쓰되 과한 약속은 빼자고 설득해야 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "I drafted the all-clear for the channel: 'Everything is fixed, no impact.' Does that sound right to you?",
+          "ko": "채널에 올릴 복구 공지 초안 썼어요. '전부 해결됨, 영향 없음.' 이 정도면 괜찮을까요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not quite. There was impact: batch jobs failed for fifty minutes, so let's say 'recovered' and list what was affected.",
+          "ko": "그건 좀 아니에요. 영향은 있었잖아요. 배치 작업이 50분간 실패했으니 '복구됨'이라고 쓰고 영향받은 것도 적어요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료",
+          "en": "Makes sense. Should we promise that it won't happen again? Leadership likes hearing that.",
+          "ko": "일리 있네요. 다시는 안 일어난다고 약속할까요? 윗분들은 그런 말 좋아하잖아요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd avoid promising that. Say what we changed, what we're monitoring, and when we'll share the full write-up.",
+          "ko": "그 약속은 피하는 게 좋아요. 뭘 바꿨고, 뭘 모니터링 중이고, 전체 회고는 언제 공유할지만 쓰세요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
