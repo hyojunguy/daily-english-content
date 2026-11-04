@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "Do you have five minutes? We're seeing p99 latency spike since the 2 p.m. deploy, and I have three suspects.",
           "ko": "잠깐 시간 되세요? 2시 배포 이후로 p99 지연이 튀고 있는데, 의심 가는 게 세 개예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Do you have time to check the latency problem?"
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "The new batching config is most likely, but a cache eviction change and a driver update are also possible.",
           "ko": "새 배칭 설정이 제일 유력하고, 캐시 제거 정책 변경이랑 드라이버 업데이트도 가능성은 있어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The new batching config is most likely the cause."
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "Checking the driver version takes two minutes, so I'll start there, then test the batching config on a canary.",
           "ko": "드라이버 버전 확인은 2분이면 되니까 거기부터 보고, 그다음에 카나리에서 배칭 설정을 테스트할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll check the driver version first, then test batching."
         }
       ]
     },
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "It's possible, but the timing doesn't match. The first errors showed up forty minutes before that change landed.",
           "ko": "가능성은 있는데 타이밍이 안 맞아요. 첫 에러가 그 변경이 반영되기 40분 전에 이미 떴거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Maybe, but the errors started 40 minutes before the change."
         },
         {
           "n": 3,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "I'd put it third. We're seeing errors on old and new schemas since early morning, so it's probably not the cause.",
           "ko": "3순위로 둘게요. 새벽부터 구 스키마, 신 스키마 둘 다에서 에러가 나서 원인일 가능성은 낮아요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'd put it low, because both old and new have errors."
         }
       ]
     },
@@ -111,7 +116,8 @@
           "role_ko": "나",
           "en": "Got a second? I need your call on which hypothesis we test first, since a full retrain check takes hours.",
           "ko": "잠깐만요. 어떤 가설부터 볼지 판단이 필요해요. 재학습까지 확인하려면 몇 시간이 걸리거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I need your help to choose the first test."
         },
         {
           "n": 2,
@@ -127,7 +133,8 @@
           "role_ko": "나",
           "en": "Option one is the tokenizer: likely, but slow to verify. Option two is the config flag: unlikely, but ten minutes.",
           "ko": "첫째는 토크나이저인데 유력하지만 확인이 오래 걸려요. 둘째는 설정 플래그인데 가능성은 낮지만 10분이면 돼요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "One is likely but slow, and one is fast but unlikely."
         },
         {
           "n": 4,
@@ -143,7 +150,8 @@
           "role_ko": "나",
           "en": "Understood. I'm going to roll back the config flag on one replica only, and I'll message you the result.",
           "ko": "알겠습니다. 설정 플래그를 레플리카 하나에서만 롤백해보고, 결과는 메시지로 드릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll remove the config flag on one server and tell you."
         }
       ]
     },
@@ -168,7 +176,8 @@
           "role_ko": "나",
           "en": "Only because we're seeing timeouts between two zones since Tuesday, and it's cheap to rule out. Could you check the link metrics?",
           "ko": "화요일부터 두 존 사이에서 타임아웃이 보이는데, 배제하기도 싸서요. 링크 지표 좀 확인해주실 수 있어요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Could you check the link metrics for the timeouts?"
         },
         {
           "n": 3,
@@ -184,7 +193,8 @@
           "role_ko": "나",
           "en": "Thanks. I'll hold off on changes and keep reading storage logs in the meantime. Ping me when you have numbers.",
           "ko": "고마워요. 저는 변경은 안 하고 그동안 스토리지 로그만 볼게요. 숫자 나오면 알려주세요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll read the storage logs and wait for your numbers."
         }
       ]
     },
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "Let's park it. It was fourth on my list, and we're seeing the same errors since the checkpoint reload.",
           "ko": "일단 접죠. 제 목록에서 4순위였고, 체크포인트를 다시 불러온 뒤로 같은 에러가 계속 나오고 있어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Let's stop this, because the same errors continue."
         },
         {
           "n": 3,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "Let's confirm before we change anything else. I'll compare the checkpoint hashes first, and we can decide in ten minutes.",
           "ko": "다른 걸 건드리기 전에 먼저 확인해요. 체크포인트 해시부터 비교해보고, 10분 뒤에 정하죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Let's compare the checkpoints first and decide in 10 minutes."
         }
       ]
     }
