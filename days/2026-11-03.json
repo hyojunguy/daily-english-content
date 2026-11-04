@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "day": 84,
+  "date": "2026-11-03",
+  "week": 12,
+  "block": "tech-comm",
+  "theme": "장애 대응 — 압박 속의 영어",
+  "topic": "재발 방지 액션을 배정하고 기한 정하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d084-s1",
+      "title_ko": "모니터 앞에서 알림 임계값 수정 담당자와 기한 정하기",
+      "context_ko": "포스트모템에서 '알림이 늦게 울렸다'는 항목이 담당자 없이 남아 있다. {name}이 모니터를 가리키며 동료 Priya에게 담당과 기한을 정해 달라고 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We're seeing late alerts since the threshold change last Friday, and this action item still has no owner.",
+          "ko": "지난 금요일에 임계값을 바꾼 뒤로 알림이 계속 늦게 울리는데, 이 액션 아이템은 아직 담당자가 없어요.",
+          "is_target": true,
+          "en_easy": "Alerts are late since the threshold change, and this has no owner."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 Priya",
+          "en": "Yeah, I saw that. I could take it, but I'm buried in the eval migration until Wednesday. Would a Friday deadline be too late?",
+          "ko": "네, 봤어요. 제가 맡을 수는 있는데 수요일까지 평가 마이그레이션에 매여 있어요. 금요일 마감이면 너무 늦을까요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Friday works for the fix itself. Can you share a draft of the new thresholds by Thursday, so I can review it?",
+          "ko": "수정 자체는 금요일도 괜찮아요. 새 임계값 초안을 목요일까지 공유해 주실 수 있어요? 제가 리뷰할게요.",
+          "is_target": true,
+          "en_easy": "Friday is fine, but please share the new thresholds by Thursday."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 Priya",
+          "en": "Sure, a draft by Thursday is doable. Should I put your name on the ticket as reviewer and mine as owner?",
+          "ko": "네, 목요일까지 초안은 가능해요. 티켓에 제가 담당자, 리뷰어는 {name}으로 적을까요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yes, please. I'll write both names and the Friday date on the action list right now.",
+          "ko": "네, 그렇게 해 주세요. 두 이름이랑 금요일 기한은 제가 지금 바로 액션 목록에 적어 둘게요.",
+          "is_target": true,
+          "en_easy": "Yes, I'll write both names and the Friday date on the list."
+        }
+      ]
+    },
+    {
+      "id": "d084-s2",
+      "title_ko": "복도에서 플랫폼 팀 리드에게 배포 전 점검 도입 부탁하기",
+      "context_ko": "설정 변경이 카나리 단계 없이 배포돼 장애가 났다. 복도에서 마주친 플랫폼 리드 Marco에게 점검 도입을 맡아 달라고 하지만 스프린트가 가득 찼다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Marco, do you have a minute? The postmortem says config changes need a canary step, and your team owns the deploy tool.",
+          "ko": "Marco, 잠깐 시간 돼요? 포스트모템에서 설정 변경에 카나리 단계가 필요하다고 나왔는데, 배포 도구는 팀에서 맡고 계시잖아요.",
+          "is_target": true,
+          "en_easy": "Do you have time to add a test step for config changes?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "플랫폼 팀 리드 Marco",
+          "en": "I get it, but our sprint is full. A full canary stage is at least three weeks of work for us.",
+          "ko": "이해는 하는데 우리 스프린트가 꽉 찼어요. 카나리 단계를 제대로 만들려면 최소 3주는 걸려요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Could we start smaller? Just a check that blocks config changes without a canary, by the end of next week.",
+          "ko": "작게 먼저 시작하면 어떨까요? 카나리 없는 설정 변경만 막는 점검을 다음 주 말까지 넣는 걸로요.",
+          "is_target": true,
+          "en_easy": "Could we start with a small check by next week?"
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "플랫폼 팀 리드 Marco",
+          "en": "A blocking check is maybe four days. Fine, but the full canary stage goes on next quarter's list, not this one.",
+          "ko": "차단 점검만이면 한 4일 걸리겠네요. 좋아요, 대신 정식 카나리 단계는 이번 분기 말고 다음 분기 목록으로 넘길게요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That's fair. I'll write the two dates in the ticket and tag you, so nobody forgets which is which.",
+          "ko": "좋아요. 날짜 두 개를 티켓에 적고 태그할게요. 어느 게 어느 건지 헷갈리지 않게요.",
+          "is_target": true,
+          "en_easy": "I'll write both dates in the ticket and tag you."
+        }
+      ]
+    },
+    {
+      "id": "d084-s3",
+      "title_ko": "화상회의에서 임시 우회 설정을 되돌릴 담당과 날짜 정하기",
+      "context_ko": "장애 때 넣은 임시 우회 설정이 아직 프로덕션에 남아 있다. 시차가 다른 SRE와 매니저가 모인 화상회의에서 {name}이 되돌릴 일정을 제안한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The temporary workaround from the incident is still in production, and it has no expiry date. Who owns removing it?",
+          "ko": "장애 때 넣은 임시 우회 설정이 아직 프로덕션에 있고, 만료일도 없어요. 누가 걷어낼 건가요?",
+          "is_target": true,
+          "en_easy": "Who owns removing the temporary fix from production?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Good catch. I assumed it would clean itself up. Can the SRE side take it, or should our team?",
+          "ko": "잘 짚었네요. 저는 알아서 정리될 줄 알았어요. SRE 쪽에서 맡을 수 있나요, 아니면 우리 팀이 할까요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'm going to roll back the workaround on staging today, then production Thursday morning, once the permanent fix is confirmed.",
+          "ko": "제가 오늘 스테이징에서 우회 설정을 롤백하고, 영구 수정이 확인되면 목요일 아침에 프로덕션도 롤백할게요.",
+          "is_target": true,
+          "en_easy": "I'll remove the temporary fix on staging today, and production Thursday."
+        },
+        {
+          "n": 4,
+          "speaker": "C",
+          "role_ko": "시차 다른 SRE",
+          "en": "Thursday morning is my evening, so I can't watch it. Can we move it to Friday when we overlap?",
+          "ko": "목요일 아침이면 저는 저녁이라 지켜볼 수가 없어요. 겹치는 시간대인 금요일로 옮길 수 있을까요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Friday works. I'll put 'remove workaround, owner: me, due Friday' on the action list and add your review as a step.",
+          "ko": "금요일 좋아요. '우회 설정 제거, 담당: 나, 기한: 금요일'로 액션 목록에 적고 리뷰 단계도 추가할게요.",
+          "is_target": true,
+          "en_easy": "Friday works, so I'll add this task with my name and Friday."
+        }
+      ]
+    },
+    {
+      "id": "d084-s4",
+      "title_ko": "점심 테이블에서 후배의 액션 아이템 다섯 개 우선순위 잡기",
+      "context_ko": "후배 Jin이 밤사이 새 재발 방지 항목을 다섯 개나 추가했다. 점심을 먹던 {name}이 하나씩 순서대로 하자고 설득하고 점검 날짜를 잡는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "You added five new action items overnight. Which one do you think would have prevented this outage?",
+          "ko": "밤사이 액션 아이템을 다섯 개나 추가했네요. 이번 장애를 막았을 항목은 그중 뭐라고 생각해요?",
+          "is_target": true,
+          "en_easy": "Which of your new action items would stop this problem?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "후배 Jin",
+          "en": "Honestly, the config validation. But I also want alerts, a new dashboard, a retry policy, and a stricter review rule, all this sprint.",
+          "ko": "솔직히 설정 검증이요. 근데 알림, 새 대시보드, 재시도 정책, 더 엄격한 리뷰 규칙도 전부 이번 스프린트에 하고 싶어요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let's confirm before we change anything else. Ship the validation first, then check in a week whether the others are still needed.",
+          "ko": "다른 걸 더 바꾸기 전에 먼저 확인해 봐요. 검증부터 배포하고, 일주일 뒤에 나머지가 아직 필요한지 봅시다.",
+          "is_target": true,
+          "en_easy": "Let's do the check first, then see if we need the others."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "후배 Jin",
+          "en": "A week feels slow, though. What if something breaks again before then?",
+          "ko": "근데 일주일은 좀 느린 것 같아요. 그 전에 또 터지면 어떡해요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Then we'll have the alert and the rollback runbook as a safety net. I'll book a review for next Monday.",
+          "ko": "그땐 알림이랑 롤백 런북이 안전망이 되어 줄 거예요. 다음 주 월요일에 리뷰 일정 잡아 둘게요.",
+          "is_target": true,
+          "en_easy": "Then the alert will protect us, and I'll book a review Monday."
+        }
+      ]
+    }
+  ]
+}

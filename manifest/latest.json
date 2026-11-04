@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-11-03T21:16:24+00:00",
+  "updated": "2026-11-04T17:55:07+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 83,
-  "total_days": 67,
-  "total_turns": 1456,
-  "total_target_turns": 786,
+  "latest_day": 84,
+  "total_days": 68,
+  "total_turns": 1476,
+  "total_target_turns": 798,
   "days": [
     {
       "day": 1,
@@ -1078,6 +1078,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-11-02.json"
+    },
+    {
+      "day": 84,
+      "date": "2026-11-03",
+      "week": 12,
+      "block": "tech-comm",
+      "theme": "장애 대응 — 압박 속의 영어",
+      "topic": "재발 방지 액션을 배정하고 기한 정하기",
+      "difficulty": 3,
+      "situations": 4,
+      "turns": 20,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-11-03.json"
     }
   ]
 }
