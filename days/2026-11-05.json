@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 86,
+  "date": "2026-11-05",
+  "week": 13,
+  "block": "tech-comm",
+  "theme": "GPU·인프라 자원 — 없는 걸 얻어내기",
+  "topic": "다른 팀에 자원 대여를 요청하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d086-s1",
+      "title_ko": "복도 프린터 앞에서 이웃 팀에 GPU 빌리기",
+      "context_ko": "평가용 GPU가 부족한 {name}은 복도에서 마주친 데이터팀 프리야에게, 놀고 있는 클러스터를 3일만 빌릴 수 있는지 물어봅니다. 프리야는 월요일에 큰 스윕이 예정돼 있어 조건을 걸려 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey Priya, quick ask. We're bottlenecked on eval GPUs this week, and I noticed your cluster looked pretty empty.",
+          "ko": "프리야, 하나만 부탁할게요. 이번 주에 평가용 GPU가 완전 병목인데, 그쪽 클러스터가 꽤 비어 보이더라고요.",
+          "is_target": true,
+          "en_easy": "Our evaluation GPUs are full this week, but your cluster looks empty."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "데이터팀 동료 프리야",
+          "en": "Yeah, we're between runs right now. How many GPUs are you thinking, and for how long?",
+          "ko": "맞아요, 지금 실험 사이라 비어 있어요. 몇 장 정도, 얼마나 쓰실 생각이세요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Can we borrow capacity from your pool, maybe sixteen GPUs for three days? We'd only run evals, nothing long-lived.",
+          "ko": "그쪽 풀에서 용량을 좀 빌릴 수 있을까요? 16장 정도를 3일만요. 평가만 돌리고 오래 붙잡는 건 없어요.",
+          "is_target": true,
+          "en_easy": "Can we borrow some of your GPUs for a few days?"
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "데이터팀 동료 프리야",
+          "en": "Three days is fine, but our big sweep kicks off Monday. If it slips, I need those nodes back right away.",
+          "ko": "3일은 괜찮은데, 월요일에 큰 스윕이 시작돼요. 일정이 당겨지면 그 노드는 바로 돌려받아야 해요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Totally fair. We'll checkpoint every hour so we can release the nodes within minutes if you need them.",
+          "ko": "당연하죠. 한 시간마다 체크포인트를 저장해 둘 테니, 필요하시면 몇 분 안에 노드를 비울 수 있어요.",
+          "is_target": true,
+          "en_easy": "We'll save every hour, so we can free the nodes quickly."
+        }
+      ]
+    },
+    {
+      "id": "d086-s2",
+      "title_ko": "유리벽 회의실에서 인프라 매니저와 대여 조건 협상",
+      "context_ko": "추론 용량도 빠듯한 인프라 매니저 마르코가 선뜻 노드를 내주지 못합니다. {name}은 일정상 이득과 서빙에 피해 없는 조건을 제시해 설득합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "인프라 매니저 마르코",
+          "en": "I saw your request. We're already tight on inference capacity, so I can't just hand over nodes without knowing the payoff.",
+          "ko": "요청 봤어요. 우리도 추론 용량이 빠듯해서, 얻는 게 뭔지 모르고는 노드를 그냥 내주기 어려워요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Understood. This unblocks the ablation results by Friday, and the launch decision depends on those numbers.",
+          "ko": "이해해요. 이걸로 금요일까지 ablation 결과가 나오는데, 출시 결정이 그 숫자에 달려 있어요.",
+          "is_target": true,
+          "en_easy": "This gives us results by Friday, and the launch needs them."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "인프라 매니저 마르코",
+          "en": "Okay, but what happens to my serving latency if your jobs spike in the middle of the day?",
+          "ko": "알겠어요. 근데 낮에 그쪽 잡이 몰리면 우리 서빙 지연시간은 어떻게 되죠?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We'll cap ourselves at eight nodes with lower priority, so your serving traffic always preempts our jobs.",
+          "ko": "저희는 8노드로 상한을 두고 우선순위도 낮출게요. 그러면 서빙 트래픽이 항상 저희 잡을 선점해요.",
+          "is_target": true,
+          "en_easy": "We'll use few nodes at low priority, so your service always wins."
+        }
+      ]
+    },
+    {
+      "id": "d086-s3",
+      "title_ko": "점심 테이블에서 다른 팀 클러스터 담당자 소개받기",
+      "context_ko": "점심을 먹던 {name}은 시차 덕에 저녁에 유휴 상태인 베를린 팀 노드를 쓰고 싶어 합니다. 클러스터 주인은 다른 사람이라, 동료 준에게 소개를 부탁합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Your Berlin team's jobs finish by evening, right? Can we borrow capacity from them overnight?",
+          "ko": "베를린 팀 잡은 저녁이면 끝나죠? 밤새 그쪽 용량을 좀 빌릴 수 있을까요?",
+          "is_target": true,
+          "en_easy": "Can we use their GPUs overnight, after their jobs finish?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 준",
+          "en": "Mostly, yes, but I don't own that cluster. Dana does, and she's picky about who touches it.",
+          "ko": "대체로 그런데, 그 클러스터는 제 담당이 아니에요. 다나가 관리하는데, 아무나 건드리는 걸 싫어해요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Got it. Could you introduce me? I'd rather explain the request myself than have it get lost in translation.",
+          "ko": "알겠어요. 저를 소개해 주실래요? 전달 과정에서 뜻이 틀어지느니 제가 직접 설명하는 게 나을 것 같아서요.",
+          "is_target": true,
+          "en_easy": "Could you introduce me, so I can explain the request myself?"
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 준",
+          "en": "Sure. Lead with the numbers, though. She hates vague asks like \"we need more GPUs.\"",
+          "ko": "그럼요. 대신 숫자부터 말하세요. 다나는 \"GPU가 더 필요해요\" 같은 두루뭉술한 요청을 싫어해요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good tip. I'll send her the job size, the time window, and what finishes sooner if she says yes.",
+          "ko": "좋은 팁이네요. 잡 규모, 사용 시간대, 승낙하면 뭐가 더 빨리 끝나는지를 정리해서 보낼게요.",
+          "is_target": true,
+          "en_easy": "I'll send her the job size and the time we need."
+        }
+      ]
+    },
+    {
+      "id": "d086-s4",
+      "title_ko": "서버룸 앞에서 예약된 노드의 빈 절반 요청",
+      "context_ko": "{name}은 80GB급 고메모리 카드가 필요한 장문 컨텍스트 학습을 돌려야 하는데 대기열엔 자리가 없습니다. 서버룸 앞에서 랩 관리자에게 비전팀 예약 구역의 유휴분을 어떻게 요청할지 묻습니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "랩 관리자",
+          "en": "Those racks are reserved for the vision team until the twelfth. What brings you down here?",
+          "ko": "이 랙들은 12일까지 비전팀 예약이에요. 여긴 무슨 일로 내려오셨어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We're bottlenecked on high-memory cards, and our long-context run won't fit on anything else in the queue.",
+          "ko": "고메모리 카드가 병목이에요. 저희 장문 컨텍스트 학습은 대기열의 다른 자원에는 올라가지 않거든요.",
+          "is_target": true,
+          "en_easy": "We need big memory cards, and our run fits nowhere else."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "랩 관리자",
+          "en": "They only use half of that block, but it's their call, not mine. Ask their lead, and bring a concrete plan.",
+          "ko": "절반밖에 안 쓰긴 하지만 결정은 제가 아니라 그쪽이 해요. 리드에게 구체적인 계획을 들고 가 보세요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Will do. If they agree, we'd take only the idle half and return it with a usage report.",
+          "ko": "그렇게 할게요. 동의해 주시면 놀고 있는 절반만 쓰고, 사용 리포트와 함께 돌려드릴게요.",
+          "is_target": true,
+          "en_easy": "If they agree, we'd use only the idle half."
+        }
+      ]
+    },
+    {
+      "id": "d086-s5",
+      "title_ko": "화상회의에서 대여 조건을 글로 확정하기",
+      "context_ko": "다른 팀 리드 레나가 노드를 빌려주기로 한 뒤, 화상 통화에서 {name}이 나중에 오해가 없도록 기간과 회수 조건을 문서로 남기자고 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks for agreeing to lend us the nodes. Can I confirm the terms in writing so nobody's surprised later?",
+          "ko": "노드 빌려주신다고 해 주셔서 감사해요. 나중에 놀랄 일 없게 조건을 글로 정리해 둬도 될까요?",
+          "is_target": true,
+          "en_easy": "Thanks, can I write the terms so nobody gets surprised later?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "타팀 리드 레나",
+          "en": "Sure. Twelve nodes, Tuesday night through Thursday morning, and we can reclaim them anytime if our pipeline backs up.",
+          "ko": "그럼요. 12노드, 화요일 밤부터 목요일 아침까지고, 저희 파이프라인이 밀리면 언제든 회수할 수 있어요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That works. This unblocks our regression suite by Thursday, and I'll post the cost and utilization numbers afterward.",
+          "ko": "좋아요. 이러면 목요일까지 회귀 테스트가 풀리고, 끝나면 비용과 사용률 수치를 공유할게요.",
+          "is_target": true,
+          "en_easy": "We'll finish the tests by Thursday, then share the cost."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "타팀 리드 레나",
+          "en": "Perfect. Put it in the team channel so my manager sees it too.",
+          "ko": "좋아요. 우리 매니저도 볼 수 있게 팀 채널에 올려 주세요.",
+          "is_target": false
+        }
+      ]
+    }
+  ]
+}
