@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 85,
+  "date": "2026-11-04",
+  "week": 13,
+  "block": "tech-comm",
+  "theme": "GPU·인프라 자원 — 없는 걸 얻어내기",
+  "topic": "GPU 부족으로 실험이 막혔다고 알리기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d085-s1",
+      "title_ko": "재택 화상 통화에서 GPU 대기열 때문에 실험이 막혔다고 알리기",
+      "context_ko": "{name}이 집 책상에서 팀 리드 Priya와 화상 통화 중이다. 논문 마감이 다음 주 금요일인데 평가 스윕이 아직 시작도 못 했고, Priya는 정확한 규모를 알아야 윗선에 추가 자원을 요청할 수 있다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Quick heads-up: our eval sweep hasn't started. We're bottlenecked on GPUs, and the queue estimate says four days.",
+          "ko": "먼저 말씀드릴 게 있는데요, 평가 스윕이 아직 시작도 못 했어요. GPU가 병목이고 대기열 예상이 나흘이래요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Four days? The paper deadline is next Friday. Is this just the queue, or is something else eating the cluster?",
+          "ko": "나흘이요? 논문 마감이 다음 주 금요일인데. 그냥 대기열 문제예요, 아니면 다른 게 클러스터를 먹고 있나요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Mostly the queue. Two long pretraining runs hold most nodes, and our sweeps can't preempt them. I'll send you the numbers.",
+          "ko": "대부분 대기열 때문이에요. 긴 사전학습 두 개가 노드 대부분을 잡고 있고, 우리 스윕은 선점이 안 돼요. 수치 보내 드릴게요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Please do. If we ask for more, I need to know exactly what's blocked and for how long.",
+          "ko": "그렇게 해 주세요. 더 요청하려면 정확히 뭐가 얼마나 막혔는지 알아야 해요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Eight ablations are blocked, roughly two hundred GPU-hours total. I'll write it up in a doc before your two o'clock.",
+          "ko": "어블레이션 여덟 개가 막혀 있고 합쳐서 GPU 시간으로 대략 200시간이에요. 두 시 회의 전에 문서로 정리해 둘게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d085-s2",
+      "title_ko": "카페에서 타팀 연구원에게 주말 동안 GPU를 빌려 달라고 부탁하기",
+      "context_ko": "근처 카페에서 {name}이 옆 팀 연구원 Marco를 만났다. Marco 팀의 예약 노드가 릴리스 전까지 거의 놀고 있는데, 월요일에 자기 팀 벤치마크가 있어서 선뜻 빌려주길 망설인다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "타팀 연구원",
+          "en": "I heard your sweeps are stuck. Our nodes are mostly idle until the next release, but I can't promise anything yet.",
+          "ko": "스윕이 막혔다고 들었어요. 우리 노드는 다음 릴리스 전까지 거의 놀지만, 아직 뭘 약속해 드리긴 어려워요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Can we borrow capacity from your reserved pool for the weekend? We'd release it Monday morning, before your team's benchmark run.",
+          "ko": "주말 동안만 예약 풀에서 자원 좀 빌릴 수 있을까요? 월요일 아침 벤치마크 전에 돌려 드릴게요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "타팀 연구원",
+          "en": "Monday is tight. If your jobs overrun, my team loses its slot. What happens if a run isn't finished by then?",
+          "ko": "월요일이 빠듯해서요. 작업이 길어지면 우리 팀이 자리를 잃어요. 그때까지 안 끝나면 어떻게 돼요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We checkpoint every thirty minutes, so we'd kill and resume later. Nothing of yours gets delayed, and we'd log usage.",
+          "ko": "30분마다 체크포인트를 저장해서, 그냥 중단했다가 나중에 이어 돌리면 돼요. 그쪽 일정은 안 밀리고, 사용량도 기록해 둘게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d085-s3",
+      "title_ko": "컨퍼런스 복도 커피 코너에서 인프라 리드에게 GPU 쿼터 증설 요청하기",
+      "context_ko": "사내 ML 워크숍 쉬는 시간, 커피 코너에서 {name}이 인프라 리드 Dana를 붙잡았다. 쿼터는 1년째 그대로인데 실험량은 세 배가 됐고, Dana는 근거 데이터를 요구한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Do you have two minutes? Our team's GPU quota hasn't changed in a year, but our experiments have tripled.",
+          "ko": "잠깐 2분만 시간 되세요? 저희 팀 GPU 쿼터는 1년째 그대로인데 실험은 세 배로 늘었어요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "인프라 리드",
+          "en": "Everyone says that. Quota is zero-sum right now. What would you do with extra GPUs that nobody else could justify?",
+          "ko": "다들 그렇게 말해요. 지금 쿼터는 제로섬이거든요. 추가 GPU로 뭘 하면 다른 팀보다 더 정당화가 되죠?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We'd cut each eval cycle from three days to one. This unblocks weekly model comparisons by removing the wait for nodes.",
+          "ko": "평가 한 사이클을 사흘에서 하루로 줄일 수 있어요. 노드 대기가 없어지니 주간 모델 비교가 가능해집니다.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "인프라 리드",
+          "en": "Weekly comparisons would help the launch review. But I'd need utilization data showing your current allocation is actually full.",
+          "ko": "주간 비교는 론칭 리뷰에 도움이 되겠네요. 그런데 현재 할당량이 실제로 꽉 찬다는 사용률 데이터가 필요해요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Fair. Our average utilization is ninety-two percent over the last month. I'll send the dashboard link and a one-page request today.",
+          "ko": "맞는 말씀이에요. 지난달 평균 사용률이 92%예요. 오늘 중으로 대시보드 링크랑 한 장짜리 요청서 보낼게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d085-s4",
+      "title_ko": "모니터 앞에서 인프라 엔지니어에게 연속 노드가 병목이라고 설명하기",
+      "context_ko": "인프라 엔지니어 Sam이 대시보드를 보고 밤에는 노드가 비는데 왜 안 돌리냐고 묻는다. {name}의 스윕은 GPU 16장이 한꺼번에 필요해서 생기는 문제를 설명해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어",
+          "en": "Your jobs are sitting pending, but the dashboard shows nodes free overnight. Why not just submit them then?",
+          "ko": "작업이 계속 대기 중인데, 대시보드를 보면 밤엔 노드가 비어 있어요. 그때 그냥 제출하면 안 돼요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Our sweeps need sixteen GPUs together, and the scheduler won't split them. So we're bottlenecked on contiguous nodes, not total GPUs.",
+          "ko": "저희 스윕은 GPU 16장이 한꺼번에 필요한데 스케줄러가 쪼개 주질 않아요. 총 GPU 수가 아니라 연속된 노드가 병목이에요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어",
+          "en": "Got it. I could set up a backfill window from midnight to six, but jobs over six hours get killed.",
+          "ko": "알겠어요. 자정부터 6시까지 백필 구간을 만들 수는 있는데, 6시간 넘는 작업은 종료돼요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Perfect. We can cap each sweep at five hours. This unblocks the full ablation set by Thursday instead of next week.",
+          "ko": "좋아요. 스윕당 5시간으로 제한할게요. 그러면 어블레이션 전체가 다음 주가 아니라 목요일까지 끝날 수 있어요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d085-s5",
+      "title_ko": "공항 게이트에서 디렉터에게 클라우드 GPU 임대 승인 요청하기",
+      "context_ko": "출장 중인 디렉터가 탑승 10분 전에 전화를 받았다. {name}은 사내 클러스터가 20일까지 꽉 차서 임시로 클라우드 GPU를 빌리려 하고, 비용과 책임자를 짧게 설명해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "디렉터",
+          "en": "I'm boarding in ten minutes. Give me the short version: why do you need cloud GPUs when we own a cluster?",
+          "ko": "10분 뒤에 탑승이에요. 짧게 말해 줘요. 우리 클러스터가 있는데 왜 클라우드 GPU가 필요하죠?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The cluster is full until the twentieth. Renting thirty-two GPUs for three days costs about four thousand dollars.",
+          "ko": "클러스터가 20일까지 꽉 차 있어요. GPU 32장을 사흘 빌리면 비용은 대략 4천 달러예요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "디렉터",
+          "en": "That's real money. What's the fallback if the results aren't useful? And who signs off on the spend?",
+          "ko": "적은 돈이 아니네요. 결과가 쓸모없으면 어쩔 건가요? 그리고 지출은 누가 승인하죠?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Worst case, we lose three days and the budget. I'd cap spend at four thousand and have finance approve it today.",
+          "ko": "최악의 경우 사흘과 예산을 날리는 거예요. 지출 상한을 4천 달러로 두고 오늘 재무팀 승인을 받겠습니다.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}

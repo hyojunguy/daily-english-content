@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-11-04T17:55:07+00:00",
+  "updated": "2026-11-04T18:37:38+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 84,
-  "total_days": 68,
-  "total_turns": 1476,
-  "total_target_turns": 798,
+  "latest_day": 85,
+  "total_days": 69,
+  "total_turns": 1498,
+  "total_target_turns": 810,
   "days": [
     {
       "day": 1,
@@ -1094,6 +1094,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-11-03.json"
+    },
+    {
+      "day": 85,
+      "date": "2026-11-04",
+      "week": 13,
+      "block": "tech-comm",
+      "theme": "GPU·인프라 자원 — 없는 걸 얻어내기",
+      "topic": "GPU 부족으로 실험이 막혔다고 알리기",
+      "difficulty": 3,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-11-04.json"
     }
   ]
 }
