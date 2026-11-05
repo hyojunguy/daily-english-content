@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-11-04T21:16:53+00:00",
+  "updated": "2026-11-05T21:34:53+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 86,
-  "total_days": 70,
-  "total_turns": 1520,
-  "total_target_turns": 822,
+  "latest_day": 87,
+  "total_days": 71,
+  "total_turns": 1542,
+  "total_target_turns": 834,
   "days": [
     {
       "day": 1,
@@ -1126,6 +1126,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-11-05.json"
+    },
+    {
+      "day": 87,
+      "date": "2026-11-06",
+      "week": 13,
+      "block": "tech-comm",
+      "theme": "GPU·인프라 자원 — 없는 걸 얻어내기",
+      "topic": "자원 요청을 비용 대비 효과로 정당화하기",
+      "difficulty": 3,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-11-06.json"
     }
   ]
 }

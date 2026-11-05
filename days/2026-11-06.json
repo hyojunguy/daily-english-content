@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 87,
+  "date": "2026-11-06",
+  "week": 13,
+  "block": "tech-comm",
+  "theme": "GPU·인프라 자원 — 없는 걸 얻어내기",
+  "topic": "자원 요청을 비용 대비 효과로 정당화하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d087-s1",
+      "title_ko": "화이트보드 앞 스탠드업에서 GPU 증설을 실험당 비용으로 설명하기",
+      "context_ko": "아침 스탠드업 직후 화이트보드 앞에서 {name}이 팀 리드에게 GPU 증설이 필요하다고 말한다. 리드는 위에 올릴 숫자를 요구한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We're bottlenecked on eval GPUs. Each sweep takes nine hours, so we only get one experiment per day instead of four.",
+          "ko": "지금 평가용 GPU가 병목이에요. 스윕 한 번에 아홉 시간이라 하루에 실험을 네 번이 아니라 한 번밖에 못 돌려요.",
+          "is_target": true,
+          "en_easy": "Each sweep takes 9 hours, so we run 1 experiment a day."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Okay, but I need a number before I take this upstairs. What would four more GPUs actually cost us per month?",
+          "ko": "좋아요, 근데 위에 올리려면 숫자가 필요해요. GPU 네 장 더 쓰면 한 달에 실제로 얼마 들어요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "About six thousand dollars a month on demand. That's less than one week of an engineer's time sitting idle.",
+          "ko": "온디맨드로 월 육천 달러쯤이에요. 엔지니어 한 명이 일주일 놀고 있는 비용보다도 적고요.",
+          "is_target": true,
+          "en_easy": "It costs about 6000 dollars a month, less than idle engineer time."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Fair. Frame it as cost per finished experiment, not cost per GPU. That's what the director cares about.",
+          "ko": "일리 있네요. GPU당 비용 말고 완료된 실험당 비용으로 풀어 보세요. 디렉터가 보는 건 그거예요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Today idle engineer time costs about nine hundred dollars per experiment; with the extra GPUs it drops under two hundred.",
+          "ko": "네. 지금은 실험 하나당 놀고 있는 엔지니어 시간이 구백 달러쯤인데, GPU를 늘리면 이백 달러 아래로 떨어져요.",
+          "is_target": true,
+          "en_easy": "Idle time costs 900 dollars per experiment, but 200 with more GPUs."
+        }
+      ]
+    },
+    {
+      "id": "d087-s2",
+      "title_ko": "유리벽 회의실에서 재무 파트너에게 분기 예산 정당화하기",
+      "context_ko": "재무 파트너가 분기당 만이천 달러짜리 GPU 요청서를 들고 {name}과 1:1로 앉았다. 있으면 좋은 것인지 꼭 필요한 것인지 근거를 요구한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "재무 파트너",
+          "en": "I looked at your request. Twelve thousand dollars a quarter for GPUs is a big ask. Convince me it's not just nice to have.",
+          "ko": "요청서 봤어요. 분기에 GPU로 만이천 달러면 큰 금액이에요. 있으면 좋은 정도가 아니라는 걸 납득시켜 주세요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Fair question. Without it, we miss the model freeze date, and a missed freeze delays the launch by about three weeks.",
+          "ko": "당연한 질문이죠. 이게 없으면 모델 프리즈 날짜를 놓치고, 프리즈를 놓치면 출시가 세 주쯤 밀려요.",
+          "is_target": true,
+          "en_easy": "Without it, we miss the freeze and launch 3 weeks late."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "재무 파트너",
+          "en": "Three weeks of delay is soft. Do you have anything harder, like money we'd lose or save?",
+          "ko": "세 주 지연은 와닿는 숫자가 아니네요. 우리가 잃거나 아끼는 돈처럼 더 확실한 건 없나요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Renting spot capacity ad hoc costs about twice as much per useful hour, because preempted jobs restart from scratch.",
+          "ko": "스팟 용량을 그때그때 빌리면 유효 시간당 비용이 두 배쯤 들어요. 중단된 잡이 처음부터 다시 시작하거든요.",
+          "is_target": true,
+          "en_easy": "Renting spot capacity costs twice as much, because stopped jobs begin again."
+        }
+      ]
+    },
+    {
+      "id": "d087-s3",
+      "title_ko": "남의 책상 옆에 걸터앉아 야간 유휴 클러스터 빌려 쓰기 제안하기",
+      "context_ko": "{name}이 인프라 엔지니어 책상 옆에 앉아, 밤새 비는 배치 추론 클러스터를 비용 부담 없이 쓰게 해달라고 제안한다. 상대는 충돌 위험을 걱정한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Quick question. Your batch inference cluster looks idle overnight. Can we borrow capacity from it between midnight and six?",
+          "ko": "잠깐 물어볼 게 있어요. 배치 추론 클러스터가 밤새 놀고 있던데, 자정부터 여섯 시까지 용량 좀 빌릴 수 있을까요?",
+          "is_target": true,
+          "en_easy": "Can we borrow your idle batch cluster at night?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어",
+          "en": "It's idle on paper, but the data team's backfill sometimes runs then. If you take it, who pays for the contention?",
+          "ko": "표면상 놀긴 하는데 데이터 팀 백필이 그 시간에 돌 때가 있어요. 쓰시면 경합 비용은 누가 내죠?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Nobody pays extra. We'll run at low priority, so your backfill preempts us, and we only use leftover capacity.",
+          "ko": "추가 비용은 없어요. 저희는 낮은 우선순위로 돌리니까 백필이 저희를 밀어내고, 남는 용량만 쓸 거예요.",
+          "is_target": true,
+          "en_easy": "We use low priority and free capacity, so nobody pays extra."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어",
+          "en": "That's cheap for us. But I'd want a hard cap and a kill switch, in case your jobs misbehave.",
+          "ko": "우리한텐 부담 없네요. 근데 잡이 이상하게 돌 때를 대비해서 상한선이랑 강제 종료 수단은 있어야 해요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Agreed. I'll add a quota of sixteen GPUs and a one-line command so you can evict us instantly.",
+          "ko": "좋아요. 열여섯 장짜리 쿼터를 걸고, 바로 저희를 내쫓을 수 있게 한 줄짜리 명령도 만들어 둘게요.",
+          "is_target": true,
+          "en_easy": "I'll add a 16 GPU quota and a command to stop us."
+        }
+      ]
+    },
+    {
+      "id": "d087-s4",
+      "title_ko": "화상회의에서 바쁜 디렉터에게 노드 증설 사업 논리 한 호흡으로 설명하기",
+      "context_ko": "디렉터가 다음 회의 전 2분만 낼 수 있다고 한다. {name}은 재택 화상회의에서 증설 비용이 왜 출시 일정과 연결되는지 짧게 설명해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "디렉터",
+          "en": "I have two minutes before my next call. Give me the business case for the cluster expansion in one breath.",
+          "ko": "다음 통화까지 이 분밖에 없어요. 클러스터 증설 사업 논리를 한 호흡으로 말해 주세요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Eight more nodes cost about forty thousand a month. Without them the launch slips, and a week of slip costs more.",
+          "ko": "노드 여덟 대 추가에 월 사만 달러쯤 들어요. 없으면 출시가 밀리고, 한 주 밀리는 비용이 그보다 더 커요.",
+          "is_target": true,
+          "en_easy": "8 more nodes cost 40000 dollars a month, but delay costs more."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "디렉터",
+          "en": "Why does the launch depend on evals? I thought the safety review was the blocker.",
+          "ko": "출시가 왜 평가에 달려 있죠? 막고 있는 건 안전성 리뷰인 줄 알았는데요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It is. This unblocks the safety review by letting us rerun every eval within a day instead of a week.",
+          "ko": "맞아요. 그래서 모든 평가를 일주일 대신 하루 안에 다시 돌릴 수 있게 돼서 안전성 리뷰가 풀려요.",
+          "is_target": true,
+          "en_easy": "Yes, every eval will take one day instead of one week."
+        }
+      ]
+    },
+    {
+      "id": "d087-s5",
+      "title_ko": "모니터 앞에서 '그냥 기다리면 되지 않냐'는 PM 반박에 데이터로 답하기",
+      "context_ko": "여러 대 모니터가 붙은 {name}의 자리에서 PM이 그냥 대기열에서 기다리면 되지 않느냐고 묻는다. {name}은 대기 시간 비용 차트를 가리키며 답한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "Honestly, why not just wait in the queue? Everyone else does, and we're not paying for anything extra that way.",
+          "ko": "솔직히 그냥 대기열에서 기다리면 안 돼요? 다들 그렇게 하고, 그러면 추가 비용도 안 드는데요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Waiting isn't free. This chart shows we've lost about two hundred engineer hours this month to queue time alone.",
+          "ko": "기다리는 것도 공짜가 아니에요. 이 차트 보면 이번 달 대기열 때문에만 엔지니어 시간 이백 시간쯤 날렸어요.",
+          "is_target": true,
+          "en_easy": "Queue time cost us about 200 engineer hours this month."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "Two hundred hours sounds big, but how many of those hours were truly blocked, rather than people context-switching to other work?",
+          "ko": "이백 시간이면 커 보이긴 한데, 다른 일로 전환한 시간 말고 진짜로 막혀서 멈춘 시간은 얼마나 돼요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good point. Roughly sixty were fully blocked, and even that is close to what the extra GPUs would cost.",
+          "ko": "좋은 지적이에요. 완전히 막힌 건 육십 시간쯤인데, 그것만 해도 추가 GPU 비용에 거의 맞먹어요.",
+          "is_target": true,
+          "en_easy": "Roughly 60 hours blocked us fully, close to the extra GPU cost."
+        }
+      ]
+    }
+  ]
+}
