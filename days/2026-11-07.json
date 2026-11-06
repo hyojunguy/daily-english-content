@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "Hey Priya, got a minute? I saw the eval suite dropped to P2 after the planning reshuffle.",
           "ko": "프리야, 잠깐 시간 돼요? 분기 계획 다시 짜면서 평가 스위트가 P2로 내려간 걸 봤어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Do you have time to talk about the eval suite's priority?"
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "I get that. But we're bottlenecked on regression checks, so launch sign-off will stall without them.",
           "ko": "이해는 해요. 근데 지금 회귀 검증이 병목이라, 그게 없으면 런치 승인이 멈춰요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We need regression checks, or launch approval will stop."
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "Just eight GPUs for two nights. This unblocks the sign-off by Thursday instead of slipping to next week.",
           "ko": "GPU 8장만 이틀 밤 쓰면 돼요. 그러면 승인이 다음 주로 밀리지 않고 목요일까지 풀립니다.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I need 8 GPUs for 2 nights, so we finish Thursday."
         }
       ]
     },
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "I understand the migration is urgent. Could we cut the study down to three runs instead of dropping it entirely?",
           "ko": "마이그레이션이 급한 건 이해해요. 연구를 통째로 접는 대신 세 번 실행으로 줄이면 어떨까요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I understand it's urgent, but can we run it 3 times?"
         },
         {
           "n": 3,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "Can we borrow capacity from the migration's staging pool? It sits idle most evenings, so nobody would feel it.",
           "ko": "마이그레이션 스테이징 풀에서 용량을 좀 빌릴 수 있을까요? 저녁엔 거의 놀고 있어서 아무도 티 안 날 거예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can we borrow the staging pool, since it's idle at night?"
         }
       ]
     },
@@ -111,7 +116,8 @@
           "role_ko": "나",
           "en": "Thanks for joining. Since the retraining got deprioritized, I'd like to renegotiate the delivery date rather than quietly slip.",
           "ko": "들어와 주셔서 감사해요. 재학습이 후순위로 밀렸으니, 말없이 늦추기보다 납기를 다시 얘기하고 싶어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I want to talk about a new delivery date."
         },
         {
           "n": 2,
@@ -127,7 +133,8 @@
           "role_ko": "나",
           "en": "With the smaller allocation, the full run takes nine days. I can ship a distilled checkpoint by the twentieth instead.",
           "ko": "할당이 줄어서 전체 학습은 9일 걸려요. 대신 증류한 체크포인트는 20일까지 드릴 수 있어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I can send a small model by day 20."
         },
         {
           "n": 4,
@@ -143,7 +150,8 @@
           "role_ko": "나",
           "en": "If the vision team lends us their weekend slots, we're back on the fifteenth. I'll write up the risk today.",
           "ko": "비전팀이 주말 슬롯을 빌려주면 15일에 맞출 수 있어요. 리스크는 오늘 정리해서 공유할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "If the vision team gives us time, we can finish by day 15."
         }
       ]
     },
@@ -168,7 +176,8 @@
           "role_ko": "나",
           "en": "I did. Rather than both of us fighting for the same nights, can we split the week by deadline?",
           "ko": "봤어요. 둘이 같은 밤을 두고 다투기보다, 마감일 기준으로 한 주를 나누면 어때요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can we split the week by deadline instead of fighting?"
         },
         {
           "n": 3,
@@ -184,7 +193,8 @@
           "role_ko": "나",
           "en": "Right. You take the first half of the week, I take weekends, and we swap after your submission.",
           "ko": "맞아요. 주 초반은 당신이 쓰고 주말은 제가 쓰다가, 제출 끝나면 서로 바꿔요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "You take the first half of the week, and I take weekends."
         }
       ]
     },
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "That explains it. If I add checkpointing every thirty minutes, could we keep them on preemptible nodes?",
           "ko": "그래서 그랬군요. 30분마다 체크포인트를 넣으면 선점 가능 노드에서 계속 돌려도 될까요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "If I save every 30 minutes, can we use cheap nodes?"
         },
         {
           "n": 3,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "I'll file it now. This unblocks the nightly eval by tomorrow without taking anything from the launch team.",
           "ko": "지금 올릴게요. 이러면 런치팀 자원은 하나도 안 건드리고 내일부터 야간 평가가 풀려요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll send it now, so the night eval works tomorrow."
         }
       ]
     }
