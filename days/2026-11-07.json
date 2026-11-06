@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 88,
+  "date": "2026-11-07",
+  "week": 13,
+  "block": "tech-comm",
+  "theme": "GPU·인프라 자원 — 없는 걸 얻어내기",
+  "topic": "우선순위가 밀렸을 때 재협상하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d088-s1",
+      "title_ko": "탕비실에서 평가 작업이 P2로 밀린 걸 PM과 재협상하기",
+      "context_ko": "분기 우선순위가 재조정되면서 {name}의 회귀 평가 작업이 런치 준비에 밀려 P2로 내려갔습니다. 탕비실에서 PM Priya를 마주친 {name}은 최소한의 GPU 시간이라도 되찾으려 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey Priya, got a minute? I saw the eval suite dropped to P2 after the planning reshuffle.",
+          "ko": "프리야, 잠깐 시간 돼요? 분기 계획 다시 짜면서 평가 스위트가 P2로 내려간 걸 봤어요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "Yeah, sorry, the launch review took everything. Leadership wants the new model in front of customers by the end of the month, so evals got pushed.",
+          "ko": "네, 미안해요. 런치 리뷰가 모든 걸 잡아먹었어요. 경영진이 월말까지 고객에게 새 모델을 보여 주길 원해서 평가가 밀렸죠.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I get that. But we're bottlenecked on regression checks, so launch sign-off will stall without them.",
+          "ko": "이해는 해요. 근데 지금 회귀 검증이 병목이라, 그게 없으면 런치 승인이 멈춰요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "Okay, but I can't give you the full cluster slice back. What's the minimum you'd need?",
+          "ko": "알겠는데, 클러스터 할당을 전부 돌려줄 순 없어요. 최소한 얼마나 필요해요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Just eight GPUs for two nights. This unblocks the sign-off by Thursday instead of slipping to next week.",
+          "ko": "GPU 8장만 이틀 밤 쓰면 돼요. 그러면 승인이 다음 주로 밀리지 않고 목요일까지 풀립니다.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d088-s2",
+      "title_ko": "유리벽 회의실에서 잘려 나간 어블레이션 연구 축소안 제안하기",
+      "context_ko": "매니저 Marco가 어블레이션 연구를 이번 분기에서 빼고 GPU 시간을 서빙 마이그레이션으로 돌리겠다고 합니다. {name}은 완전 취소 대신 규모를 줄이는 대안을 내밀어야 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "I looked at the roadmap again. The ablation study is out this quarter, and we're moving those GPU hours to the serving migration.",
+          "ko": "로드맵을 다시 봤는데, 어블레이션 연구는 이번 분기에서 빠져요. 그 GPU 시간은 서빙 마이그레이션으로 돌릴 거고요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I understand the migration is urgent. Could we cut the study down to three runs instead of dropping it entirely?",
+          "ko": "마이그레이션이 급한 건 이해해요. 연구를 통째로 접는 대신 세 번 실행으로 줄이면 어떨까요?",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Three runs still means about four hundred GPU hours. Where would those come from?",
+          "ko": "세 번이어도 GPU 시간이 400시간쯤 들잖아요. 그건 어디서 가져와요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Can we borrow capacity from the migration's staging pool? It sits idle most evenings, so nobody would feel it.",
+          "ko": "마이그레이션 스테이징 풀에서 용량을 좀 빌릴 수 있을까요? 저녁엔 거의 놀고 있어서 아무도 티 안 날 거예요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d088-s3",
+      "title_ko": "화상회의에서 밀린 납기를 솔직하게 다시 협상하기",
+      "context_ko": "재학습 작업이 후순위로 밀려 큰 할당을 잃었습니다. {name}은 조용히 지연시키는 대신 제품 리드 Tomás와 화상회의에서 납기와 범위를 다시 정하려 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks for joining. Since the retraining got deprioritized, I'd like to renegotiate the delivery date rather than quietly slip.",
+          "ko": "들어와 주셔서 감사해요. 재학습이 후순위로 밀렸으니, 말없이 늦추기보다 납기를 다시 얘기하고 싶어요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "제품 리드",
+          "en": "Fair. We told the customer the fifteenth, though. What's realistic now that you've lost the big allocation?",
+          "ko": "맞는 말이에요. 근데 고객한테는 15일이라고 했거든요. 큰 할당을 잃은 지금은 뭐가 현실적이에요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "With the smaller allocation, the full run takes nine days. I can ship a distilled checkpoint by the twentieth instead.",
+          "ko": "할당이 줄어서 전체 학습은 9일 걸려요. 대신 증류한 체크포인트는 20일까지 드릴 수 있어요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "제품 리드",
+          "en": "The twentieth is tight. Is there anything that would get us back to the fifteenth?",
+          "ko": "20일은 빠듯한데요. 15일로 되돌릴 방법이 혹시 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "If the vision team lends us their weekend slots, we're back on the fifteenth. I'll write up the risk today.",
+          "ko": "비전팀이 주말 슬롯을 빌려주면 15일에 맞출 수 있어요. 리스크는 오늘 정리해서 공유할게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d088-s4",
+      "title_ko": "점심 테이블에서 줄어든 GPU를 동료와 마감 순으로 나누기",
+      "context_ko": "팀 할당이 절반으로 깎여 {name}과 동료 연구자 Jun의 실험이 같은 밤을 두고 부딪힙니다. 점심을 먹으며 서로 싸우지 않고 마감일 기준으로 일정을 나누자고 제안합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 연구자",
+          "en": "Did you see the new allocation? Our team got cut to half, and my fine-tuning sweep is nowhere near done.",
+          "ko": "새 할당 봤어요? 우리 팀이 절반으로 깎였는데, 제 파인튜닝 스윕은 한참 남았어요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I did. Rather than both of us fighting for the same nights, can we split the week by deadline?",
+          "ko": "봤어요. 둘이 같은 밤을 두고 다투기보다, 마감일 기준으로 한 주를 나누면 어때요?",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 연구자",
+          "en": "My workshop paper is due the twelfth. Yours is what, the end of the month?",
+          "ko": "내 워크숍 논문은 12일이 마감이에요. 당신 건 월말이죠?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Right. You take the first half of the week, I take weekends, and we swap after your submission.",
+          "ko": "맞아요. 주 초반은 당신이 쓰고 주말은 제가 쓰다가, 제출 끝나면 서로 바꿔요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d088-s5",
+      "title_ko": "모니터 앞에서 선점 우선순위 바뀐 평가 잡 구제하기",
+      "context_ko": "계획 문서가 바뀌면서 {name}의 야간 평가 잡이 런치 태그를 잃고 가장 먼저 선점당하고 있습니다. 인프라 엔지니어 Lena의 모니터를 같이 보며 체크포인팅으로 타협안을 찾습니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어",
+          "en": "Your eval jobs lost the launch tag in the planning change, so they're first in line for preemption now.",
+          "ko": "계획이 바뀌면서 평가 잡이 런치 태그를 잃어서, 이제 선점 대상 1순위예요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That explains it. If I add checkpointing every thirty minutes, could we keep them on preemptible nodes?",
+          "ko": "그래서 그랬군요. 30분마다 체크포인트를 넣으면 선점 가능 노드에서 계속 돌려도 될까요?",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어",
+          "en": "Works for me. Preempted jobs would resume where they left off. I just need a ticket from you.",
+          "ko": "좋아요. 선점돼도 멈춘 데서 이어서 돌 테니까요. 티켓만 하나 올려 주세요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll file it now. This unblocks the nightly eval by tomorrow without taking anything from the launch team.",
+          "ko": "지금 올릴게요. 이러면 런치팀 자원은 하나도 안 건드리고 내일부터 야간 평가가 풀려요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
