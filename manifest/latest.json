@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-11-06T21:16:36+00:00",
+  "updated": "2026-11-07T21:43:12+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 88,
-  "total_days": 72,
-  "total_turns": 1564,
-  "total_target_turns": 846,
+  "latest_day": 89,
+  "total_days": 73,
+  "total_turns": 1584,
+  "total_target_turns": 858,
   "days": [
     {
       "day": 1,
@@ -1158,6 +1158,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-11-07.json"
+    },
+    {
+      "day": 89,
+      "date": "2026-11-08",
+      "week": 13,
+      "block": "tech-comm",
+      "theme": "GPU·인프라 자원 — 없는 걸 얻어내기",
+      "topic": "낭비되는 자원을 발견하고 회수 제안하기",
+      "difficulty": 3,
+      "situations": 4,
+      "turns": 20,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-11-08.json"
     }
   ]
 }

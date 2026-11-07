@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "day": 89,
+  "date": "2026-11-08",
+  "week": 13,
+  "block": "tech-comm",
+  "theme": "GPU·인프라 자원 — 없는 걸 얻어내기",
+  "topic": "낭비되는 자원을 발견하고 회수 제안하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d089-s1",
+      "title_ko": "여러 모니터 앞에서 9일째 놀고 있는 GPU 발견하기",
+      "context_ko": "{name}이 대시보드에서 9일간 사용률 0%인 A100 네 장을 발견하고, 옆자리 동료 Sam에게 주인에게 확인해 달라고 부탁한다. 평가 노드가 모자란 상황이라 회수하고 싶다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sam, look at this utilization panel. Four A100s have sat at zero percent for nine days.",
+          "ko": "Sam, 이 사용률 패널 좀 봐요. A100 네 장이 9일째 0%예요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "옆자리 동료 Sam",
+          "en": "Those are Priya's old sweep jobs. She finished that paper in October, so I think nobody ever released them.",
+          "ko": "그거 Priya가 돌리던 스윕 잡이에요. 10월에 논문 끝냈으니까 아무도 반납 안 한 것 같네요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Right. We're bottlenecked on eval nodes right now, so even those four would help. Can you ping her before I release them?",
+          "ko": "맞아요. 지금 평가 노드가 병목이라 네 장만 있어도 도움이 돼요. 제가 반납하기 전에 Priya한테 먼저 물어봐 줄래요?",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "옆자리 동료 Sam",
+          "en": "Sure, I'll message her now. Does releasing them mean her checkpoints on local disk get wiped?",
+          "ko": "그럼요, 지금 메시지 보낼게요. 반납하면 로컬 디스크에 있는 체크포인트도 날아가나요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Only the allocation goes away. I'll copy her checkpoints to shared storage first, so nothing gets lost.",
+          "ko": "할당만 사라져요. 체크포인트는 제가 먼저 공유 스토리지로 옮겨 놓을 테니 잃어버리는 건 없을 거예요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d089-s2",
+      "title_ko": "복도에서 안 쓰는 예약 노드 잠시 빌려 쓰기",
+      "context_ko": "{name}이 3주째 쓰이지 않는 예약 노드를 발견하고 인프라 엔지니어 Marco와 마주쳤다. 소유 팀의 출시가 밀린 상태라, 선점 가능 조건으로 빌리자고 제안한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Marco, got a minute? I noticed the reservation on node twelve hasn't run a single job in three weeks.",
+          "ko": "Marco, 잠깐 시간 돼요? 12번 노드 예약이 3주 동안 잡 하나도 안 돌았더라고요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어 Marco",
+          "en": "Yeah, that belongs to the vision team. They reserved it for a launch that slipped. Why, do you need it?",
+          "ko": "네, 비전 팀 거예요. 출시가 밀려서 놀고 있죠. 왜요, 필요해요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yes. Can we borrow capacity from that reservation for two weeks? This unblocks our ablation backlog by freeing eight GPUs.",
+          "ko": "네. 그 예약분에서 2주만 빌려 쓸 수 있을까요? GPU 여덟 장이 풀리면 밀린 어블레이션이 풀려요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어 Marco",
+          "en": "I can't just hand it over. If their launch gets a new date, they'll want it back immediately.",
+          "ko": "그냥 넘겨줄 순 없어요. 출시 날짜가 잡히면 그쪽에서 바로 돌려달라고 할 거예요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Fair. We'd make our jobs preemptible, so they can reclaim the node anytime without waiting for us.",
+          "ko": "맞는 말씀이에요. 저희 잡을 선점 가능하게 해 둘게요. 그럼 저희를 기다릴 필요 없이 언제든 노드를 되찾아 갈 수 있어요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d089-s3",
+      "title_ko": "화상회의에서 남아도는 추론 레플리카 줄이자고 제안하기",
+      "context_ko": "재택 화상회의 중, {name}이 서빙 스택이 피크에도 40%만 쓰는 걸 데이터로 보여주며 팀 리드에게 오토스케일링과 남는 GPU의 학습 전환을 제안한다. 리드는 새벽 호출이 걱정된다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Last month our serving stack peaked at forty percent of provisioned replicas. We're paying for idle capacity every night.",
+          "ko": "지난달 서빙 스택이 피크에도 프로비저닝된 레플리카의 40%밖에 안 썼어요. 밤마다 놀리는 용량에 돈을 내고 있는 거죠.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Hm, we sized it for the launch spike. If I scale down and traffic jumps, I'm the one getting paged.",
+          "ko": "음, 출시 때 트래픽 급증에 맞춰 잡은 거라서요. 줄였다가 트래픽 튀면 제가 호출받잖아요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Understood. What if we autoscale between four and ten replicas, and hand the freed GPUs to training overnight?",
+          "ko": "이해해요. 그럼 레플리카를 4~10개 사이로 오토스케일링하고, 비는 GPU는 밤에 학습으로 돌리면 어떨까요?",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Autoscaling cold starts worry me. Loading the model takes almost four minutes, and users would notice during a spike.",
+          "ko": "콜드 스타트가 걱정이에요. 모델 로딩에 거의 4분 걸려서 트래픽 몰리면 사용자가 바로 느낄 거예요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We can keep a warm minimum of four replicas. I'll run a load test this week and share the latency numbers.",
+          "ko": "최소 네 개는 항상 띄워 둘 수 있어요. 이번 주에 부하 테스트 돌려서 지연 시간 수치 공유할게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d089-s4",
+      "title_ko": "점심 테이블에서 방치된 체크포인트 정리 제안하기",
+      "context_ko": "점심을 먹으며 {name}이 공유 버킷의 40TB가 버려진 실행의 체크포인트라는 사실을 동료에게 알린다. 논문 베이스라인을 지울까 걱정하는 동료를 안심시킬 절차를 정한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I checked our shared bucket. Old checkpoints from abandoned runs take up forty terabytes, and that's most of our quota.",
+          "ko": "공유 버킷 확인해 봤는데요. 버려진 실행의 옛날 체크포인트가 40테라바이트인데, 우리 쿼터 대부분이에요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 연구원",
+          "en": "Wow. But some of those might be baselines we cite in papers. I wouldn't want to delete the wrong thing.",
+          "ko": "헐. 근데 그중엔 논문에 인용하는 베이스라인도 있을 수 있어요. 잘못 지우면 곤란한데.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Agreed. I'd archive anything untouched for ninety days to cold storage first, then delete only after owners confirm.",
+          "ko": "동의해요. 90일간 손 안 댄 건 먼저 콜드 스토리지로 옮기고, 주인이 확인한 다음에만 삭제하죠.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 연구원",
+          "en": "That sounds safe. But who sends the notices? Everyone ignores bucket cleanup emails.",
+          "ko": "그럼 안전하겠네요. 근데 공지는 누가 보내요? 버킷 정리 메일은 다들 무시하잖아요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll post a list with owner names in the team channel. Anything tagged keep is skipped.",
+          "ko": "제가 소유자 이름 붙인 목록을 팀 채널에 올릴게요. 'keep' 태그가 붙은 건 건너뛰고요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
