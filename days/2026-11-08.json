@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "Sam, look at this utilization panel. Four A100s have sat at zero percent for nine days.",
           "ko": "Sam, 이 사용률 패널 좀 봐요. A100 네 장이 9일째 0%예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "This panel shows 4 GPUs at 0% for 9 days."
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "Right. We're bottlenecked on eval nodes right now, so even those four would help. Can you ping her before I release them?",
           "ko": "맞아요. 지금 평가 노드가 병목이라 네 장만 있어도 도움이 돼요. 제가 반납하기 전에 Priya한테 먼저 물어봐 줄래요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can you ask her before I return the 4 GPUs?"
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "Only the allocation goes away. I'll copy her checkpoints to shared storage first, so nothing gets lost.",
           "ko": "할당만 사라져요. 체크포인트는 제가 먼저 공유 스토리지로 옮겨 놓을 테니 잃어버리는 건 없을 거예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll copy her checkpoints to shared storage first, so we lose nothing."
         }
       ]
     },
@@ -70,7 +73,8 @@
           "role_ko": "나",
           "en": "Marco, got a minute? I noticed the reservation on node twelve hasn't run a single job in three weeks.",
           "ko": "Marco, 잠깐 시간 돼요? 12번 노드 예약이 3주 동안 잡 하나도 안 돌았더라고요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I saw node 12 ran no jobs for 3 weeks."
         },
         {
           "n": 2,
@@ -86,7 +90,8 @@
           "role_ko": "나",
           "en": "Yes. Can we borrow capacity from that reservation for two weeks? This unblocks our ablation backlog by freeing eight GPUs.",
           "ko": "네. 그 예약분에서 2주만 빌려 쓸 수 있을까요? GPU 여덟 장이 풀리면 밀린 어블레이션이 풀려요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can we use 8 GPUs from that reservation for 2 weeks?"
         },
         {
           "n": 4,
@@ -102,7 +107,8 @@
           "role_ko": "나",
           "en": "Fair. We'd make our jobs preemptible, so they can reclaim the node anytime without waiting for us.",
           "ko": "맞는 말씀이에요. 저희 잡을 선점 가능하게 해 둘게요. 그럼 저희를 기다릴 필요 없이 언제든 노드를 되찾아 갈 수 있어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We'll stop our jobs when you need the node."
         }
       ]
     },
@@ -119,7 +125,8 @@
           "role_ko": "나",
           "en": "Last month our serving stack peaked at forty percent of provisioned replicas. We're paying for idle capacity every night.",
           "ko": "지난달 서빙 스택이 피크에도 프로비저닝된 레플리카의 40%밖에 안 썼어요. 밤마다 놀리는 용량에 돈을 내고 있는 거죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Last month we used only 40% of our capacity at peak."
         },
         {
           "n": 2,
@@ -135,7 +142,8 @@
           "role_ko": "나",
           "en": "Understood. What if we autoscale between four and ten replicas, and hand the freed GPUs to training overnight?",
           "ko": "이해해요. 그럼 레플리카를 4~10개 사이로 오토스케일링하고, 비는 GPU는 밤에 학습으로 돌리면 어떨까요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "What if we train on the free GPUs at night?"
         },
         {
           "n": 4,
@@ -151,7 +159,8 @@
           "role_ko": "나",
           "en": "We can keep a warm minimum of four replicas. I'll run a load test this week and share the latency numbers.",
           "ko": "최소 네 개는 항상 띄워 둘 수 있어요. 이번 주에 부하 테스트 돌려서 지연 시간 수치 공유할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll run a load test this week and share the results."
         }
       ]
     },
@@ -168,7 +177,8 @@
           "role_ko": "나",
           "en": "I checked our shared bucket. Old checkpoints from abandoned runs take up forty terabytes, and that's most of our quota.",
           "ko": "공유 버킷 확인해 봤는데요. 버려진 실행의 옛날 체크포인트가 40테라바이트인데, 우리 쿼터 대부분이에요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Old checkpoints from failed runs use most of our quota."
         },
         {
           "n": 2,
@@ -184,7 +194,8 @@
           "role_ko": "나",
           "en": "Agreed. I'd archive anything untouched for ninety days to cold storage first, then delete only after owners confirm.",
           "ko": "동의해요. 90일간 손 안 댄 건 먼저 콜드 스토리지로 옮기고, 주인이 확인한 다음에만 삭제하죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'd archive old files first, and delete after owners confirm."
         },
         {
           "n": 4,
@@ -200,7 +211,8 @@
           "role_ko": "나",
           "en": "I'll post a list with owner names in the team channel. Anything tagged keep is skipped.",
           "ko": "제가 소유자 이름 붙인 목록을 팀 채널에 올릴게요. 'keep' 태그가 붙은 건 건너뛰고요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll post the owner list in the team channel."
         }
       ]
     }
