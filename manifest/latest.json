@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-11-07T21:43:12+00:00",
+  "updated": "2026-11-08T21:34:39+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 89,
-  "total_days": 73,
-  "total_turns": 1584,
-  "total_target_turns": 858,
+  "latest_day": 90,
+  "total_days": 74,
+  "total_turns": 1606,
+  "total_target_turns": 870,
   "days": [
     {
       "day": 1,
@@ -1174,6 +1174,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-11-08.json"
+    },
+    {
+      "day": 90,
+      "date": "2026-11-09",
+      "week": 13,
+      "block": "tech-comm",
+      "theme": "GPU·인프라 자원 — 없는 걸 얻어내기",
+      "topic": "클러스터 정책 변경을 설명하고 설득하기",
+      "difficulty": 3,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-11-09.json"
     }
   ]
 }
