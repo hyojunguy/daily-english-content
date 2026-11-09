@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-11-08T21:34:39+00:00",
+  "updated": "2026-11-09T21:20:46+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 90,
-  "total_days": 74,
-  "total_turns": 1606,
-  "total_target_turns": 870,
+  "latest_day": 91,
+  "total_days": 75,
+  "total_turns": 1628,
+  "total_target_turns": 882,
   "days": [
     {
       "day": 1,
@@ -1190,6 +1190,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-11-09.json"
+    },
+    {
+      "day": 91,
+      "date": "2026-11-10",
+      "week": 13,
+      "block": "tech-comm",
+      "theme": "GPU·인프라 자원 — 없는 걸 얻어내기",
+      "topic": "인프라 팀과 SLA를 협의하기",
+      "difficulty": 3,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-11-10.json"
     }
   ]
 }
