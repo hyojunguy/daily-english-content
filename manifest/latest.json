@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-11-09T21:20:46+00:00",
+  "updated": "2026-11-10T21:31:44+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 91,
-  "total_days": 75,
-  "total_turns": 1628,
-  "total_target_turns": 882,
+  "latest_day": 92,
+  "total_days": 76,
+  "total_turns": 1646,
+  "total_target_turns": 892,
   "days": [
     {
       "day": 1,
@@ -1206,6 +1206,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-11-10.json"
+    },
+    {
+      "day": 92,
+      "date": "2026-11-11",
+      "week": 14,
+      "block": "tech-comm",
+      "theme": "논문·최신 연구 — 읽고 말하기",
+      "topic": "논문 하나를 5분 안에 팀에 요약하기",
+      "difficulty": 3,
+      "situations": 4,
+      "turns": 18,
+      "target_turns": 10,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-11-11.json"
     }
   ]
 }
