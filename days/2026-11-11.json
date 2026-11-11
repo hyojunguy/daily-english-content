@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "Quick context before I start: I have five minutes, so I'll cover the claim, the evidence, and my doubts.",
           "ko": "시작 전에 먼저 말씀드리면, 5분이라 핵심 주장, 근거, 그리고 제 의문점 순서로 말씀드릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll be short and cover the claim, evidence and doubts."
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "The core claim is that a small, curated preference set beats a huge noisy one for training reward models.",
           "ko": "핵심 주장은 보상 모델을 학습할 때 작고 정제된 선호 데이터가 크고 노이즈 많은 데이터보다 낫다는 겁니다.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "They say small good data beats big bad data for reward models."
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "About four points on their benchmark, but only two on an independent one. That gap is what caught my eye.",
           "ko": "자체 벤치마크에선 4점 정도인데 독립 벤치마크에선 2점뿐이에요. 저는 그 차이가 눈에 띄더라고요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The gain is big on their test but small on another."
         }
       ]
     },
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "What I'm skeptical about is the evaluation: they only tested on one model family, so the trend might be an artifact.",
           "ko": "제가 의심스러운 건 평가예요. 모델 계열을 하나만 테스트해서 그 추세가 우연일 수도 있거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I doubt the test, because they used only one model family."
         },
         {
           "n": 3,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "It does, but they never report variance across seeds. Without error bars I can't tell signal from noise.",
           "ko": "의미는 있죠. 근데 시드별 분산을 아예 안 써놨어요. 오차 막대가 없으면 신호인지 노이즈인지 구분이 안 돼요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "They show no error bars, so I cannot trust the result."
         }
       ]
     },
@@ -111,7 +116,8 @@
           "role_ko": "나",
           "en": "Sorry, I'm running long on the summary. Do you want me to jump straight to the takeaways?",
           "ko": "죄송해요, 요약이 길어지고 있네요. 바로 결론부터 말씀드릴까요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Sorry, should I give you the main points now?"
         },
         {
           "n": 2,
@@ -127,7 +133,8 @@
           "role_ko": "나",
           "en": "The headline result is real, but it only holds under long training schedules. With our budget, the gain mostly disappears.",
           "ko": "주요 결과는 진짜인데, 학습을 오래 돌렸을 때만 성립해요. 우리 예산으로는 이득이 거의 사라져요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The result is real, but only with long training."
         },
         {
           "n": 4,
@@ -143,7 +150,8 @@
           "role_ko": "나",
           "en": "I'd run one small replication first, on a tenth of the data. If the gap survives, we scale up.",
           "ko": "먼저 데이터 10분의 1로 작게 재현 실험을 한 번 해보죠. 차이가 유지되면 그때 키우고요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'd first repeat the test on less data."
         }
       ]
     },
@@ -168,7 +176,8 @@
           "role_ko": "나",
           "en": "I write one sentence per question: what's the claim, what's the evidence, and what would make me doubt it.",
           "ko": "저는 질문마다 한 문장씩 써요. 주장이 뭔지, 근거가 뭔지, 그리고 뭐 때문에 의심이 드는지요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I write one sentence for each question."
         },
         {
           "n": 3,
@@ -184,7 +193,8 @@
           "role_ko": "나",
           "en": "You don't need to attack it. Just ask when the result stops holding, like different data or smaller models.",
           "ko": "공격할 필요는 없어요. 데이터가 다르거나 모델이 작을 때 결과가 언제 깨지는지만 물어보세요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Just ask when the result breaks with other data or smaller models."
         }
       ]
     }
