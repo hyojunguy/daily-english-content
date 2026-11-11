@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-11-10T21:31:44+00:00",
+  "updated": "2026-11-11T21:56:35+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 92,
-  "total_days": 76,
-  "total_turns": 1646,
-  "total_target_turns": 892,
+  "latest_day": 93,
+  "total_days": 77,
+  "total_turns": 1666,
+  "total_target_turns": 904,
   "days": [
     {
       "day": 1,
@@ -1222,6 +1222,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-11-11.json"
+    },
+    {
+      "day": 93,
+      "date": "2026-11-12",
+      "week": 14,
+      "block": "tech-comm",
+      "theme": "논문·최신 연구 — 읽고 말하기",
+      "topic": "논문 주장의 약점을 지적하기",
+      "difficulty": 3,
+      "situations": 4,
+      "turns": 20,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-11-12.json"
     }
   ]
 }
