@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-11-11T21:56:35+00:00",
+  "updated": "2026-11-12T21:17:17+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 93,
-  "total_days": 77,
-  "total_turns": 1666,
-  "total_target_turns": 904,
+  "latest_day": 94,
+  "total_days": 78,
+  "total_turns": 1686,
+  "total_target_turns": 915,
   "days": [
     {
       "day": 1,
@@ -1238,6 +1238,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-11-12.json"
+    },
+    {
+      "day": 94,
+      "date": "2026-11-13",
+      "week": 14,
+      "block": "tech-comm",
+      "theme": "논문·최신 연구 — 읽고 말하기",
+      "topic": "우리 문제에 적용 가능한지 판단해 말하기",
+      "difficulty": 3,
+      "situations": 4,
+      "turns": 20,
+      "target_turns": 11,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-11-13.json"
     }
   ]
 }

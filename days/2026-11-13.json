@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "day": 94,
+  "date": "2026-11-13",
+  "week": 14,
+  "block": "tech-comm",
+  "theme": "논문·최신 연구 — 읽고 말하기",
+  "topic": "우리 문제에 적용 가능한지 판단해 말하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d094-s1",
+      "title_ko": "화이트보드 앞에서 KV 캐시 압축 논문이 우리 서빙에 맞는지 판단하기",
+      "context_ko": "{name}은 팀 리드 Marco와 화이트보드 앞에서 KV 캐시 압축 논문을 로드맵에 올릴지 논의한다. 논문이 평가한 컨텍스트 길이가 우리 서비스 트래픽보다 훨씬 짧아서 그대로 믿기 어렵다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Marco, I finished the KV-cache paper. The core claim is that four-times compression costs almost no quality.",
+          "ko": "Marco, KV 캐시 논문 다 읽었어요. 핵심 주장은 4배 압축해도 품질 손실이 거의 없다는 거예요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 리드 Marco",
+          "en": "Nice. We're memory-bound at long context, so four times would be huge. But did they test on prompts as long as ours?",
+          "ko": "좋네요. 우리는 긴 컨텍스트에서 메모리가 병목이라 4배면 엄청난데요. 근데 우리만큼 긴 프롬프트로도 테스트했대요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "What I'm skeptical about is the context length. They tested up to eight thousand tokens, but our users send sixty thousand.",
+          "ko": "제가 의심스러운 건 컨텍스트 길이예요. 논문은 8천 토큰까지만 봤는데, 우리 유저는 6만 토큰을 보내거든요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 리드 Marco",
+          "en": "Fair. So what do you want to do, drop it or try it anyway?",
+          "ko": "일리 있네요. 그래서 어떻게 할까요, 접을까요 아니면 그래도 해볼까요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let's run one cheap test at sixty thousand tokens first. If quality holds there, we'll put it on the roadmap.",
+          "ko": "일단 6만 토큰에서 싸게 테스트 한 번 돌려보죠. 거기서 품질이 유지되면 로드맵에 올리고요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d094-s2",
+      "title_ko": "후배 책상 옆에서 데이터 믹싱 논문의 전제 조건 짚어주기",
+      "context_ko": "후배 Priya가 데이터 믹싱 논문을 바로 재구현하려 한다. {name}은 그 방법이 도메인 라벨이 깨끗할 때만 통한다는 점을 알려줘야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Priya, I read your data-mixing paper. It only holds under one condition: a huge, clean pool of domain labels.",
+          "ko": "Priya, 가져온 데이터 믹싱 논문 읽어봤어요. 도메인 라벨이 크고 깨끗할 때만 성립해요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "후배 Priya",
+          "en": "Hmm. Our labels are noisy, but we do have fifty million documents. Isn't that big enough to try it?",
+          "ko": "음, 우리 라벨은 노이즈가 있지만 문서는 5천만 개나 있잖아요. 그 정도면 시도해볼 만하지 않나요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Size isn't the issue. Their gains disappear when domain tags are wrong more than ten percent of the time.",
+          "ko": "규모가 문제가 아니에요. 도메인 태그가 10% 넘게 틀리면 논문의 이득이 사라져요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "후배 Priya",
+          "en": "Ugh, our tag error rate is probably around twenty percent. Should I just skip the paper then?",
+          "ko": "아, 우리 태그 오류율이 아마 20% 정도일 텐데요. 그럼 이 논문은 그냥 건너뛸까요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Don't skip it. Measure our tag error rate on a small sample first, then we'll know whether it applies.",
+          "ko": "건너뛰진 마요. 작은 샘플로 우리 태그 오류율부터 재보면 적용 가능한지 알 수 있어요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d094-s3",
+      "title_ko": "화상회의에서 디렉터에게 새 옵티마이저 도입 여부 권고하기",
+      "context_ko": "디렉터 Dana가 시간이 2분뿐이라며 논문의 새 옵티마이저를 다음 사전학습에 쓸지 묻는다. {name}은 결론과 검증 조건을 짧게 말해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "디렉터 Dana",
+          "en": "I have two minutes. Should we adopt the new optimizer from that paper for our next pretraining run, yes or no?",
+          "ko": "2분밖에 없어요. 그 논문에 나온 새 옵티마이저, 다음 사전학습에 쓸지 말지 예/아니오로 말해줘요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not yet. The core claim is faster convergence, but they only showed it on models ten times smaller than ours.",
+          "ko": "아직은 아니에요. 핵심 주장은 수렴이 빠르다는 건데, 우리 모델보다 10배 작은 모델에서만 보여줬어요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "디렉터 Dana",
+          "en": "Ten times smaller is common in papers. What would convince you, and how long would that take?",
+          "ko": "논문은 보통 그 정도로 작게 하잖아요. 뭘 보면 확신이 서고, 얼마나 걸려요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "A two-day run at our smallest production scale. If the loss curve still beats ours by five percent, I'd say go.",
+          "ko": "우리 가장 작은 프로덕션 규모로 이틀 돌려보죠. 손실 곡선이 여전히 우리 것보다 5% 낫다면 가도 된다고 봐요.",
+          "is_target": true
+        },
+        {
+          "n": 5,
+          "speaker": "A",
+          "role_ko": "디렉터 Dana",
+          "en": "Two days is fine. Send me a one-line decision rule by tomorrow so I can sign off.",
+          "ko": "이틀이면 괜찮아요. 내일까지 판단 기준을 한 줄로 보내줘요, 제가 승인할게요.",
+          "is_target": false
+        }
+      ]
+    },
+    {
+      "id": "d094-s4",
+      "title_ko": "서버룸 앞에서 두 논문 중 우리 지연 문제에 맞는 쪽 고르기",
+      "context_ko": "{name}은 서버 랙 앞에서 동료 Sam에게 두 논문 중 어느 쪽이 우리 첫 토큰 지연 문제에 맞는지 상의한다. 결론은 한쪽을 먼저 시험하고 품질 하한선을 미리 정하는 것이다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sam, do you have a minute? I need to decide between two papers for our latency problem.",
+          "ko": "Sam, 잠깐 시간 돼요? 우리 지연 문제에 어떤 논문을 쓸지 두 개 중에 정해야 해서요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 Sam",
+          "en": "Sure. One's the speculative decoding paper, the other is the pruning one. Our bottleneck is time to first token, right?",
+          "ko": "그럼요. 하나는 투기적 디코딩 논문이고 하나는 가지치기 논문이죠. 우리 병목은 첫 토큰까지 걸리는 시간 맞죠?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Right. Speculative decoding speeds up later tokens, so it barely touches time to first token. Pruning looks more relevant.",
+          "ko": "맞아요. 투기적 디코딩은 뒤쪽 토큰을 빠르게 하니까 첫 토큰 시간엔 거의 영향이 없어요. 가지치기가 더 맞아 보여요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 Sam",
+          "en": "Agreed, but pruning usually needs retraining. Do we have the budget for that this quarter?",
+          "ko": "동의해요. 근데 가지치기는 보통 재학습이 필요하잖아요. 이번 분기에 그럴 예산이 있나요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Probably not a full retrain. I'd try the one-shot variant first and measure time to first token on our own traffic.",
+          "ko": "전체 재학습은 어려울 거예요. 원샷 방식부터 시도해서 우리 실제 트래픽으로 첫 토큰 시간을 재볼게요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
