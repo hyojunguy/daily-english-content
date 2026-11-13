@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-11-12T21:17:17+00:00",
+  "updated": "2026-11-13T21:02:57+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 94,
-  "total_days": 78,
-  "total_turns": 1686,
-  "total_target_turns": 915,
+  "latest_day": 95,
+  "total_days": 79,
+  "total_turns": 1708,
+  "total_target_turns": 927,
   "days": [
     {
       "day": 1,
@@ -1254,6 +1254,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-11-13.json"
+    },
+    {
+      "day": 95,
+      "date": "2026-11-14",
+      "week": 14,
+      "block": "tech-comm",
+      "theme": "논문·최신 연구 — 읽고 말하기",
+      "topic": "재현 실패를 보고하기",
+      "difficulty": 3,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-11-14.json"
     }
   ]
 }

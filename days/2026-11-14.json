@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 95,
+  "date": "2026-11-14",
+  "week": 14,
+  "block": "tech-comm",
+  "theme": "논문·최신 연구 — 읽고 말하기",
+  "topic": "재현 실패를 보고하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d095-s1",
+      "title_ko": "화상회의에서 '재현이 안 된다'고 팀 리드에게 보고하기",
+      "context_ko": "팀 리드 Priya가 희소 어텐션 논문 위에 다음 분기 계획을 세우려 한다. {name}은 시드 세 개를 돌렸지만 논문 수치가 나오지 않았다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Quick status on the sparse-attention paper — are we good to build on it? I need a yes or no before planning on Monday.",
+          "ko": "희소 어텐션 논문 건, 이거 기반으로 가도 돼요? 월요일 계획 잡기 전에 예/아니오만 알려주세요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not yet. The core claim is a four-point retrieval gain, but across three seeds I only reproduced about one point.",
+          "ko": "아직은요. 논문의 핵심 주장은 검색 성능 4점 향상인데, 시드 세 개로 돌려보니 1점 정도밖에 재현이 안 됐어요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Could that just be noise? Maybe your run is off, or the authors cherry-picked their best seed. Which one do you think it is?",
+          "ko": "그냥 노이즈 아닐까요? 돌린 쪽이 문제거나, 저자들이 제일 좋은 시드만 골랐을 수도 있고요. 어느 쪽 같아요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I can't tell yet. I used their released config and code, so I'd call it a failed reproduction, not a refutation.",
+          "ko": "아직 모르겠어요. 공개된 설정이랑 코드 그대로 썼으니까, 반박이라기보다는 재현 실패라고 하는 게 맞겠어요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d095-s2",
+      "title_ko": "동료 책상 옆에서 웜업 설정 차이 파고들기",
+      "context_ko": "Marco는 학습 루프를 직접 짠 사람이라 자기 코드 탓은 아니라고 생각한다. {name}은 학습률 웜업이 원인일 수 있다고 본다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "I checked my data loader again and it's fine. Are you sure the gap isn't from the learning-rate warmup you changed?",
+          "ko": "데이터 로더 다시 봤는데 문제없어요. 차이가 네가 바꾼 학습률 웜업 때문은 아니고?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good point. I'll rerun with their exact warmup. If the gain comes back, it only holds under that schedule.",
+          "ko": "좋은 지적이에요. 저자 웜업 그대로 다시 돌릴게요. 성능이 돌아오면 그 스케줄에서만 성립하는 거죠.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Wouldn't they mention it if the warmup mattered that much? I only see it buried in their appendix, if it's there at all.",
+          "ko": "웜업이 그렇게 중요하면 본문에 썼겠죠? 부록 어딘가에 묻혀 있거나, 아예 없는 것 같은데요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It's in the appendix, one line. What I'm skeptical about is calling that a minor detail when it flips the result.",
+          "ko": "부록에 한 줄 있어요. 결과가 뒤집히는데 그걸 사소한 디테일이라고 부르는 건 좀 의심스러워요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d095-s3",
+      "title_ko": "복도에서 저자에게 보낼 메일 표현 다듬기",
+      "context_ko": "{name}은 논문 저자에게 재현 결과를 메일로 보내려 한다. 동료 Sam은 그냥 숫자가 틀렸다고 쓰라고 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 리서처",
+          "en": "You're emailing the authors? Just tell them the numbers are wrong. Honestly, three failed seeds is enough for me.",
+          "ko": "저자한테 메일 보내게? 그냥 숫자가 틀렸다고 해. 솔직히 시드 세 번 실패면 나는 충분하다고 봐.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd rather not accuse anyone. I'll share my setup and ask whether the reported score used a different evaluation split.",
+          "ko": "누굴 몰아세우고 싶진 않아. 내 세팅을 공유하고, 보고된 점수가 다른 평가 분할을 쓴 건지 물어볼래.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 리서처",
+          "en": "Fair, but won't a polite email just get ignored? It might sound like you're hiding the fact that you couldn't reproduce it.",
+          "ko": "일리는 있는데, 너무 공손하면 무시당하지 않을까? 재현 못 한 걸 숨기는 것처럼 들릴 수도 있고.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll say it up front: we got four points lower, and I've attached logs and configs so they can check.",
+          "ko": "처음에 바로 말할 거야. 우리는 4점 낮게 나왔고, 확인하실 수 있게 로그랑 설정도 첨부했다고.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d095-s4",
+      "title_ko": "옥상 벤치에서 이틀만 더 쓰자고 디렉터와 합의하기",
+      "context_ko": "디렉터 Dana는 이번 스프린트 안에 제품팀에 답을 줘야 한다. {name}은 재현 실패를 알리고 추가 시간을 제한해서 요청한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Do you have a minute? The paper's reproduction failed, and I need a decision on whether to keep digging.",
+          "ko": "잠깐 시간 되세요? 논문 재현이 실패해서, 계속 파볼지 말지 결정이 필요해요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "디렉터",
+          "en": "Sure. How much more time are we talking about? I've already told product we'd have an answer this sprint.",
+          "ko": "네, 말해 봐요. 시간이 얼마나 더 필요한데요? 제품팀에는 이번 스프린트 안에 답 준다고 이미 말해놨어요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Two more days, max. I want to try the authors' warmup and a larger batch size, then stop.",
+          "ko": "길어야 이틀이요. 저자들의 웜업이랑 더 큰 배치 크기를 시험해 보고, 그걸로 끝내겠습니다.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "디렉터",
+          "en": "And if it still doesn't reproduce? What do I tell product — that the method doesn't work?",
+          "ko": "그래도 재현이 안 되면요? 제품팀에는 뭐라고 해요, 이 방법이 안 된다고요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Tell them it only holds under the authors' setup, which we can't match. That's not enough to ship on.",
+          "ko": "저자들 세팅에서만 성립하는데 우리는 그걸 맞출 수 없다고 하세요. 그걸로는 출시 근거로 부족해요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d095-s5",
+      "title_ko": "서버룸 앞에서 재실험용 노드 확보하기",
+      "context_ko": "인프라 엔지니어 Jin은 대기열이 밀려 있어 논문 재현에 노드 다섯 개를 주기 꺼린다. {name}은 이유와 계획을 구체적으로 설명해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Can I get the five nodes through Friday? I need to rerun the paper's experiment with more seeds.",
+          "ko": "금요일까지 노드 다섯 개 쓸 수 있을까요? 논문 실험을 시드 더 늘려서 다시 돌려야 해서요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어",
+          "en": "Five nodes for a replication? Convince me. Our queue is already backed up with real training jobs.",
+          "ko": "재현 실험에 노드 다섯 개요? 설득해 보세요. 지금 큐도 진짜 학습 잡들로 꽉 막혀 있는데.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The core claim is that it beats the baseline everywhere. We should verify that before building on it.",
+          "ko": "논문의 핵심 주장이 모든 조건에서 베이스라인을 이긴다는 거예요. 그 위에 쌓기 전에 확인해야 해요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "인프라 엔지니어",
+          "en": "Fine, but be specific. How many runs, and what will you do if the results still don't match?",
+          "ko": "알겠어요, 근데 구체적으로요. 몇 번 돌리고, 그래도 결과가 안 맞으면 어떻게 할 건데요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Five seeds, two configs, so ten runs. If they still don't match, I'll write it up and share the logs.",
+          "ko": "시드 다섯 개에 설정 두 개, 총 열 번이요. 그래도 안 맞으면 정리해서 로그와 함께 공유할게요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
