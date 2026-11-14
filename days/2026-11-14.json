@@ -29,7 +29,8 @@
           "role_ko": "나",
           "en": "Not yet. The core claim is a four-point retrieval gain, but across three seeds I only reproduced about one point.",
           "ko": "아직은요. 논문의 핵심 주장은 검색 성능 4점 향상인데, 시드 세 개로 돌려보니 1점 정도밖에 재현이 안 됐어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Not yet because I only got 1 point, not 4."
         },
         {
           "n": 3,
@@ -45,7 +46,8 @@
           "role_ko": "나",
           "en": "I can't tell yet. I used their released config and code, so I'd call it a failed reproduction, not a refutation.",
           "ko": "아직 모르겠어요. 공개된 설정이랑 코드 그대로 썼으니까, 반박이라기보다는 재현 실패라고 하는 게 맞겠어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I used their code and settings, but my test failed."
         }
       ]
     },
@@ -70,7 +72,8 @@
           "role_ko": "나",
           "en": "Good point. I'll rerun with their exact warmup. If the gain comes back, it only holds under that schedule.",
           "ko": "좋은 지적이에요. 저자 웜업 그대로 다시 돌릴게요. 성능이 돌아오면 그 스케줄에서만 성립하는 거죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll try again with their exact settings."
         },
         {
           "n": 3,
@@ -86,7 +89,8 @@
           "role_ko": "나",
           "en": "It's in the appendix, one line. What I'm skeptical about is calling that a minor detail when it flips the result.",
           "ko": "부록에 한 줄 있어요. 결과가 뒤집히는데 그걸 사소한 디테일이라고 부르는 건 좀 의심스러워요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It's only one line, but it changes the result."
         }
       ]
     },
@@ -111,7 +115,8 @@
           "role_ko": "나",
           "en": "I'd rather not accuse anyone. I'll share my setup and ask whether the reported score used a different evaluation split.",
           "ko": "누굴 몰아세우고 싶진 않아. 내 세팅을 공유하고, 보고된 점수가 다른 평가 분할을 쓴 건지 물어볼래.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll share my setup and ask about their evaluation split."
         },
         {
           "n": 3,
@@ -127,7 +132,8 @@
           "role_ko": "나",
           "en": "I'll say it up front: we got four points lower, and I've attached logs and configs so they can check.",
           "ko": "처음에 바로 말할 거야. 우리는 4점 낮게 나왔고, 확인하실 수 있게 로그랑 설정도 첨부했다고.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll tell them we got 4 points lower, and I'll send logs."
         }
       ]
     },
@@ -144,7 +150,8 @@
           "role_ko": "나",
           "en": "Do you have a minute? The paper's reproduction failed, and I need a decision on whether to keep digging.",
           "ko": "잠깐 시간 되세요? 논문 재현이 실패해서, 계속 파볼지 말지 결정이 필요해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Do you have time to decide if we should continue?"
         },
         {
           "n": 2,
@@ -160,7 +167,8 @@
           "role_ko": "나",
           "en": "Two more days, max. I want to try the authors' warmup and a larger batch size, then stop.",
           "ko": "길어야 이틀이요. 저자들의 웜업이랑 더 큰 배치 크기를 시험해 보고, 그걸로 끝내겠습니다.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I need 2 more days to try their settings, then stop."
         },
         {
           "n": 4,
@@ -176,7 +184,8 @@
           "role_ko": "나",
           "en": "Tell them it only holds under the authors' setup, which we can't match. That's not enough to ship on.",
           "ko": "저자들 세팅에서만 성립하는데 우리는 그걸 맞출 수 없다고 하세요. 그걸로는 출시 근거로 부족해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Tell them it works only in their setup, so we stop."
         }
       ]
     },
@@ -193,7 +202,8 @@
           "role_ko": "나",
           "en": "Can I get the five nodes through Friday? I need to rerun the paper's experiment with more seeds.",
           "ko": "금요일까지 노드 다섯 개 쓸 수 있을까요? 논문 실험을 시드 더 늘려서 다시 돌려야 해서요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can I use 5 nodes until Friday for more tests?"
         },
         {
           "n": 2,
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "The core claim is that it beats the baseline everywhere. We should verify that before building on it.",
           "ko": "논문의 핵심 주장이 모든 조건에서 베이스라인을 이긴다는 거예요. 그 위에 쌓기 전에 확인해야 해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It claims to beat the baseline everywhere, so we should test it."
         },
         {
           "n": 4,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "Five seeds, two configs, so ten runs. If they still don't match, I'll write it up and share the logs.",
           "ko": "시드 다섯 개에 설정 두 개, 총 열 번이요. 그래도 안 맞으면 정리해서 로그와 함께 공유할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll run 5 seeds and 2 settings, then share the logs."
         }
       ]
     }
