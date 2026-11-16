@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "day": 98,
+  "date": "2026-11-17",
+  "week": 14,
+  "block": "tech-comm",
+  "theme": "논문·최신 연구 — 읽고 말하기",
+  "topic": "컨퍼런스 발표를 듣고 질문하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d098-s1",
+      "title_ko": "강연장 마이크 앞에서 발표자에게 한계 조건 묻기",
+      "context_ko": "추론 가속 기법 발표가 끝난 대강당. {name}이 통로 마이크 줄에 서서, 좁은 테스트셋의 한계를 발표자에게 직접 묻는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks for the talk. If I understand correctly, the core claim is that speculative decoding speedups survive at large batch sizes.",
+          "ko": "발표 감사합니다. 제가 이해한 핵심 주장은, 큰 배치에서도 speculative decoding 속도 향상이 유지된다는 거죠?",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "발표자",
+          "en": "Right, we saw about a two-times throughput gain on our benchmark, even at batch size 64. Was there something specific you wanted to check?",
+          "ko": "맞습니다. 벤치마크에서 배치 64에서도 처리량이 약 두 배 늘었어요. 특별히 확인하고 싶은 게 있으세요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "What I'm skeptical about is the draft model's acceptance rate on out-of-domain prompts, since your test set looked quite narrow.",
+          "ko": "제가 의문인 건, 테스트셋이 꽤 좁아 보여서 도메인 밖 프롬프트에서의 draft 모델 수락률이에요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "발표자",
+          "en": "Fair point. We only evaluated on code and chat traffic, so I can't say much about long documents or multilingual input.",
+          "ko": "맞는 지적이에요. 코드랑 채팅 트래픽에서만 평가해서, 긴 문서나 다국어 입력은 말씀드리기 어렵습니다.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Got it. So it only holds under short, in-domain prompts, and anyone adopting this should measure their own traffic first?",
+          "ko": "알겠습니다. 그럼 짧고 도메인 안의 프롬프트에서만 성립하니, 도입하려면 각자 트래픽부터 재봐야 한다는 말씀이죠?",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d098-s2",
+      "title_ko": "포스터 세션에서 저자에게 규모 일반화 질문하기",
+      "context_ko": "학습률 스케줄 포스터 앞. {name}이 저자에게 모델 크기와 시드 수를 묻고, 설정 파일을 공유받으려 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "포스터 저자",
+          "en": "This poster shows our learning-rate schedule cuts final loss by three percent across all model sizes. Any questions?",
+          "ko": "이 포스터는 저희 학습률 스케줄이 모든 모델 크기에서 최종 loss를 3% 줄인다는 내용이에요. 질문 있으세요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "So the core claim is it transfers across scales. Did you test anything above one billion parameters?",
+          "ko": "그러니까 핵심 주장은 규모가 달라져도 통한다는 거네요. 10억 파라미터 넘는 모델도 해보셨어요?",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "포스터 저자",
+          "en": "Not yet. Compute was tight, so the largest run was 700 million parameters, and we only ran one seed per size.",
+          "ko": "아직요. 컴퓨팅이 빠듯해서 가장 큰 게 7억이고, 크기마다 시드는 하나만 돌렸어요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Understood. Could you share the config so I can try it on our larger runs and compare the loss curves?",
+          "ko": "알겠습니다. 설정 파일 공유해 주실 수 있나요? 저희 큰 학습에 적용해서 loss 곡선을 비교해 보고 싶어요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d098-s3",
+      "title_ko": "카페 라운지 소파에서 동료와 Q&A 질문 다듬기",
+      "context_ko": "발표 직후 컨퍼런스 카페 라운지. {name}은 평가 오염이 의심되지만 따지는 듯한 인상은 피하고 싶어, 동료 Priya와 질문 표현을 정한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That talk was interesting, but what I'm skeptical about is the eval, because they reused the same prompts they tuned on.",
+          "ko": "흥미로운 발표였는데, 제가 걸리는 건 평가예요. 튜닝에 쓴 프롬프트를 그대로 다시 쓴 것 같아서요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 Priya",
+          "en": "Hm, I thought the held-out slide covered that. Are you sure it's contamination and not just a weak baseline? I'd hate to ask something unfair.",
+          "ko": "음, 홀드아웃 슬라이드가 그걸 다룬 줄 알았는데. 오염이 확실해요, 아니면 그냥 베이스라인이 약한 걸까요? 불공정한 질문은 싫어서요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not sure. That's why I'll ask whether the held-out prompts were chosen before or after tuning, not accuse anyone.",
+          "ko": "확신은 없어요. 그래서 누굴 탓하기보다, 홀드아웃 프롬프트를 튜닝 전에 골랐는지 후에 골랐는지 물어보려고요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 Priya",
+          "en": "Good framing. If they say before, you can follow up on the core claim, since the gain is only on that split.",
+          "ko": "좋은 접근이에요. 전이라고 하면 핵심 주장으로 이어서 물어보면 돼요. 향상이 그 분할에서만 나오니까요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Right. If it only holds under that split, the headline number is much weaker than the abstract suggests.",
+          "ko": "맞아요. 그 분할에서만 성립한다면, 대표 수치가 초록에서 말하는 것보다 훨씬 약한 거죠.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d098-s4",
+      "title_ko": "온라인 학회 Q&A에서 마이크를 켜고 질문하기",
+      "context_ko": "가상 학회의 스케일링 법칙 세션. 진행자가 {name}의 채팅 질문을 읽고, {name}은 집 책상에서 음소거를 풀고 직접 묻는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "세션 진행자",
+          "en": "We have time for one more. Your question in the chat was about the scaling-law fit. Could you unmute and ask it?",
+          "ko": "질문 하나 더 받을 시간이 있네요. 채팅에 올리신 스케일링 법칙 피팅 질문, 음소거 풀고 직접 해주시겠어요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sure. The core claim is a clean power law, but how many data points did you fit it on?",
+          "ko": "네. 핵심 주장은 깔끔한 멱법칙인데, 피팅에 데이터 포인트를 몇 개 쓰셨나요?",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "발표자",
+          "en": "Only five model sizes, honestly. The fit looks clean, but the error bars get wide beyond ten billion parameters.",
+          "ko": "솔직히 모델 크기 다섯 개뿐이에요. 피팅은 깔끔해 보이지만 100억 파라미터를 넘으면 오차 막대가 넓어집니다.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Thanks. Then it only holds under the range you measured, so I'd be careful extrapolating to our 70B runs.",
+          "ko": "감사합니다. 그럼 측정하신 범위 안에서만 성립하니, 저희 70B 학습으로 외삽하는 건 조심해야겠네요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-11-15T21:03:18+00:00",
+  "updated": "2026-11-16T21:02:59+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 97,
-  "total_days": 81,
-  "total_turns": 1750,
-  "total_target_turns": 951,
+  "latest_day": 98,
+  "total_days": 82,
+  "total_turns": 1768,
+  "total_target_turns": 961,
   "days": [
     {
       "day": 1,
@@ -1302,6 +1302,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-11-16.json"
+    },
+    {
+      "day": 98,
+      "date": "2026-11-17",
+      "week": 14,
+      "block": "tech-comm",
+      "theme": "논문·최신 연구 — 읽고 말하기",
+      "topic": "컨퍼런스 발표를 듣고 질문하기",
+      "difficulty": 3,
+      "situations": 4,
+      "turns": 18,
+      "target_turns": 10,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-11-17.json"
     }
   ]
 }
