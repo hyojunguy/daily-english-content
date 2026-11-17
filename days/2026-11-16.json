@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "Before we email the authors, I'd like to cut our list down to the one question that matters most.",
           "ko": "저자한테 메일 보내기 전에, 제일 중요한 질문 하나로 줄이고 싶어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I want one key question before we email the authors."
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "The core claim is that the method halves memory use, so I'd ask for the exact batch size they used.",
           "ko": "핵심 주장이 메모리를 절반으로 줄인다는 거니까, 실제로 쓴 배치 크기를 먼저 물어보려고요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The method halves memory, so I'll ask their batch size first."
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "I'll fold it into the same sentence as the batch size, and keep the whole email under a hundred words.",
           "ko": "배치 크기 질문이랑 한 문장으로 묶고, 메일 전체는 백 단어 안으로 짧게 쓸게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll put both questions in one sentence and keep the email short."
         }
       ]
     },
@@ -70,7 +73,8 @@
           "role_ko": "나",
           "en": "Can I see your draft before you send it? I want to check the tone.",
           "ko": "보내기 전에 초안 좀 볼 수 있을까요? 어투를 좀 확인하고 싶어서요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can I check your draft's tone before you send it?"
         },
         {
           "n": 2,
@@ -86,7 +90,8 @@
           "role_ko": "나",
           "en": "A bit. Try, 'What I'm skeptical about is Table 3, because I couldn't reproduce it with the released code.'",
           "ko": "좀요. '표 3이 의심스러운 이유는 공개된 코드로 재현이 안 됐기 때문'이라고 써보세요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Say you doubt Table 3 because you couldn't reproduce it."
         },
         {
           "n": 4,
@@ -102,7 +107,8 @@
           "role_ko": "나",
           "en": "Attach your config and one log, and ask what we might have missed. That makes it a question, not an accusation.",
           "ko": "설정 파일이랑 로그 하나 첨부하고, 우리가 놓친 게 뭔지 물어보세요. 그러면 비난이 아니라 질문이 돼요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Send your config and one log, and ask what we missed."
         }
       ]
     },
@@ -119,7 +125,8 @@
           "role_ko": "나",
           "en": "Thanks for joining. The authors replied overnight, but their answer raises more questions than it settles.",
           "ko": "들어와 주셔서 감사해요. 저자가 밤새 답장했는데, 해결되는 것보다 의문이 더 늘었어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The authors replied overnight, but their answer raises more questions."
         },
         {
           "n": 2,
@@ -135,7 +142,8 @@
           "role_ko": "나",
           "en": "Exactly. It only holds under short contexts, and they never tested anything past two thousand tokens.",
           "ko": "맞아요. 짧은 컨텍스트에서만 성립하는 건데, 2천 토큰 넘는 건 테스트한 적이 없어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It only works with short contexts, and they never tested longer ones."
         },
         {
           "n": 4,
@@ -151,7 +159,8 @@
           "role_ko": "나",
           "en": "I'd write once more, thank them, and ask for one specific number: accuracy at eight thousand tokens.",
           "ko": "한 번만 더 쓰되 감사 인사를 하고, 숫자 하나만 물어보죠. 8천 토큰에서의 정확도요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll thank them and ask for accuracy at 8000 tokens."
         }
       ]
     },
@@ -168,7 +177,8 @@
           "role_ko": "나",
           "en": "You met the first author at that workshop, right? Could you introduce me by email?",
           "ko": "그 워크숍에서 제1저자 만나셨죠? 메일로 저를 소개해 주실 수 있어요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Could you introduce me to the first author by email?"
         },
         {
           "n": 2,
@@ -184,7 +194,8 @@
           "role_ko": "나",
           "en": "The core claim is that their filter transfers across scales. I want to know if they tested above 7B.",
           "ko": "핵심 주장이 필터가 규모를 넘어 통한다는 거예요. 7B 넘는 모델에서도 테스트했는지 알고 싶어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Did they test their filter on bigger models too?"
         },
         {
           "n": 4,
@@ -200,7 +211,8 @@
           "role_ko": "나",
           "en": "Thanks. I'll draft it today, and I'll make it easy for them: one question, one yes-or-no answer.",
           "ko": "고마워요. 오늘 초안 쓸게요. 답하기 쉽게 질문은 하나, 답은 예·아니오로 끝나게 할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll write one easy question for them today."
         }
       ]
     }
