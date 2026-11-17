@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "day": 99,
+  "date": "2026-11-18",
+  "week": 15,
+  "block": "tech-comm",
+  "theme": "비기술 동료에게 설명하기",
+  "topic": "모델이 왜 틀리는지 PM에게 설명하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d099-s1",
+      "title_ko": "화상회의에서 짧은 질문에 오답이 나오는 이유 설명하기",
+      "context_ko": "PM 프리야가 고객 불만을 받고 화상회의에서 왜 모델이 짧은 검색어에 엉뚱한 답을 하는지, 이번 스프린트에 고칠 수 있는지 묻는다. {name}은 버그가 아니라 데이터 문제임을 쉽게 설명해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I saw your note about the assistant botching short queries. Let me explain why that keeps happening.",
+          "ko": "짧은 질문에서 어시스턴트가 자꾸 틀린다는 메모 봤어요. 왜 그런지 설명드릴게요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "Please, yes. Customers type three words and get nonsense. Is it a bug? Can engineering just fix it this sprint?",
+          "ko": "네, 부탁해요. 고객이 세 단어만 쳐도 이상한 답이 나와요. 버그인가요? 이번 스프린트에 고칠 수 있나요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It's not a bug. Think of it like a student who only practiced long essays, then got a one-word question.",
+          "ko": "버그는 아니에요. 긴 에세이만 연습한 학생이 갑자기 단어 하나짜리 질문을 받은 상황이라고 보시면 돼요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "Okay, that makes sense. So we just need to give it more short examples, right? How long would that take?",
+          "ko": "아, 이해돼요. 그럼 짧은 예시를 더 주면 되는 거죠? 얼마나 걸릴까요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Mostly yes. We need to collect and label short queries first, which is the slow part, so I'd estimate three weeks.",
+          "ko": "대체로 맞아요. 짧은 질문을 먼저 모으고 라벨링해야 하는데 그게 오래 걸려서, 3주 정도 보고 있어요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d099-s2",
+      "title_ko": "복도에서 데모 오답을 임원에게 한 줄로 설명하기",
+      "context_ko": "로드맵 리뷰 직전, 데모에서 가격 질문에 틀린 답이 나와 임원이 이유를 물었다. {name}은 복도에서 PM 마르코를 붙잡고 반복해서 말할 수 있는 한 줄 설명을 준다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Marco, got a minute? I wanted to catch you before the roadmap review about the wrong answers in the demo.",
+          "ko": "마르코, 잠깐 시간 돼요? 로드맵 리뷰 전에 데모에서 나온 오답 얘기를 드리고 싶어서요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "Sure. The exec asked why it got the pricing question wrong. I need a one-line explanation I can repeat.",
+          "ko": "그럼요. 임원이 왜 가격 질문에 틀렸냐고 물었어요. 제가 그대로 말할 수 있는 한 줄 설명이 필요해요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The short version is, it never saw that pricing page during training, so it guessed something plausible.",
+          "ko": "한마디로, 학습할 때 그 가격 페이지를 본 적이 없어서 그럴듯하게 지어낸 거예요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "Guessed? That sounds bad. Can't we just tell it not to guess when it isn't sure?",
+          "ko": "지어냈다고요? 안 좋게 들리네요. 확실하지 않으면 추측하지 말라고 시키면 안 되나요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We can add that, but it will refuse more often. It's a trade-off between wrong answers and unhelpful ones.",
+          "ko": "넣을 수는 있는데 그러면 답변 거부가 늘어요. 틀린 답과 도움 안 되는 답 사이의 트레이드오프예요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d099-s3",
+      "title_ko": "점심 테이블에서 정확도 95%인데 불만이 나오는 이유 풀어주기",
+      "context_ko": "점심시간, PM 대시보드에는 정확도 95%인데 핵심 고객 세 곳은 계속 오류를 겪는다. {name}은 평균 지표가 어려운 사례를 가린다는 점을 설명하고 다음 단계를 제안한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Your dashboard says ninety-five percent accuracy, but I get why that number feels misleading when big customers complain.",
+          "ko": "대시보드엔 정확도 95%라고 뜨는데, 큰 고객들이 불만을 내니까 그 숫자가 와닿지 않는 거 이해해요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "Exactly. We're at ninety-five, yet the three biggest accounts keep hitting errors. Did the metric lie to us?",
+          "ko": "맞아요. 95%인데 가장 큰 세 계정은 계속 오류가 나요. 지표가 우리한테 거짓말한 건가요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not lie, exactly. The average hides the hard cases. What that means for you is, we should track those accounts separately.",
+          "ko": "거짓말은 아니고요, 평균이 어려운 케이스를 가리는 거예요. 그래서 그 계정들은 따로 추적해야 해요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "Fine, but that's more reporting work for your team. What would you need from me to start?",
+          "ko": "좋아요, 근데 그럼 팀에서 리포팅 일이 늘어나잖아요. 시작하려면 제가 뭘 해드려야 하죠?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Just a list of the accounts that matter most. I'll build a small test set from their real queries.",
+          "ko": "가장 중요한 계정 목록만 주세요. 그 고객들의 실제 질문으로 작은 테스트셋을 만들게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d099-s4",
+      "title_ko": "화이트보드 앞에서 '오류 제로' 약속 대신 사람 검토 흐름 합의하기",
+      "context_ko": "법무팀이 고객에게 오답은 절대 없다고 약속하자고 한다. {name}은 화이트보드 앞에서 PM과 측정 가능한 오류율과 사람 검토 폴백을 대안으로 합의한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "Legal wants us to tell customers the model will never give wrong medical-billing answers. Can we promise that?",
+          "ko": "법무팀이 고객한테 모델이 의료 청구 질문에 절대 틀린 답을 안 한다고 말하자는데, 그렇게 약속할 수 있나요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I wouldn't promise zero. I'd promise a measured error rate and a clear fallback to a human when confidence is low.",
+          "ko": "전 제로를 약속하진 않을 거예요. 측정된 오류율과, 확신이 낮을 때 사람에게 넘기는 명확한 폴백을 약속하겠어요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "A human fallback costs money. How often would it trigger, and who staffs it?",
+          "ko": "사람이 받으면 비용이 드는데요. 얼마나 자주 넘어가고, 누가 맡죠?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Roughly eight percent of queries today. Let's draw the flow and agree on who owns the review queue.",
+          "ko": "지금 기준으로 질문의 8% 정도예요. 흐름을 그려보고 검토 큐를 누가 맡을지 정해요.",
+          "is_target": true
+        },
+        {
+          "n": 5,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "Okay, sketch it out. I'll take the staffing question to finance tomorrow and bring numbers back Friday.",
+          "ko": "좋아요, 그려봐요. 인력 문제는 내일 재무팀에 물어보고 금요일에 숫자를 가져올게요.",
+          "is_target": false
+        }
+      ]
+    }
+  ]
+}
