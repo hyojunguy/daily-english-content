@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "I saw your note about the assistant botching short queries. Let me explain why that keeps happening.",
           "ko": "짧은 질문에서 어시스턴트가 자꾸 틀린다는 메모 봤어요. 왜 그런지 설명드릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I saw your note, so I'll explain why short questions fail."
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "It's not a bug. Think of it like a student who only practiced long essays, then got a one-word question.",
           "ko": "버그는 아니에요. 긴 에세이만 연습한 학생이 갑자기 단어 하나짜리 질문을 받은 상황이라고 보시면 돼요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It's not a bug, because it only practiced long essays."
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "Mostly yes. We need to collect and label short queries first, which is the slow part, so I'd estimate three weeks.",
           "ko": "대체로 맞아요. 짧은 질문을 먼저 모으고 라벨링해야 하는데 그게 오래 걸려서, 3주 정도 보고 있어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Mostly yes, but we need 3 weeks to label the queries."
         }
       ]
     },
@@ -70,7 +73,8 @@
           "role_ko": "나",
           "en": "Marco, got a minute? I wanted to catch you before the roadmap review about the wrong answers in the demo.",
           "ko": "마르코, 잠깐 시간 돼요? 로드맵 리뷰 전에 데모에서 나온 오답 얘기를 드리고 싶어서요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can we talk about the wrong demo answers before the review?"
         },
         {
           "n": 2,
@@ -86,7 +90,8 @@
           "role_ko": "나",
           "en": "The short version is, it never saw that pricing page during training, so it guessed something plausible.",
           "ko": "한마디로, 학습할 때 그 가격 페이지를 본 적이 없어서 그럴듯하게 지어낸 거예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It never saw that pricing page in training, so it guessed."
         },
         {
           "n": 4,
@@ -102,7 +107,8 @@
           "role_ko": "나",
           "en": "We can add that, but it will refuse more often. It's a trade-off between wrong answers and unhelpful ones.",
           "ko": "넣을 수는 있는데 그러면 답변 거부가 늘어요. 틀린 답과 도움 안 되는 답 사이의 트레이드오프예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We can add it, but it will refuse more questions."
         }
       ]
     },
@@ -119,7 +125,8 @@
           "role_ko": "나",
           "en": "Your dashboard says ninety-five percent accuracy, but I get why that number feels misleading when big customers complain.",
           "ko": "대시보드엔 정확도 95%라고 뜨는데, 큰 고객들이 불만을 내니까 그 숫자가 와닿지 않는 거 이해해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Your dashboard says 95% accuracy, but I see why big customers disagree."
         },
         {
           "n": 2,
@@ -135,7 +142,8 @@
           "role_ko": "나",
           "en": "Not lie, exactly. The average hides the hard cases. What that means for you is, we should track those accounts separately.",
           "ko": "거짓말은 아니고요, 평균이 어려운 케이스를 가리는 거예요. 그래서 그 계정들은 따로 추적해야 해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The average hides hard cases, so we should track those accounts separately."
         },
         {
           "n": 4,
@@ -151,7 +159,8 @@
           "role_ko": "나",
           "en": "Just a list of the accounts that matter most. I'll build a small test set from their real queries.",
           "ko": "가장 중요한 계정 목록만 주세요. 그 고객들의 실제 질문으로 작은 테스트셋을 만들게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Send me your most important accounts, and I'll build a test set."
         }
       ]
     },
@@ -176,7 +185,8 @@
           "role_ko": "나",
           "en": "I wouldn't promise zero. I'd promise a measured error rate and a clear fallback to a human when confidence is low.",
           "ko": "전 제로를 약속하진 않을 거예요. 측정된 오류율과, 확신이 낮을 때 사람에게 넘기는 명확한 폴백을 약속하겠어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'd promise we count errors and send hard cases to a person."
         },
         {
           "n": 3,
@@ -192,7 +202,8 @@
           "role_ko": "나",
           "en": "Roughly eight percent of queries today. Let's draw the flow and agree on who owns the review queue.",
           "ko": "지금 기준으로 질문의 8% 정도예요. 흐름을 그려보고 검토 큐를 누가 맡을지 정해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "About 8% today, so let's choose who owns the review queue."
         },
         {
           "n": 5,
