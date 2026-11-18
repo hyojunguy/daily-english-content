@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "Before you update the roadmap, let me explain why this training run needs three weeks, not one.",
           "ko": "로드맵 고치시기 전에, 이번 학습이 왜 1주가 아니라 3주나 걸리는지 설명드릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Before you change the plan, I'll explain why training needs 3 weeks."
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "Think of it like making someone read an entire library, several times, before they can answer questions about it.",
           "ko": "도서관 전체를 여러 번 읽혀야 비로소 질문에 답할 수 있게 되는 것과 비슷하다고 보시면 돼요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It's like reading a whole library many times before you answer."
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "Only partly. Adding machines helps, but they spend more and more time waiting on each other, so it's not linear.",
           "ko": "일부만요. 장비를 늘리면 도움은 되는데, 서로 기다리는 시간이 늘어서 비례해서 빨라지진 않아요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "More machines help a little, but they wait for each other."
         }
       ]
     },
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "Stopping and restarting wastes work. What that means for you is, a one-week delay costs real money, not just time.",
           "ko": "멈췄다 다시 시작하면 작업이 날아가요. 그래서 재무 쪽에서는 일주일 지연이 시간이 아니라 실제 돈이라는 뜻이에요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Stopping wastes work, so one week of delay costs real money."
         },
         {
           "n": 3,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "Sure. I'll send you a range by tomorrow, including a buffer in case the run needs to restart.",
           "ko": "그럼요. 내일까지 범위로 보내드릴게요, 학습을 다시 돌려야 할 경우를 대비한 여유분도 포함해서요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll send you a range tomorrow with extra time."
         }
       ]
     },
@@ -111,7 +116,8 @@
           "role_ko": "나",
           "en": "I know you'd like a preview, so let me explain why we can't show anything good yet.",
           "ko": "미리보기 원하시는 거 알아요. 그래서 아직 보여드릴 게 왜 없는지 설명드릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Let me explain why we have nothing good to show."
         },
         {
           "n": 2,
@@ -127,7 +133,8 @@
           "role_ko": "나",
           "en": "The short version is that early checkpoints sound fluent but make confusing mistakes, so showing them would hurt your trust.",
           "ko": "한마디로, 초기 결과물은 말은 그럴듯한데 엉뚱한 실수를 해서, 보여드리면 오히려 신뢰를 잃을 수 있어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Early results sound good, but they make strange mistakes."
         },
         {
           "n": 4,
@@ -143,7 +150,8 @@
           "role_ko": "나",
           "en": "I'll share a checked sample next Tuesday, and I'll tell you honestly if the schedule starts slipping.",
           "ko": "다음 주 화요일에 검증된 샘플을 드릴게요. 일정이 밀리기 시작하면 솔직하게 바로 말씀드리고요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll send a sample next Tuesday and tell you if we're late."
         }
       ]
     },
@@ -168,7 +176,8 @@
           "role_ko": "나",
           "en": "It's slowing down, not broken. Early on the model learns quickly, then each small gain takes much longer.",
           "ko": "고장 난 게 아니라 느려지는 거예요. 초반엔 빨리 배우다가, 갈수록 작은 개선 하나에도 훨씬 오래 걸려요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The model is not broken, but it learns slowly now."
         },
         {
           "n": 3,
@@ -184,7 +193,8 @@
           "role_ko": "나",
           "en": "I'll set an alert for when the curve stops improving, and I'll message you the moment it fires.",
           "ko": "곡선이 더 이상 좋아지지 않을 때 알림을 걸어두고, 울리자마자 바로 메시지 드릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll set an alert for when learning stops, and I'll message you."
         }
       ]
     },
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "We could, but the model would be noticeably weaker. Think of it like cramming for an exam the night before.",
           "ko": "가능은 한데, 모델 성능이 눈에 띄게 떨어져요. 시험 전날 벼락치기하는 것과 비슷하다고 보시면 돼요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We could, but the model would be much weaker."
         },
         {
           "n": 3,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "I can show the half-trained version with clear caveats, or move the demo to the following Wednesday. Which would you prefer?",
           "ko": "절반만 학습된 버전을 한계를 명시해서 보여드리거나, 데모를 다음 주 수요일로 옮기는 방법이 있어요. 어느 쪽이 좋으세요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Should I show the early version, or move the demo?"
         }
       ]
     }
