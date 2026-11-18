@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "Thanks for the talk. If I understand correctly, the core claim is that speculative decoding speedups survive at large batch sizes.",
           "ko": "발표 감사합니다. 제가 이해한 핵심 주장은, 큰 배치에서도 speculative decoding 속도 향상이 유지된다는 거죠?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "So your main point is that it stays fast with large batches?"
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "What I'm skeptical about is the draft model's acceptance rate on out-of-domain prompts, since your test set looked quite narrow.",
           "ko": "제가 의문인 건, 테스트셋이 꽤 좁아 보여서 도메인 밖 프롬프트에서의 draft 모델 수락률이에요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I doubt the draft model works on new prompts."
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "Got it. So it only holds under short, in-domain prompts, and anyone adopting this should measure their own traffic first?",
           "ko": "알겠습니다. 그럼 짧고 도메인 안의 프롬프트에서만 성립하니, 도입하려면 각자 트래픽부터 재봐야 한다는 말씀이죠?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "So it only works on short prompts, right?"
         }
       ]
     },
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "So the core claim is it transfers across scales. Did you test anything above one billion parameters?",
           "ko": "그러니까 핵심 주장은 규모가 달라져도 통한다는 거네요. 10억 파라미터 넘는 모델도 해보셨어요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Did you test any much bigger models?"
         },
         {
           "n": 3,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "Understood. Could you share the config so I can try it on our larger runs and compare the loss curves?",
           "ko": "알겠습니다. 설정 파일 공유해 주실 수 있나요? 저희 큰 학습에 적용해서 loss 곡선을 비교해 보고 싶어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can you send me the config file for our big runs?"
         }
       ]
     },
@@ -111,7 +116,8 @@
           "role_ko": "나",
           "en": "That talk was interesting, but what I'm skeptical about is the eval, because they reused the same prompts they tuned on.",
           "ko": "흥미로운 발표였는데, 제가 걸리는 건 평가예요. 튜닝에 쓴 프롬프트를 그대로 다시 쓴 것 같아서요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I doubt the test, because they used the same prompts again."
         },
         {
           "n": 2,
@@ -127,7 +133,8 @@
           "role_ko": "나",
           "en": "Not sure. That's why I'll ask whether the held-out prompts were chosen before or after tuning, not accuse anyone.",
           "ko": "확신은 없어요. 그래서 누굴 탓하기보다, 홀드아웃 프롬프트를 튜닝 전에 골랐는지 후에 골랐는지 물어보려고요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I'll just ask when you chose the test prompts, not blame you."
         },
         {
           "n": 4,
@@ -143,7 +150,8 @@
           "role_ko": "나",
           "en": "Right. If it only holds under that split, the headline number is much weaker than the abstract suggests.",
           "ko": "맞아요. 그 분할에서만 성립한다면, 대표 수치가 초록에서 말하는 것보다 훨씬 약한 거죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Then the main number is weaker than the paper says."
         }
       ]
     },
@@ -168,7 +176,8 @@
           "role_ko": "나",
           "en": "Sure. The core claim is a clean power law, but how many data points did you fit it on?",
           "ko": "네. 핵심 주장은 깔끔한 멱법칙인데, 피팅에 데이터 포인트를 몇 개 쓰셨나요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "How many data points did you use for the fit?"
         },
         {
           "n": 3,
@@ -184,7 +193,8 @@
           "role_ko": "나",
           "en": "Thanks. Then it only holds under the range you measured, so I'd be careful extrapolating to our 70B runs.",
           "ko": "감사합니다. 그럼 측정하신 범위 안에서만 성립하니, 저희 70B 학습으로 외삽하는 건 조심해야겠네요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "So it works in your range, and I should be careful."
         }
       ]
     }
