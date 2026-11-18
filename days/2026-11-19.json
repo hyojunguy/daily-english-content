@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 100,
+  "date": "2026-11-19",
+  "week": 15,
+  "block": "tech-comm",
+  "theme": "비기술 동료에게 설명하기",
+  "topic": "학습에 왜 그렇게 오래 걸리는지 설명하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d100-s1",
+      "title_ko": "출시일이 왜 밀리는지 PM에게 설명하기",
+      "context_ko": "유리벽 작은 회의실에서 PM이 로드맵을 고치려 하고 있다. {name}은 학습에 3주가 걸리는 이유를 비전문가 눈높이로 설명해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Before you update the roadmap, let me explain why this training run needs three weeks, not one.",
+          "ko": "로드맵 고치시기 전에, 이번 학습이 왜 1주가 아니라 3주나 걸리는지 설명드릴게요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "프로덕트 매니저",
+          "en": "Please do. Honestly, I don't get it. The model already exists, so why isn't this just a button press?",
+          "ko": "그러세요. 솔직히 이해가 안 돼요. 모델은 이미 있는데 왜 버튼 한 번으로 안 끝나죠?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Think of it like making someone read an entire library, several times, before they can answer questions about it.",
+          "ko": "도서관 전체를 여러 번 읽혀야 비로소 질문에 답할 수 있게 되는 것과 비슷하다고 보시면 돼요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "프로덕트 매니저",
+          "en": "Okay, but can't you just add more computers and finish it in a week?",
+          "ko": "그럼 컴퓨터를 더 붙여서 일주일 안에 끝낼 수는 없어요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Only partly. Adding machines helps, but they spend more and more time waiting on each other, so it's not linear.",
+          "ko": "일부만요. 장비를 늘리면 도움은 되는데, 서로 기다리는 시간이 늘어서 비례해서 빨라지진 않아요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d100-s2",
+      "title_ko": "학습 비용이 왜 매일 늘어나는지 재무 담당에게 설명하기",
+      "context_ko": "서버룸 유리창 앞에서 재무팀 동료가 클라우드 청구서를 보고 걱정한다. {name}은 하루 지연이 곧 비용이라는 점을 납득시켜야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "재무팀 동료",
+          "en": "That cloud bill looks scary. Why are those machines running day and night for one single training job?",
+          "ko": "클라우드 청구서가 무섭네요. 왜 학습 하나 때문에 저 장비들이 밤낮으로 돌아가요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Stopping and restarting wastes work. What that means for you is, a one-week delay costs real money, not just time.",
+          "ko": "멈췄다 다시 시작하면 작업이 날아가요. 그래서 재무 쪽에서는 일주일 지연이 시간이 아니라 실제 돈이라는 뜻이에요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "재무팀 동료",
+          "en": "Got it. Can you give me a rough cost per day so I can plan the budget?",
+          "ko": "알겠어요. 예산 잡게 하루 비용을 대략 알려줄 수 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sure. I'll send you a range by tomorrow, including a buffer in case the run needs to restart.",
+          "ko": "그럼요. 내일까지 범위로 보내드릴게요, 학습을 다시 돌려야 할 경우를 대비한 여유분도 포함해서요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d100-s3",
+      "title_ko": "고객사에 중간 결과를 못 보여주는 이유 말하기",
+      "context_ko": "화상회의 중 고객사 담당자가 열흘째 학습 중인데 왜 미리보기가 없냐며 압박한다. {name}은 신뢰를 잃지 않으면서 거절해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I know you'd like a preview, so let me explain why we can't show anything good yet.",
+          "ko": "미리보기 원하시는 거 알아요. 그래서 아직 보여드릴 게 왜 없는지 설명드릴게요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "고객사 담당자",
+          "en": "A preview would really help us. Your team has been training for ten days. Surely something is usable by now?",
+          "ko": "미리보기가 정말 필요해요. 열흘이나 학습하셨는데 지금쯤이면 쓸 만한 게 있지 않나요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The short version is that early checkpoints sound fluent but make confusing mistakes, so showing them would hurt your trust.",
+          "ko": "한마디로, 초기 결과물은 말은 그럴듯한데 엉뚱한 실수를 해서, 보여드리면 오히려 신뢰를 잃을 수 있어요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "고객사 담당자",
+          "en": "Fair enough. When could we realistically see something we can trust, then?",
+          "ko": "일리 있네요. 그럼 현실적으로 언제쯤 믿을 만한 걸 볼 수 있죠?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll share a checked sample next Tuesday, and I'll tell you honestly if the schedule starts slipping.",
+          "ko": "다음 주 화요일에 검증된 샘플을 드릴게요. 일정이 밀리기 시작하면 솔직하게 바로 말씀드리고요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d100-s4",
+      "title_ko": "평평해 보이는 학습 그래프를 디자이너에게 풀어주기",
+      "context_ko": "모니터 여러 대가 붙은 자리에서 디자이너가 손실 그래프가 하루 종일 평평하다며 고장 아니냐고 묻는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "디자이너",
+          "en": "That line has been almost flat since this morning. Is the run broken, or is it just stuck?",
+          "ko": "저 선이 아침부터 거의 평평한데요. 고장 난 건가요, 아니면 그냥 멈춘 건가요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "It's slowing down, not broken. Early on the model learns quickly, then each small gain takes much longer.",
+          "ko": "고장 난 게 아니라 느려지는 거예요. 초반엔 빨리 배우다가, 갈수록 작은 개선 하나에도 훨씬 오래 걸려요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "디자이너",
+          "en": "So how will I know when it's actually finished? I don't want to keep asking you.",
+          "ko": "그럼 진짜 끝났는지는 어떻게 알아요? 계속 물어보기도 미안해서요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'll set an alert for when the curve stops improving, and I'll message you the moment it fires.",
+          "ko": "곡선이 더 이상 좋아지지 않을 때 알림을 걸어두고, 울리자마자 바로 메시지 드릴게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d100-s5",
+      "title_ko": "금요일 데모 전에 학습을 절반으로 줄이자는 임원에게 답하기",
+      "context_ko": "커피 줄에서 마주친 임원이 금요일 데모에 맞춰 학습을 반으로 줄이라고 요청한다. {name}은 트레이드오프를 설명하고 대안을 제시해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "임원",
+          "en": "Quick one — can we cut the training in half to hit the demo on Friday? Just tell me the downside.",
+          "ko": "하나만 물을게요. 금요일 데모에 맞추려고 학습을 반으로 줄일 수 있을까요? 단점만 말해줘요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We could, but the model would be noticeably weaker. Think of it like cramming for an exam the night before.",
+          "ko": "가능은 한데, 모델 성능이 눈에 띄게 떨어져요. 시험 전날 벼락치기하는 것과 비슷하다고 보시면 돼요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "임원",
+          "en": "Hmm. So what can you give me for Friday that won't embarrass us?",
+          "ko": "음. 그럼 금요일에 우리가 창피하지 않을 만한 건 뭘 보여줄 수 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I can show the half-trained version with clear caveats, or move the demo to the following Wednesday. Which would you prefer?",
+          "ko": "절반만 학습된 버전을 한계를 명시해서 보여드리거나, 데모를 다음 주 수요일로 옮기는 방법이 있어요. 어느 쪽이 좋으세요?",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
