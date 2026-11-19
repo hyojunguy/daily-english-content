@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-11-18T21:03:34+00:00",
+  "updated": "2026-11-19T21:04:08+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 100,
-  "total_days": 84,
-  "total_turns": 1810,
-  "total_target_turns": 984,
+  "latest_day": 101,
+  "total_days": 85,
+  "total_turns": 1832,
+  "total_target_turns": 996,
   "days": [
     {
       "day": 1,
@@ -1350,6 +1350,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-11-19.json"
+    },
+    {
+      "day": 101,
+      "date": "2026-11-20",
+      "week": 15,
+      "block": "tech-comm",
+      "theme": "비기술 동료에게 설명하기",
+      "topic": "정확도 숫자의 의미와 한계를 전달하기",
+      "difficulty": 3,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-11-20.json"
     }
   ]
 }
