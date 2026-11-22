@@ -1,0 +1,219 @@
+{
+  "schema": 1,
+  "day": 102,
+  "date": "2026-11-21",
+  "week": 15,
+  "block": "tech-comm",
+  "theme": "비기술 동료에게 설명하기",
+  "topic": "기술 부채를 비용 언어로 번역하기",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d102-s1",
+      "title_ko": "유리벽 회의실에서 재무 담당에게 리팩터링 3주를 '이자'로 설명하기",
+      "context_ko": "재무 파트너가 '잘 돌아가는 데이터 로더를 왜 3주나 갈아엎느냐'며 예산 승인을 망설인다. {name}은 기술 부채를 숫자와 비유로 설명해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The short version is that our data loader works today, but every new experiment costs us extra engineer-hours to run.",
+          "ko": "한마디로 지금 데이터 로더는 돌아가긴 하는데, 실험을 새로 돌릴 때마다 엔지니어 시간이 더 들어요.",
+          "is_target": true,
+          "en_easy": "Our data tool works, but every new experiment costs extra time."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "재무 파트너",
+          "en": "Extra how? If it works, I don't see why I should approve three weeks of rewriting. Give me a number I can put in the budget.",
+          "ko": "얼마나 더 드는데요? 잘 돌아가면 3주짜리 재작업을 왜 승인해야 하는지 모르겠네요. 예산에 넣을 숫자를 주세요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Think of it like a loan: we borrowed speed last spring, and now we pay about six engineer-days monthly in interest.",
+          "ko": "대출이라고 생각해 보세요. 지난봄에 속도를 빌렸고, 지금은 매달 엔지니어 6일치를 이자로 내고 있는 거예요.",
+          "is_target": true,
+          "en_easy": "We borrowed speed last spring, and now we pay interest monthly."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "재무 파트너",
+          "en": "Six days a month is about a third of an engineer. So the rewrite pays for itself in what, four or five months?",
+          "ko": "한 달에 6일이면 엔지니어 한 명의 3분의 1쯤이네요. 그럼 재작업은 넉 달, 다섯 달이면 본전이 나오는 건가요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "What that means for you is a one-time three-week cost, and the monthly interest drops to nearly zero.",
+          "ko": "재무 쪽에서 보시면, 3주는 한 번만 드는 비용이고 매달 나가던 이자는 거의 0으로 줄어든다는 뜻이에요.",
+          "is_target": true,
+          "en_easy": "You pay once, and the monthly interest almost stops."
+        }
+      ]
+    },
+    {
+      "id": "d102-s2",
+      "title_ko": "화상회의에서 영업 리드에게 '컬럼 하나가 왜 3주냐'에 답하기",
+      "context_ko": "영업 리드가 고객 요청 지표 하나 추가하는 데 3주라는 말에 화를 낸다. 금요일 계약이 걸려 있어 '일단 땜질하자'고 밀어붙인다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "영업 리드",
+          "en": "The customer wants one extra metric in the report. It's one column! Why is engineering saying three weeks?",
+          "ko": "고객이 리포트에 지표 하나만 더 넣어 달라는 거예요. 컬럼 하나요! 엔지니어링은 왜 3주래요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Adding the column takes a day. The rest goes to untangling old report code before we can safely touch it.",
+          "ko": "컬럼 추가는 하루면 돼요. 나머지는 예전 리포트 코드를 먼저 풀어야 안전하게 건드릴 수 있어서 걸리는 시간이에요.",
+          "is_target": true,
+          "en_easy": "The column takes a day, but old report code takes longer."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "영업 리드",
+          "en": "Old code? That's not the customer's problem. Can't you just hack it in and clean up later? They sign Friday.",
+          "ko": "옛날 코드요? 그건 고객 사정이 아니잖아요. 일단 끼워 넣고 나중에 정리하면 안 돼요? 금요일에 계약하는데.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Think of it like building on a cracked foundation: it's fast now, but every later feature costs double to repair.",
+          "ko": "금 간 토대 위에 집을 짓는 것과 같아요. 지금은 빠르지만 이후 기능마다 고치는 비용이 두 배로 들어요.",
+          "is_target": true,
+          "en_easy": "A cracked foundation is fast now, but later features cost double."
+        },
+        {
+          "n": 5,
+          "speaker": "A",
+          "role_ko": "영업 리드",
+          "en": "Okay, so a clean build costs one extra week now versus double later. I can sell that. Let's go with the safe version.",
+          "ko": "알겠어요, 깔끔하게 하면 지금 일주일 더 들고, 안 하면 나중에 두 배라는 거네요. 그건 설명할 수 있겠어요. 안전한 쪽으로 가죠.",
+          "is_target": false
+        }
+      ]
+    },
+    {
+      "id": "d102-s3",
+      "title_ko": "점심 테이블에서 PM에게 정리 작업을 로드맵에서 빼지 말라고 설득하기",
+      "context_ko": "PM이 이번 분기에도 눈에 안 보이는 정리 작업을 로드맵에서 빼려 한다. {name}은 지난 분기에 실제로 잃은 시간을 근거로 든다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Before we cut the cleanup from the roadmap again, can I show you what it has cost us this quarter?",
+          "ko": "정리 작업을 또 로드맵에서 빼기 전에, 이번 분기에 그게 우리한테 얼마나 비용을 냈는지 보여드려도 될까요?",
+          "is_target": true,
+          "en_easy": "Before we cut it again, can I show the cost?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "Sure, but I only have a few minutes. Cleanup doesn't ship anything customers can see, so it's hard to defend upstairs.",
+          "ko": "그래요, 근데 시간이 몇 분밖에 없어요. 정리는 고객 눈에 보이는 게 없어서 위에 설명하기가 어려워요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The short version is that broken pipelines ate nine engineer-days this quarter, roughly one small feature.",
+          "ko": "요약하면, 이번 분기에 깨진 파이프라인 때문에 엔지니어 9일을 썼고, 작은 기능 하나 만드는 정도예요.",
+          "is_target": true,
+          "en_easy": "Broken pipelines took many days this quarter, about one small feature."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "Nine days is real. But how do I explain that to my director without sounding like I'm making excuses?",
+          "ko": "9일이면 꽤 크네요. 근데 변명처럼 들리지 않게 제 디렉터한테 어떻게 설명하죠?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Frame it as a recurring cost: we can pay two days now, or keep paying nine days every quarter.",
+          "ko": "반복 비용으로 말씀하세요. 지금 이틀을 쓰든지, 아니면 분기마다 9일을 계속 내든지 선택하는 거라고요.",
+          "is_target": true,
+          "en_easy": "We can pay now, or keep paying every quarter."
+        }
+      ]
+    },
+    {
+      "id": "d102-s4",
+      "title_ko": "디렉터 책상 옆에서 두 스프린트 대신 한 스프린트로 합의하기",
+      "context_ko": "{name}이 서빙 코드 부채를 갚을 두 스프린트를 요청하자 디렉터는 추상적이라며 망설인다. 예산 회의 전에 설득할 한 줄 버전이 필요하다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Do you have a minute? I'd like to ask for two sprints to pay down the serving-code debt.",
+          "ko": "잠깐 시간 되세요? 서빙 코드 부채를 갚는 데 스프린트 두 개를 요청드리고 싶어요.",
+          "is_target": true,
+          "en_easy": "I'd like to ask for more sprints to pay the code debt."
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "디렉터",
+          "en": "Two sprints is a lot. Debt sounds abstract to me. What happens if we just leave it for a quarter?",
+          "ko": "두 스프린트는 크네요. 부채라는 말이 저한텐 추상적으로 들려요. 한 분기 그냥 두면 어떻게 되죠?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Each release costs two extra days of manual checks, and the cost compounds. Bad deploys also become more likely.",
+          "ko": "릴리스마다 수동 점검에 이틀이 더 들고, 그 비용이 계속 쌓여요. 잘못된 배포가 날 가능성도 커지고요.",
+          "is_target": true,
+          "en_easy": "Each release costs extra days of manual checks, and the cost grows."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "디렉터",
+          "en": "Okay, but two sprints means pushing the roadmap. Give me a version I can take to the budget meeting.",
+          "ko": "알겠는데, 두 스프린트면 로드맵이 밀려요. 예산 회의에 들고 갈 수 있는 버전으로 주세요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let's start with one sprint on the worst offenders, and I'll report the saved hours so you can judge the payoff.",
+          "ko": "가장 심한 부분부터 한 스프린트만 하고, 절약된 시간을 보고드릴게요. 그걸로 효과를 판단해 주세요.",
+          "is_target": true,
+          "en_easy": "Let's start with one sprint, and I'll report the saved hours."
+        }
+      ]
+    }
+  ]
+}
