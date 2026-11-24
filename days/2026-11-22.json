@@ -29,7 +29,8 @@
           "role_ko": "나",
           "en": "Not through retraining. Think of it like a new hire who stopped reading news last spring.",
           "ko": "재학습으로는 안 돼요. 작년 봄 이후로 뉴스를 못 본 신입사원이라고 생각하시면 돼요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It is like a new worker with no news since last spring."
         },
         {
           "n": 3,
@@ -45,7 +46,8 @@
           "role_ko": "나",
           "en": "Yes, we can let it search a pricing page you approve, and it will cite the source every time.",
           "ko": "있어요. 승인해 주신 가격 페이지를 검색하게 하고, 매번 출처를 달게 할 수 있어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Yes, it can search a price page you approve and show sources."
         }
       ]
     },
@@ -70,7 +72,8 @@
           "role_ko": "나",
           "en": "Not as 'remember forever', no. The short version is that it forgets each chat, and storing everything raises privacy risk.",
           "ko": "'영원히 기억'은 어려워요. 한마디로, 대화마다 초기화되고 전부 저장하면 개인정보 위험이 커져요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It forgets each chat, and storing everything risks privacy."
         },
         {
           "n": 3,
@@ -86,7 +89,8 @@
           "role_ko": "나",
           "en": "We can save a short summary per case, with customer consent, and load it at the start of each chat.",
           "ko": "고객 동의를 받고 건별로 짧은 요약만 저장해서, 대화 시작할 때 불러오게 할 수 있어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "With consent, we save a short summary for each case."
         }
       ]
     },
@@ -103,7 +107,8 @@
           "role_ko": "나",
           "en": "Priya, I looked at the live phone translation idea. Can I walk you through what's realistic for next week's demo?",
           "ko": "Priya, 실시간 전화 통역 건 살펴봤어요. 다음 주 데모에서 현실적으로 가능한 범위를 설명드려도 될까요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can I explain what we can show next week?"
         },
         {
           "n": 2,
@@ -119,7 +124,8 @@
           "role_ko": "나",
           "en": "Not instant, no. What that means for you is a two-second delay, and weaker quality in smaller languages.",
           "ko": "즉시는 어려워요. 그러면 2초 정도 지연이 생기고, 사용자가 적은 언어는 품질이 떨어진다는 뜻이에요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It has a short delay, and small languages are weaker."
         },
         {
           "n": 4,
@@ -135,7 +141,8 @@
           "role_ko": "나",
           "en": "Let's demo three languages with live captions instead; the delay feels natural when people can read along.",
           "ko": "대신 3개 국어를 실시간 자막과 함께 시연해요. 읽으면서 따라가면 지연이 자연스럽게 느껴져요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Let's show live text instead, so people can read along."
         }
       ]
     },
@@ -160,7 +167,8 @@
           "role_ko": "나",
           "en": "I can't promise that. Video models draw letters like pictures, so spelling slips are common.",
           "ko": "그건 약속드릴 수 없어요. 영상 모델은 글자를 그림처럼 그려서 철자 오류가 흔하거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I cannot promise that, because video models draw letters like pictures."
         },
         {
           "n": 3,
@@ -176,7 +184,8 @@
           "role_ko": "나",
           "en": "It can. Let AI generate the footage, and we add the slogan as a text layer in your editor.",
           "ko": "넣을 수 있어요. 영상은 AI가 만들고, 슬로건은 편집 툴에서 텍스트 레이어로 얹는 거예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Yes, we add the slogan as text in your editor."
         }
       ]
     },
@@ -201,7 +210,8 @@
           "role_ko": "나",
           "en": "I can't build that. What that means for you is legal risk, plus a ranking nobody can really defend.",
           "ko": "그건 만들 수 없어요. 그러면 법적 위험이 생기고, 아무도 제대로 방어 못 할 순위가 나온다는 뜻이에요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I cannot build that, because it is a legal risk."
         },
         {
           "n": 3,
@@ -217,7 +227,8 @@
           "role_ko": "나",
           "en": "We could summarize the self-reviews and project outcomes people already shared, then managers add their own judgment on top.",
           "ko": "이미 공유된 자기 평가와 프로젝트 성과를 요약하고, 거기에 매니저들이 각자 판단을 더하면 돼요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We could summarize the results, then managers add their own judgment."
         }
       ]
     }
