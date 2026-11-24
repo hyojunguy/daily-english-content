@@ -29,7 +29,8 @@
           "role_ko": "나",
           "en": "Think of it like training a smoke detector: millions of quiet days, but only forty real fires.",
           "ko": "화재경보기를 학습시킨다고 생각해 보세요. 평온한 날은 수백만 일인데 진짜 불난 날은 마흔 번뿐인 거죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Real fires are rare, and most days are quiet."
         },
         {
           "n": 3,
@@ -45,7 +46,8 @@
           "role_ko": "나",
           "en": "Not reliably. The short version is that forty examples let it memorize them, not spot new fraud patterns.",
           "ko": "안정적으로는 어렵습니다. 한마디로 마흔 건이면 그걸 외울 뿐이지, 새로운 사기 패턴을 잡아내진 못해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Not really, 40 examples are too few for new fraud patterns."
         }
       ]
     },
@@ -62,7 +64,8 @@
           "role_ko": "나",
           "en": "Only about eight percent of our stored chats have training consent, and that's why the model keeps missing rare cases.",
           "ko": "저장된 대화 중 학습 동의가 있는 건 8% 정도뿐이라, 모델이 희귀 케이스를 계속 놓치고 있어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Only 8% of chats have consent, so the model misses rare cases."
         },
         {
           "n": 2,
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "Understood. What that means for you is no change to old data, just a new opt-in checkbox for future signups.",
           "ko": "알겠습니다. 법무 쪽에서는 기존 데이터엔 변화가 없고, 앞으로 가입자용 동의 체크박스만 새로 생기는 겁니다.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Old data stays the same, and new users get a new option."
         },
         {
           "n": 4,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "Honestly, slowly. Maybe six months to collect enough, so I'd rather start the clock now than wait for a perfect answer.",
           "ko": "솔직히 느립니다. 충분히 모이려면 아마 6개월은 걸릴 텐데, 완벽한 답을 기다리기보다 지금 시작하는 게 낫겠어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It takes about 6 months, so let's start now."
         }
       ]
     },
@@ -119,7 +124,8 @@
           "role_ko": "나",
           "en": "We only have about two thousand Yoruba sentences, and the model needs roughly fifty thousand to be reliable.",
           "ko": "요루바어 문장이 2천 개 정도밖에 없는데, 모델이 믿을 만해지려면 대략 5만 개는 필요해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We have 2000 sentences for this language, but need 50000."
         },
         {
           "n": 3,
@@ -135,7 +141,8 @@
           "role_ko": "나",
           "en": "What that means for you is promising a pilot, not full support. Offer March for a limited beta, and full release later.",
           "ko": "영업 쪽에서는 전면 지원이 아니라 파일럿을 약속하셔야 해요. 3월엔 제한적 베타, 정식 출시는 그 이후로요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Promise a March beta, not full support."
         }
       ]
     },
@@ -160,7 +167,8 @@
           "role_ko": "나",
           "en": "Partly. Synthetic data helps with variety, but it copies the model's blind spots, so we'd still need some real examples.",
           "ko": "일부는요. 합성 데이터는 다양성엔 도움 되지만 모델의 사각지대를 그대로 따라 해서, 실제 예시도 어느 정도 필요해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Synthetic data helps, but we still need some real examples."
         },
         {
           "n": 3,
@@ -176,7 +184,8 @@
           "role_ko": "나",
           "en": "Maybe three hundred, checked by a human. I'll test with fifty first and tell you by Friday if the curve looks promising.",
           "ko": "사람이 검수한 300개 정도요. 먼저 50개로 테스트해 보고, 곡선이 괜찮아 보이는지 금요일까지 알려드릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Maybe 300 examples, and people will check them."
         }
       ]
     },
@@ -193,7 +202,8 @@
           "role_ko": "나",
           "en": "Elena, can we get budget for labeling two thousand examples? It's the cheapest fix for our data shortage.",
           "ko": "엘레나, 예시 2천 개 라벨링 예산을 받을 수 있을까요? 데이터 부족을 푸는 가장 싼 방법이에요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can we get budget to label 2000 examples?"
         },
         {
           "n": 2,
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "Fair. We'll label five hundred first and plot accuracy. If the curve is still climbing, we keep going.",
           "ko": "맞는 말씀이에요. 먼저 500개만 라벨링해서 정확도 곡선을 그려 볼게요. 계속 오르고 있으면 이어서 가고요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We'll label 500 first, then check the accuracy curve."
         },
         {
           "n": 4,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "Then we've learned data isn't the bottleneck, which is cheap to know. Think of it like a test drive.",
           "ko": "그럼 병목이 데이터가 아니라는 걸 알게 되는 거고, 그건 싸게 아는 거죠. 시승해 보는 거라고 생각하세요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Then we learn data isn't the problem, and that's cheap."
         }
       ]
     }
