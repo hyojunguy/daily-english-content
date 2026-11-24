@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-11-23T21:03:09+00:00",
+  "updated": "2026-11-24T21:03:58+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 105,
-  "total_days": 89,
-  "total_turns": 1917,
-  "total_target_turns": 1042,
+  "latest_day": 106,
+  "total_days": 90,
+  "total_turns": 1939,
+  "total_target_turns": 1054,
   "days": [
     {
       "day": 1,
@@ -1430,6 +1430,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-11-24.json"
+    },
+    {
+      "day": 106,
+      "date": "2026-11-25",
+      "week": 16,
+      "block": "tech-comm",
+      "theme": "2블록 통합 — 기술 판단을 말로 지키기",
+      "topic": "설계 리뷰에서 반대에 부딪히는 하루",
+      "difficulty": 3,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-11-25.json"
     }
   ]
 }

@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 106,
+  "date": "2026-11-25",
+  "week": 16,
+  "block": "tech-comm",
+  "theme": "2블록 통합 — 기술 판단을 말로 지키기",
+  "topic": "설계 리뷰에서 반대에 부딪히는 하루",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d106-s1",
+      "title_ko": "화이트보드 앞에서 야간 평가 게이트 폐지 안 반박하기",
+      "context_ko": "릴리스 체크리스트를 검토하는 자리에서 시니어 엔지니어가 릴리스를 6시간 늦추는 야간 평가 게이트를 빼자고 합니다. {name}은 이 게이트가 회귀를 잡아낸다는 근거로 반박해야 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Before we sign off, can I raise a concern about removing the nightly eval gate from the release checklist?",
+          "ko": "승인하기 전에, 야간 평가 게이트를 릴리스 체크리스트에서 빼는 건에 대해 우려 하나만 말씀드려도 될까요?",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "시니어 엔지니어",
+          "en": "Honestly, it adds six hours to every release. Training loss looks fine, so why not ship and watch metrics after?",
+          "ko": "솔직히 릴리스마다 6시간씩 늘어나잖아요. 학습 loss도 멀쩡한데 그냥 내보내고 나중에 지표를 보면 안 되나요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd push back on that. Loss can look healthy while the model quietly regresses on cases customers actually care about.",
+          "ko": "그건 좀 반대입니다. loss는 멀쩡해 보여도 고객이 실제로 신경 쓰는 케이스에서는 모델이 조용히 퇴보할 수 있어요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "시니어 엔지니어",
+          "en": "We've never actually caught anything with it, though. People are already finding ways around the gate.",
+          "ko": "근데 그걸로 뭔가 잡아낸 적이 없잖아요. 다들 이미 게이트를 우회할 방법을 찾고 있고요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let me walk you through the reasoning. Both regressions last quarter came from data changes, and loss looked normal.",
+          "ko": "근거를 차근차근 설명드릴게요. 지난 분기 회귀 두 건 다 데이터 변경 때문이었고, 그때도 loss는 정상이었습니다.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d106-s2",
+      "title_ko": "화상회의에서 소형 모델 라우터의 오분류 우려에 답하기",
+      "context_ko": "추론 서빙 리드가 쉬운 질의를 작은 증류 모델로 보내는 설계의 위험을 지적합니다. {name}은 폴백 방식과 지연 시간 영향을 데이터로 설명해야 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "서빙 리드",
+          "en": "Your design routes easy queries to the small model. What if the router sends a hard query there by mistake?",
+          "ko": "설계를 보면 쉬운 질의는 작은 모델로 보내잖아요. 라우터가 어려운 질의를 잘못 보내면 어떡하죠?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That's a fair concern — here's how we handle it. Low-confidence queries automatically fall back to the large model.",
+          "ko": "맞는 우려입니다. 저희는 이렇게 처리해요. 신뢰도가 낮은 질의는 자동으로 큰 모델로 폴백됩니다.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "서빙 리드",
+          "en": "Fallback adds latency, though. Won't p99 end up worse than just serving the large model everywhere?",
+          "ko": "그런데 폴백하면 지연이 늘잖아요. p99가 그냥 큰 모델로만 서빙할 때보다 나빠지지 않을까요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Only for about eight percent of traffic. I measured it on last week's logs, and p99 stayed under our target.",
+          "ko": "트래픽의 8% 정도만 그렇습니다. 지난주 로그로 측정해 봤는데 p99는 목표치 아래였어요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d106-s3",
+      "title_ko": "동료 책상 모서리에 앉아 지금 데이터 로더를 다시 짜자는 제안 반대하기",
+      "context_ko": "코드 프리즈 2주 전, 선배가 새 프레임워크로 데이터 로더를 지금 갈아엎자고 합니다. {name}은 병목이 아니라는 근거로 반대하되 상대의 반론은 받아들여야 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "선배 엔지니어",
+          "en": "Why not rewrite the data loader in the new framework now? It would clean up everything.",
+          "ko": "데이터 로더를 지금 새 프레임워크로 다시 짜면 어때요? 전부 깔끔해질 텐데.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd push back on rewriting it now. We have two weeks before the freeze, and the old loader isn't our bottleneck.",
+          "ko": "지금 다시 짜는 건 반대예요. 프리즈까지 2주뿐인데다 기존 로더가 병목도 아니거든요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "선배 엔지니어",
+          "en": "But your profiling was a single node. Maybe it bites at scale.",
+          "ko": "근데 프로파일링은 노드 하나로 한 거잖아요. 규모가 커지면 문제가 될 수도 있죠.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Fair point, so I'll rerun the profile on sixteen nodes tomorrow and share the numbers before we decide anything.",
+          "ko": "맞는 말씀이에요. 내일 노드 16대로 다시 프로파일링해서 결정 전에 수치를 공유할게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d106-s4",
+      "title_ko": "복도에서 리뷰어의 체크포인트 제안을 묵살한 것 수습하기",
+      "context_ko": "회의 직후 복도에서 리뷰어가 {name}이 자기 체크포인트 아이디어를 너무 단호하게 잘랐다고 서운해합니다. {name}은 관계를 살리면서 대안을 제시해야 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "리뷰어",
+          "en": "You were pretty firm in there. I felt like you shot down my checkpoint idea without really hearing it.",
+          "ko": "아까 꽤 단호하시던데요. 제 체크포인트 아이디어를 제대로 듣지도 않고 거절하신 느낌이었어요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Sorry if it came across that way. Let me walk you through the reasoning again, because your idea has real merit.",
+          "ko": "그렇게 느끼셨다면 죄송해요. 아이디어에 분명 장점이 있으니 제 근거를 다시 차근차근 설명드릴게요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "리뷰어",
+          "en": "Then what would you accept? Saving every hundred steps is what I wanted, for faster recovery.",
+          "ko": "그럼 뭐라면 괜찮겠어요? 저는 빠른 복구를 위해 100스텝마다 저장하길 원했는데요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Every hundred steps doubles our storage cost. Could we try every five hundred and compare recovery time?",
+          "ko": "100스텝마다 하면 저장 비용이 두 배가 돼요. 500스텝마다로 해 보고 복구 시간을 비교해 볼까요?",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d106-s5",
+      "title_ko": "서버룸 앞에서 롤백 계획 없는 드라이버 업그레이드 말리기",
+      "context_ko": "인프라 리드가 오늘 밤 클러스터 드라이버 업데이트를 바로 진행하려 합니다. {name}은 롤백 계획의 필요성을 설득하고, 부담을 줄일 현실적인 대안을 내놓아야 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Quick question before you flip the switch. Has anyone reviewed the rollback plan for tonight's cluster upgrade?",
+          "ko": "시작하시기 전에 하나만요. 오늘 밤 클러스터 업그레이드 롤백 계획은 누가 검토했나요?",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "인프라 리드",
+          "en": "It's a minor driver update. A rollback plan feels like overkill for something this small.",
+          "ko": "마이너 드라이버 업데이트예요. 이 정도에 롤백 계획까지 만드는 건 과해 보여요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd push back on that. A minor driver mismatch once stalled our training jobs for a whole weekend.",
+          "ko": "그건 반대입니다. 마이너 드라이버 불일치 때문에 예전에 학습 작업이 주말 내내 멈춘 적이 있어요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "인프라 리드",
+          "en": "Fine, but writing a full plan takes hours. Nobody has the time tonight.",
+          "ko": "알겠어요, 근데 계획서를 제대로 쓰려면 몇 시간 걸려요. 오늘 밤엔 시간 낼 사람이 없고요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That's a fair concern — here's how we handle it. A five-line checklist and a pinned driver version are enough.",
+          "ko": "맞는 말씀이에요. 이렇게 하면 됩니다. 다섯 줄짜리 체크리스트와 고정된 드라이버 버전이면 충분해요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
