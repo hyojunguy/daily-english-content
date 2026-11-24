@@ -29,7 +29,8 @@
           "role_ko": "나",
           "en": "It's a bit like a bus versus a taxi. Waiting a moment to fill the bus makes each ride much cheaper.",
           "ko": "버스랑 택시 차이 같은 거예요. 잠깐 기다려서 버스를 채우면 한 명당 비용이 확 줄거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "A bus is cheaper than a taxi because many people share it."
         },
         {
           "n": 3,
@@ -45,7 +46,8 @@
           "role_ko": "나",
           "en": "What that means for you is a tiny wait, but one GPU serves four times more people.",
           "ko": "운영하시는 입장에서는 대기는 아주 조금 늘지만, GPU 한 대가 네 배 많은 사용자를 처리한다는 뜻이에요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "You wait a little more, but each GPU serves more users."
         }
       ]
     },
@@ -62,7 +64,8 @@
           "role_ko": "나",
           "en": "Priya, do you have a minute? I need to explain why the 99% benchmark score isn't as good as it looks.",
           "ko": "프리야, 잠깐 시간 돼요? 벤치마크 99%가 보이는 것만큼 좋은 숫자가 아닌 이유를 설명드려야 해서요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Do you have a minute to talk about the benchmark score?"
         },
         {
           "n": 2,
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "Think of it like a student who saw the exam questions beforehand. The score proves memory, not understanding.",
           "ko": "시험 문제를 미리 본 학생이라고 생각해 보세요. 그 점수는 이해가 아니라 암기를 보여줄 뿐이에요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It's like a student who saw the test before."
         },
         {
           "n": 4,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "The short version is, wait for the clean test results before quoting any number. I'll have them Thursday.",
           "ko": "한마디로, 깨끗한 테스트 결과가 나올 때까지 숫자는 인용하지 마세요. 목요일까지 드릴게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Please don't use any number until I send the clean results."
         }
       ]
     },
@@ -119,7 +124,8 @@
           "role_ko": "나",
           "en": "Think of it like saving a photo as a smaller file. You lose a little detail, so we test where it shows.",
           "ko": "사진을 용량 작게 저장하는 거랑 비슷해요. 디테일이 조금 줄어서, 어디서 티가 나는지 테스트해야 해요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It's like saving a photo smaller, so we lose some detail."
         },
         {
           "n": 3,
@@ -135,7 +141,8 @@
           "role_ko": "나",
           "en": "Compress too far and the photo turns to blur. We'll stop one step before quality drops.",
           "ko": "너무 많이 압축하면 사진이 뭉개져요. 품질이 떨어지기 직전 단계에서 멈출게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "If we make it too small, the photo gets bad."
         }
       ]
     },
@@ -152,7 +159,8 @@
           "role_ko": "나",
           "en": "Lena, you asked about retraining weekly when policies change. There's a cheaper option I'd like to walk you through.",
           "ko": "레나, 정책이 바뀔 때마다 매주 재학습하자고 하셨죠. 비용이 더 적게 드는 방법이 있어서 설명드리려고요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I have a cheaper way than weekly training."
         },
         {
           "n": 2,
@@ -168,7 +176,8 @@
           "role_ko": "나",
           "en": "Picture an open-book exam. The model looks up the current policy instead of memorizing it.",
           "ko": "오픈북 시험이라고 생각해 보세요. 모델이 정책을 외우는 대신 최신 문서를 찾아보는 거예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It's like a book test, so the model reads the current policy."
         },
         {
           "n": 4,
@@ -184,7 +193,8 @@
           "role_ko": "나",
           "en": "What that means for you is updates take minutes, not weeks. It can still misread a page, so we spot-check.",
           "ko": "그러면 업데이트가 몇 주가 아니라 몇 분이면 끝나요. 문서를 잘못 읽을 수는 있어서 샘플 점검은 할 거예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Updates take minutes, but we still check some pages."
         }
       ]
     },
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "Not everything. It's like a video game with save points. We restart from the last checkpoint.",
           "ko": "전부는 아니에요. 게임의 저장 지점 같은 거라서, 마지막 체크포인트부터 다시 시작하면 돼요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Not all of it, because it's like a game with save points."
         },
         {
           "n": 3,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "We save every two hours, so we lose at most two hours. I'd tell the client we're still on schedule.",
           "ko": "두 시간마다 저장해서 최대 두 시간 치만 잃어요. 고객에게는 일정에 문제없다고 말씀하셔도 돼요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We lose little work, so tell the client we're on schedule."
         }
       ]
     }
