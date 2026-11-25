@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "updated": "2026-11-24T21:03:58+00:00",
+  "updated": "2026-11-25T22:41:25+00:00",
   "content_base": "https://raw.githubusercontent.com/sylvanus4/daily-english-content/main/",
-  "latest_day": 106,
-  "total_days": 90,
-  "total_turns": 1939,
-  "total_target_turns": 1054,
+  "latest_day": 107,
+  "total_days": 91,
+  "total_turns": 1961,
+  "total_target_turns": 1066,
   "days": [
     {
       "day": 1,
@@ -1446,6 +1446,22 @@
       "audio": 0,
       "complete": false,
       "file": "days/2026-11-25.json"
+    },
+    {
+      "day": 107,
+      "date": "2026-11-26",
+      "week": 16,
+      "block": "tech-comm",
+      "theme": "2블록 통합 — 기술 판단을 말로 지키기",
+      "topic": "장애 직후 실험 일정을 재조정하는 하루",
+      "difficulty": 3,
+      "situations": 5,
+      "turns": 22,
+      "target_turns": 12,
+      "images": 0,
+      "audio": 0,
+      "complete": false,
+      "file": "days/2026-11-26.json"
     }
   ]
 }

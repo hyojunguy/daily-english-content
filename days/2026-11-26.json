@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "day": 107,
+  "date": "2026-11-26",
+  "week": 16,
+  "block": "tech-comm",
+  "theme": "2블록 통합 — 기술 판단을 말로 지키기",
+  "topic": "장애 직후 실험 일정을 재조정하는 하루",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d107-s1",
+      "title_ko": "장애 직후, 실험 6개를 오늘 밤 전부 다시 돌리자는 PM에게 답하기",
+      "context_ko": "스토리지 장애로 밤새 돌던 어블레이션 6개가 중단됐습니다. 집 서재에서 화상으로 접속한 PM Priya가 금요일 리뷰를 지키려고 전부 오늘 밤 재실행하자고 합니다. {name}은 클러스터 부하가 걱정입니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "PM (화상)",
+          "en": "The storage outage cost us a full day. Can we just relaunch all six ablations tonight so Friday's review isn't affected?",
+          "ko": "스토리지 장애로 하루를 통째로 날렸잖아요. 금요일 리뷰에 지장 없게 어블레이션 여섯 개 오늘 밤에 전부 다시 돌리면 안 될까요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd push back on that. Relaunching everything at once will saturate the cluster and could trigger the same failure again.",
+          "ko": "그건 좀 반대입니다. 한꺼번에 다 돌리면 클러스터가 포화돼서 같은 장애가 또 날 수 있어요.",
+          "is_target": true,
+          "en_easy": "I disagree, because running everything together may break the cluster again."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "PM (화상)",
+          "en": "But the deadline hasn't moved. What would you do instead, wait until the storage team signs off on everything?",
+          "ko": "그래도 마감은 그대로잖아요. 그럼 어떻게 하자는 거예요? 스토리지 팀이 다 괜찮다고 할 때까지 기다리나요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Two ablations carry the main claim, so I'd restart those tonight and stagger the other four over the next two days.",
+          "ko": "어블레이션 두 개가 핵심 주장을 받치고 있으니 그 둘을 오늘 밤 먼저 돌리고, 나머지 넷은 이틀에 걸쳐 나눠 돌리겠습니다.",
+          "is_target": true,
+          "en_easy": "I'll run the main experiments tonight and the others later."
+        }
+      ]
+    },
+    {
+      "id": "d107-s2",
+      "title_ko": "체크포인트 검증 없이 바로 재개하자는 동료 설득하기",
+      "context_ko": "연구동 복도 자판기 앞에서 Marco를 마주쳤습니다. Marco는 마지막 체크포인트를 검증 없이 바로 이어서 돌리자고 하고, {name}은 손상 가능성이 걱정됩니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Hey Marco, before you resume the long run, did anyone verify the last checkpoint wasn't corrupted?",
+          "ko": "Marco, 긴 학습 이어서 돌리기 전에 마지막 체크포인트 손상 안 됐는지 누가 확인했어요?",
+          "is_target": true,
+          "en_easy": "Did anyone check the last checkpoint before we continue training?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "It loaded fine in my notebook. Verifying every shard takes forty minutes, and we're already behind. I say we just resume.",
+          "ko": "내 노트북에선 잘 로드됐어요. 샤드 전부 검증하면 40분 걸리는데 이미 일정이 밀렸잖아요. 그냥 재개합시다.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That's a fair concern — here's how we handle it. Parallel hash checks take five minutes, not forty.",
+          "ko": "맞는 걱정이에요. 이렇게 하면 됩니다. 해시 검사를 병렬로 돌리면 40분이 아니라 5분이면 끝나요.",
+          "is_target": true,
+          "en_easy": "Parallel checks are much faster than you think."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Fine, but what if a shard fails the check? Then we've lost another half day before we even restart.",
+          "ko": "알겠는데, 샤드 하나라도 검사에서 걸리면요? 재시작도 못 해보고 또 반나절을 날리는 거잖아요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Then we fall back to the previous checkpoint, only two hours older. That's cheaper than debugging a corrupted run next week.",
+          "ko": "그럼 두 시간 전 체크포인트로 돌아가면 됩니다. 다음 주에 망가진 학습을 디버깅하는 것보다 훨씬 싸요.",
+          "is_target": true,
+          "en_easy": "Then we use the previous checkpoint, because that costs less than debugging."
+        }
+      ]
+    },
+    {
+      "id": "d107-s3",
+      "title_ko": "내 평가 작업이 큐 뒤로 밀린 이유를 동료에게 설명하기",
+      "context_ko": "구내식당 야외 테라스에서 점심을 먹는 중입니다. 평가 엔지니어 Sam이 장애 후 재조정된 GPU 큐에서 자기 평가 작업이 밀린 걸 따집니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "평가 엔지니어",
+          "en": "You bumped my eval sweep behind the training reruns. It's a small job. Why can't it just run alongside them?",
+          "ko": "제 평가 스윕을 학습 재실행 뒤로 밀어놨네요. 작은 작업인데 같이 돌리면 안 돼요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let me walk you through the reasoning. Eval shares those GPUs, so running both slows the main reruns by a third.",
+          "ko": "이유를 차근차근 설명드릴게요. 평가가 같은 GPU를 쓰기 때문에 둘을 같이 돌리면 메인 재실행이 3분의 1 느려져요.",
+          "is_target": true,
+          "en_easy": "Eval uses the same GPUs, so both jobs together run slower."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "평가 엔지니어",
+          "en": "Okay, but my results feed Thursday's write-up. Can I at least get a guaranteed slot on Wednesday night?",
+          "ko": "알겠는데, 제 결과가 목요일 문서에 들어가요. 최소한 수요일 밤 슬롯은 보장해 줄 수 있어요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Yes, I'll reserve Wednesday night for it, and I'll post the updated queue in the channel so everyone sees the order.",
+          "ko": "네, 수요일 밤을 잡아둘게요. 바뀐 큐 순서도 채널에 올려서 모두가 볼 수 있게 하겠습니다.",
+          "is_target": true,
+          "en_easy": "Yes, I'll save Wednesday night and post the new queue."
+        }
+      ]
+    },
+    {
+      "id": "d107-s4",
+      "title_ko": "재시작 전후 loss 곡선을 이어 붙이자는 요청 막기",
+      "context_ko": "모니터가 여러 대 붙은 자리에서 대시보드를 가리키며 이야기합니다. 팀 리드 Wen은 장애 전후 곡선을 이어 붙여 보고하자고 하지만, {name}은 재시작 때 데이터 순서가 바뀐 걸 알고 있습니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Just stitch the pre-outage curve onto the restarted run. It's the same config, so nobody will notice the join.",
+          "ko": "장애 전 곡선을 재시작한 런에 그냥 이어 붙이세요. 설정이 같으니까 이은 자국은 아무도 모를 거예요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd rather not stitch them. The restart reshuffled the data order, so the join would hide a real jump in the loss.",
+          "ko": "이어 붙이는 건 피하고 싶어요. 재시작하면서 데이터 순서가 섞여서, 이으면 loss의 실제 점프가 가려집니다.",
+          "is_target": true,
+          "en_easy": "I'd rather not join them, because the data order changed."
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "We're short on time. Can't we just add a footnote and move on?",
+          "ko": "시간이 없잖아요. 각주 하나 달고 넘어가면 안 돼요?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "A footnote is fine if we also rerun the last thousand steps in the original order, about four GPU hours.",
+          "ko": "각주는 괜찮습니다. 대신 마지막 1000 스텝을 원래 순서로 다시 돌려야 해요. GPU로 네 시간 정도입니다.",
+          "is_target": true,
+          "en_easy": "A note is fine if we run the last steps again."
+        }
+      ]
+    },
+    {
+      "id": "d107-s5",
+      "title_ko": "논문 마감 앞에서 수정된 실험 일정을 매니저에게 보고하기",
+      "context_ko": "옥상 정원을 걸으며 매니저 Chris와 짧게 이야기합니다. {name}은 팀에 공유하기 전에 재조정한 일정과 그 위험을 먼저 알리려 합니다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Do you have five minutes? I want to share the revised experiment schedule before I send it to the team.",
+          "ko": "5분만 시간 되세요? 팀에 보내기 전에 수정한 실험 일정을 먼저 공유드리고 싶어서요.",
+          "is_target": true,
+          "en_easy": "Do you have time to see the new schedule?"
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Sure. Just give me the headline. Are we still hitting the paper deadline, or do I need to warn the director?",
+          "ko": "그럼요. 결론만 말해 줘요. 논문 마감은 맞출 수 있어요, 아니면 디렉터한테 미리 알려야 해요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "We can still make it if we cut one ablation. The full sweep would slip us about four days past the deadline.",
+          "ko": "어블레이션 하나를 빼면 맞출 수 있습니다. 전체를 다 돌리면 마감을 4일 정도 넘기게 돼요.",
+          "is_target": true,
+          "en_easy": "We can finish on time if we cut one experiment."
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Cutting an ablation worries me. A reviewer will ask for it. Isn't there another way to buy time?",
+          "ko": "어블레이션을 빼는 건 걱정되네요. 리뷰어가 분명 요구할 텐데. 시간을 벌 다른 방법은 없어요?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Fair point. We'll run the dropped ablation at smaller scale and report it as preliminary, so reviewers see we considered it.",
+          "ko": "맞는 지적이에요. 뺀 어블레이션은 작은 규모로 돌려서 예비 결과로 싣겠습니다. 리뷰어가 검토한 흔적을 볼 수 있게요.",
+          "is_target": true,
+          "en_easy": "We'll run the dropped experiment on a small scale and show it."
+        }
+      ]
+    }
+  ]
+}
