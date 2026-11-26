@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 108,
+  "date": "2026-11-27",
+  "week": 16,
+  "block": "tech-comm",
+  "theme": "2블록 통합 — 기술 판단을 말로 지키기",
+  "topic": "논문 아이디어를 프로덕션에 넣자고 설득하는 하루",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d108-s1",
+      "title_ko": "화이트보드 앞에서 논문 기법 시도를 반대하는 팀 리드에게 답하기",
+      "context_ko": "아침 스탠드업 중 {name}이 긴 문맥용 희소 어텐션 논문을 제안하자, 팀 리드는 논문 성능은 믿을 수 없다며 분기 계획에서 빼자고 한다. {name}은 작은 실험부터 하자고 설득해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I want to propose we try the sparse attention method from that paper on our long-context model.",
+          "ko": "이 논문에 나온 희소 어텐션 기법을 우리 긴 문맥 모델에 한번 적용해 보자고 제안하고 싶어요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Papers always look great on their own benchmarks. We've been burned before. I'd rather spend the quarter on things we already know work.",
+          "ko": "논문은 자기네 벤치마크에선 늘 좋아 보이죠. 전에 데인 적도 있고요. 이번 분기는 검증된 일에 쓰고 싶어요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd push back on that. The paper's gains hold on long inputs, and that's exactly where our current model falls apart.",
+          "ko": "그건 좀 다르게 봅니다. 논문의 개선은 긴 입력에서 나타나는데, 지금 우리 모델이 딱 거기서 무너지거든요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Okay, but their setup isn't ours. Different data, different scale. What makes you think the numbers will transfer?",
+          "ko": "그래도 그쪽 환경은 우리랑 달라요. 데이터도 규모도요. 그 수치가 우리한테도 나온다고 생각하는 근거가 뭐죠?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "They might not, which is why I'm only asking for a small ablation first, not a full migration.",
+          "ko": "안 나올 수도 있죠. 그래서 전체 이전이 아니라 작은 ablation부터 해 보자는 거예요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d108-s2",
+      "title_ko": "화상회의에서 지연 시간을 걱정하는 추론 담당자 안심시키기",
+      "context_ko": "새 어텐션 커널 도입을 두고 추론 팀 리드가 화상회의에서 메모리 부담과 피크 시간대 p99 지연 급등을 걱정한다. {name}은 롤백 장치를 구체적으로 설명해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "추론 팀 리드",
+          "en": "The new attention kernel adds memory pressure. If p99 latency spikes at peak traffic, I'm the one who gets paged. How do we avoid that?",
+          "ko": "새 어텐션 커널은 메모리를 더 먹잖아요. 피크 때 p99가 튀면 새벽에 호출받는 건 저예요. 그걸 어떻게 막죠?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That's a fair concern — here's how we handle it. We cap batch size, and a flag lets us fall back instantly.",
+          "ko": "맞는 우려예요. 이렇게 대응하려고 합니다. 배치 크기에 상한을 두고, 플래그 하나로 바로 이전 경로로 돌아가게 해 둘 거예요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "추론 팀 리드",
+          "en": "And if the fallback path rots because nobody exercises it? I've seen that happen with half the flags we've shipped.",
+          "ko": "그 이전 경로를 아무도 안 써서 썩어 버리면요? 우리가 넣은 플래그 절반이 그렇게 됐거든요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Good point. We'll route five percent of traffic through the old path daily, so the fallback stays tested.",
+          "ko": "좋은 지적이에요. 매일 트래픽 5%는 기존 경로로 보내서 폴백이 계속 검증되게 할게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d108-s3",
+      "title_ko": "복도 커피머신 앞에서 '그냥 바로 출시하자'는 PM에게 단계적 검증 설명하기",
+      "context_ko": "PM이 {name}의 제안서를 읽고 논문에서 이미 증명된 것 아니냐며 전 고객에게 바로 배포하자고 한다. {name}은 섀도 모드부터 가는 이유를 짧게 설명해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "I saw your doc. Honestly, why not just ship the new method to everyone? Sounds like the paper already proved it works.",
+          "ko": "문서 봤어요. 솔직히 그냥 전체에 바로 내보내면 안 돼요? 논문에서 이미 된다고 증명한 것 같은데요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let me walk you through the reasoning. The paper shows it on their data, so we shadow-test it first.",
+          "ko": "왜 그런지 차근차근 설명드릴게요. 논문은 그쪽 데이터에서 보인 거라서, 우리는 먼저 섀도 테스트를 합니다.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "PM",
+          "en": "Shadow mode sounds like a delay. How long until I can tell customers something real?",
+          "ko": "섀도 모드면 결국 지연 아니에요? 고객한테 실제로 말할 수 있는 건 언제쯤이죠?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "About two weeks. We compare outputs on live traffic without users seeing anything, so you'd get real numbers, not promises.",
+          "ko": "2주 정도요. 사용자 눈에는 안 보이게 실서비스 트래픽으로 결과를 비교하니까, 약속이 아니라 실제 숫자를 드릴 수 있어요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d108-s4",
+      "title_ko": "동료 책상 옆에서 논문 재현 실패를 이유로 포기하자는 말에 답하기",
+      "context_ko": "동료가 어젯밤 저자 코드를 돌렸는데 수치가 전혀 맞지 않았다며 아이디어 자체를 접자고 한다. {name}은 재현을 제대로 해 보되 시간 낭비를 막는 기준을 제시해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "I tried the authors' repo last night. I couldn't get anywhere near their numbers. Doesn't that kill the idea before we start?",
+          "ko": "어젯밤에 저자 레포를 돌려 봤는데 그쪽 수치 근처에도 못 갔어요. 시작도 전에 끝난 거 아닐까요?",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Not necessarily. Missing code details are common, so let's reproduce the core result on our own small setup first.",
+          "ko": "꼭 그렇진 않아요. 코드에 빠진 세부사항은 흔하니까, 우리 작은 환경에서 핵심 결과부터 재현해 보죠.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "And if we still can't reproduce it after a week? I don't want to burn time chasing a ghost.",
+          "ko": "일주일 해도 재현이 안 되면요? 헛것 쫓느라 시간 날리고 싶진 않아요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Then we stop. I'll write a hard cutoff now: if we're not within one point after five days, we drop it.",
+          "ko": "그럼 접어야죠. 지금 기준을 박아 둘게요. 닷새 뒤에도 1점 안쪽으로 못 오면 그만두는 걸로요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d108-s5",
+      "title_ko": "유리벽 회의실에서 매니저에게 2주 프로덕션 시험을 제안하기",
+      "context_ko": "매니저가 {name}에게 이 기법이 정말 프로덕션에 들어갈 만한지 분명한 예스/노를 요구한다. {name}은 과장 없이 제한된 시험과 중단 기준을 제시해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Before you decide, can I show you what a two-week production trial would look like and what would stop it?",
+          "ko": "결정하시기 전에, 2주짜리 프로덕션 시험이 어떤 모습이고 무엇이 중단 조건인지 보여드려도 될까요?",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Sure. But I need a clear yes or no from you. Do you actually believe this belongs in production, or is it just interesting?",
+          "ko": "좋아요. 그래도 분명한 예스/노는 필요해요. 이게 정말 프로덕션에 들어갈 물건이에요, 아니면 그냥 흥미로운 정도예요?",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I believe it earns a limited trial, not a full launch, because we haven't measured tail latency or cost yet.",
+          "ko": "전면 출시가 아니라 제한적인 시험을 해 볼 가치는 있다고 봅니다. 꼬리 지연과 비용을 아직 못 쟀거든요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Fine. What would make you kill it halfway through, and who makes that call?",
+          "ko": "알겠어요. 중간에 접어야 하는 조건은 뭐고, 그 판단은 누가 하죠?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "If quality drops by more than half a point or p99 latency worsens by ten percent, I roll it back myself.",
+          "ko": "품질이 0.5점 넘게 떨어지거나 p99 지연이 10% 나빠지면 제가 직접 롤백하겠습니다.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
