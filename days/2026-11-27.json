@@ -21,7 +21,8 @@
           "role_ko": "나",
           "en": "I want to propose we try the sparse attention method from that paper on our long-context model.",
           "ko": "이 논문에 나온 희소 어텐션 기법을 우리 긴 문맥 모델에 한번 적용해 보자고 제안하고 싶어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I suggest we try the paper's attention method on our model."
         },
         {
           "n": 2,
@@ -37,7 +38,8 @@
           "role_ko": "나",
           "en": "I'd push back on that. The paper's gains hold on long inputs, and that's exactly where our current model falls apart.",
           "ko": "그건 좀 다르게 봅니다. 논문의 개선은 긴 입력에서 나타나는데, 지금 우리 모델이 딱 거기서 무너지거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The paper's gains are on long inputs, and our model fails there."
         },
         {
           "n": 4,
@@ -53,7 +55,8 @@
           "role_ko": "나",
           "en": "They might not, which is why I'm only asking for a small ablation first, not a full migration.",
           "ko": "안 나올 수도 있죠. 그래서 전체 이전이 아니라 작은 ablation부터 해 보자는 거예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Maybe not, so I only want a small test first."
         }
       ]
     },
@@ -78,7 +81,8 @@
           "role_ko": "나",
           "en": "That's a fair concern — here's how we handle it. We cap batch size, and a flag lets us fall back instantly.",
           "ko": "맞는 우려예요. 이렇게 대응하려고 합니다. 배치 크기에 상한을 두고, 플래그 하나로 바로 이전 경로로 돌아가게 해 둘 거예요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "We limit batch size, and a flag lets us return fast."
         },
         {
           "n": 3,
@@ -94,7 +98,8 @@
           "role_ko": "나",
           "en": "Good point. We'll route five percent of traffic through the old path daily, so the fallback stays tested.",
           "ko": "좋은 지적이에요. 매일 트래픽 5%는 기존 경로로 보내서 폴백이 계속 검증되게 할게요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Each day some traffic uses the old path, so we test it."
         }
       ]
     },
@@ -119,7 +124,8 @@
           "role_ko": "나",
           "en": "Let me walk you through the reasoning. The paper shows it on their data, so we shadow-test it first.",
           "ko": "왜 그런지 차근차근 설명드릴게요. 논문은 그쪽 데이터에서 보인 거라서, 우리는 먼저 섀도 테스트를 합니다.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "The paper used its own data, so we test it first."
         },
         {
           "n": 3,
@@ -135,7 +141,8 @@
           "role_ko": "나",
           "en": "About two weeks. We compare outputs on live traffic without users seeing anything, so you'd get real numbers, not promises.",
           "ko": "2주 정도요. 사용자 눈에는 안 보이게 실서비스 트래픽으로 결과를 비교하니까, 약속이 아니라 실제 숫자를 드릴 수 있어요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "It takes 2 weeks, and you get real numbers."
         }
       ]
     },
@@ -160,7 +167,8 @@
           "role_ko": "나",
           "en": "Not necessarily. Missing code details are common, so let's reproduce the core result on our own small setup first.",
           "ko": "꼭 그렇진 않아요. 코드에 빠진 세부사항은 흔하니까, 우리 작은 환경에서 핵심 결과부터 재현해 보죠.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Let's reproduce the core result on our own small setup first."
         },
         {
           "n": 3,
@@ -176,7 +184,8 @@
           "role_ko": "나",
           "en": "Then we stop. I'll write a hard cutoff now: if we're not within one point after five days, we drop it.",
           "ko": "그럼 접어야죠. 지금 기준을 박아 둘게요. 닷새 뒤에도 1점 안쪽으로 못 오면 그만두는 걸로요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "If we're not within 1 point in 5 days, we stop."
         }
       ]
     },
@@ -193,7 +202,8 @@
           "role_ko": "나",
           "en": "Before you decide, can I show you what a two-week production trial would look like and what would stop it?",
           "ko": "결정하시기 전에, 2주짜리 프로덕션 시험이 어떤 모습이고 무엇이 중단 조건인지 보여드려도 될까요?",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "Can I show you a trial plan and its stop rules first?"
         },
         {
           "n": 2,
@@ -209,7 +219,8 @@
           "role_ko": "나",
           "en": "I believe it earns a limited trial, not a full launch, because we haven't measured tail latency or cost yet.",
           "ko": "전면 출시가 아니라 제한적인 시험을 해 볼 가치는 있다고 봅니다. 꼬리 지연과 비용을 아직 못 쟀거든요.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "I suggest a limited trial, because we didn't measure tail latency."
         },
         {
           "n": 4,
@@ -225,7 +236,8 @@
           "role_ko": "나",
           "en": "If quality drops by more than half a point or p99 latency worsens by ten percent, I roll it back myself.",
           "ko": "품질이 0.5점 넘게 떨어지거나 p99 지연이 10% 나빠지면 제가 직접 롤백하겠습니다.",
-          "is_target": true
+          "is_target": true,
+          "en_easy": "If quality drops 0.5 points, I return to the old path."
         }
       ]
     }
