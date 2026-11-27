@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "day": 109,
+  "date": "2026-11-28",
+  "week": 16,
+  "block": "tech-comm",
+  "theme": "2블록 통합 — 기술 판단을 말로 지키기",
+  "topic": "자원 요청이 거절당한 뒤 대안을 찾는 하루",
+  "difficulty": 3,
+  "situations": [
+    {
+      "id": "d109-s1",
+      "title_ko": "GPU 64장 요청이 거절된 뒤, 화이트보드 앞 스탠드업에서 대안 설명하기",
+      "context_ko": "클러스터 팀이 다음 주 GPU 64장 요청을 거절했다. {name}은 스탠드업에서 화이트보드에 새 계획을 그려 놓고, 규모 확장 결과를 믿을 수 있는지 묻는 팀 리드를 설득해야 한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "The cluster team rejected our request for sixty-four GPUs, so I redrew the plan on the board.",
+          "ko": "클러스터 팀에서 GPU 64장 요청을 거절해서, 계획을 보드에 다시 그려 봤어요.",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "Without the full run, how do we know the scaling result holds? I don't want to ship a guess.",
+          "ko": "전체 실행 없이 스케일링 결과가 맞는지 어떻게 알죠? 추측을 내보내고 싶진 않아요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Let me walk you through the reasoning: we run four small proxy models first and fit the scaling curve.",
+          "ko": "근거를 설명드릴게요. 작은 대리 모델 네 개를 먼저 돌려서 스케일링 곡선을 맞춰 볼 겁니다.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "팀 리드",
+          "en": "And if the curve bends at scale? Proxy runs have misled us before.",
+          "ko": "큰 규모에서 곡선이 꺾이면요? 대리 실험에 속은 적이 있잖아요.",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Then we request eight GPUs for one confirmation run, which is a much easier ask than sixty-four.",
+          "ko": "그럼 확인용 한 번만 GPU 8장을 요청하죠. 64장보다는 훨씬 받아들이기 쉬운 요청이에요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d109-s2",
+      "title_ko": "스토리지 증설이 거절된 날, 탕비실에서 체크포인트 보관 규칙 제안하기",
+      "context_ko": "인프라 팀이 추가 200TB 요청을 거절했다. 금요일이면 쿼터가 다 찰 상황에서, {name}은 탕비실에서 마주친 동료에게 체크포인트 정리안을 내놓는다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Infra denied our extra 200 terabytes. Checkpoints alone will fill the quota by Friday.",
+          "ko": "인프라 쪽에서 추가 200TB를 거절했어요. 체크포인트만으로 금요일이면 쿼터가 찰 거예요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Then let's keep only every fifth checkpoint and move older ones to the cold tier tonight.",
+          "ko": "그럼 체크포인트는 다섯 개마다 하나만 남기고, 오래된 건 오늘 밤 콜드 티어로 옮기죠.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 엔지니어",
+          "en": "Pruning checkpoints worries me. What if we need to roll back to step ten thousand?",
+          "ko": "체크포인트를 지우는 건 걱정돼요. 1만 스텝으로 롤백해야 하면 어떡하죠?",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Fair point, so we'll always keep the best-eval checkpoint plus a weekly snapshot, and I'll write the retention rule down.",
+          "ko": "맞는 말이에요. 평가 최고 체크포인트와 주간 스냅샷은 항상 남기고, 보관 규칙은 제가 문서로 적어 둘게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d109-s3",
+      "title_ko": "LLM 판정 크레딧이 거절된 뒤, 화상회의에서 50개 수동 평가안에 반박하기",
+      "context_ko": "재무팀이 평가용 LLM 판정 크레딧을 승인하지 않았다. 매니저는 샘플 50개만 손으로 채점하자고 하는데, {name}은 화상회의에서 그 방식의 위험을 짚고 대안을 낸다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I saw finance declined the credits for our LLM judge. How should we evaluate the new checkpoint?",
+          "ko": "재무에서 LLM 판정 크레딧을 거절했다고 들었어요. 새 체크포인트는 어떻게 평가할까요?",
+          "is_target": true
+        },
+        {
+          "n": 2,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Let's just score fifty random samples by hand and call it good enough. That's cheap and fast.",
+          "ko": "무작위 50개만 손으로 채점하고 그 정도면 충분하다고 하죠. 싸고 빠르잖아요.",
+          "is_target": false
+        },
+        {
+          "n": 3,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "I'd push back on that. Fifty samples gives us a huge error bar, and we'd miss regressions.",
+          "ko": "그건 반대예요. 50개면 오차 범위가 너무 커서 성능 하락을 놓칠 수 있어요.",
+          "is_target": true
+        },
+        {
+          "n": 4,
+          "speaker": "A",
+          "role_ko": "매니저",
+          "en": "Okay, but we have no budget. What's your alternative?",
+          "ko": "알겠는데, 예산이 없잖아요. 대안이 뭐죠?",
+          "is_target": false
+        },
+        {
+          "n": 5,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Run an open-weight judge on our own GPUs overnight, then hand-check a small slice to calibrate it.",
+          "ko": "우리 GPU에서 오픈 웨이트 판정 모델을 밤새 돌리고, 일부만 직접 확인해서 보정하죠.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d109-s4",
+      "title_ko": "보안팀이 외부 트래커를 거절한 점심, 자체 호스팅 운영 부담 걱정에 답하기",
+      "context_ko": "보안팀이 호스팅형 실험 트래커를 승인하지 않았다. 점심 자리에서 동료는 스프레드시트로 돌아가자고 하고, {name}은 자체 호스팅을 제안하며 유지보수 걱정에 답한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "동료 리서처",
+          "en": "Security rejected the hosted tracker, so I'm thinking we just go back to spreadsheets.",
+          "ko": "보안팀이 호스팅 트래커를 거절했으니 그냥 스프레드시트로 돌아갈까 해요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Spreadsheets will break once we hit fifty runs a week. Why not self-host an open-source tracker inside our network?",
+          "ko": "주 50회 실험쯤 되면 스프레드시트는 무너져요. 사내망 안에 오픈소스 트래커를 직접 띄우면 어때요?",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "동료 리서처",
+          "en": "Self-hosting means someone patches it forever. I don't want that on my plate.",
+          "ko": "자체 호스팅은 누군가 계속 패치해야 하잖아요. 그 일은 제가 맡기 싫어요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "That's a fair concern — here's how we handle it: containerized, auto-updated monthly, and I'm the on-call owner.",
+          "ko": "맞는 걱정이에요. 컨테이너로 띄우고 매달 자동 업데이트하고, 담당자는 제가 할게요.",
+          "is_target": true
+        }
+      ]
+    },
+    {
+      "id": "d109-s5",
+      "title_ko": "서버 증설이 전력 한도로 거절된 뒤, 서버룸 앞에서 전력 제한안 설명하기",
+      "context_ko": "시설팀이 랙 전력 한도를 이유로 노드 4대 추가를 거절했다. 논문 마감이 2주 남은 상황에서, {name}은 서버룸 앞에서 GPU 전력 제한이라는 대안을 제안한다.",
+      "image": null,
+      "audio": null,
+      "turns": [
+        {
+          "n": 1,
+          "speaker": "A",
+          "role_ko": "인프라 담당",
+          "en": "Facilities denied the extra four nodes. We're already at the rack's power limit.",
+          "ko": "시설팀이 노드 4대 추가를 거절했어요. 랙 전력 한도에 이미 도달했거든요.",
+          "is_target": false
+        },
+        {
+          "n": 2,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Then let's cap each GPU's power and see how much throughput we actually lose first.",
+          "ko": "그럼 GPU별 전력을 제한해 보고, 처리량이 실제로 얼마나 줄어드는지부터 봐요.",
+          "is_target": true
+        },
+        {
+          "n": 3,
+          "speaker": "A",
+          "role_ko": "인프라 담당",
+          "en": "Capping sounds like slower training to me. Our paper deadline is two weeks out.",
+          "ko": "전력 제한이면 학습이 느려진다는 얘기잖아요. 논문 마감이 2주 남았는데요.",
+          "is_target": false
+        },
+        {
+          "n": 4,
+          "speaker": "B",
+          "role_ko": "나",
+          "en": "Often a modest cap costs only a few percent speed, but I'll benchmark it tonight and share the numbers.",
+          "ko": "적당한 제한이면 속도 손실이 몇 퍼센트에 그치는 경우가 많아요. 오늘 밤 측정해서 숫자를 공유할게요.",
+          "is_target": true
+        }
+      ]
+    }
+  ]
+}
